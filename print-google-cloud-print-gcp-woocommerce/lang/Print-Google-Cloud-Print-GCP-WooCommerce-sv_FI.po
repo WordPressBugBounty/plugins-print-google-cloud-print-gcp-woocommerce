@@ -1,0 +1,928 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Print Manager\n"
+"POT-Creation-Date: 2021-08-12 22:11+0300\n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: sv_FI\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/Addons.php:20
+#, fuzzy
+msgid "Add more functionality"
+msgstr "Lägg till mer funktionalitet"
+
+#: includes/Addons.php:34 setting/logs.php:30
+#, fuzzy
+msgid "Active"
+msgstr "Aktiva"
+
+#: includes/Addons.php:39 setting/general.php:38
+#: setting/locations/single.php:112 setting/locations/single.php:121
+#, fuzzy
+msgid "Enable"
+msgstr "Gör det möjligt"
+
+#: includes/Addons.php:44
+#, fuzzy
+msgid "Install"
+msgstr "Installera"
+
+#: includes/Addons.php:62
+#, fuzzy
+msgid "Explore more products, platforms and services"
+msgstr "Utforska fler produkter, plattformar och tjänster"
+
+#: includes/Addons.php:87
+#, fuzzy
+msgid "Your life`s work, our technology"
+msgstr "Ditt livsverk, vår teknik"
+
+#: includes/Addons.php:91
+#, fuzzy
+msgid "Visit Us"
+msgstr "Besök oss"
+
+#: includes/Addons.php:101
+#, fuzzy
+msgid "More info"
+msgstr "Mer information"
+
+#: includes/Addons.php:105
+#, fuzzy
+msgid "White Label Branding"
+msgstr "White Label Branding"
+
+#: includes/Addons.php:106
+#, fuzzy
+msgid "Remove BizSwoop branding for a while label print template solution."
+msgstr "Ta bort BizSwoop-varumärket för en stund etikettutskriftsmalllösning."
+
+#: includes/Addons.php:113
+#, fuzzy
+msgid "Product Location Mapping"
+msgstr "Kartläggning av produktplats"
+
+#: includes/Addons.php:114
+#, fuzzy
+msgid ""
+"Easily configure product and category level mapping to specific print "
+"locations."
+msgstr ""
+"Konfigurera enkelt produkt- och kategorinivåmappning till specifika "
+"utskriftsplatser."
+
+#: includes/Addons.php:121
+#, fuzzy
+msgid "Sample Print Template"
+msgstr "Exempel på mall för utskrift"
+
+#: includes/Addons.php:122
+#, fuzzy
+msgid "Developer sample template to create a custom print template."
+msgstr "Exempelmall för utvecklare för att skapa en anpassad utskriftsmall."
+
+#: includes/Addons.php:129
+#, fuzzy
+msgid "Custom Print Templates"
+msgstr "Anpassade utskriftsmallar"
+
+#: includes/Addons.php:130
+#, fuzzy
+msgid ""
+"A custom development service for building your own custom print template."
+msgstr ""
+"En anpassad utvecklingstjänst för att bygga din egen anpassade tryckmall."
+
+#: includes/Addons.php:143
+#, fuzzy
+msgid "WordPress.org"
+msgstr "WordPress.org"
+
+#: includes/Addons.php:144
+#, fuzzy
+msgid "Free plugin apps for the open source community"
+msgstr "Gratis plugin-appar för öppen källkod"
+
+#: includes/Addons.php:147
+#, fuzzy
+msgid "Explore Free Apps"
+msgstr "Utforska gratisappar"
+
+#: includes/Addons.php:150
+#, fuzzy
+msgid "Premium Plugins"
+msgstr "Premium plugins"
+
+#: includes/Addons.php:151
+#, fuzzy
+msgid "Smart plugin apps for your advanced business requirements"
+msgstr "Smarta plugin-appar för dina avancerade affärskrav"
+
+#: includes/Addons.php:154
+#, fuzzy
+msgid "Explore All Apps"
+msgstr "Utforska alla appar"
+
+#: includes/Addons.php:157
+#, fuzzy
+msgid "Powerful Platforms"
+msgstr "Kraftfulla plattformar"
+
+#: includes/Addons.php:158
+#, fuzzy
+msgid "Advanced platforms for agencies, developers and businesses"
+msgstr "Avancerade plattformar för byråer, utvecklare och företag"
+
+#: includes/Addons.php:161
+#, fuzzy
+msgid "Explore Platforms"
+msgstr "Utforska plattformar"
+
+#: includes/Addons.php:164
+#, fuzzy
+msgid "Super Services"
+msgstr "Supertjänster"
+
+#: includes/Addons.php:165
+#, fuzzy
+msgid "High-touch services to boost your business technology solutions"
+msgstr "High-touch-tjänster för att stärka dina affärstekniska lösningar"
+
+#: includes/Addons.php:168
+#, fuzzy
+msgid "Explore Services"
+msgstr "Utforska tjänster"
+
+#: includes/Admin.php:136 includes/Admin.php:137 includes/Admin/Layout.php:32
+#: includes/Admin/Layout.php:37
+#, fuzzy
+msgid "Print Manager"
+msgstr "Utskriftshanterare"
+
+#: includes/Admin.php:140
+#, fuzzy
+msgid "Print Order"
+msgstr "Skriv ut beställning"
+
+#: includes/Admin.php:149
+#, fuzzy
+msgid "Select Location"
+msgstr "Välj plats"
+
+#: includes/Admin/Layout.php:41
+#, fuzzy
+msgid "Print to Anywhere"
+msgstr "Skriv ut var som helst"
+
+#: includes/Admin/Layout.php:54 setting/general.php:11
+#, fuzzy
+msgid "General"
+msgstr "Allmän"
+
+#: includes/Admin/Layout.php:65 setting/locations.php:15
+#, fuzzy
+msgid "Locations"
+msgstr "Platser"
+
+#: includes/Admin/Layout.php:76 setting/addons.php:11
+#, fuzzy
+msgid "Add-ons"
+msgstr "Tillägg"
+
+#: includes/Admin/Layout.php:87 setting/locations/single.php:382
+#: setting/setting/index.php:10
+msgid "Settings"
+msgstr "Inställningar"
+
+#: includes/Admin/OrdersTable.php:31 includes/Admin/OrdersTable.php:46
+#: setting/logs.php:25
+#, fuzzy
+msgid "Print"
+msgstr "Skriva ut"
+
+#: includes/Aspect/Input.php:317
+#, fuzzy
+msgid "Upload"
+msgstr "Ladda upp"
+
+#: includes/Aspect/Input.php:319
+#, fuzzy
+msgid "Remove"
+msgstr "Avlägsna"
+
+#: includes/Debug/Tab.php:13
+#, fuzzy
+msgid "Requests"
+msgstr "Förfrågningar"
+
+#: includes/Debug/Tab.php:19
+#, fuzzy
+msgid "Get Remote Printers"
+msgstr "Skaffa fjärrskrivare"
+
+#: includes/Debug/Tab.php:37
+msgid "Order:"
+msgstr "Beställning:"
+
+#: includes/Debug/Tab.php:49
+#, fuzzy
+msgid "Location:"
+msgstr "Plats:"
+
+#: includes/Debug/Tab.php:62
+#, fuzzy
+msgid "Send Print Request"
+msgstr "Skicka utskriftsförfrågan"
+
+#: includes/Model/Location.php:300
+#, fuzzy
+msgid "A4"
+msgstr "A4"
+
+#: includes/Model/Location.php:301
+#, fuzzy
+msgid "Letter"
+msgstr "Brev"
+
+#: includes/Model/Location.php:302
+#, fuzzy
+msgid "Custom"
+msgstr "Beställnings"
+
+#: includes/Model/Location.php:321
+#, fuzzy
+msgid "HTML"
+msgstr "HTML"
+
+#: includes/Model/Location.php:322
+#, fuzzy
+msgid "Plain Text"
+msgstr "Oformatterad text"
+
+#: includes/Model/Location.php:357
+#, fuzzy
+msgid "Portrait"
+msgstr "Porträtt"
+
+#: includes/Model/Location.php:358
+#, fuzzy
+msgid "Landscape"
+msgstr "Landskap"
+
+#: includes/Model/Location.php:359 setting/locations/index.php:157
+#: setting/locations/index.php:159
+#, fuzzy
+msgid "Auto"
+msgstr "Bil"
+
+#: includes/Setup.php:26
+#, fuzzy
+msgid "Due to an unexpected error the database table was not created."
+msgstr "På grund av ett oväntat fel skapades inte databastabellen."
+
+#: includes/Setup.php:26
+#, fuzzy
+msgid "Retry"
+msgstr "Försök igen"
+
+#: includes/Setup.php:30
+#, fuzzy
+msgid "Print Manager require WooCommerce"
+msgstr "Print Manager kräver WooCommerce"
+
+#: includes/Templates/Customer.php:13
+#, fuzzy
+msgid "Customer Receipt"
+msgstr "Kundkvitto"
+
+#: includes/Templates/Details.php:13
+#, fuzzy
+msgid "Customer Order Receipt"
+msgstr "Kundbeställningskvitto"
+
+#: includes/Templates/Order.php:13 templates/details-plain.php:6
+#, fuzzy
+msgid "Order Receipt"
+msgstr "Order kvitto"
+
+#: setting/debug.php:12
+#, fuzzy
+msgid "Debug"
+msgstr "Felsök"
+
+#: setting/general.php:17
+#, fuzzy
+msgid "Automatic Order Printing"
+msgstr "Automatisk orderutskrift"
+
+#: setting/general.php:24
+#, fuzzy
+msgid "Enable Automatic Printing"
+msgstr "Aktivera automatisk utskrift"
+
+#: setting/general.php:31
+#, fuzzy
+msgid "Web Orders"
+msgstr "Webbeställningar"
+
+#: setting/general.php:32
+#, fuzzy
+msgid "POS Orders"
+msgstr "POS order"
+
+#: setting/general.php:35
+#, fuzzy
+msgid "POS Orders Save"
+msgstr "POS-ordrar Spara"
+
+#: setting/general.php:46
+#, fuzzy
+msgid "Web Orders Automatic Print Statuses"
+msgstr "Webbeställningar Automatiska utskriftsstatusar"
+
+#: setting/general.php:51
+#, fuzzy
+msgid "Orders Automatic Print Statuses"
+msgstr "Beställningar Automatiska utskriftsstatusar"
+
+#: setting/general.php:71
+#, fuzzy
+msgid "Copies"
+msgstr "Kopior"
+
+#: setting/index.php:15
+#, fuzzy
+msgid "Print Settings"
+msgstr "Utskriftsinställningar"
+
+#: setting/locations.php:62
+#, fuzzy
+msgid "Location deleted"
+msgstr "Plats raderad"
+
+#: setting/locations.php:68
+#, fuzzy
+msgid "Location saved"
+msgstr "Platsen har sparats"
+
+#: setting/locations.php:74
+#, fuzzy
+msgid "Test print initiated, view log for details"
+msgstr "Testutskrift initierad, se logg för detaljer"
+
+#: setting/locations.php:87
+#, fuzzy
+msgid "Add new"
+msgstr "Lägg till ny"
+
+#: setting/locations/index.php:87
+#, fuzzy
+msgid "Title"
+msgstr "Titel"
+
+#: setting/locations/index.php:91
+#, fuzzy
+msgid "Web Order"
+msgstr "Webbeställning"
+
+#: setting/locations/index.php:95
+#, fuzzy
+msgid "Enabled"
+msgstr "Aktiverad"
+
+#: setting/locations/index.php:100
+#, fuzzy
+msgid "POS Order"
+msgstr "POS-beställning"
+
+#: setting/locations/index.php:104 setting/locations/single.php:128
+#, fuzzy
+msgid "Printers"
+msgstr "Skrivare"
+
+#: setting/locations/index.php:107 setting/locations/single.php:139
+#, fuzzy
+msgid "Users"
+msgstr "Användare"
+
+#: setting/locations/index.php:110 setting/locations/single.php:151
+#, fuzzy
+msgid "Template"
+msgstr "Mall"
+
+#: setting/locations/index.php:113
+#, fuzzy
+msgid "Size"
+msgstr "Storlek"
+
+#: setting/locations/index.php:116
+#, fuzzy
+msgid "Actions"
+msgstr "Handlingar"
+
+#: setting/locations/index.php:155 setting/locations/index.php:157
+#: setting/locations/single.php:483 setting/locations/single.php:488
+#: setting/locations/single.php:493 setting/locations/single.php:498
+#, fuzzy
+msgid "mm"
+msgstr "mm"
+
+#: setting/locations/index.php:165
+msgid "Edit"
+msgstr "Ändra"
+
+#: setting/locations/single.php:32
+#, fuzzy
+msgid "WordPress Site Default Language Setting"
+msgstr "WordPress webbplats standardspråkinställning"
+
+#: setting/locations/single.php:33
+#, fuzzy
+msgid "User Profile Language Setting"
+msgstr "Språkinställning för användarprofil"
+
+#: setting/locations/single.php:34
+#, fuzzy
+msgid "Select a Language"
+msgstr "Välj ett språk"
+
+#: setting/locations/single.php:89
+#, fuzzy
+msgid "Location title"
+msgstr "Platstitel"
+
+#: setting/locations/single.php:98
+#, fuzzy
+msgid "Test print"
+msgstr "Provtryck"
+
+#: setting/locations/single.php:102
+#, fuzzy
+msgid "View Sample"
+msgstr "Visa prov"
+
+#: setting/locations/single.php:108
+#, fuzzy
+msgid "Web order printer"
+msgstr "Webbeställningsskrivare"
+
+#: setting/locations/single.php:117
+#, fuzzy
+msgid "POS order printer"
+msgstr "POS beställningsskrivare"
+
+#: setting/locations/single.php:153
+#, fuzzy
+msgid "Need Custom Templates?"
+msgstr "Behöver du anpassade mallar?"
+
+#: setting/locations/single.php:155
+#, fuzzy
+msgid "Buy"
+msgstr "köpa"
+
+#: setting/locations/single.php:161
+#, fuzzy
+msgid "Select Template"
+msgstr "Välj Mall"
+
+#: setting/locations/single.php:169
+#, fuzzy
+msgid "Include Order Cost"
+msgstr "Inkludera beställningskostnad"
+
+#: setting/locations/single.php:175
+#, fuzzy
+msgid "Include Shipping Cost"
+msgstr "Inkludera fraktkostnad"
+
+#: setting/locations/single.php:182
+#, fuzzy
+msgid "Include Billing & Shipping Details"
+msgstr "Inkludera fakturerings- och fraktinformation"
+
+#: setting/locations/single.php:189
+#, fuzzy
+msgid "Include Customer Details"
+msgstr "Inkludera kundinformation"
+
+#: setting/locations/single.php:196
+#, fuzzy
+msgid "Include Shipping Method"
+msgstr "Inkludera fraktmetod"
+
+#: setting/locations/single.php:203
+#, fuzzy
+msgid "Include Pickup or Delivery Type"
+msgstr "Inkludera hämtning eller leveranstyp"
+
+#: setting/locations/single.php:210
+#, fuzzy
+msgid "Developer Documentation"
+msgstr "Utvecklardokumentation"
+
+#: setting/locations/single.php:216
+#, fuzzy
+msgid "Appearance"
+msgstr "Utseende"
+
+#: setting/locations/single.php:347
+#, fuzzy
+msgid "Template Language"
+msgstr "Mallspråk"
+
+#: setting/locations/single.php:386
+#, fuzzy
+msgid "Page Orientation"
+msgstr "Sidorientering"
+
+#: setting/locations/single.php:390
+#, fuzzy
+msgid "Select Orientation"
+msgstr "Välj Orientering"
+
+#: setting/locations/single.php:405
+#, fuzzy
+msgid "Output Format"
+msgstr "Utmatningsformat"
+
+#: setting/locations/single.php:409
+#, fuzzy
+msgid "Select Format"
+msgstr "Välj Format"
+
+#: setting/locations/single.php:420
+#, fuzzy
+msgid "Plain text format symbols width"
+msgstr "Vanligt textformat symboler bredd"
+
+#: setting/locations/single.php:428
+#, fuzzy
+msgid "Print symbols for layout debug"
+msgstr "Skriv ut symboler för layoutfelsökning"
+
+#: setting/locations/single.php:437
+#, fuzzy
+msgid "Basic Font Size (px)"
+msgstr "Grundläggande teckenstorlek (px)"
+
+#: setting/locations/single.php:444
+#, fuzzy
+msgid "Header Font Size (px)"
+msgstr "Teckenstorlek för rubrik (px)"
+
+#: setting/locations/single.php:451
+#, fuzzy
+msgid "Basic Font Weight (CSS value)"
+msgstr "Grundläggande teckensnittsvikt (CSS-värde)"
+
+#: setting/locations/single.php:458
+#, fuzzy
+msgid "Header Font Weight (CSS value)"
+msgstr "Header Font Weight (CSS-värde)"
+
+#: setting/locations/single.php:469
+#, fuzzy
+msgid "Custom Margins"
+msgstr "Anpassade marginaler"
+
+#: setting/locations/single.php:476
+#, fuzzy
+msgid "Layout Margins"
+msgstr "Layoutmarginaler"
+
+#: setting/locations/single.php:480
+#, fuzzy
+msgid "Top Margin"
+msgstr "Toppmarginal"
+
+#: setting/locations/single.php:485
+#, fuzzy
+msgid "Right Margin"
+msgstr "Höger marginal"
+
+#: setting/locations/single.php:490
+#, fuzzy
+msgid "Bottom Margin"
+msgstr "Nedre marginal"
+
+#: setting/locations/single.php:495
+#, fuzzy
+msgid "Left Margin"
+msgstr "Vänster marginal"
+
+#: setting/locations/single.php:506
+#, fuzzy
+msgid "Layout Size"
+msgstr "Layout Storlek"
+
+#: setting/locations/single.php:510
+#, fuzzy
+msgid "Select Size"
+msgstr "Välj storlek"
+
+#: setting/locations/single.php:525
+#, fuzzy
+msgid "Custom Width (mm)"
+msgstr "Anpassad bredd (mm)"
+
+#: setting/locations/single.php:528
+#, fuzzy
+msgid "Note: use 0mm for automatic width (based on printer setting)"
+msgstr ""
+"Obs: använd 0 mm för automatisk bredd (baserat på skrivarinställningar)"
+
+#: setting/locations/single.php:534
+#, fuzzy
+msgid "Custom Height (mm)"
+msgstr "Anpassad höjd (mm)"
+
+#: setting/locations/single.php:537
+#, fuzzy
+msgid ""
+"Note: use 0mm for continuous feed (some printers may not support this "
+"function)"
+msgstr ""
+"Obs: använd 0 mm för kontinuerlig matning (vissa skrivare kanske inte stöder "
+"den här funktionen)"
+
+#: setting/locations/single.php:551
+#, fuzzy
+msgid "Save Changes"
+msgstr "Spara ändringar"
+
+#: setting/locations/single.php:558
+#, fuzzy
+msgid "Delete"
+msgstr "Radera"
+
+#: setting/logs.php:11
+#, fuzzy
+msgid "Logs"
+msgstr "Loggar"
+
+#: setting/logs.php:20
+#, fuzzy
+msgid "View log"
+msgstr "Visa logg"
+
+#: setting/logs.php:21
+#, fuzzy
+msgid "Copy log"
+msgstr "Kopiera logg"
+
+#: setting/logs.php:32
+#, fuzzy
+msgid "Save info logs"
+msgstr "Spara infologgar"
+
+#: setting/logs.php:38 setting/logs.php:76
+#, fuzzy
+msgid "Log file content"
+msgstr "Loggfilens innehåll"
+
+#: setting/logs.php:50 setting/logs.php:88
+#, fuzzy
+msgid "Log file"
+msgstr "Loggfil"
+
+#: setting/logs.php:51 setting/logs.php:89
+#, fuzzy
+msgid "Clear log file"
+msgstr "Rensa loggfilen"
+
+#: setting/logs.php:57 setting/logs.php:95
+#, fuzzy, php-format
+msgid "Log file (Size: %s)"
+msgstr "Loggfil (storlek: %s)"
+
+#: setting/logs.php:72
+#, fuzzy
+msgid "Plugin"
+msgstr "Plugin"
+
+#: setting/setting/access.php:9
+#, fuzzy
+msgid "Application API Keys"
+msgstr "Application API-nycklar"
+
+#: setting/setting/index.php:17
+#, fuzzy
+msgid "BizPrint Cloud Service"
+msgstr "BizPrints molntjänst"
+
+#: setting/setting/index.php:22
+#, fuzzy
+msgid "Dashboard"
+msgstr "instrumentbräda"
+
+#: setting/setting/index.php:25
+#, fuzzy
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: setting/setting/userRoles.php:15
+#, fuzzy
+msgid "Location User Roles"
+msgstr "Plats användarroller"
+
+#: setting/setting/userRoles.php:16
+#, fuzzy
+msgid "Select Roles for Location Mapping to Users"
+msgstr "Välj Roller för platsmappning till användare"
+
+#: setting/setting/userRoles.php:22 setting/setting/userRoles.php:36
+#, fuzzy
+msgid "Selected Roles"
+msgstr "Valda roller"
+
+#: setting/setting/userRoles.php:29
+#, fuzzy
+msgid "Management Access User Roles"
+msgstr "Management Access Användarroller"
+
+#: setting/setting/userRoles.php:30
+#, fuzzy
+msgid "Select Roles for Access to Manage Print Settings"
+msgstr "Välj Roller för åtkomst för att hantera utskriftsinställningar"
+
+#: templates/customer-html.php:27 templates/customer-plain.php:10
+#: templates/details-plain.php:7 templates/order-html.php:23
+#: templates/order-plain.php:7
+#, fuzzy
+msgid "Order Number"
+msgstr "Ordernummer"
+
+#: templates/customer-html.php:28 templates/customer-plain.php:11
+#: templates/details-html.php:20 templates/details-plain.php:8
+#: templates/order-html.php:24 templates/order-plain.php:8
+#, fuzzy
+msgid "Date"
+msgstr "Datum"
+
+#: templates/customer-html.php:30 templates/customer-html.php:66
+#: templates/customer-html.php:92 templates/customer-plain.php:13
+#: templates/customer-plain.php:52 templates/details-html.php:35
+#: templates/details-html.php:61 templates/details-plain.php:42
+msgid "Total"
+msgstr "Totalt"
+
+#: templates/customer-html.php:32 templates/customer-html.php:88
+#: templates/customer-plain.php:14 templates/customer-plain.php:51
+#: templates/details-html.php:57 templates/details-plain.php:41
+#, fuzzy
+msgid "Payment Method"
+msgstr "Betalningsmetod"
+
+#: templates/customer-html.php:37 templates/order-html.php:29
+#, fuzzy
+msgid "Time ordered"
+msgstr "Tid beställd"
+
+#: templates/customer-html.php:65 templates/details-html.php:34
+#: templates/order-html.php:51
+msgid "Product"
+msgstr "Produkt"
+
+#: templates/customer-html.php:72 templates/customer-plain.php:44
+#: templates/details-html.php:41 templates/details-plain.php:34
+msgid "Subtotal"
+msgstr "Delsumma"
+
+#: templates/customer-html.php:78 templates/customer-plain.php:47
+#: templates/details-html.php:47 templates/details-plain.php:37
+msgid "Shipping"
+msgstr "Frakt"
+
+#: templates/customer-html.php:84 templates/customer-plain.php:50
+#: templates/details-html.php:53 templates/details-plain.php:40
+#, fuzzy
+msgid "Tax"
+msgstr "Beskatta"
+
+#: templates/customer-html.php:97
+#, fuzzy
+msgid "Add Tip Amount"
+msgstr "Lägg till dricksbelopp"
+
+#: templates/customer-html.php:103
+#, fuzzy
+msgid "Amount Collected"
+msgstr "Insamlat belopp"
+
+#: templates/customer-html.php:147 templates/customer-plain.php:56
+#: templates/details-html.php:102 templates/details-plain.php:46
+#: templates/order-html.php:89 templates/order-plain.php:35
+#, fuzzy
+msgid "Customer Details"
+msgstr "Kunddetaljer"
+
+#: templates/customer-html.php:154 templates/customer-plain.php:58
+#, fuzzy
+msgid "Name"
+msgstr "namn"
+
+#: templates/customer-html.php:160 templates/customer-plain.php:59
+#, fuzzy
+msgid "Telephone"
+msgstr "Telefon"
+
+#: templates/customer-html.php:166 templates/customer-plain.php:60
+msgid "Email"
+msgstr "E-postadress"
+
+#: templates/customer-html.php:179 templates/customer-plain.php:63
+#: templates/details-html.php:147 templates/details-plain.php:75
+#: templates/order-html.php:134 templates/order-plain.php:64
+#, fuzzy
+msgid "Order Notes"
+msgstr "Beställningsanteckningar"
+
+#: templates/customer-html.php:192 templates/customer-plain.php:66
+#: templates/details-html.php:125 templates/details-plain.php:63
+#: templates/order-html.php:112 templates/order-plain.php:52
+#, fuzzy
+msgid "Shipping method"
+msgstr "Frakt metod"
+
+#: templates/customer-plain.php:16 templates/order-plain.php:9
+#, fuzzy
+msgid "Time Ordered"
+msgstr "Beställd tid"
+
+#: templates/customer-plain.php:22
+#, fuzzy
+msgid "Order Information"
+msgstr "Beställningsinformation"
+
+#: templates/details-html.php:18
+#, php-format
+msgid "Order #%s"
+msgstr "Order #%s"
+
+#: templates/details-html.php:22
+msgid "Time"
+msgstr "Tid"
+
+#: templates/details-html.php:109 templates/details-plain.php:48
+#: templates/order-html.php:96 templates/order-plain.php:37
+msgid "Billing address"
+msgstr "Faktureringadress"
+
+#: templates/details-html.php:113 templates/details-plain.php:53
+#: templates/order-html.php:100 templates/order-plain.php:42
+#, fuzzy
+msgid "N/A"
+msgstr "N/A"
+
+#: templates/details-html.php:135 templates/details-plain.php:67
+#: templates/order-html.php:122 templates/order-plain.php:56
+msgid "Shipping address"
+msgstr "Leveransadress"
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid "Print Manager for WooCommerce"
+msgstr "Print Manager för WooCommerce"
+
+#. Plugin URI of the plugin/theme
+#, fuzzy
+msgid "http://www.bizswoop.com/wp/print"
+msgstr "http://www.bizswoop.com/wp/print"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid ""
+"Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print "
+"Service and Print to Anywhere in the World!"
+msgstr ""
+"Lägg enkelt till stöd för utskrift av WooCommerce-ordrar med BizPrint Cloud "
+"Print Service och Print var som helst i världen!"
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "BizSwoop a CPF Concepts, LLC Brand"
+msgstr "BizSwoop och CPF Concepts, LLC varumärke"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "http://www.bizswoop.com"
+msgstr "http://www.bizswoop.com"
+
+msgid "Print Google Cloud Print GCP WooCommerce require WooCommerce"
+msgstr "Drucken Google Cloud Print GCP WooCommerce erfordert WooCommerce"

@@ -1,0 +1,143 @@
+.zprint-dialog {
+	display: none;
+	z-index: 999999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .25);
+}
+
+.zprint-dialog__loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../image/loader.svg) center no-repeat;
+	background-size: 60px;
+}
+
+.zprint-dialog__content {
+	height: 100%;
+	padding: 30px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow-y: auto;
+}
+
+.zprint-dialog__window {
+	position: relative;
+	width: calc(100% - 40px);
+	max-width: 400px;
+	display: none;
+    padding: 40px 30px 30px;
+    line-height: 1.3;
+    font-family: Nunito, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    color: #585858;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.zprint-dialog__hide {
+	z-index: 100;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	padding: 0;
+	background: none;
+	border: 0;
+	font-size: 34px;
+	width: 34px;
+	height: 34px;
+	color: #585858;
+	cursor: pointer;
+	opacity: .4;
+	transition: opacity .15s ease-out;
+}
+
+.zprint-dialog__hide:hover {
+	opacity: .75;
+}
+
+.zprint-dialog__logo {
+    margin-bottom: 20px;
+}
+
+.zprint-dialog__logo-emblem {
+    height: 70px;
+}
+
+.zprint-dialog__logo-title {
+    font-size: 1.5em;
+}
+
+.zprint-dialog__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 2.2em;
+    color: #585858;
+}
+
+.zprint-dialog__title-order-ids {
+	display: block;
+}
+
+.zprint-dialog__form-title {
+	cursor: default;
+}
+
+.zprint-dialog__locations {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.zprint-dialog__locations label {
+	display: block;
+}
+
+.zprint-dialog__location-checkbox {
+	display: none !important;
+}
+
+.zprint-dialog__location {
+	display: block;
+	padding: 12px;
+	font-size: 16px;
+	border: 1px solid rgba(0, 0, 0, .12);
+	border-bottom: 0;
+}
+
+.zprint-dialog__locations label:first-child .zprint-dialog__location {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.zprint-dialog__locations label:last-child .zprint-dialog__location {
+	border-bottom: 1px solid rgba(0, 0, 0, .12);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.zprint-dialog__location-checkbox:checked + .zprint-dialog__location {
+	color: #2e4453;
+	background: #c8d7e1;
+}
+
+.zprint-dialog__form {
+    margin-top: 10px;
+}
+
+.zprint-dialog__btn-row {
+    margin-top: 15px;
+}
+
+.zprint-dialog__submit {
+    margin-bottom: 0 !important;
+    padding: 0 30px !important;
+    font-size: 1.4em !important;
+    line-height: 2.15384615 !important;
+}

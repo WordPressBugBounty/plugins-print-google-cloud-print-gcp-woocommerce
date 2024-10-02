@@ -1,0 +1,781 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Print Manager\n"
+"POT-Creation-Date: 2021-08-12 22:23+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_UY\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/Addons.php:20
+msgid "Add more functionality"
+msgstr "Agrega más funcionalidad"
+
+#: includes/Addons.php:34 setting/logs.php:30
+msgid "Active"
+msgstr "Activo"
+
+#: includes/Addons.php:39 setting/general.php:38
+#: setting/locations/single.php:112 setting/locations/single.php:121
+msgid "Enable"
+msgstr "Permitir"
+
+#: includes/Addons.php:44
+msgid "Install"
+msgstr "Instalar en pc"
+
+#: includes/Addons.php:62
+msgid "Explore more products, platforms and services"
+msgstr "Explore más productos, plataformas y servicios"
+
+#: includes/Addons.php:87
+msgid "Your life`s work, our technology"
+msgstr "El trabajo de tu vida, nuestra tecnología"
+
+#: includes/Addons.php:91
+msgid "Visit Us"
+msgstr "Visítanos"
+
+#: includes/Addons.php:101
+msgid "More info"
+msgstr "Más información"
+
+#: includes/Addons.php:105
+msgid "White Label Branding"
+msgstr "Marca de marca blanca"
+
+#: includes/Addons.php:106
+msgid "Remove BizSwoop branding for a while label print template solution."
+msgstr ""
+"Elimine la marca BizSwoop por un tiempo como solución de plantilla de "
+"impresión de etiquetas."
+
+#: includes/Addons.php:113
+msgid "Product Location Mapping"
+msgstr "Mapeo de la ubicación del producto"
+
+#: includes/Addons.php:114
+msgid ""
+"Easily configure product and category level mapping to specific print "
+"locations."
+msgstr ""
+"Configure fácilmente la asignación de nivel de categoría y producto a "
+"ubicaciones de impresión específicas."
+
+#: includes/Addons.php:121
+msgid "Sample Print Template"
+msgstr "Plantilla de impresión de muestra"
+
+#: includes/Addons.php:122
+msgid "Developer sample template to create a custom print template."
+msgstr ""
+"Plantilla de muestra de desarrollador para crear una plantilla de impresión "
+"personalizada."
+
+#: includes/Addons.php:129
+msgid "Custom Print Templates"
+msgstr "Plantillas de impresión personalizadas"
+
+#: includes/Addons.php:130
+msgid ""
+"A custom development service for building your own custom print template."
+msgstr ""
+"Un servicio de desarrollo personalizado para crear su propia plantilla de "
+"impresión personalizada."
+
+#: includes/Addons.php:143
+msgid "WordPress.org"
+msgstr "WordPress.org"
+
+#: includes/Addons.php:144
+msgid "Free plugin apps for the open source community"
+msgstr ""
+"Aplicaciones de complemento gratuitas para la comunidad de código abierto"
+
+#: includes/Addons.php:147
+msgid "Explore Free Apps"
+msgstr "Explorar aplicaciones gratuitas"
+
+#: includes/Addons.php:150
+msgid "Premium Plugins"
+msgstr "Complementos premium"
+
+#: includes/Addons.php:151
+msgid "Smart plugin apps for your advanced business requirements"
+msgstr ""
+"Aplicaciones de complementos inteligentes para sus requisitos comerciales "
+"avanzados"
+
+#: includes/Addons.php:154
+msgid "Explore All Apps"
+msgstr "Explorar todas las aplicaciones"
+
+#: includes/Addons.php:157
+msgid "Powerful Platforms"
+msgstr "Plataformas poderosas"
+
+#: includes/Addons.php:158
+msgid "Advanced platforms for agencies, developers and businesses"
+msgstr "Plataformas avanzadas para agencias, desarrolladores y empresas"
+
+#: includes/Addons.php:161
+msgid "Explore Platforms"
+msgstr "Explorar plataformas"
+
+#: includes/Addons.php:164
+msgid "Super Services"
+msgstr "Super servicios"
+
+#: includes/Addons.php:165
+msgid "High-touch services to boost your business technology solutions"
+msgstr ""
+"Servicios de alto contacto para impulsar las soluciones tecnológicas de su "
+"negocio"
+
+#: includes/Addons.php:168
+msgid "Explore Services"
+msgstr "Explorar servicios"
+
+#: includes/Admin.php:136 includes/Admin.php:137 includes/Admin/Layout.php:32
+#: includes/Admin/Layout.php:37
+msgid "Print Manager"
+msgstr "Administrador de impresión"
+
+#: includes/Admin.php:140
+msgid "Print Order"
+msgstr "Orden de impresión"
+
+#: includes/Admin.php:149
+msgid "Select Location"
+msgstr "Seleccionar ubicación"
+
+#: includes/Admin/Layout.php:41
+msgid "Print to Anywhere"
+msgstr "Imprimir en cualquier lugar"
+
+#: includes/Admin/Layout.php:54 setting/general.php:11
+msgid "General"
+msgstr "General"
+
+#: includes/Admin/Layout.php:65 setting/locations.php:15
+msgid "Locations"
+msgstr "Ubicaciones"
+
+#: includes/Admin/Layout.php:76 setting/addons.php:11
+msgid "Add-ons"
+msgstr "Complementos"
+
+#: includes/Admin/Layout.php:87 setting/locations/single.php:382
+#: setting/setting/index.php:10
+msgid "Settings"
+msgstr "Ajustes"
+
+#: includes/Admin/OrdersTable.php:31 includes/Admin/OrdersTable.php:46
+#: setting/logs.php:25
+msgid "Print"
+msgstr "Impresión"
+
+#: includes/Aspect/Input.php:317
+msgid "Upload"
+msgstr "Subir"
+
+#: includes/Aspect/Input.php:319
+msgid "Remove"
+msgstr "Eliminar"
+
+#: includes/Debug/Tab.php:13
+msgid "Requests"
+msgstr "Peticiones"
+
+#: includes/Debug/Tab.php:19
+msgid "Get Remote Printers"
+msgstr "Obtenga impresoras remotas"
+
+#: includes/Debug/Tab.php:37
+msgid "Order:"
+msgstr "Pedido:"
+
+#: includes/Debug/Tab.php:49
+msgid "Location:"
+msgstr "Localización:"
+
+#: includes/Debug/Tab.php:62
+msgid "Send Print Request"
+msgstr "Enviar solicitud de impresión"
+
+#: includes/Model/Location.php:300
+msgid "A4"
+msgstr "A4"
+
+#: includes/Model/Location.php:301
+msgid "Letter"
+msgstr "Letra"
+
+#: includes/Model/Location.php:302
+msgid "Custom"
+msgstr "Personalizado"
+
+#: includes/Model/Location.php:321
+msgid "HTML"
+msgstr "HTML"
+
+#: includes/Model/Location.php:322
+msgid "Plain Text"
+msgstr "Texto sin formato"
+
+#: includes/Model/Location.php:357
+msgid "Portrait"
+msgstr "Retrato"
+
+#: includes/Model/Location.php:358
+msgid "Landscape"
+msgstr "Paisaje"
+
+#: includes/Model/Location.php:359 setting/locations/index.php:157
+#: setting/locations/index.php:159
+msgid "Auto"
+msgstr "Auto"
+
+#: includes/Setup.php:26
+msgid "Due to an unexpected error the database table was not created."
+msgstr "Debido a un error inesperado, no se creó la tabla de la base de datos."
+
+#: includes/Setup.php:26
+msgid "Retry"
+msgstr "Rever"
+
+#: includes/Setup.php:30
+msgid "Print Manager require WooCommerce"
+msgstr "Print Manager requiere WooCommerce"
+
+#: includes/Templates/Customer.php:13
+msgid "Customer Receipt"
+msgstr "Recibo del cliente"
+
+#: includes/Templates/Details.php:13
+msgid "Customer Order Receipt"
+msgstr "Recibo de pedido del cliente"
+
+#: includes/Templates/Order.php:13 templates/details-plain.php:6
+msgid "Order Receipt"
+msgstr "Recibo de pedido"
+
+#: setting/debug.php:12
+msgid "Debug"
+msgstr "Depurar"
+
+#: setting/general.php:17
+msgid "Automatic Order Printing"
+msgstr "Impresión automática de pedidos"
+
+#: setting/general.php:24
+msgid "Enable Automatic Printing"
+msgstr "Habilitar la impresión automática"
+
+#: setting/general.php:31
+msgid "Web Orders"
+msgstr "Pedidos web"
+
+#: setting/general.php:32
+msgid "POS Orders"
+msgstr "Órdenes POS"
+
+#: setting/general.php:35
+msgid "POS Orders Save"
+msgstr "Órdenes de POS guardar"
+
+#: setting/general.php:46
+msgid "Web Orders Automatic Print Statuses"
+msgstr "Estados de impresión automática de pedidos web"
+
+#: setting/general.php:51
+msgid "Orders Automatic Print Statuses"
+msgstr "Estados de impresión automática de pedidos"
+
+#: setting/general.php:71
+msgid "Copies"
+msgstr "Copias"
+
+#: setting/index.php:15
+msgid "Print Settings"
+msgstr "Configuración de impresión"
+
+#: setting/locations.php:62
+msgid "Location deleted"
+msgstr "Ubicación eliminada"
+
+#: setting/locations.php:68
+msgid "Location saved"
+msgstr "Ubicación guardada"
+
+#: setting/locations.php:74
+msgid "Test print initiated, view log for details"
+msgstr ""
+"Prueba de impresión iniciada, consulte el registro para obtener más detalles"
+
+#: setting/locations.php:87
+msgid "Add new"
+msgstr "Agregar nuevo"
+
+#: setting/locations/index.php:87
+msgid "Title"
+msgstr "Título"
+
+#: setting/locations/index.php:91
+msgid "Web Order"
+msgstr "Pedido web"
+
+#: setting/locations/index.php:95
+msgid "Enabled"
+msgstr "Activado"
+
+#: setting/locations/index.php:100
+msgid "POS Order"
+msgstr "Orden POS"
+
+#: setting/locations/index.php:104 setting/locations/single.php:128
+msgid "Printers"
+msgstr "Impresoras"
+
+#: setting/locations/index.php:107 setting/locations/single.php:139
+msgid "Users"
+msgstr "Usuarios"
+
+#: setting/locations/index.php:110 setting/locations/single.php:151
+msgid "Template"
+msgstr "Plantilla"
+
+#: setting/locations/index.php:113
+msgid "Size"
+msgstr "Tamaño"
+
+#: setting/locations/index.php:116
+msgid "Actions"
+msgstr "Comportamiento"
+
+#: setting/locations/index.php:155 setting/locations/index.php:157
+#: setting/locations/single.php:483 setting/locations/single.php:488
+#: setting/locations/single.php:493 setting/locations/single.php:498
+msgid "mm"
+msgstr "mm"
+
+#: setting/locations/index.php:165
+msgid "Edit"
+msgstr "Editar"
+
+#: setting/locations/single.php:32
+msgid "WordPress Site Default Language Setting"
+msgstr "Configuración de idioma predeterminado del sitio de WordPress"
+
+#: setting/locations/single.php:33
+msgid "User Profile Language Setting"
+msgstr "Configuración del idioma del perfil de usuario"
+
+#: setting/locations/single.php:34
+msgid "Select a Language"
+msgstr "Selecciona un idioma"
+
+#: setting/locations/single.php:89
+msgid "Location title"
+msgstr "Título de la ubicación"
+
+#: setting/locations/single.php:98
+msgid "Test print"
+msgstr "Prueba de impresión"
+
+#: setting/locations/single.php:102
+msgid "View Sample"
+msgstr "Ver muestra"
+
+#: setting/locations/single.php:108
+msgid "Web order printer"
+msgstr "Impresora de pedidos web"
+
+#: setting/locations/single.php:117
+msgid "POS order printer"
+msgstr "Impresora de pedidos POS"
+
+#: setting/locations/single.php:153
+msgid "Need Custom Templates?"
+msgstr "¿Necesitas plantillas personalizadas?"
+
+#: setting/locations/single.php:155
+msgid "Buy"
+msgstr "Comprar"
+
+#: setting/locations/single.php:161
+msgid "Select Template"
+msgstr "Seleccionar plantilla"
+
+#: setting/locations/single.php:169
+msgid "Include Order Cost"
+msgstr "Incluir el costo del pedido"
+
+#: setting/locations/single.php:175
+msgid "Include Shipping Cost"
+msgstr "Incluir costo de envío"
+
+#: setting/locations/single.php:182
+msgid "Include Billing & Shipping Details"
+msgstr "Incluir detalles de facturación y envío"
+
+#: setting/locations/single.php:189
+msgid "Include Customer Details"
+msgstr "Incluir detalles del cliente"
+
+#: setting/locations/single.php:196
+msgid "Include Shipping Method"
+msgstr "Incluir método de envío"
+
+#: setting/locations/single.php:203
+msgid "Include Pickup or Delivery Type"
+msgstr "Incluir tipo de recogida o entrega"
+
+#: setting/locations/single.php:210
+msgid "Developer Documentation"
+msgstr "Documentación para desarrolladores"
+
+#: setting/locations/single.php:216
+msgid "Appearance"
+msgstr "Apariencia"
+
+#: setting/locations/single.php:347
+msgid "Template Language"
+msgstr "Lenguaje de plantilla"
+
+#: setting/locations/single.php:386
+msgid "Page Orientation"
+msgstr "Orientación de la página"
+
+#: setting/locations/single.php:390
+msgid "Select Orientation"
+msgstr "Seleccionar orientación"
+
+#: setting/locations/single.php:405
+msgid "Output Format"
+msgstr "Formato de salida"
+
+#: setting/locations/single.php:409
+msgid "Select Format"
+msgstr "Seleccionar formato"
+
+#: setting/locations/single.php:420
+msgid "Plain text format symbols width"
+msgstr "Ancho de los símbolos de formato de texto sin formato"
+
+#: setting/locations/single.php:428
+msgid "Print symbols for layout debug"
+msgstr "Imprimir símbolos para depurar el diseño"
+
+#: setting/locations/single.php:437
+msgid "Basic Font Size (px)"
+msgstr "Tamaño de fuente básico (px)"
+
+#: setting/locations/single.php:444
+msgid "Header Font Size (px)"
+msgstr "Tamaño de fuente del encabezado (px)"
+
+#: setting/locations/single.php:451
+msgid "Basic Font Weight (CSS value)"
+msgstr "Peso de fuente básico (valor CSS)"
+
+#: setting/locations/single.php:458
+msgid "Header Font Weight (CSS value)"
+msgstr "Peso de la fuente del encabezado (valor CSS)"
+
+#: setting/locations/single.php:469
+msgid "Custom Margins"
+msgstr "Márgenes personalizados"
+
+#: setting/locations/single.php:476
+msgid "Layout Margins"
+msgstr "Márgenes de diseño"
+
+#: setting/locations/single.php:480
+msgid "Top Margin"
+msgstr "Margen superior"
+
+#: setting/locations/single.php:485
+msgid "Right Margin"
+msgstr "Margen derecho"
+
+#: setting/locations/single.php:490
+msgid "Bottom Margin"
+msgstr "Margen inferior"
+
+#: setting/locations/single.php:495
+msgid "Left Margin"
+msgstr "Margen izquierdo"
+
+#: setting/locations/single.php:506
+msgid "Layout Size"
+msgstr "Tamaño de diseño"
+
+#: setting/locations/single.php:510
+msgid "Select Size"
+msgstr "Selecciona el tamaño"
+
+#: setting/locations/single.php:525
+msgid "Custom Width (mm)"
+msgstr "Ancho personalizado (mm)"
+
+#: setting/locations/single.php:528
+msgid "Note: use 0mm for automatic width (based on printer setting)"
+msgstr ""
+"Nota: utilice 0 mm para el ancho automático (según la configuración de la "
+"impresora)"
+
+#: setting/locations/single.php:534
+msgid "Custom Height (mm)"
+msgstr "Altura personalizada (mm)"
+
+#: setting/locations/single.php:537
+msgid ""
+"Note: use 0mm for continuous feed (some printers may not support this "
+"function)"
+msgstr ""
+"Nota: utilice 0 mm para alimentación continua (es posible que algunas "
+"impresoras no admitan esta función)"
+
+#: setting/locations/single.php:551
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#: setting/locations/single.php:558
+msgid "Delete"
+msgstr "Borrar"
+
+#: setting/logs.php:11
+msgid "Logs"
+msgstr "Registros"
+
+#: setting/logs.php:20
+msgid "View log"
+msgstr "Ver registro"
+
+#: setting/logs.php:21
+msgid "Copy log"
+msgstr "Copiar registro"
+
+#: setting/logs.php:32
+msgid "Save info logs"
+msgstr "Guardar registros de información"
+
+#: setting/logs.php:38 setting/logs.php:76
+msgid "Log file content"
+msgstr "Contenido del archivo de registro"
+
+#: setting/logs.php:50 setting/logs.php:88
+msgid "Log file"
+msgstr "Archivo de registro"
+
+#: setting/logs.php:51 setting/logs.php:89
+msgid "Clear log file"
+msgstr "Borrar archivo de registro"
+
+#: setting/logs.php:57 setting/logs.php:95
+#, php-format
+msgid "Log file (Size: %s)"
+msgstr "Archivo de registro (tamaño:% s)"
+
+#: setting/logs.php:72
+msgid "Plugin"
+msgstr "Enchufar"
+
+#: setting/setting/access.php:9
+msgid "Application API Keys"
+msgstr "Claves de API de la aplicación"
+
+#: setting/setting/index.php:17
+msgid "BizPrint Cloud Service"
+msgstr "Servicio en la nube BizPrint"
+
+#: setting/setting/index.php:22
+msgid "Dashboard"
+msgstr "Tablero"
+
+#: setting/setting/index.php:25
+msgid "Documentation"
+msgstr "Documentación"
+
+#: setting/setting/userRoles.php:15
+msgid "Location User Roles"
+msgstr "Funciones de usuario de ubicación"
+
+#: setting/setting/userRoles.php:16
+msgid "Select Roles for Location Mapping to Users"
+msgstr "Seleccionar roles para la asignación de ubicación a los usuarios"
+
+#: setting/setting/userRoles.php:22 setting/setting/userRoles.php:36
+msgid "Selected Roles"
+msgstr "Roles seleccionados"
+
+#: setting/setting/userRoles.php:29
+msgid "Management Access User Roles"
+msgstr "Funciones de usuario de acceso de gestión"
+
+#: setting/setting/userRoles.php:30
+msgid "Select Roles for Access to Manage Print Settings"
+msgstr ""
+"Seleccionar roles para acceder a la gestión de la configuración de impresión"
+
+#: templates/customer-html.php:27 templates/customer-plain.php:10
+#: templates/details-plain.php:7 templates/order-html.php:23
+#: templates/order-plain.php:7
+msgid "Order Number"
+msgstr "Número de orden"
+
+#: templates/customer-html.php:28 templates/customer-plain.php:11
+#: templates/details-html.php:20 templates/details-plain.php:8
+#: templates/order-html.php:24 templates/order-plain.php:8
+msgid "Date"
+msgstr "Fecha"
+
+#: templates/customer-html.php:30 templates/customer-html.php:66
+#: templates/customer-html.php:92 templates/customer-plain.php:13
+#: templates/customer-plain.php:52 templates/details-html.php:35
+#: templates/details-html.php:61 templates/details-plain.php:42
+msgid "Total"
+msgstr "Total"
+
+#: templates/customer-html.php:32 templates/customer-html.php:88
+#: templates/customer-plain.php:14 templates/customer-plain.php:51
+#: templates/details-html.php:57 templates/details-plain.php:41
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#: templates/customer-html.php:37 templates/order-html.php:29
+msgid "Time ordered"
+msgstr "Tiempo ordenado"
+
+#: templates/customer-html.php:65 templates/details-html.php:34
+#: templates/order-html.php:51
+msgid "Product"
+msgstr "Producto"
+
+#: templates/customer-html.php:72 templates/customer-plain.php:44
+#: templates/details-html.php:41 templates/details-plain.php:34
+msgid "Subtotal"
+msgstr "Total parcial"
+
+#: templates/customer-html.php:78 templates/customer-plain.php:47
+#: templates/details-html.php:47 templates/details-plain.php:37
+msgid "Shipping"
+msgstr "Transporte"
+
+#: templates/customer-html.php:84 templates/customer-plain.php:50
+#: templates/details-html.php:53 templates/details-plain.php:40
+msgid "Tax"
+msgstr "Impuesto"
+
+#: templates/customer-html.php:97
+msgid "Add Tip Amount"
+msgstr "Agregar monto de propina"
+
+#: templates/customer-html.php:103
+msgid "Amount Collected"
+msgstr "Cantidad recaudada"
+
+#: templates/customer-html.php:147 templates/customer-plain.php:56
+#: templates/details-html.php:102 templates/details-plain.php:46
+#: templates/order-html.php:89 templates/order-plain.php:35
+msgid "Customer Details"
+msgstr "Detalles del cliente"
+
+#: templates/customer-html.php:154 templates/customer-plain.php:58
+msgid "Name"
+msgstr "Nombre"
+
+#: templates/customer-html.php:160 templates/customer-plain.php:59
+msgid "Telephone"
+msgstr "Teléfono"
+
+#: templates/customer-html.php:166 templates/customer-plain.php:60
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: templates/customer-html.php:179 templates/customer-plain.php:63
+#: templates/details-html.php:147 templates/details-plain.php:75
+#: templates/order-html.php:134 templates/order-plain.php:64
+msgid "Order Notes"
+msgstr "pedidos"
+
+#: templates/customer-html.php:192 templates/customer-plain.php:66
+#: templates/details-html.php:125 templates/details-plain.php:63
+#: templates/order-html.php:112 templates/order-plain.php:52
+msgid "Shipping method"
+msgstr "Método de envío"
+
+#: templates/customer-plain.php:16 templates/order-plain.php:9
+msgid "Time Ordered"
+msgstr "Tiempo ordenado"
+
+#: templates/customer-plain.php:22
+msgid "Order Information"
+msgstr "información del pedido"
+
+#: templates/details-html.php:18
+#, php-format
+msgid "Order #%s"
+msgstr "Pedido n.º %s"
+
+#: templates/details-html.php:22
+msgid "Time"
+msgstr "Hora"
+
+#: templates/details-html.php:109 templates/details-plain.php:48
+#: templates/order-html.php:96 templates/order-plain.php:37
+msgid "Billing address"
+msgstr "Dirección de Envio"
+
+#: templates/details-html.php:113 templates/details-plain.php:53
+#: templates/order-html.php:100 templates/order-plain.php:42
+msgid "N/A"
+msgstr "N / A"
+
+#: templates/details-html.php:135 templates/details-plain.php:67
+#: templates/order-html.php:122 templates/order-plain.php:56
+msgid "Shipping address"
+msgstr "Dirección de Envío"
+
+#. Plugin Name of the plugin/theme
+msgid "Print Manager for WooCommerce"
+msgstr "Administrador de impresión para WooCommerce"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.bizswoop.com/wp/print"
+msgstr "http://www.bizswoop.com/wp/print"
+
+#. Description of the plugin/theme
+msgid ""
+"Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print "
+"Service and Print to Anywhere in the World!"
+msgstr ""
+"¡Agregue fácilmente soporte para imprimir pedidos de WooCommerce con "
+"BizPrint Cloud Print Service e imprima en cualquier lugar del mundo!"
+
+#. Author of the plugin/theme
+msgid "BizSwoop a CPF Concepts, LLC Brand"
+msgstr "BizSwoop una marca de CPF Concepts, LLC"
+
+#. Author URI of the plugin/theme
+msgid "http://www.bizswoop.com"
+msgstr "http://www.bizswoop.com"
+
+#~ msgid "Print Google Cloud Print GCP WooCommerce require WooCommerce"
+#~ msgstr "Imprimir Google Cloud Print GCP WooCommerce requiere WooCommerce"

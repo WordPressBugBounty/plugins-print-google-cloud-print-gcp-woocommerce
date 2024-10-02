@@ -1,0 +1,167 @@
+.zprint-marketplace {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1400px;
+	margin: 20px 0 0;
+	font-family: Nunito, Arial, Helvetica Neue, Helvetica, sans-serif;
+	border: 1px solid #dcdcdc;
+	border-bottom: 0;
+	border-right: 0;
+}
+
+.zprint-marketplace__tile {
+	flex: 0 0 25%;
+	box-sizing: border-box;
+	padding: 40px 20px;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #dcdcdc;
+	border-top: 0;
+	border-left: 0;
+}
+
+.zprint-marketplace__tile > *:first-child {
+	margin-top: 0 !important;
+}
+
+.zprint-marketplace__tile > *:last-child {
+	margin-bottom: 0 !important;
+}
+
+.zprint-marketplace__tile_md,
+.zprint-marketplace__tile_lg {
+	flex: 0 0 50%;
+}
+
+@media (max-width: 719px) {
+	.zprint-marketplace__tile {
+		flex: 0 0 50%;
+	}
+
+	.zprint-marketplace__tile_md,
+	.zprint-marketplace__tile_lg {
+		flex: 0 0 100%;
+	}
+}
+
+@media (max-width: 399px) {
+	.zprint-marketplace__tile {
+		flex: 0 0 100%;
+	}
+}
+
+.zprint-marketplace__tile_md {
+	padding: 45px 20px 52px;
+}
+
+.zprint-marketplace__tile_lg {
+	padding: 50px 20px 60px;
+}
+
+.zprint-marketplace__tile_xl {
+	flex: 0 0 100%;
+}
+
+.zprint-marketplace__icon {
+	--fa-primary-opacity: 1.0;
+	--fa-secondary-opacity: 1.0;
+	margin: 20px 0 15px;
+}
+
+.zprint-marketplace__tile_lg .zprint-marketplace__icon {
+	margin: 30px 0;
+}
+
+.zprint-marketplace__icon span {
+	font-size: 50px;
+}
+
+.zprint-marketplace__icon .fa-cubes {
+	font-size: 62px;
+}
+
+.zprint-marketplace__tile_lg .zprint-marketplace__icon span {
+	font-size: 140px;
+}
+
+.zprint-marketplace__tile:nth-child(1n) .zprint-marketplace__icon {
+	color: #429dba;
+}
+
+.zprint-marketplace__tile:nth-child(2n) .zprint-marketplace__icon {
+	color: #9b86e1;
+}
+
+.zprint-marketplace__tile:nth-child(3n) .zprint-marketplace__icon {
+	color: #83a7e1;
+}
+
+.zprint-marketplace__tile:nth-child(4n) .zprint-marketplace__icon {
+	color: #67bf94;
+}
+
+.zprint-marketplace__tile:nth-child(5n) .zprint-marketplace__icon {
+	color: #000;
+}
+
+.zprint-marketplace__title {
+	margin: 10px 0;
+	line-height: 1;
+	font-weight: 800;
+	font-size: 18px;
+	color: #565656;
+	text-transform: uppercase;
+}
+
+.zprint-marketplace__tile_md .zprint-marketplace__title {
+	font-size: 24px;
+}
+
+.zprint-marketplace__tile_lg .zprint-marketplace__title {
+	font-size: 36px;
+}
+
+.zprint-marketplace__subtitle {
+	margin: 10px 0;
+	font-size: 12px;
+	color: #565656;
+}
+
+.zprint-marketplace__tile_md .zprint-marketplace__subtitle {
+	font-size: 15px;
+}
+
+.zprint-marketplace__tile_lg .zprint-marketplace__subtitle {
+	font-size: 18px;
+}
+
+.zprint-marketplace__btn {
+	display: inline-block;
+	margin: 10px 0;
+	padding: 4px 15px 3px;
+	font-weight: 700;
+	font-size: 12px;
+	color: #565656;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 2px solid #565656;
+}
+
+.zprint-marketplace__btn:hover {
+	color: #fff;
+	background: #83cfaa;
+	border-color: transparent;
+}
+
+.zprint-marketplace__tile_md .zprint-marketplace__btn {
+	margin: 15px 0;
+	padding: 5px 20px;
+	font-size: 14px;
+}
+
+.zprint-marketplace__tile_lg .zprint-marketplace__btn {
+	margin: 25px 0;
+	padding: 7px 25px;
+	font-size: 16px;
+	border-width: 3px;
+}

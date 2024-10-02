@@ -1,0 +1,770 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Print Manager\n"
+"POT-Creation-Date: 2021-08-12 22:35+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/Addons.php:20
+msgid "Add more functionality"
+msgstr "Daha fazla işlevsellik ekleyin"
+
+#: includes/Addons.php:34 setting/logs.php:30
+msgid "Active"
+msgstr "Aktif"
+
+#: includes/Addons.php:39 setting/general.php:38
+#: setting/locations/single.php:112 setting/locations/single.php:121
+msgid "Enable"
+msgstr "etkinleştirme"
+
+#: includes/Addons.php:44
+msgid "Install"
+msgstr "Yüklemek"
+
+#: includes/Addons.php:62
+msgid "Explore more products, platforms and services"
+msgstr "Daha fazla ürün, platform ve hizmet keşfedin"
+
+#: includes/Addons.php:87
+msgid "Your life`s work, our technology"
+msgstr "Hayatınızın işi, bizim teknolojimiz"
+
+#: includes/Addons.php:91
+msgid "Visit Us"
+msgstr "Bizi ziyaret et"
+
+#: includes/Addons.php:101
+msgid "More info"
+msgstr "Daha fazla bilgi"
+
+#: includes/Addons.php:105
+msgid "White Label Branding"
+msgstr "Beyaz Etiket Markalama"
+
+#: includes/Addons.php:106
+msgid "Remove BizSwoop branding for a while label print template solution."
+msgstr ""
+"Bir süre etiket yazdırma şablonu çözümü için BizSwoop markasını kaldırın."
+
+#: includes/Addons.php:113
+msgid "Product Location Mapping"
+msgstr "Ürün Konum Eşleme"
+
+#: includes/Addons.php:114
+msgid ""
+"Easily configure product and category level mapping to specific print "
+"locations."
+msgstr ""
+"Ürün ve kategori düzeyinde eşleştirmeyi belirli baskı konumlarına kolayca "
+"yapılandırın."
+
+#: includes/Addons.php:121
+msgid "Sample Print Template"
+msgstr "Örnek Baskı Şablonu"
+
+#: includes/Addons.php:122
+msgid "Developer sample template to create a custom print template."
+msgstr "Özel bir yazdırma şablonu oluşturmak için geliştirici örnek şablonu."
+
+#: includes/Addons.php:129
+msgid "Custom Print Templates"
+msgstr "Özel Baskı Şablonları"
+
+#: includes/Addons.php:130
+msgid ""
+"A custom development service for building your own custom print template."
+msgstr ""
+"Kendi özel baskı şablonunuzu oluşturmak için özel bir geliştirme hizmeti."
+
+#: includes/Addons.php:143
+msgid "WordPress.org"
+msgstr "WordPress.org"
+
+#: includes/Addons.php:144
+msgid "Free plugin apps for the open source community"
+msgstr "Açık kaynak topluluğu için ücretsiz eklenti uygulamaları"
+
+#: includes/Addons.php:147
+msgid "Explore Free Apps"
+msgstr "Ücretsiz Uygulamaları Keşfedin"
+
+#: includes/Addons.php:150
+msgid "Premium Plugins"
+msgstr "Premium Eklentiler"
+
+#: includes/Addons.php:151
+msgid "Smart plugin apps for your advanced business requirements"
+msgstr "Gelişmiş iş gereksinimleriniz için akıllı eklenti uygulamaları"
+
+#: includes/Addons.php:154
+msgid "Explore All Apps"
+msgstr "Tüm Uygulamaları Keşfedin"
+
+#: includes/Addons.php:157
+msgid "Powerful Platforms"
+msgstr "Güçlü Platformlar"
+
+#: includes/Addons.php:158
+msgid "Advanced platforms for agencies, developers and businesses"
+msgstr "Ajanslar, geliştiriciler ve işletmeler için gelişmiş platformlar"
+
+#: includes/Addons.php:161
+msgid "Explore Platforms"
+msgstr "Platformları Keşfedin"
+
+#: includes/Addons.php:164
+msgid "Super Services"
+msgstr "Süper Hizmetler"
+
+#: includes/Addons.php:165
+msgid "High-touch services to boost your business technology solutions"
+msgstr ""
+"İş teknolojisi çözümlerinizi geliştirmek için yüksek dokunuşlu hizmetler"
+
+#: includes/Addons.php:168
+msgid "Explore Services"
+msgstr "Hizmetleri Keşfedin"
+
+#: includes/Admin.php:136 includes/Admin.php:137 includes/Admin/Layout.php:32
+#: includes/Admin/Layout.php:37
+msgid "Print Manager"
+msgstr "Baskı Yöneticisi"
+
+#: includes/Admin.php:140
+msgid "Print Order"
+msgstr "Yazdırma emri"
+
+#: includes/Admin.php:149
+msgid "Select Location"
+msgstr "Konum Seçin"
+
+#: includes/Admin/Layout.php:41
+msgid "Print to Anywhere"
+msgstr "Her Yere Yazdır"
+
+#: includes/Admin/Layout.php:54 setting/general.php:11
+msgid "General"
+msgstr "Genel"
+
+#: includes/Admin/Layout.php:65 setting/locations.php:15
+msgid "Locations"
+msgstr "Konumlar"
+
+#: includes/Admin/Layout.php:76 setting/addons.php:11
+msgid "Add-ons"
+msgstr "Eklentiler"
+
+#: includes/Admin/Layout.php:87 setting/locations/single.php:382
+#: setting/setting/index.php:10
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: includes/Admin/OrdersTable.php:31 includes/Admin/OrdersTable.php:46
+#: setting/logs.php:25
+msgid "Print"
+msgstr "Yazdır"
+
+#: includes/Aspect/Input.php:317
+msgid "Upload"
+msgstr "Yükle"
+
+#: includes/Aspect/Input.php:319
+msgid "Remove"
+msgstr "Kaldırmak"
+
+#: includes/Debug/Tab.php:13
+msgid "Requests"
+msgstr "İstekler"
+
+#: includes/Debug/Tab.php:19
+msgid "Get Remote Printers"
+msgstr "Uzak Yazıcılar Alın"
+
+#: includes/Debug/Tab.php:37
+msgid "Order:"
+msgstr "Sipariş:"
+
+#: includes/Debug/Tab.php:49
+msgid "Location:"
+msgstr "Yer:"
+
+#: includes/Debug/Tab.php:62
+msgid "Send Print Request"
+msgstr "Yazdırma İsteği Gönder"
+
+#: includes/Model/Location.php:300
+msgid "A4"
+msgstr "A4"
+
+#: includes/Model/Location.php:301
+msgid "Letter"
+msgstr "mektup"
+
+#: includes/Model/Location.php:302
+msgid "Custom"
+msgstr "özel"
+
+#: includes/Model/Location.php:321
+msgid "HTML"
+msgstr "HTML"
+
+#: includes/Model/Location.php:322
+msgid "Plain Text"
+msgstr "Düz Metin"
+
+#: includes/Model/Location.php:357
+msgid "Portrait"
+msgstr "Vesika"
+
+#: includes/Model/Location.php:358
+msgid "Landscape"
+msgstr "Manzara"
+
+#: includes/Model/Location.php:359 setting/locations/index.php:157
+#: setting/locations/index.php:159
+msgid "Auto"
+msgstr "Oto"
+
+#: includes/Setup.php:26
+msgid "Due to an unexpected error the database table was not created."
+msgstr "Beklenmeyen bir hata nedeniyle veritabanı tablosu oluşturulamadı."
+
+#: includes/Setup.php:26
+msgid "Retry"
+msgstr "Tekrar dene"
+
+#: includes/Setup.php:30
+msgid "Print Manager require WooCommerce"
+msgstr "Yazdırma Yöneticisi WooCommerce gerektirir"
+
+#: includes/Templates/Customer.php:13
+msgid "Customer Receipt"
+msgstr "Müşteri fişi"
+
+#: includes/Templates/Details.php:13
+msgid "Customer Order Receipt"
+msgstr "Müşteri Sipariş Fişi"
+
+#: includes/Templates/Order.php:13 templates/details-plain.php:6
+msgid "Order Receipt"
+msgstr "Sipariş makbuzu"
+
+#: setting/debug.php:12
+msgid "Debug"
+msgstr "hata ayıklama"
+
+#: setting/general.php:17
+msgid "Automatic Order Printing"
+msgstr "Otomatik Sipariş Yazdırma"
+
+#: setting/general.php:24
+msgid "Enable Automatic Printing"
+msgstr "Otomatik Yazdırmayı Etkinleştir"
+
+#: setting/general.php:31
+msgid "Web Orders"
+msgstr "Web Siparişleri"
+
+#: setting/general.php:32
+msgid "POS Orders"
+msgstr "POS Siparişleri"
+
+#: setting/general.php:35
+msgid "POS Orders Save"
+msgstr "POS Siparişleri Kaydet"
+
+#: setting/general.php:46
+msgid "Web Orders Automatic Print Statuses"
+msgstr "Web Siparişleri Otomatik Yazdırma Durumları"
+
+#: setting/general.php:51
+msgid "Orders Automatic Print Statuses"
+msgstr "Otomatik Yazdırma Durumları Siparişleri"
+
+#: setting/general.php:71
+msgid "Copies"
+msgstr "kopyalar"
+
+#: setting/index.php:15
+msgid "Print Settings"
+msgstr "Yazdırma Ayarları"
+
+#: setting/locations.php:62
+msgid "Location deleted"
+msgstr "Konum silindi"
+
+#: setting/locations.php:68
+msgid "Location saved"
+msgstr "Konum kaydedildi"
+
+#: setting/locations.php:74
+msgid "Test print initiated, view log for details"
+msgstr "Test baskısı başlatıldı, ayrıntılar için günlüğü görüntüleyin"
+
+#: setting/locations.php:87
+msgid "Add new"
+msgstr "Yeni ekle"
+
+#: setting/locations/index.php:87
+msgid "Title"
+msgstr "Başlık"
+
+#: setting/locations/index.php:91
+msgid "Web Order"
+msgstr "Web Siparişi"
+
+#: setting/locations/index.php:95
+msgid "Enabled"
+msgstr "Etkin"
+
+#: setting/locations/index.php:100
+msgid "POS Order"
+msgstr "POS Siparişi"
+
+#: setting/locations/index.php:104 setting/locations/single.php:128
+msgid "Printers"
+msgstr "Yazıcılar"
+
+#: setting/locations/index.php:107 setting/locations/single.php:139
+msgid "Users"
+msgstr "Kullanıcılar"
+
+#: setting/locations/index.php:110 setting/locations/single.php:151
+msgid "Template"
+msgstr "şablon"
+
+#: setting/locations/index.php:113
+msgid "Size"
+msgstr "Boyut"
+
+#: setting/locations/index.php:116
+msgid "Actions"
+msgstr "Hareketler"
+
+#: setting/locations/index.php:155 setting/locations/index.php:157
+#: setting/locations/single.php:483 setting/locations/single.php:488
+#: setting/locations/single.php:493 setting/locations/single.php:498
+msgid "mm"
+msgstr "mm"
+
+#: setting/locations/index.php:165
+msgid "Edit"
+msgstr "Düzenle"
+
+#: setting/locations/single.php:32
+msgid "WordPress Site Default Language Setting"
+msgstr "WordPress Sitesi Varsayılan Dil Ayarı"
+
+#: setting/locations/single.php:33
+msgid "User Profile Language Setting"
+msgstr "Kullanıcı Profili Dil Ayarı"
+
+#: setting/locations/single.php:34
+msgid "Select a Language"
+msgstr "Bir dil seç"
+
+#: setting/locations/single.php:89
+msgid "Location title"
+msgstr "Konum başlığı"
+
+#: setting/locations/single.php:98
+msgid "Test print"
+msgstr "Test baskısı"
+
+#: setting/locations/single.php:102
+msgid "View Sample"
+msgstr "Örneği görüntüle"
+
+#: setting/locations/single.php:108
+msgid "Web order printer"
+msgstr "Web siparişi yazıcısı"
+
+#: setting/locations/single.php:117
+msgid "POS order printer"
+msgstr "POS siparişi yazıcısı"
+
+#: setting/locations/single.php:153
+msgid "Need Custom Templates?"
+msgstr "Özel Şablonlara mı ihtiyacınız var?"
+
+#: setting/locations/single.php:155
+msgid "Buy"
+msgstr "satın al"
+
+#: setting/locations/single.php:161
+msgid "Select Template"
+msgstr "Şablon Seç"
+
+#: setting/locations/single.php:169
+msgid "Include Order Cost"
+msgstr "Sipariş Maliyetini Dahil Et"
+
+#: setting/locations/single.php:175
+msgid "Include Shipping Cost"
+msgstr "Nakliye Maliyetini Dahil Et"
+
+#: setting/locations/single.php:182
+msgid "Include Billing & Shipping Details"
+msgstr "Fatura ve Gönderim Ayrıntılarını Dahil Et"
+
+#: setting/locations/single.php:189
+msgid "Include Customer Details"
+msgstr "Müşteri Ayrıntılarını Dahil Et"
+
+#: setting/locations/single.php:196
+msgid "Include Shipping Method"
+msgstr "Nakliye Yöntemini Dahil Et"
+
+#: setting/locations/single.php:203
+msgid "Include Pickup or Delivery Type"
+msgstr "Alım veya Teslimat Türünü Dahil Et"
+
+#: setting/locations/single.php:210
+msgid "Developer Documentation"
+msgstr "Geliştirici Belgeleri"
+
+#: setting/locations/single.php:216
+msgid "Appearance"
+msgstr "Görünüm"
+
+#: setting/locations/single.php:347
+msgid "Template Language"
+msgstr "Şablon Dili"
+
+#: setting/locations/single.php:386
+msgid "Page Orientation"
+msgstr "Sayfa yönlendirmesi"
+
+#: setting/locations/single.php:390
+msgid "Select Orientation"
+msgstr "Oryantasyon Seç"
+
+#: setting/locations/single.php:405
+msgid "Output Format"
+msgstr "Çıkış biçimi"
+
+#: setting/locations/single.php:409
+msgid "Select Format"
+msgstr "Biçim Seç"
+
+#: setting/locations/single.php:420
+msgid "Plain text format symbols width"
+msgstr "Düz metin biçimi sembolleri genişliği"
+
+#: setting/locations/single.php:428
+msgid "Print symbols for layout debug"
+msgstr "Düzen hata ayıklaması için sembolleri yazdır"
+
+#: setting/locations/single.php:437
+msgid "Basic Font Size (px)"
+msgstr "Temel Yazı Tipi Boyutu (px)"
+
+#: setting/locations/single.php:444
+msgid "Header Font Size (px)"
+msgstr "Başlık Yazı Tipi Boyutu (px)"
+
+#: setting/locations/single.php:451
+msgid "Basic Font Weight (CSS value)"
+msgstr "Temel Yazı Tipi Ağırlığı (CSS değeri)"
+
+#: setting/locations/single.php:458
+msgid "Header Font Weight (CSS value)"
+msgstr "Başlık Yazı Tipi Ağırlığı (CSS değeri)"
+
+#: setting/locations/single.php:469
+msgid "Custom Margins"
+msgstr "Özel Kenar Boşlukları"
+
+#: setting/locations/single.php:476
+msgid "Layout Margins"
+msgstr "Düzen Kenar Boşlukları"
+
+#: setting/locations/single.php:480
+msgid "Top Margin"
+msgstr "Üst boşluk"
+
+#: setting/locations/single.php:485
+msgid "Right Margin"
+msgstr "Sağ Kenar Boşluğu"
+
+#: setting/locations/single.php:490
+msgid "Bottom Margin"
+msgstr "Alt Kenar Boşluğu"
+
+#: setting/locations/single.php:495
+msgid "Left Margin"
+msgstr "Sol Kenar Boşluğu"
+
+#: setting/locations/single.php:506
+msgid "Layout Size"
+msgstr "Düzen Boyutu"
+
+#: setting/locations/single.php:510
+msgid "Select Size"
+msgstr "Beden seçin"
+
+#: setting/locations/single.php:525
+msgid "Custom Width (mm)"
+msgstr "Özel Genişlik (mm)"
+
+#: setting/locations/single.php:528
+msgid "Note: use 0mm for automatic width (based on printer setting)"
+msgstr "Not: otomatik genişlik için 0 mm kullanın (yazıcı ayarına göre)"
+
+#: setting/locations/single.php:534
+msgid "Custom Height (mm)"
+msgstr "Özel Yükseklik (mm)"
+
+#: setting/locations/single.php:537
+msgid ""
+"Note: use 0mm for continuous feed (some printers may not support this "
+"function)"
+msgstr ""
+"Not: Sürekli besleme için 0 mm kullanın (bazı yazıcılar bu işlevi "
+"desteklemeyebilir)"
+
+#: setting/locations/single.php:551
+msgid "Save Changes"
+msgstr "Değişiklikleri Kaydet"
+
+#: setting/locations/single.php:558
+msgid "Delete"
+msgstr "Sil"
+
+#: setting/logs.php:11
+msgid "Logs"
+msgstr "Kütükler"
+
+#: setting/logs.php:20
+msgid "View log"
+msgstr "Günlüğü görüntüle"
+
+#: setting/logs.php:21
+msgid "Copy log"
+msgstr "Günlüğü kopyala"
+
+#: setting/logs.php:32
+msgid "Save info logs"
+msgstr "Bilgi günlüklerini kaydet"
+
+#: setting/logs.php:38 setting/logs.php:76
+msgid "Log file content"
+msgstr "Günlük dosyası içeriği"
+
+#: setting/logs.php:50 setting/logs.php:88
+msgid "Log file"
+msgstr "Log dosyası"
+
+#: setting/logs.php:51 setting/logs.php:89
+msgid "Clear log file"
+msgstr "Günlük dosyasını temizle"
+
+#: setting/logs.php:57 setting/logs.php:95
+#, php-format
+msgid "Log file (Size: %s)"
+msgstr "Günlük dosyası (Boyut: %s)"
+
+#: setting/logs.php:72
+msgid "Plugin"
+msgstr "Eklenti"
+
+#: setting/setting/access.php:9
+msgid "Application API Keys"
+msgstr "Uygulama API Anahtarları"
+
+#: setting/setting/index.php:17
+msgid "BizPrint Cloud Service"
+msgstr "BizPrint Bulut Hizmeti"
+
+#: setting/setting/index.php:22
+msgid "Dashboard"
+msgstr "Gösterge Paneli"
+
+#: setting/setting/index.php:25
+msgid "Documentation"
+msgstr "belgeler"
+
+#: setting/setting/userRoles.php:15
+msgid "Location User Roles"
+msgstr "Konum Kullanıcı Rolleri"
+
+#: setting/setting/userRoles.php:16
+msgid "Select Roles for Location Mapping to Users"
+msgstr "Kullanıcılara Konum Eşleme için Rolleri Seçin"
+
+#: setting/setting/userRoles.php:22 setting/setting/userRoles.php:36
+msgid "Selected Roles"
+msgstr "Seçilen Roller"
+
+#: setting/setting/userRoles.php:29
+msgid "Management Access User Roles"
+msgstr "Yönetim Erişimi Kullanıcı Rolleri"
+
+#: setting/setting/userRoles.php:30
+msgid "Select Roles for Access to Manage Print Settings"
+msgstr "Yazdırma Ayarlarını Yönetme Erişimi için Rolleri Seçin"
+
+#: templates/customer-html.php:27 templates/customer-plain.php:10
+#: templates/details-plain.php:7 templates/order-html.php:23
+#: templates/order-plain.php:7
+msgid "Order Number"
+msgstr "Sipariş numarası"
+
+#: templates/customer-html.php:28 templates/customer-plain.php:11
+#: templates/details-html.php:20 templates/details-plain.php:8
+#: templates/order-html.php:24 templates/order-plain.php:8
+msgid "Date"
+msgstr "Tarih"
+
+#: templates/customer-html.php:30 templates/customer-html.php:66
+#: templates/customer-html.php:92 templates/customer-plain.php:13
+#: templates/customer-plain.php:52 templates/details-html.php:35
+#: templates/details-html.php:61 templates/details-plain.php:42
+msgid "Total"
+msgstr "Toplam"
+
+#: templates/customer-html.php:32 templates/customer-html.php:88
+#: templates/customer-plain.php:14 templates/customer-plain.php:51
+#: templates/details-html.php:57 templates/details-plain.php:41
+msgid "Payment Method"
+msgstr "Ödeme şekli"
+
+#: templates/customer-html.php:37 templates/order-html.php:29
+msgid "Time ordered"
+msgstr "Zaman sipariş"
+
+#: templates/customer-html.php:65 templates/details-html.php:34
+#: templates/order-html.php:51
+msgid "Product"
+msgstr "Ürün"
+
+#: templates/customer-html.php:72 templates/customer-plain.php:44
+#: templates/details-html.php:41 templates/details-plain.php:34
+msgid "Subtotal"
+msgstr "ara toplam"
+
+#: templates/customer-html.php:78 templates/customer-plain.php:47
+#: templates/details-html.php:47 templates/details-plain.php:37
+msgid "Shipping"
+msgstr "Nakliye"
+
+#: templates/customer-html.php:84 templates/customer-plain.php:50
+#: templates/details-html.php:53 templates/details-plain.php:40
+msgid "Tax"
+msgstr "Vergi"
+
+#: templates/customer-html.php:97
+msgid "Add Tip Amount"
+msgstr "Bahşiş Tutarı Ekle"
+
+#: templates/customer-html.php:103
+msgid "Amount Collected"
+msgstr "Toplanan Tutar"
+
+#: templates/customer-html.php:147 templates/customer-plain.php:56
+#: templates/details-html.php:102 templates/details-plain.php:46
+#: templates/order-html.php:89 templates/order-plain.php:35
+msgid "Customer Details"
+msgstr "Müşteri detayları"
+
+#: templates/customer-html.php:154 templates/customer-plain.php:58
+msgid "Name"
+msgstr "isim"
+
+#: templates/customer-html.php:160 templates/customer-plain.php:59
+msgid "Telephone"
+msgstr "Telefon"
+
+#: templates/customer-html.php:166 templates/customer-plain.php:60
+msgid "Email"
+msgstr "E-posta"
+
+#: templates/customer-html.php:179 templates/customer-plain.php:63
+#: templates/details-html.php:147 templates/details-plain.php:75
+#: templates/order-html.php:134 templates/order-plain.php:64
+msgid "Order Notes"
+msgstr "Sipariş Notları"
+
+#: templates/customer-html.php:192 templates/customer-plain.php:66
+#: templates/details-html.php:125 templates/details-plain.php:63
+#: templates/order-html.php:112 templates/order-plain.php:52
+msgid "Shipping method"
+msgstr "Nakliye Yöntemi"
+
+#: templates/customer-plain.php:16 templates/order-plain.php:9
+msgid "Time Ordered"
+msgstr "Sipariş Zamanı"
+
+#: templates/customer-plain.php:22
+msgid "Order Information"
+msgstr "Sipariş Bilgisi"
+
+#: templates/details-html.php:18
+#, php-format
+msgid "Order #%s"
+msgstr "Sipariş #%s"
+
+#: templates/details-html.php:22
+msgid "Time"
+msgstr "Zaman"
+
+#: templates/details-html.php:109 templates/details-plain.php:48
+#: templates/order-html.php:96 templates/order-plain.php:37
+msgid "Billing address"
+msgstr "Fatura Adresi"
+
+#: templates/details-html.php:113 templates/details-plain.php:53
+#: templates/order-html.php:100 templates/order-plain.php:42
+msgid "N/A"
+msgstr "Yok"
+
+#: templates/details-html.php:135 templates/details-plain.php:67
+#: templates/order-html.php:122 templates/order-plain.php:56
+msgid "Shipping address"
+msgstr "Gönderi Adresi"
+
+#. Plugin Name of the plugin/theme
+msgid "Print Manager for WooCommerce"
+msgstr "WooCommerce için Baskı Yöneticisi"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.bizswoop.com/wp/print"
+msgstr "http://www.bizswoop.com/wp/print"
+
+#. Description of the plugin/theme
+msgid ""
+"Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print "
+"Service and Print to Anywhere in the World!"
+msgstr ""
+"BizPrint Bulut Yazdırma Hizmeti ile WooCommerce Siparişlerini Yazdırmak için "
+"Kolayca Destek Ekleyin ve Dünyanın Her Yerine Yazdırın!"
+
+#. Author of the plugin/theme
+msgid "BizSwoop a CPF Concepts, LLC Brand"
+msgstr "BizSwoop bir CPF Concepts, LLC Markası"
+
+#. Author URI of the plugin/theme
+msgid "http://www.bizswoop.com"
+msgstr "http://www.bizswoop.com"
+
+#~ msgid "Print Google Cloud Print GCP WooCommerce require WooCommerce"
+#~ msgstr ""
+#~ "Google Cloud Print'i yazdırın GCP WooCommerce, WooCommerce gerektirir"

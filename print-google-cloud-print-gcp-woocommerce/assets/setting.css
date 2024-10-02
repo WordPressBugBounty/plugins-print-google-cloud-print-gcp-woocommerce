@@ -1,0 +1,94 @@
+.zprint-connection-box {
+	display: inline-block;
+	margin: 20px 0 10px;
+	padding: 20px 0 0 20px;
+	background-color: #fff;
+	border:	1px solid #dcdcdc;
+}
+
+.zprint-connection-card {
+	display: inline-block;
+	width: 250px;
+	margin: 0 20px 20px 0;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	box-shadow: 0 0 2px #3e3e3e;
+}
+
+.zprint-connection-card:hover {
+	color: #000;
+}
+
+.zprint-connection-card__header {
+	display: block;
+	padding: 20px 10px 15px;
+	background: #f1f1f1;
+	border-bottom: 1px solid #bebebe;
+}
+
+.zprint-connection-card__icon {
+	display: block;
+	margin-bottom: 15px;
+	font-size: 36px;
+}
+
+.zprint-connection-card__title {
+	font-size: 23px;
+}
+
+.zprint-connection-card__btn {
+	display: block;
+	padding: 10px;
+	font-size: 17px;
+	color: #83cfaa;
+}
+
+.zprint-connection-card:hover .zprint-connection-card__btn {
+	color: #fff;
+	background: #83cfaa;
+}
+
+.zprint-setting-title {
+	display: block;
+	margin-top: 30px;
+}
+
+.zprint-setting-title__text {
+	display: inline-block;
+	width: 200px;
+	margin-right: 20px;
+}
+
+.zprint-setting-title__link {
+	display: inline-block;
+	font-size: 15px;
+}
+
+.zprint-setting-title__link span {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+@media (max-width: 782px) {
+	.zprint-setting-title__text {
+		width: auto;
+	}
+}
+
+.zprint-version-selector {
+	height: 30px;
+	line-height: 30px;
+}
+
+.zprint-version-selector button.button.button-primary {
+	float: right;
+
+}
+
+@media (min-width: 783px) {
+	.zprint-version-selector button.button.button-primary {
+		margin-right: 1%;
+	}
+}
