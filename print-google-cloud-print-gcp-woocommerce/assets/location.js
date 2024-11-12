@@ -102,4 +102,12 @@ jQuery(function($) {
 			$language_locale.hide();
 		}
 	});
+
+	$('#zp-address-label-type').on('change', function () {
+		if ('return' === $(this).val()) {
+			$('#zp-return-address').show();
+		} else {
+			$('#zp-return-address').hide();
+		}
+	});
 });

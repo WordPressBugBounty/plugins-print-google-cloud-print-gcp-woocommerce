@@ -106,3 +106,20 @@
 	box-shadow: rgb(102, 0, 0) 0px 1px 0px;
 	border-color: rgb(102, 0, 0);
 }
+
+#zp-return-address {
+	margin-top: 1em;
+	display: block;
+}
+
+#zp-return-address label {
+	display: block;
+}
+
+#zp-return-address label + label {
+	margin-top: 1em;
+}
+
+#zp-return-address input {
+	max-width: 25rem;
+}

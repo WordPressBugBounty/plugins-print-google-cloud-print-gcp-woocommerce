@@ -11,6 +11,13 @@ class Templates
 		self::registerTemplate(new \Zprint\Templates\Customer());
 		self::registerTemplate(new \Zprint\Templates\Details());
 		self::registerTemplate(new \Zprint\Templates\Order());
+		self::registerTemplate(new Templates\Advanced\AddressLabels());
+		self::registerTemplate(new Templates\Advanced\DeliveryNote());
+		self::registerTemplate(new Templates\Advanced\DispatchLabel());
+		self::registerTemplate(new Templates\Advanced\Invoice());
+		self::registerTemplate(new Templates\Advanced\PackingSlip());
+		self::registerTemplate(new Templates\Advanced\PickList());
+		self::registerTemplate(new Templates\Advanced\ShippingLabel());
 	}
 
 	public static function registerTemplate(Template\Index $template)

@@ -4,8 +4,8 @@ Contributors: bizswoop
 Tags: print, PDF, automatic print, shipping labels, woocommerce print
 Requires at least: 4.4
 Requires PHP: 5.6
-Tested up to: 6.6.1
-Stable tag: 4.5.15
+Tested up to: 6.6.2
+Stable tag: 4.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,7 +41,7 @@ But don’t just take our word for it! This is what Chris from Kyoto Sushi had t
 *   Supports Local, Network, USB, Serial, Wifi and Bluetooth Based Printers
 *   Choose Single Print or Print Multiple Copies Instantly
 *   Support with Popular WordPress Plugins like Product Add-ons, Point of Sale, Pickup Delivery Scheduler and More
-*   Over 15 Templates Available Including, Receipt Template, Customer Invoice, Order Pick List, Pickup & Delivery Invoice etc
+*   Over 25 Templates Available Including, Receipt Template, Customer Invoice, Order Pick List, Pickup & Delivery Invoice etc
 *   Custom Branding to Add Your Logo and Additional Store Information
 *   Supports Over 36 Languages including the ability to select a language for specific printer locations
 *   Generate PDF Receipts & Invoices
@@ -86,7 +86,7 @@ Our users really enjoy this feature. This is what the owner of Mighty Moose Mart
 > We’re using BizPrint to automatically print customer receipts at our ordering station and simultaneously print in the kitchen to fulfill the order. The impact is improved kitchen times, increased sales, and happier customers. I’d highly recommend BizPrint to other small businesses for in-store Point of Sale orders or orders placed online by your customers.” - Chris R. Co-Owner, Mighty Moose Marts.
 
 == BizPrint Hardware: ==
-BizPrint was designed to work with any printer that can be connected to a Windows, Mac or Linux computer! This means you can use your current thermal or Inkjet Printers with support for all major brands like HP, Dymo, Cannon, Star, Epson, Brother and more. Supported connection types include Local, Network, USB, Serial, Wifi and Bluetooth Based Printers. If you do not want to use your own computer, learn more about [BizPrint Hub](https://getbizprint.com/bizprint-hub-hardware/).
+BizPrint was designed to work with any printer that can be connected to a Windows, Mac, Linux, Raspberry Pi or Android! This means you can use your current thermal or Inkjet Printers with support for all major brands like HP, Dymo, Cannon, Star, Epson, Brother and more. Supported connection types include Local, Network, USB, Serial, Wifi and Bluetooth Based Printers. If you do not want to use your own computer or Android device, learn more about [BizPrint Hub](https://getbizprint.com/bizprint-hub-hardware/).
 
 == BizPrint User Documentation & Support: ==
 If you need help with BizPrint, you have multiple options for getting help:
@@ -103,10 +103,10 @@ Also provided are WP Actions to Extend Third-party plugin meta data into templat
 
 == What features are included in BizPrint?: ==
 *   **Instant Printing:** Automatically print WooCommerce orders in a receipt format based on order status anywhere in your restaurant, retail store or fulfillment station instantly.
-*   **Supports All Printer Models:** All printers that can connect to a Mac, PC or Linux and have a supported driver will work. Easy to adjust margins and formatting.
+*   **Supports All Printer Models:** All printers that can connect to a Mac, PC, Linux Raspberry Pi, or Android and have a supported driver will work. Easy to adjust margins and formatting.
 *   **Custom Branding on Receipts:** Easily customize invoice and order print templates to include your company logo or other company information.
 *   **WooCommerce Compatibility:** Native WooCommerce compatibility means that it works with other plugins. No need for third-party solutions to generate orders/invoices!
-*   **Print to Multiple Printers:** A scalable cloud solution that can print to multiple printers at once. And we support any printer model! If it connects to a Windows, Mac or Linux, it will work.
+*   **Print to Multiple Printers:** A scalable cloud solution that can print to multiple printers at once. And we support any printer model! If it connects to a Windows, Mac, Linux, Raspberry Pi or Android, it will work.
 *   **Generates PDF Receipts:** With the ability to generate a PDF of the receipt, BizPrint offers an easier and less fragmented solution for your WooCommerce printing needs.
 *   **Simple to Set Up & Easy to Use:** Don’t worry, we make it simple to set up – even for non-technical people! Create a BizSwoop account, configure the BizPrint plugin, and start printing in under 5 minutes.
 *   **Supports 36 Languages:** We speak your language! Plugin and receipt templates support 36 languages, including the ability to select a language for specific printer locations.
@@ -183,6 +183,11 @@ Sorry, no. Order Receipt Print plugin was developed for Google Cloud Print. Goog
 
 
 == Changelog ==
+= 4.6.1 = 
+* Add 7 new templates: Address labels, Delivery note, Dispatch label, Invoice, Packing Slip, Pick list and Shipping label
+* WC 9.4.1 compatibility
+* WP 6.6.2 compatibility 
+
 = 4.5.15 = 
 * Add Greek language support
 * WC 9.1.4 compatibility

@@ -207,6 +207,78 @@ return function (Location $location, $page, Page $setting_page) {
 									 value="1" <?= $location->shipping['delivery_pickup_type'] ? 'checked' : ''; ?>>
 					</label>
 				</p>
+				<p class="templateSetting" data-group="shipping" data-label="address_label_type">
+					<label>
+						<?php echo esc_html__('Select Address Type', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+						<select id="zp-address-label-type" name="zpl_shipping[address_label_type]">
+							<option
+								value="shipping"
+								<?php selected('shipping', $location->shipping['address_label_type'] ?: 'shipping'); ?>
+							>
+								<?php echo esc_html__('Shipping Address', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+							</option>
+							<option
+								value="billing"
+								<?php selected('billing', $location->shipping['address_label_type']); ?>
+							>
+								<?php echo esc_html__('Billing Address', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+							</option>
+							<option
+								value="shop"
+								<?php selected('shop', $location->shipping['address_label_type']); ?>
+							>
+								<?php echo esc_html__('From Address', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+							</option>
+							<option
+								value="return"
+								<?php selected('return', $location->shipping['address_label_type']); ?>
+							>
+								<?php echo esc_html__('Return Address', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+							</option>
+						</select>
+					</label>
+					<?php
+					$return_address_style = 'return' === $location->shipping['address_label_type'] ?
+						'display: block;' :
+						'display: none;';
+					?>
+					<span id="zp-return-address" style="<?php echo esc_attr($return_address_style); ?>">
+						<label>
+							<?php echo esc_html__('Return Address Line 1', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+							<input type="text" name="zpl_shipping[return_address][address_1]" value="<?php echo esc_attr($location->shipping['return_address']['address_1'] ?? ''); ?>">
+						</label>
+						<label>
+							<?php echo esc_html__('Return Address Line 2', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+							<input type="text" name="zpl_shipping[return_address][address_2]" value="<?php echo esc_attr($location->shipping['return_address']['address_2'] ?? ''); ?>">
+						</label>
+						<label>
+							<?php echo esc_html__('Return City', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+							<input type="text" name="zpl_shipping[return_address][city]" value="<?php echo esc_attr($location->shipping['return_address']['city'] ?? ''); ?>">
+						</label>
+						<label>
+							<?php
+							echo esc_html__('Return Country / State', 'Print-Google-Cloud-Print-GCP-WooCommerce');
+							$country_setting = $location->shipping['return_address']['country'] ?? '';
+							if (strstr($country_setting, ':')) {
+								$country_setting = explode(':', $country_setting);
+								$country = current($country_setting);
+								$state = end($country_setting);
+							} else {
+								$country = $country_setting;
+								$state = '*';
+							}
+							?>
+							<select name="zpl_shipping[return_address][country]">
+								<option disabled><?php echo esc_html__('Choose a country / region&hellip;', 'woocommerce'); ?></option>
+								<?php WC()->countries->country_dropdown_options($country, $state); ?>
+							</select>
+						</label>
+						<label>
+							<?php echo esc_html__('Return Postcode', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+							<input type="text" name="zpl_shipping[return_address][postcode]" value="<?php echo esc_attr($location->shipping['return_address']['postcode'] ?? ''); ?>">
+						</label>
+					</span>
+				</p>
                 <?php do_action('Zprint\setting\locations\single\templateBoxEnd', $location); ?>
 				<p class="text-centered">
 					<a href="https://getbizprint.com/documentation/developer/">

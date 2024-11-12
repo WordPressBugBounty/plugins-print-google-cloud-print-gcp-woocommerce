@@ -87,13 +87,26 @@ return function (Location $location, TabPage $tab, Page $page) {
 		}
 		$location->margins = $margins;
 
-		$shipping = isset( $_POST['zpl_shipping'] ) ? array_map( 'boolval' , $_POST['zpl_shipping'] ) : array();
+		$shipping = isset($_POST['zpl_shipping']) ? array_map('boolval', $_POST['zpl_shipping']) : array();
+
+		$address_label_type = isset($_POST['zpl_shipping']['address_label_type']) ?
+			sanitize_text_field(wp_unslash($_POST['zpl_shipping']['address_label_type'])) :
+			'shipping';
+		$return_address = [];
+		if (isset($_POST['zpl_shipping']['return_address'])) {
+			foreach ($_POST['zpl_shipping']['return_address'] as $key => $value) {
+				$return_address[$key] = sanitize_text_field(wp_unslash($value));
+			}
+		}
+
 		$location->shipping = [
 			'cost' => $shipping['cost'] ?? false,
 			'billing_shipping_details' => $shipping['billing_shipping_details'] ?? false,
 			'customer_details' => $shipping['customer_details'] ?? false,
 			'method' => $shipping['method'] ?? false,
 			'delivery_pickup_type' => $shipping['delivery_pickup_type'] ?? false,
+			'address_label_type' => $address_label_type,
+			'return_address' => $return_address,
 		];
 
 		$total = $_POST['zpl_total'] ?? array();
