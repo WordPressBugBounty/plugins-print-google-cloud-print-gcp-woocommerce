@@ -1,6 +1,11 @@
-<?php namespace Zprint;
-/* @var $order \WC_Order */
-/* @var $location_data */
+<?php
+namespace Zprint;
+
+use WC_Order;
+use WC_Order_Item;
+
+/* @var WC_Order $order */
+/* @var array $location_data */
 ?>
 <html>
 <head>
@@ -26,14 +31,14 @@
     </thead>
     <tbody>
 		<tr>
-			<td><?= $order->get_id(); ?></td>
-			<td><?= date_i18n(\get_option('date_format', 'm/d/Y'), $order->get_date_created()); ?></td>
+			<td><?= apply_filters( 'Zprint\templates\general\orderIdLabel', $order->get_id(), $order ); ?></td>
+			<td><?= date_i18n(get_option('date_format', 'm/d/Y'), $order->get_date_created()); ?></td>
 		</tr>
     </tbody>
 	<tfoot>
 		<tr>
 			<td colspan="4"><?php _e('Time ordered', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
-				- <?= date_i18n(\get_option('time_format', 'H:i'), $order->get_date_created()); ?></td>
+				- <?= date_i18n(get_option('time_format', 'H:i'), $order->get_date_created()); ?></td>
 		</tr>
 		<?php if ($location_data['shipping']['delivery_pickup_type']) { ?>
 			<tr>
@@ -52,6 +57,7 @@
 		</tr>
     </thead>
     <?php foreach ($order->get_items() as $item) {
+		/* @var $item WC_Order_Item */
 		$meta = apply_filters('Zprint\templates\order-html\orderItemRawMeta', $item->get_formatted_meta_data(), $item, $order);
 		$meta = array_filter($meta, function ($meta_item) {
 			return !in_array($meta_item->key, Order::getHiddenKeys());

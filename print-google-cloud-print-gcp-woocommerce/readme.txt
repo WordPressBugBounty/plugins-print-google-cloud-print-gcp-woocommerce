@@ -4,8 +4,8 @@ Contributors: bizswoop
 Tags: print, PDF, automatic print, shipping labels, woocommerce print
 Requires at least: 4.4
 Requires PHP: 5.6
-Tested up to: 6.6.2
-Stable tag: 4.6.1
+Tested up to: 6.7.1
+Stable tag: 4.6.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -183,6 +183,11 @@ Sorry, no. Order Receipt Print plugin was developed for Google Cloud Print. Goog
 
 
 == Changelog ==
+= 4.6.3 = 
+* Add product mapping per product support
+* WC 9.5.1 compatibility
+* WP 6.7.1 compatibility 
+
 = 4.6.1 = 
 * Add 7 new templates: Address labels, Delivery note, Dispatch label, Invoice, Packing Slip, Pick list and Shipping label
 * WC 9.4.1 compatibility

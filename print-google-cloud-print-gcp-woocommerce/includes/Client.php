@@ -26,8 +26,6 @@ class Client
 				update_option($option, 'v0', true);
 			});
 		});
-
-
 	}
 
 	public static function getVersion()

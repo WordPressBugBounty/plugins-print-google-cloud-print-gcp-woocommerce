@@ -1,13 +1,21 @@
-<?php namespace Zprint;
-/* @var $order \WC_Order */
-/* @var $location_data */
+<?php
+namespace Zprint;
+
+use WC_Order;
+use WC_Order_Item;
+
+/* @var WC_Order $order */
+/* @var array $location_data */
 ?>
 <?= Document::centerLine(get_appearance_setting('Check Header')); ?>
 <?= Document::centerLine(get_appearance_setting('Company Name')); ?>
 <?= Document::centerLine(get_appearance_setting('Company Info')); ?>
 <?= Document::emptyLine(); ?>
 <?= Document::centerLine(get_appearance_setting('Order Details Header')); ?>
-<?= Document::symbolsAlign(__('Order Number', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $order->get_id()); ?>
+<?= Document::symbolsAlign(
+	__('Order Number', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
+	apply_filters( 'Zprint\templates\general\orderIdLabel', $order->get_id(), $order )
+); ?>
 <?= Document::symbolsAlign(__('Date', 'Print-Google-Cloud-Print-GCP-WooCommerce'), date_i18n(\get_option('date_format', 'm/d/Y'), $order->get_date_created())); ?>
 <?php if ($location_data['total']['cost']) { ?>
 	<?= Document::symbolsAlign(__('Total', 'Print-Google-Cloud-Print-GCP-WooCommerce'), wc_price($order->get_total(), array('currency' => $order->get_currency()))); ?>
@@ -22,7 +30,7 @@
 <?= Document::centerLine(__('Order Information', 'Print-Google-Cloud-Print-GCP-WooCommerce')); ?>
 <?= Document::emptyLine(); ?>
 <?php foreach ($order->get_items() as $item) {
-	/* @var $item \WC_Order_item */
+	/* @var $item WC_Order_Item */
 	$meta = apply_filters('Zprint\templates\customer-plain\orderItemRawMeta', $item->get_formatted_meta_data(), $item, $order);
 	$meta = array_filter($meta, function ($meta_item) {
 		return !in_array($meta_item->key, Order::getHiddenKeys());

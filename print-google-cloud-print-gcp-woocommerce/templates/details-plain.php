@@ -1,10 +1,18 @@
-<?php namespace Zprint;
-/* @var $order \WC_Order */
-/* @var $location_data */
+<?php
+namespace Zprint;
+
+use WC_Order;
+use WC_Order_Item;
+
+/* @var WC_Order $order */
+/* @var array $location_data */
 ?>
 <?= Document::centerLine(get_appearance_setting('Company Name')); ?>
 <?= Document::centerLine(__('Order Receipt', 'Print-Google-Cloud-Print-GCP-WooCommerce')); ?>
-<?= Document::centerLine(__('Order Number', 'Print-Google-Cloud-Print-GCP-WooCommerce') . ': ' . $order->get_id()); ?>
+<?= Document::centerLine(
+	__('Order Number', 'Print-Google-Cloud-Print-GCP-WooCommerce') .
+	': ' . apply_filters( 'Zprint\templates\general\orderIdLabel', $order->get_id(), $order )
+); ?>
 <?= Document::centerLine(__('Date', 'Print-Google-Cloud-Print-GCP-WooCommerce') . ': ' . date_i18n(\get_option('date_format', 'm/d/Y'), $order->get_date_created())); ?>
 <?php if ($location_data['shipping']['delivery_pickup_type']) { ?>
 	<?= Document::centerLine(get_shipping_details($order)); ?>
@@ -12,7 +20,7 @@
 <?php do_action('Zprint\templates\details-plain\afterShippingDetails', $order->get_id(), $order); ?>
 <?= Document::emptyLine(); ?>
 <?php foreach ($order->get_items() as $item) {
-	/* @var $item \WC_Order_item */
+	/* @var $item WC_Order_Item */
 	$meta = apply_filters('Zprint\templates\details-plain\orderItemRawMeta', $item->get_formatted_meta_data(), $item, $order);
 	$meta = array_filter($meta, function ($meta_item) {
 		return !in_array($meta_item->key, Order::getHiddenKeys());

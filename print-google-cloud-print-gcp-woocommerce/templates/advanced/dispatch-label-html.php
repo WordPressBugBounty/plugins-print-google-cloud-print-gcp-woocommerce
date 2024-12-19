@@ -75,10 +75,10 @@ $logo = get_appearance_setting('logo');
 			<ul>
 				<?php do_action('Zprint\templates\advanced\beforeOrderInfo', $order, $location_data); ?>
 				<li>
-					<b><?php echo esc_html__('Invoice No.', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>:</b> <?php echo esc_html($order->get_id()); ?>
+					<b><?php echo esc_html__('Invoice No.', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>:</b> <?php echo esc_html(apply_filters( 'Zprint\templates\general\orderIdLabel', $order->get_id(), $order )); ?>
 				</li>
 				<li>
-					<b><?php echo esc_html__('Order No.', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>:</b> <?php echo esc_html($order->get_id()); ?>
+					<b><?php echo esc_html__('Order No.', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>:</b> <?php echo esc_html(apply_filters( 'Zprint\templates\general\orderIdLabel', $order->get_id(), $order )); ?>
 				</li>
 				<li>
 					<b><?php echo esc_html__('Order Date', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>:</b> <?php echo esc_html(date_i18n(get_option('date_format', 'm/d/Y'), $order->get_date_created())); ?>

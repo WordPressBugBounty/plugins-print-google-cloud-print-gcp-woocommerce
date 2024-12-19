@@ -76,7 +76,7 @@ $logo = get_appearance_setting('logo');
 			<ul>
 				<?php do_action('Zprint\templates\advanced\beforeOrderInfo', $order, $location_data); ?>
 				<li>
-					<?php echo esc_html__('Orders', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>: <?php echo esc_html($order->get_id()); ?>
+					<?php echo esc_html__('Orders', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>: <?php echo esc_html(apply_filters( 'Zprint\templates\general\orderIdLabel', $order->get_id(), $order )); ?>
 				</li>
 				<li>
 					<?php echo esc_html__('Printed on', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>: <?php echo esc_html(date(get_option('date_format', 'm/d/Y') . ' ' . get_option('time_format', 'g:i A'))); ?>

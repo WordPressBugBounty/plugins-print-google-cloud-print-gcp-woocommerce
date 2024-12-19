@@ -2,13 +2,14 @@
 
 namespace Zprint;
 
-use Zprint\Model\Location;
+use Exception;
+use WC_Order;
 
 class POS
 {
 	public function __construct()
 	{
-		\add_action(
+		add_action(
 			'woocommerce_rest_insert_shop_order_object',
 			[static::class, 'processInsertOrderFromPOS'],
 			1000
@@ -25,10 +26,15 @@ class POS
 		});
 	}
 
-	public static function processInsertOrderFromPOS($order_id)
+	/**
+	 * @param int|WC_Order $order
+	 *
+	 * @throws Exception
+	 */
+	public static function processInsertOrderFromPOS($order): void
 	{
-		$order = new \WC_Order($order_id);
-		$print = (bool) $order->get_meta('_pos_print', true);
+		$order = new WC_Order($order);
+		$print = (bool) $order->get_meta('_pos_print');
 		if ($print) {
 			$user_id = wp_get_current_user()->id;
 			Printer::printOrder($order, [

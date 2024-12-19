@@ -3,7 +3,6 @@
 namespace Zprint\Model;
 
 use Zprint\DB;
-use Zprint\Client;
 use Zprint\Exception\DB as DBException;
 use Zprint\Template\Index;
 use Zprint\Templates;
@@ -65,6 +64,9 @@ class Location
 	protected $updated_at = null;
 	protected $updated_at_gmt = null;
 
+	/**
+	 * @throws DBException
+	 */
 	public function __construct($data = null)
 	{
 		if ($id = filter_var($data, FILTER_VALIDATE_INT)) {
@@ -96,12 +98,12 @@ class Location
 			$this->options = $options;
 
 			$appearanceDefault = $this->appearance;
-			$appearance = isset($options['appearance']) ? $options['appearance'] : [];
+			$appearance = $options['appearance'] ?? [];
 			$this->appearance = array_merge($appearanceDefault, $appearance);
 
-			$this->template = isset($options['template']) ? $options['template'] : null;
-			$this->size = isset($options['size']) ? $options['size'] : null;
-			$this->margins = isset($options['margins']) ? $options['margins'] : null;
+			$this->template = $options['template'] ?? null;
+			$this->size = $options['size'] ?? null;
+			$this->margins = $options['margins'] ?? null;
 			if (isset($options['shipping'])) {
 				$this->shipping = array_merge($this->shipping, $options['shipping']);
 				$this->shipping['delivery_pickup_type'] =
@@ -109,18 +111,12 @@ class Location
 			}
 			$this->total = array_merge($this->total, isset($options['total']) ? $options['total'] : array());
 
-			$this->height = isset($options['height']) ? $options['height'] : null;
-			$this->width = isset($options['width']) ? $options['width'] : null;
-			$this->format = isset($options['format']) ? $options['format'] : 'html';
-			$this->symbolsWidth = isset($options['symbolsWidth'])
-				? $options['symbolsWidth']
-				: $this->symbolsWidth;
-			$this->printSymbolsDebug = isset($options['printSymbolsDebug'])
-				? $options['printSymbolsDebug']
-				: $this->printSymbolsDebug;
-			$this->orientation = isset($options['orientation'])
-				? $options['orientation']
-				: $this->orientation;
+			$this->height = $options['height'] ?? null;
+			$this->width = $options['width'] ?? null;
+			$this->format = $options['format'] ?? 'html';
+			$this->symbolsWidth = $options['symbolsWidth'] ?? $this->symbolsWidth;
+			$this->printSymbolsDebug = $options['printSymbolsDebug'] ?? $this->printSymbolsDebug;
+			$this->orientation = $options['orientation'] ?? $this->orientation;
 			$this->font = isset($options['font']) ? (array) $options['font'] : $this->font;
 
 			$this->printers = $data->printers ? explode('|', $data->printers) : [];
@@ -138,7 +134,7 @@ class Location
 		}
 	}
 
-	public function delete()
+	public function delete(): void
 	{
 		global $wpdb;
 		$prefix = $wpdb->prefix . DB::Prefix;
@@ -152,11 +148,9 @@ class Location
 		do_action('Zprint\removeLocation', $this->id);
 
 		$this->id = null;
-
-		return null;
 	}
 
-	public function save()
+	public function save(): void
 	{
 		global $wpdb;
 		$prefix = $wpdb->prefix . DB::Prefix;
@@ -223,12 +217,12 @@ class Location
 		}
 	}
 
-	public function getID()
+	public function getID(): ?int
 	{
 		return $this->id;
 	}
 
-	public function getData()
+	public function getData(): array
 	{
 		$data = [
 			'id' => $this->getID(),
@@ -256,7 +250,7 @@ class Location
 		return apply_filters('Zprint\getLocationDataForTemplate', $data);
 	}
 
-	public static function getAll()
+	public static function getAll(): array
 	{
 		global $wpdb;
 		$prefix = $wpdb->prefix . DB::Prefix;
@@ -265,12 +259,16 @@ class Location
 
 		$data = $wpdb->get_results("SELECT * FROM ${table}");
 
-		return array_map(function ($el) {
-			return new self($el);
-		}, $data);
+		return array_map(
+			/* @throws DBException */
+			function ($el) {
+				return new static($el);
+			},
+			$data
+		);
 	}
 
-	public function getSize()
+	public function getSize(): array
 	{
 		switch ($this->size) {
 			case 'a4':
@@ -295,7 +293,7 @@ class Location
 		}
 	}
 
-	public static function getSizes()
+	public static function getSizes(): array
 	{
 		return [
 			'a4' => __('A4', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
@@ -304,7 +302,7 @@ class Location
 		];
 	}
 
-	public static function getTemplates()
+	public static function getTemplates(): array
 	{
 		$templates = Templates::getTemplates();
 		return array_map(function ($template) {
@@ -316,7 +314,7 @@ class Location
 		}, $templates);
 	}
 
-	public static function getFormats()
+	public static function getFormats(): array
 	{
 		$basic = [
 			'html' => __('HTML', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
@@ -326,7 +324,7 @@ class Location
 		$templates = apply_filters('Zprint\getTemplates', []);
 		$formats = array_reduce(
 			$templates,
-			function ($acc, $template) use ($basic) {
+			function (array $acc, $template) use ($basic) {
 				if ($template instanceof Index) {
 					return array_merge($acc, array_filter($template->getFormats()));
 				} else {
@@ -352,7 +350,7 @@ class Location
 		);
 	}
 
-	public static function getOrientations()
+	public static function getOrientations(): array
 	{
 		return [
 			'0' => __('Portrait', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
@@ -361,27 +359,27 @@ class Location
 		];
 	}
 
-	public static function validateSize($size)
+	public static function validateSize($size): bool
 	{
 		return in_array($size, array_keys(static::getSizes()));
 	}
 
-	public static function validateTemplate($template)
+	public static function validateTemplate($template): bool
 	{
 		return in_array($template, array_keys(static::getTemplates()));
 	}
 
-	public static function validateFormat($format)
+	public static function validateFormat($format): bool
 	{
 		return in_array($format, array_keys(static::getFormats()));
 	}
 
-	public static function validateOrientation($orientation)
+	public static function validateOrientation($orientation): bool
 	{
 		return in_array($orientation, array_keys(static::getOrientations()));
 	}
 
-	public static function getAllFormatted()
+	public static function getAllFormatted(): array
 	{
 		$locations = Location::getAll();
 
@@ -394,26 +392,25 @@ class Location
 		}, $locations);
 
 		$locations = array_map(
-			function (Location $location, $id) {
+			function (Location $location) {
 				return $location->getData();
 			},
 			$locations,
 			$locations_keys
 		);
 
-		$locations = array_combine($locations_keys, $locations);
-
-		return $locations;
+		return array_combine($locations_keys, $locations);
 	}
 
-	public function getTemplateOption()
+	public function getTemplateOption(): array
 	{
-		return isset($this->options['templateOptions'][$this->template])
-			? $this->options['templateOptions'][$this->template]
-			: [];
+		return $this->options['templateOptions'][ $this->template ] ?? [];
 	}
 
-	public function setTemplateOption($value)
+	/**
+	 * @param mixed $value
+	 */
+	public function setTemplateOption($value): void
 	{
 		if (!isset($this->options['templateOptions'])) {
 			$this->options['templateOptions'] = [];
@@ -421,17 +418,23 @@ class Location
 		$this->options['templateOptions'][$this->template] = $value;
 	}
 
-	public function getBoxOption($slug)
+	public function getBoxOption(string $slug): array
 	{
 		return $this->options['box'][$slug] ?? [];
 	}
 
-	public function setBoxOption($slug, $value)
+	/**
+	 * @param mixed $value
+	 */
+	public function setBoxOption(string $slug, $value): void
 	{
 		$this->options['box'][$slug] = $value;
 	}
 
-	public static function getCurrent()
+	/**
+	 * @throws DBException
+	 */
+	public static function getCurrent(): Location
 	{
 		global $zprint_location_id;
 		return new static($zprint_location_id);

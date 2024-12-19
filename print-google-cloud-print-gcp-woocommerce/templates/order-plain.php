@@ -1,19 +1,26 @@
 <?php namespace Zprint;
-/* @var $order \WC_Order */
-/* @var $location_data */
+
+use WC_Order;
+use WC_Order_Item;
+
+/* @var WC_Order $order */
+/* @var array $location_data */
 ?>
 <?= Document::centerLine(get_appearance_setting('Check Header')); ?>
 <?= Document::emptyLine(); ?>
-<?= Document::symbolsAlign(__('Order Number', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $order->get_id()); ?>
-<?= Document::symbolsAlign(__('Date', 'Print-Google-Cloud-Print-GCP-WooCommerce'), date_i18n(\get_option('date_format', 'm/d/Y'), $order->get_date_created())); ?>
-<?= Document::symbolsAlign(__('Time Ordered', 'Print-Google-Cloud-Print-GCP-WooCommerce'), date_i18n(\get_option('time_format', 'H:i'), $order->get_date_created())); ?>
+<?= Document::symbolsAlign(
+	__('Order Number', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
+	apply_filters( 'Zprint\templates\general\orderIdLabel', $order->get_id(), $order )
+); ?>
+<?= Document::symbolsAlign(__('Date', 'Print-Google-Cloud-Print-GCP-WooCommerce'), date_i18n(get_option('date_format', 'm/d/Y'), $order->get_date_created())); ?>
+<?= Document::symbolsAlign(__('Time Ordered', 'Print-Google-Cloud-Print-GCP-WooCommerce'), date_i18n(get_option('time_format', 'H:i'), $order->get_date_created())); ?>
 <?php if ($location_data['shipping']['delivery_pickup_type']) { ?>
 	<?= Document::centerLine(get_shipping_details($order)); ?>
 <?php } ?>
 <?php do_action('Zprint\templates\order-plain\afterShippingDetails', $order->get_id()); ?>
 <?= Document::emptyLine(); ?>
 <?php foreach ($order->get_items() as $item) {
-	/* @var $item \WC_Order_item */
+	/* @var $item WC_Order_Item */
 	$meta = apply_filters('Zprint\templates\order-plain\orderItemRawMeta', $item->get_formatted_meta_data(), $item, $order);
 	$meta = array_filter($meta, function ($meta_item) {
 		return !in_array($meta_item->key, Order::getHiddenKeys());

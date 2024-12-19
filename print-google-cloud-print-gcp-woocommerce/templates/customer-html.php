@@ -1,6 +1,11 @@
-<?php namespace Zprint;
-/* @var $order \WC_Order */
-/* @var $location_data */
+<?php
+namespace Zprint;
+
+use WC_Order;
+use WC_Order_Item;
+
+/* @var WC_Order $order */
+/* @var array $location_data */
 ?>
 <html>
 <head>
@@ -34,7 +39,7 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td><?= $order->get_id(); ?></td>
+			<td><?= apply_filters( 'Zprint\templates\general\orderIdLabel', $order->get_id(), $order ); ?></td>
 			<td><?= date_i18n(\get_option('date_format', 'm/d/Y'), $order->get_date_created()); ?></td>
 			<?php if ($location_data['total']['cost']) { ?>
 				<td><?= wc_price($order->get_total(), array('currency' => $order->get_currency())); ?></td>
@@ -67,7 +72,7 @@
 		</tr>
 	</thead>
 	<?php foreach ($order->get_items() as $item) {
-		/* @var $item \WC_Order_item */
+		/* @var $item WC_Order_Item */
 		$meta = apply_filters('Zprint\templates\customer-html\orderItemRawMeta', $item->get_formatted_meta_data(), $item, $order);
 		$meta = array_filter($meta, function ($meta_item) {
 			return !in_array($meta_item->key, Order::getHiddenKeys());

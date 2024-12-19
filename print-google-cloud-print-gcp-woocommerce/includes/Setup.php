@@ -14,7 +14,7 @@ class Setup
 		do_action('zprint_loaded_base');
 		add_action('plugins_loaded', [$this, 'init']);
 
-		if (\file_exists(PLUGIN_ROOT . '/dev.php')) {
+		if (file_exists( PLUGIN_ROOT . '/dev.php')) {
 			require_once PLUGIN_ROOT . '/dev.php';
 		}
 	}

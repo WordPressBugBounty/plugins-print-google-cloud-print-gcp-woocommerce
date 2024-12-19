@@ -2,6 +2,8 @@
 
 namespace Zprint;
 
+use Exception;
+use WC_Order;
 use Zprint\Aspect\InstanceStorage;
 use Zprint\Aspect\Page;
 use Zprint\Aspect\Box;
@@ -16,7 +18,7 @@ abstract class DocumentBase
 
 	public static function template()
 	{
-		if (!isset($_GET['zprint_location'], $_GET['zprint_order'])) {
+		if (empty($_GET['zprint_location']) || empty($_GET['zprint_order'])) {
 			return;
 		}
 
@@ -35,20 +37,20 @@ abstract class DocumentBase
 			die(401);
 		}
 
-		$order = $_GET['zprint_order'];
-		$order = wc_get_order($order);
 		try {
-			if ($id = filter_var($_GET['zprint_location'], FILTER_VALIDATE_INT)) {
-				$location = new Location($id);
+			if ($location_id = intval(wp_unslash($_GET['zprint_location']))) {
+				$location = new Location($location_id);
 			} else {
-				throw new \Exception('Wrong Argument');
+				throw new Exception('Wrong Argument');
 			}
-		} catch (\Exception $exception) {
+		} catch (Exception $exception) {
 			echo 'Error:' . $exception->getMessage();
 			die(400);
 		}
 
-		if (!$order instanceof \WC_Order) {
+		$order = wc_get_order(intval(wp_unslash($_GET['zprint_order'])));
+
+		if (!$order instanceof WC_Order) {
 			echo 'Error: Order not found';
 			die(404);
 		}
@@ -126,7 +128,7 @@ abstract class DocumentBase
 		global $zprint_appearance, $zprint_location_id;
 		$zprint_location_id = $location_data['id'];
 
-		if (!$order instanceof \WC_Order) {
+		if (!$order instanceof WC_Order) {
 			$order = wc_get_order($order);
 		}
 

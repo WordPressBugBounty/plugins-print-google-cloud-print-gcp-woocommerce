@@ -1,8 +1,8 @@
 <?php
-/* @var $fontSize
- * @var $fontWeight
- * @var $headerSize
- * @var $headerWeight
+/* @var int $fontSize
+ * @var int|string $fontWeight
+ * @var int $headerSize
+ * @var int|string $headerWeight
  */
 
 $css = <<<CSS

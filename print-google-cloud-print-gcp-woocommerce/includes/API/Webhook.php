@@ -2,14 +2,14 @@
 
 namespace Zprint\API;
 
+use WP_REST_Request;
+use WP_REST_Response;
 use Zprint\Client;
 use Zprint\Log;
 
 class Webhook
 {
-	private $namespace;
-
-	public function __construct($namespace)
+	public function __construct(string $namespace)
 	{
 		register_rest_route($namespace, '/webhook', [
 			'methods' => 'POST',
@@ -18,14 +18,17 @@ class Webhook
 		]);
 	}
 
-	public function verifyRequest(\WP_REST_Request $request)
+	/**
+	 * @return WP_REST_Response|bool
+	 */
+	public function verifyRequest(WP_REST_Request $request)
 	{
 		$time = $request->get_param('time');
 		if (time() > $time + 60 * 5) {
 			Log::info(Log::PRINTING, [
 				'Webhook-Error-Connect', 'Old request'
 			]);
-			return new \WP_REST_Response(
+			return new WP_REST_Response(
 				['errorCode' => 'ERR_TOO_OLD_REQUEST', 'message' => 'too old request'],
 				400
 			);
@@ -43,14 +46,16 @@ class Webhook
 			Log::info(Log::PRINTING, [
 				'Webhook-Error-Connect', 'Incorrect auth data'
 			]);
-			return new \WP_REST_Response(
+			return new WP_REST_Response(
 				['errorCode' => 'ERR_UNAUTHORIZED', 'message' => 'Unauthorized'],
 				401
 			);
 		}
+
+		return false;
 	}
 
-	public function handler(\WP_REST_Request $request)
+	public function handler(WP_REST_Request $request): WP_REST_Response
 	{
 		$validationResponse = $this->verifyRequest($request);
 		if($validationResponse) return $validationResponse;
@@ -61,48 +66,51 @@ class Webhook
 		$transient = 'zprint_webhook_request_' . $id;
 
 		if (get_transient($transient)) {
-			return $this->alreadyProcessedHandler($request);
+			return $this->alreadyProcessedHandler();
 		}
 		set_transient($transient, time());
 
 		switch ($type) {
 			case 'test-connect':
-				return $this->testConnectHandler($request);
+				return $this->testConnectHandler();
 			case 'print-job-status-update':
 				return $this->printJobStatusUpdateHandler($request);
 			default:
-				return $this->defaultHandler($request);
+				return $this->defaultHandler();
 		}
 	}
 
-	public function testConnectHandler($request)
+	public function testConnectHandler(): WP_REST_Response
 	{
 		Log::info(Log::PRINTING, [
 			'Test-Connect'
 		]);
-		return new \WP_REST_Response([
+		return new WP_REST_Response([
 			'received' => true
 		]);
 	}
 
-	public function printJobStatusUpdateHandler(\WP_REST_Request $request)
+	public function printJobStatusUpdateHandler(WP_REST_Request $request): WP_REST_Response
 	{
 		$job = (object) $request->get_param('job');
+
 		Log::info(Log::PRINTING, [
 			$job->description,
 			'update to ' . $job->status,
 			'Job ' . $job->id,
 		]);
-		return new \WP_REST_Response(['received' => true], 200);
+		do_action('Zprint\printJobStatusUpdate', $job);
+
+		return new WP_REST_Response(['received' => true], 200);
 	}
 
-	public function defaultHandler($request)
+	public function defaultHandler(): WP_REST_Response
 	{
-		return new \WP_REST_Response('Unprocessable Type', 422);
+		return new WP_REST_Response('Unprocessable Type', 422);
 	}
 
-	public function alreadyProcessedHandler($request)
+	public function alreadyProcessedHandler(): WP_REST_Response
 	{
-		return new \WP_REST_Response('Already Processed', 200);
+		return new WP_REST_Response('Already Processed', 200);
 	}
 }

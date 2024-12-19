@@ -2,6 +2,9 @@
 
 namespace Zprint;
 
+use Exception;
+use Zprint\Model\Location;
+
 class LocationFilter
 {
 	public $type = null;
@@ -14,61 +17,55 @@ class LocationFilter
 	private static $allowed_types = [self::WEB_ORDER, self::USER, self::LOCATION, self::POS_ORDER_ONLY];
 
 	/**
-	 * LocationFilter constructor.
-	 * @param $type
-	 * @param $argument
-	 * @throws \Exception
+	 * @param bool|int|array $argument
+	 *
+	 * @throws Exception
 	 */
-	public function __construct($type, $argument)
+	public function __construct(string $type, $argument)
 	{
 		if (!in_array($type, self::$allowed_types)) {
-			throw new \Exception($type . ' is not correct ' . __CLASS__ . ' type');
+			throw new Exception($type . ' is not correct ' . __CLASS__ . ' type');
 		}
 
 		$this->type = $type;
 		$this->argument = $argument;
 	}
 
-	public function filter($locations)
+	/**
+	 * @param $locations Location[]
+	 *
+	 * @return Location[]
+	 */
+	public function filter(array $locations): array
 	{
-		$argument = $this->argument;
-		$type = $this->type;
-		$filter = function ($location) use ($argument, $type) {
-			/* @var $location \Zprint\Model\Location */
-			switch ($type) {
+		return array_filter($locations, function (Location $location): bool {
+			switch ($this->type) {
 				case self::USER:
-					{
-						if (is_array($argument)) {
-							return count(array_diff($argument, $location->users)) < count($argument);
-						} else {
-							return in_array($argument, $location->users);
-						}
-						break;
+				{
+					if (is_array($this->argument)) {
+						return count(array_diff($this->argument, $location->users)) < count($this->argument);
+					} else {
+						return in_array($this->argument, $location->users);
 					}
+				}
 				case
 				self::WEB_ORDER:
-					{
-						return $location->enabledWEB === $argument;
+				{
+					return $location->enabledWEB === $this->argument;
 
-						break;
-					}
+				}
 				case self::POS_ORDER_ONLY:
-					{
-						return $location->enabledPOS === $argument;
+				{
+					return $location->enabledPOS === $this->argument;
 
-						break;
-					}
+				}
 				case self::LOCATION:
-					{
-						return in_array($location->getID(), $argument);
-						break;
-					}
+				{
+					return in_array($location->getID(), $this->argument);
+				}
 				default:
 					return true;
 			}
-		};
-		$locations = array_filter($locations, $filter);
-
-		return $locations;
+		});
 	}
 }

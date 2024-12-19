@@ -29,8 +29,14 @@ do_action('Zprint\templates\advanced\afterShopInfo', $order, $location_data);
 echo Document::emptyLine();
 
 do_action('Zprint\templates\advanced\beforeOrderInfo', $order, $location_data);
-echo Document::symbolsAlign(esc_html__('Order No.', 'Print-Google-Cloud-Print-GCP-WooCommerce'), esc_html($order->get_id()));
-echo Document::symbolsAlign(esc_html__('Order date', 'Print-Google-Cloud-Print-GCP-WooCommerce'), esc_html(date_i18n(get_option('date_format', 'm/d/Y'), $order->get_date_created())));
+echo Document::symbolsAlign(
+	esc_html__('Order No.', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
+	apply_filters( 'Zprint\templates\general\orderIdLabel', $order->get_id(), $order )
+);
+echo Document::symbolsAlign(
+	esc_html__('Order date', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
+	esc_html(date_i18n(get_option('date_format', 'm/d/Y'), $order->get_date_created()))
+);
 if ($customer_note = $order->get_customer_note()) {
 	echo Document::symbolsAlign(esc_html__('Customer note', 'Print-Google-Cloud-Print-GCP-WooCommerce'), esc_html($customer_note));
 }

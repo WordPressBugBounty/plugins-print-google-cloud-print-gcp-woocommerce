@@ -1,6 +1,11 @@
-<?php namespace Zprint;
-/* @var $order \WC_Order */
-/* @var $location_data */
+<?php
+namespace Zprint;
+
+use WC_Order;
+use WC_Order_Item;
+
+/* @var WC_Order $order */
+/* @var array $location_data */
 ?>
 <html>
 <head>
@@ -15,12 +20,15 @@
 	<?php if (get_appearance_setting('Company Name')) { ?>
 		<h2><?= get_appearance_setting('Company Name'); ?></h2>
 	<?php } ?>
-	<h3><?= sprintf(__('Order #%s', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $order->get_id()) ?></h3>
+	<h3><?= sprintf(
+		__('Order #%s', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
+		apply_filters( 'Zprint\templates\general\orderIdLabel', $order->get_id(), $order )
+	) ?></h3>
 	<h4>
 		<?php _e('Date', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
-		: <?= date_i18n(\get_option('date_format', 'm/d/Y'), $order->get_date_created()); ?><br />
+		: <?= date_i18n(get_option('date_format', 'm/d/Y'), $order->get_date_created()); ?><br />
 		<?php _e('Time', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
-		: <?= date_i18n(\get_option('time_format', 'H:i'), $order->get_date_created()); ?>
+		: <?= date_i18n(get_option('time_format', 'H:i'), $order->get_date_created()); ?>
 	</h4>
     <?php if ($location_data['shipping']['delivery_pickup_type']) { ?>
         <h4><?= get_shipping_details($order); ?></h4>
@@ -36,7 +44,7 @@
 		</tr>
 	</thead>
 	<?php foreach ($order->get_items() as $item) {
-		/* @var $item \WC_Order_item */
+		/* @var $item WC_Order_Item */
 		$meta = apply_filters('Zprint\templates\details-html\orderItemRawMeta', $item->get_formatted_meta_data(), $item, $order);
 		$meta = array_filter($meta, function ($meta_item) {
 			return !in_array($meta_item->key, Order::getHiddenKeys());
