@@ -205,7 +205,12 @@ class Page extends Base
             return $el;
         }, $obj);
 
-        return call_user_func_array('parent::attach', $obj);
+        return call_user_func_array(
+			function () use ($obj) {
+				return parent::attach(...$obj);
+			},
+			[]
+		);
     }
 
     public function attachFew(array $obj)
@@ -219,6 +224,11 @@ class Page extends Base
             return $el;
         }, $obj);
 
-        return call_user_func('parent::attachFew', $obj);
+        return call_user_func(
+			function () use ($obj) {
+				return parent::attachFew(...$obj);
+			},
+			[]
+		);
     }
 }

@@ -76,7 +76,7 @@ class Location
 			$locations = $prefix . DB::Locations;
 
 			$data = $wpdb->get_row(
-				$wpdb->prepare("SELECT * FROM ${locations} as l WHERE l.id = %d", $id)
+				$wpdb->prepare("SELECT * FROM {$locations} as l WHERE l.id = %d", $id)
 			);
 
 			if ($data === null) {
@@ -257,7 +257,7 @@ class Location
 
 		$table = $prefix . DB::Locations;
 
-		$data = $wpdb->get_results("SELECT * FROM ${table}");
+		$data = $wpdb->get_results("SELECT * FROM {$table}");
 
 		return array_map(
 			/* @throws DBException */
