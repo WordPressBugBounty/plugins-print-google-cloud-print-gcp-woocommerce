@@ -9,6 +9,7 @@ class Setup
 		new Plugin();
 		new Translate();
 		new Activate();
+		new Support\Setup();
 
 	  add_action( 'before_woocommerce_init', [ $this, 'add_order_storage_support' ] );
 		do_action('zprint_loaded_base');

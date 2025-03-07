@@ -21,6 +21,7 @@ class Activate
 		register_deactivation_hook(PLUGIN_ROOT_FILE, function ($network_wide) {
 			if (static::is_reset_data()) {
 				DB::drop($network_wide);
+				Support\Setup::reset();
 			}
 		});
 	}
