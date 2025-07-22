@@ -177,10 +177,10 @@ class Admin
             ?>
 							<div class="zprint-qnotice notice is-dismissible">
 								<div class="zprint-qnotice__header">
-									<span class="dashicons dashicons-warning"></span>
+									<span class="dashicons dashicons-megaphone"></span>
 										<h4>
 						<?php echo esc_html__(
-          'You’re almost done. Set up BizPrint to enable printing tools for WooCommerce',
+          'You’re almost there. Easily set up BizPrint to enable printing tools for WooCommerce',
           'Print-Google-Cloud-Print-GCP-WooCommerce'
       ); ?>
 										</h4>
@@ -195,19 +195,19 @@ class Admin
 									<div class="zprint-qnotice__content">
 										<h5>
 									<?php echo esc_html__(
-             'Print Receipts & Invoices Automatically From WooCommerce and Point of Sale Orders',
+             'Finish Setup to Start Printing Orders From WooCommerce and Point of Sale Orders',
              'Print-Google-Cloud-Print-GCP-WooCommerce'
          ); ?>
 										</h5>
 										<p>
 						<?php echo esc_html__(
-          'BizPrint makes it easy to create and manage customer orders, receipts and invoices for your restaurant, retail store or fulfillment station.',
+          'Save time, money and the hassle of third-party plugins with our go-to print solution for the WooCommerce community that is reliable and scalable. Bring your current printer. Works on all major brands.',
           'Print-Google-Cloud-Print-GCP-WooCommerce'
       ); ?>
 										</p>
 										<p>
 						<?php echo esc_html__(
-          'Save time, money and the hassle of third-party plugins with our go-to print solution for the WooCommerce community that is reliable and scalable. Bring your current printer. Works on all major brands.',
+          '✅ You’re Almost Ready to Print Automatically. Follow our Quick Start Guide to connect your printer and start printing receipts and orders from WooCommerce.',
           'Print-Google-Cloud-Print-GCP-WooCommerce'
       ); ?>
 										</p>
@@ -220,7 +220,10 @@ class Admin
 											</a>
 											<br class="zprint-qnotice__br-after-btn">
 											<a class="zprint-qnotice__link" href="/wp-admin/admin.php?page=zp_bce0c&tab=bce0c_3676d">
-												Go to print settings<span class="fas fa-arrow-right"></span>
+												Or go to print settings<span class="fas fa-arrow-right"></span>
+											</a>
+											<a class="zprint-qnotice__link" href="https://bizswoop.atlassian.net/servicedesk/customer/portal/4/group/4/create/10039" target="_blank">
+												Get Support<span class="fas fa-life-ring"></span>
 											</a>
 										</p>
 									</div>
