@@ -3,11 +3,11 @@
  * Plugin Name: BizPrint Print Manager for WooCommerce
  * Plugin URI: http://www.getbizprint.com
  * Description: Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!
- * Version: 4.6.7
+ * Version: 4.8.1
  * Text Domain: Print-Google-Cloud-Print-GCP-WooCommerce
  * Domain Path: /lang
  * WC requires at least: 2.4.0
- * WC tested up to: 10.2.1
+ * WC tested up to: 10.3.4
  * Author: BizSwoop a CPF Concepts, LLC Brand
  * Author URI: http://www.bizswoop.com
  */
@@ -21,7 +21,7 @@ const ACTIVE           = true;
 const PLUGIN_ROOT      = __DIR__;
 const PLUGIN_ROOT_FILE = __FILE__;
 const ROOT_FILE        = __FILE__;
-const PLUGIN_VERSION   = '4.6.7';
+const PLUGIN_VERSION   = '4.8.1';
 const ASPECT_PREFIX    = 'zp';
 defined('ABSPATH') or die('No script kiddies please!');
 require_once __DIR__ . '/includes/functions.php';

@@ -7,11 +7,27 @@ use Zprint\Printer;
 
 class PrintDialog
 {
+	/**
+	 * Default capability required to access print functionality.
+	 * Filterable via 'zprint_print_dialog_capability'.
+	 */
+	const DEFAULT_CAPABILITY = 'edit_shop_orders';
+
 	public function __construct()
 	{
         add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_assets' ) );
 		add_action( 'wp_ajax_zprint_render_print_dialog_window', array( $this, 'render_window' ) );
 		add_action( 'wp_ajax_zprint_print_manually', array( $this, 'print' ) );
+	}
+
+	/**
+	 * Get the capability required for print dialog access.
+	 * Filterable via 'zprint_print_dialog_capability'.
+	 *
+	 * @return string Capability name
+	 */
+	public static function get_required_capability(): string {
+		return apply_filters( 'zprint_print_dialog_capability', self::DEFAULT_CAPABILITY );
 	}
 
     public function enqueue_assets(): void {
@@ -46,11 +62,27 @@ class PrintDialog
     }
 
 	public function render_window(): void {
+		if ( ! current_user_can( self::get_required_capability() ) ) {
+			wp_send_json_error(
+				array( 'message' => __( 'You do not have permission to perform this action.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ) ),
+				403
+			);
+		}
+
         $order_ids = isset( $_GET['order_ids'] ) ? array_map( 'intval', json_decode( $_GET['order_ids'] ) ) : array();
 
         if ( empty( $order_ids ) ) {
             die();
         }
+
+		foreach ( $order_ids as $order_id ) {
+			if ( ! wc_get_order( $order_id ) ) {
+				wp_send_json_error(
+					array( 'message' => __( 'One or more orders could not be found.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ) ),
+					404
+				);
+			}
+		}
 
 		$order_id_count = count( $order_ids );
 		$is_bulk_action = 1 < $order_id_count;
@@ -123,6 +155,13 @@ class PrintDialog
 	}
 
 	public function print(): void {
+		if ( ! current_user_can( self::get_required_capability() ) ) {
+			wp_send_json_error(
+				array( 'message' => __( 'You do not have permission to perform this action.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ) ),
+				403
+			);
+		}
+
 		$order_ids    = isset( $_GET['order_ids'] ) ? array_map( 'intval', json_decode( wp_unslash( $_GET['order_ids'] ) ) ) : array();
 		$location_ids = isset( $_GET['location_ids'] ) ? array_map( 'intval', json_decode( wp_unslash( $_GET['location_ids'] ) ) ) : array();
 		$redirect_to  = apply_filters(
@@ -137,6 +176,12 @@ class PrintDialog
 
 		if ( $order_ids && $location_ids ) {
 			foreach ( $order_ids as $order_id ) {
+				if ( ! wc_get_order( $order_id ) ) {
+					wp_send_json_error(
+						array( 'message' => __( 'One or more orders could not be found.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ) ),
+						404
+					);
+				}
 				Printer::reprintOrder( $order_id, $location_ids );
 			}
 		}

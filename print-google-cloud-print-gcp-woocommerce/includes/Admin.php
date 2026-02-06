@@ -71,7 +71,7 @@ class Admin
 	public function showTemplatePreview()
 	{
 		if (
-			current_user_can( 'edit_posts' ) &&
+			current_user_can( Admin\PrintDialog::get_required_capability() ) &&
 			isset($_GET['zprint_location'], $_GET['zprint_order'])
 		) {
 			$allowed_query_args = array('zprint_location', 'zprint_order', 'zprint_order_user');
@@ -105,6 +105,7 @@ class Admin
 			if (!$order instanceof \WC_Order) {
 				die('Error: Order not found');
 			}
+
 			if (
 		  	empty($_GET['zprint_pos']) ||
 				!filter_var($_GET['zprint_pos'], FILTER_VALIDATE_BOOLEAN)

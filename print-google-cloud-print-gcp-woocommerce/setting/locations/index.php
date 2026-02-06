@@ -137,11 +137,15 @@ return function ($tab, $page) {
 						</ul>
 					</td>
 					<td>
-						<ul class="list">
-							<?= implode(", ", array_map(function ($user) use ($users) {
-								return '<li>' . $users[$user] . '</li>';
-							}, $location['users'])); ?>
-						</ul>
+						<?php if (!empty($location['autoIncludeAllUsers'])): ?>
+							<strong><?php _e('All Users (Auto)', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?></strong>
+						<?php else: ?>
+							<ul class="list">
+								<?= implode(", ", array_map(function ($user) use ($users) {
+									return '<li>' . $users[$user] . '</li>';
+								}, $location['users'])); ?>
+							</ul>
+						<?php endif; ?>
 					</td>
 					<td>
 						<?= Location::getTemplates()[$location['template']]; ?>

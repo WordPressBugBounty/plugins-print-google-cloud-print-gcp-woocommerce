@@ -28,10 +28,18 @@ return function (Location $location, TabPage $tab, Page $page) {
 		$location->title = esc_attr( $_POST['zpl_title'] );
 		$location->enabledWEB = isset( $_POST['zpl_web_order'] ) && $_POST['zpl_web_order'];
 		$location->enabledPOS = isset( $_POST['zpl_pos_order_only'] ) && $_POST['zpl_pos_order_only'];
-		$users = isset($_POST['zpl_users']) ? array_map( 'strval', $_POST['zpl_users'] ) : array();
-		$location->users = array_filter($users, function ($user) {
-			return get_user_by('id', $user);
-		});
+
+		$location->autoIncludeAllUsers = isset( $_POST['zpl_auto_include_all_users'] ) && $_POST['zpl_auto_include_all_users'];
+
+		if ($location->autoIncludeAllUsers) {
+			$location->users = array();
+		} else {
+			$users = isset($_POST['zpl_users']) ? array_map( 'strval', $_POST['zpl_users'] ) : array();
+			$location->users = array_filter($users, function ($user) {
+				return get_user_by('id', $user);
+			});
+		}
+
 		$printers = isset($_POST['zpl_printers']) ? array_map( 'strval', $_POST['zpl_printers'] ) : array();
 		$all_printers = array_keys(Printer::getPrinters());
 		$location->printers = array_filter($printers, function ($printer) use ($all_printers) {

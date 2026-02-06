@@ -133,7 +133,7 @@ class RestClient
 		$hashedUrl = add_query_arg('hash', $hash, $baseArgsUrl);
 
 		$headers = self::applyHeadersForUpdatesService();
-		$result = wp_remote_get($hashedUrl, [
+		$result = HttpClient::get($hashedUrl, [
 			'headers' => $headers,
 		]);
 
@@ -166,7 +166,7 @@ class RestClient
 			'Content-Type' => 'application/json; charset=utf-8',
 		]);
 
-		$result = wp_remote_post($base . '/' . $url, [
+		$result = HttpClient::post($base . '/' . $url, [
 			'body' => json_encode($data),
 			'headers' => $headers,
 			'data_format' => 'body',

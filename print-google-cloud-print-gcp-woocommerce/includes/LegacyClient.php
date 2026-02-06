@@ -71,7 +71,7 @@ class LegacyClient
 	{
 		$base = self::getBaseUrl();
 
-		$result = wp_remote_get($base . '/' . $url, [
+		$result = HttpClient::get($base . '/' . $url, [
 			'headers' => ['Authorization' => 'Basic ' . self::getAuthHeader()],
 		]);
 		if (is_wp_error($result)) {
@@ -97,7 +97,7 @@ class LegacyClient
 	{
 		$base = self::getBaseUrl();
 
-		$result = wp_remote_post($base . '/' . $url, [
+		$result = HttpClient::post($base . '/' . $url, [
 			'body' => json_encode($data),
 			'headers' => [
 				'Authorization' => 'Basic ' . self::getAuthHeader(),

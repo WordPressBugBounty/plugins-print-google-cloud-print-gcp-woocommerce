@@ -169,13 +169,15 @@ class Printer
 	public static function printDocument(string $description, WC_Order $order, array $template_data): array
 	{
 		$printers = $template_data['printers'];
+		$orderId = $order->get_id();
+		$locationId = $template_data['id'];
 
-		$multipart = [
+		$jobData = [
 			'description' => $description,
 			'url' => add_query_arg(
 				[
-					'zprint_order' => $order->get_id(),
-					'zprint_location' => $template_data['id'],
+					'zprint_order' => $orderId,
+					'zprint_location' => $locationId,
 					'zprint_order_user' => $order->get_user_id(),
 				],
 				home_url()
@@ -183,30 +185,133 @@ class Printer
 			'printOption' => Document::getTicket($template_data),
 		];
 
-		$printers = array_map(function ($printer) use ($multipart) {
-			$printer = [
-				'printerId' => $printer,
-			];
-			$multipart = array_merge($multipart, $printer);
-			return Client::postRequest('jobs', $multipart);
-		}, $printers);
+		// Check if async printing is enabled - queue immediately
+		if (JobQueue::isAsyncEnabled()) {
+			return self::queuePrintJobs($orderId, $locationId, $printers, $jobData);
+		}
 
-		$printers_success = array_map(function (object $response): bool {
-			if ($response->job) {
+		// Synchronous printing with optional fallback to queue
+		return self::syncPrintWithFallback($orderId, $locationId, $printers, $jobData);
+	}
+
+	/**
+	 * Queue print jobs and process immediately.
+	 * Jobs are queued first (for tracking/retry), then processed right away.
+	 *
+	 * @param int $orderId
+	 * @param int $locationId
+	 * @param array $printers
+	 * @param array $jobData
+	 * @return array
+	 */
+	private static function queuePrintJobs(int $orderId, int $locationId, array $printers, array $jobData): array
+	{
+		$succeeded = 0;
+		$failed = 0;
+
+		foreach ($printers as $printerId) {
+			// Add to queue for tracking
+			$jobId = JobQueue::addJob($orderId, $locationId, $printerId, $jobData);
+
+			if ($jobId) {
 				Log::info(Log::PRINTING, [
-					$response->job->description,
-					'create with ' . $response->job->status,
-					'Job ' . $response->job->id,
+					$jobData['description'],
+					'queued',
+					'Queue Job ' . $jobId,
+					'Printer ' . $printerId,
+				]);
+
+				// Process immediately - don't wait for background
+				$success = JobQueue::processJobNow($jobId);
+
+				if ($success) {
+					$succeeded++;
+				} else {
+					$failed++;
+					// Job is already marked for retry by processJobNow
+				}
+			} else {
+				$failed++;
+				Log::error(Log::BASIC, [
+					'Printer',
+					'Failed to queue job',
+					'Order ' . $orderId,
+					'Printer ' . $printerId,
 				]);
 			}
-			if ( isset( $response->errorCode ) ) {
-				Log::warn(Log::PRINTING, [$response->errorCode, $response->message]);
-			}
-			return isset($response->job);
-		}, $printers);
+		}
 
-		$printers_success = array_filter($printers_success);
-		if (count($printers_success) === count($printers)) {
+		if ($failed === 0) {
+			return [
+				'status' => true,
+				'error' => null,
+			];
+		} else {
+			return [
+				'status' => $succeeded > 0,
+				'error' => $failed . ' job(s) failed - queued for retry',
+			];
+		}
+	}
+
+	/**
+	 * Synchronous print with fallback to queue on failure.
+	 *
+	 * @param int $orderId
+	 * @param int $locationId
+	 * @param array $printers
+	 * @param array $jobData
+	 * @return array
+	 */
+	private static function syncPrintWithFallback(int $orderId, int $locationId, array $printers, array $jobData): array
+	{
+		$fallbackEnabled = JobQueue::isFallbackEnabled();
+		$successCount = 0;
+		$totalPrinters = count($printers);
+		$errors = [];
+
+		foreach ($printers as $printerId) {
+			$requestData = array_merge($jobData, ['printerId' => $printerId]);
+
+			try {
+				$response = Client::postRequest('jobs', $requestData);
+
+				if (isset($response->job)) {
+					Log::info(Log::PRINTING, [
+						$response->job->description,
+						'create with ' . $response->job->status,
+						'Job ' . $response->job->id,
+					]);
+					$successCount++;
+				} elseif (isset($response->errorCode)) {
+					Log::warn(Log::PRINTING, [$response->errorCode, $response->message]);
+					$errorMessage = $response->errorCode . ': ' . ($response->message ?? 'Unknown error');
+					$errors[] = $errorMessage;
+
+					// Queue for retry if fallback is enabled
+					if ($fallbackEnabled) {
+						self::queueFailedJob($orderId, $locationId, $printerId, $jobData, $errorMessage);
+					}
+				}
+			} catch (Exception $e) {
+				$errorMessage = $e->getMessage();
+				Log::error(Log::BASIC, [
+					'Printer',
+					'Print request failed',
+					'Order ' . $orderId,
+					'Printer ' . $printerId,
+					'Error: ' . $errorMessage,
+				]);
+				$errors[] = $errorMessage;
+
+				// Queue for retry if fallback is enabled
+				if ($fallbackEnabled) {
+					self::queueFailedJob($orderId, $locationId, $printerId, $jobData, $errorMessage);
+				}
+			}
+		}
+
+		if ($successCount === $totalPrinters) {
 			return [
 				'status' => true,
 				'error' => null,
@@ -214,8 +319,31 @@ class Printer
 		} else {
 			return [
 				'status' => false,
-				'error' => $printers,
+				'error' => $errors,
 			];
+		}
+	}
+
+	/**
+	 * Queue a failed job for background retry.
+	 *
+	 * @param int $orderId
+	 * @param int $locationId
+	 * @param string $printerId
+	 * @param array $jobData
+	 * @param string $errorMessage
+	 */
+	private static function queueFailedJob(int $orderId, int $locationId, string $printerId, array $jobData, string $errorMessage): void
+	{
+		$jobId = JobQueue::addJob($orderId, $locationId, $printerId, $jobData, $errorMessage);
+
+		if ($jobId) {
+			Log::info(Log::PRINTING, [
+				$jobData['description'],
+				'queued for background retry after failure',
+				'Queue Job ' . $jobId,
+				'Printer ' . $printerId,
+			]);
 		}
 	}
 

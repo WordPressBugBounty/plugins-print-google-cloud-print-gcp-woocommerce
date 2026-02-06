@@ -139,10 +139,16 @@ return function (Location $location, $page, Page $setting_page) {
 			</div>
 			<div class="box">
 				<h3><label for="users"><?php _e('Users', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?></label></h3>
-				<select id="users" name="zpl_users[]" multiple>
+				<p>
+					<label>
+						<input name="zpl_auto_include_all_users" type="checkbox" id="auto_include_all_users" value="1" <?php checked($location->autoIncludeAllUsers); ?>>
+						<?php _e('Automatically include all users (current and future)', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+					</label>
+				</p>
+				<select id="users" name="zpl_users[]" multiple <?= $location->autoIncludeAllUsers ? 'disabled' : ''; ?>>
 					<?php foreach ($users as $user => $name): ?>
 						<option
-							value="<?= $user ?>" <?= in_array($user, $location->users) ? "selected" : ""; ?>><?= $name ?></option>
+							value="<?= $user ?>" <?= ($location->autoIncludeAllUsers || in_array($user, $location->users)) ? "selected" : ""; ?>><?= $name ?></option>
 					<?php endforeach; ?>
 				</select>
 			</div>

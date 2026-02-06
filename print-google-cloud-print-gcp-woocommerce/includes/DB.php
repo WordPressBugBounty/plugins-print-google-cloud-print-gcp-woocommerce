@@ -7,6 +7,7 @@ class DB
 	const Prefix = 'zp_';
 	/* Tables */
 	const Locations = 'locations';
+	const JobQueue = 'job_queue';
 
 	public static function setup()
 	{
@@ -149,6 +150,45 @@ class DB
 			}
 		}
 
+		if (!in_array('auto_include_all_users', $tables)) {
+			$request = $wpdb->query(
+				"ALTER TABLE `{$locations}`
+                ADD auto_include_all_users INT(1) DEFAULT 0 AFTER users"
+			);
+
+			if ( $request ) {
+				$tables[] = 'auto_include_all_users';
+			}
+		}
+
+		$job_queue = $prefix . static::JobQueue;
+
+		if (!in_array('job_queue', $tables)) {
+			$request = $wpdb->query(
+				"CREATE TABLE IF NOT EXISTS `{$job_queue}` (
+					id BIGINT(20) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+					order_id BIGINT(20) UNSIGNED NOT NULL,
+					location_id BIGINT(20) UNSIGNED NOT NULL,
+					printer_id VARCHAR(255) NOT NULL,
+					job_data LONGTEXT NOT NULL,
+					status ENUM('pending', 'processing', 'completed', 'failed') DEFAULT 'pending',
+					attempts INT(3) DEFAULT 0,
+					max_attempts INT(3) DEFAULT 5,
+					last_error TEXT NULL,
+					scheduled_at DATETIME NULL,
+					created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+					updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+					INDEX idx_status (status),
+					INDEX idx_order (order_id),
+					INDEX idx_scheduled (status, scheduled_at)
+				) {$collate};"
+			);
+
+			if ( $request ) {
+				$tables[] = 'job_queue';
+			}
+		}
+
 		static::update_option('zprint_tables', $tables);
 	}
 
@@ -174,6 +214,7 @@ class DB
 
 		$prefix = $wpdb->prefix . static::Prefix;
 		$locations = $prefix . static::Locations;
+		$job_queue = $prefix . static::JobQueue;
 
 		if (is_multisite() && $network_wide) {
 			$blog_ids = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs");
@@ -181,10 +222,12 @@ class DB
 			foreach ($blog_ids as $blog_id) {
 				switch_to_blog($blog_id);
 				$wpdb->query( "DROP TABLE IF EXISTS $locations;" );
+				$wpdb->query( "DROP TABLE IF EXISTS $job_queue;" );
 				restore_current_blog();
 			}
 		} else {
 			$wpdb->query( "DROP TABLE IF EXISTS $locations;" );
+			$wpdb->query( "DROP TABLE IF EXISTS $job_queue;" );
 		}
 
 		static::update_option('zprint_tables', []);
@@ -213,7 +256,13 @@ class DB
 
 		return in_array( 'base', $tables, true ) &&
 		       in_array( 'options', $tables, true ) &&
-		       in_array( 'base_language_columns', $tables, true );
+		       in_array( 'base_language_columns', $tables, true ) &&
+		       in_array( 'auto_include_all_users', $tables, true );
+	}
+
+	public static function getJobQueueTable() {
+		global $wpdb;
+		return $wpdb->prefix . static::Prefix . static::JobQueue;
 	}
 
 	public function create_tables_by_url() {

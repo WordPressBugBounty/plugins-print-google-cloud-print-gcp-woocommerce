@@ -42,6 +42,9 @@ class LocationFilter
 			switch ($this->type) {
 				case self::USER:
 				{
+					if ($location->autoIncludeAllUsers) {
+						return true;
+					}
 					if (is_array($this->argument)) {
 						return count(array_diff($this->argument, $location->users)) < count($this->argument);
 					} else {

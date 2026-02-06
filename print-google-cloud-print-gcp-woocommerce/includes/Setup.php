@@ -45,6 +45,7 @@ class Setup
 
 		new Admin();
 		new Printer();
+		new BackgroundPrintProcessor();
 		new POS();
 		new Templates();
 		new Document();

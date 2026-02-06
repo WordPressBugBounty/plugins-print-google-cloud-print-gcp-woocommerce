@@ -51,6 +51,7 @@ class Location
 		'headerSize' => 16,
 	];
 	public $users = [];
+	public $autoIncludeAllUsers = false;
 
 	public $language = 'global';
 	public $language_locale = 'en';
@@ -121,6 +122,7 @@ class Location
 
 			$this->printers = $data->printers ? explode('|', $data->printers) : [];
 			$this->users = $data->users ? array_map('intval', explode('|', $data->users)) : [];
+			$this->autoIncludeAllUsers = isset($data->auto_include_all_users) ? boolval($data->auto_include_all_users) : false;
 
 			$this->language        = $data->language;
 			$this->language_locale = $data->language_locale;
@@ -192,12 +194,13 @@ class Location
 			'options' => $wpdb->_real_escape(maybe_serialize($options)),
 			'printers' => implode('|', $this->printers),
 			'users' => implode('|', $this->users),
+			'auto_include_all_users' => $this->autoIncludeAllUsers,
 			'language' => $this->language,
 			'language_locale' => $this->language_locale,
 			'updated_at' => current_time('mysql'),
 			'updated_at_gmt' => current_time('mysql', 1),
 		];
-		$base_data_where = ['%s', '%d', '%d', '%s', '%s', '%s', '%s', '%s'];
+		$base_data_where = ['%s', '%d', '%d', '%s', '%s', '%s', '%d', '%s', '%s'];
 
 		$base_data = apply_filters('Zprint\setLocationDatabaseData', $base_data);
 
@@ -239,6 +242,7 @@ class Location
 			'margins' => $this->margins,
 			'printers' => $this->printers,
 			'users' => $this->users,
+			'autoIncludeAllUsers' => $this->autoIncludeAllUsers,
 			'language' => $this->language,
 			'language_locale' => $this->language_locale,
 			'shipping' => $this->shipping,

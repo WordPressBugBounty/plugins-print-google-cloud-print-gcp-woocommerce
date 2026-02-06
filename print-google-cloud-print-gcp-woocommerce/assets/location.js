@@ -110,4 +110,13 @@ jQuery(function($) {
 			$('#zp-return-address').hide();
 		}
 	});
+
+	$("#auto_include_all_users").on("change", function() {
+		if ($(this).is(":checked")) {
+			$("#users").attr("disabled", "disabled");
+			$("#users option").prop("selected", true);
+		} else {
+			$("#users").removeAttr("disabled");
+		}
+	}).trigger("change");
 });
