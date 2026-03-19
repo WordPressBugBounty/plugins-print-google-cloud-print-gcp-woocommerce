@@ -12,19 +12,30 @@ $setting_page
 	->setArgument('capability', User::PRINT_MANAGEMENT_CAP_KEY )
 	->setLabel('singular_name', __('Print Manager', 'Print-Google-Cloud-Print-GCP-WooCommerce'))
 	->scope(function (Page $setting_page) {
-		if ($setting_page->isRequested()) {
-			add_action('admin_enqueue_scripts', function () {
-				wp_enqueue_style('zprint_top_navbar_layout-style', plugins_url('assets/top-navbar-layout.css', PLUGIN_ROOT_FILE), [], PLUGIN_VERSION);
-				wp_enqueue_style('zprint-fa', plugins_url('assets/fa/app.css', PLUGIN_ROOT_FILE), [], PLUGIN_VERSION);
+		/* Enqueue styles using $hook_suffix — works reliably on multisite
+		   subdirectory installs where Page::isRequested() may fail due to
+		   home_url() path doubling. */
+		add_action('admin_enqueue_scripts', function ( $hook_suffix ) {
+			if ( false === strpos( $hook_suffix, 'zp_bce0c' ) ) {
+				return;
+			}
+			wp_enqueue_style('zprint_top_navbar_layout-style', plugins_url('assets/top-navbar-layout.css', PLUGIN_ROOT_FILE), [], PLUGIN_VERSION);
+			wp_enqueue_style('zprint-fa', plugins_url('assets/fa/app.css', PLUGIN_ROOT_FILE), [], PLUGIN_VERSION);
 
-				wp_enqueue_style(
-					'zprint_setting',
-					plugins_url('assets/setting.css', PLUGIN_ROOT_FILE),
-					[],
-					PLUGIN_VERSION
-				);
-			});
-		}
+			wp_enqueue_style(
+				'zprint_setting',
+				plugins_url('assets/setting.css', PLUGIN_ROOT_FILE),
+				[],
+				PLUGIN_VERSION
+			);
+
+			wp_enqueue_style(
+				'zprint-admin-modern',
+				plugins_url('assets/css/print-manager-admin.css', PLUGIN_ROOT_FILE),
+				['zprint_top_navbar_layout-style', 'zprint_setting'],
+				PLUGIN_VERSION
+			);
+		});
 
 		call_user_func(include_once 'general.php', $setting_page);
 		call_user_func(include_once 'printers.php', $setting_page);

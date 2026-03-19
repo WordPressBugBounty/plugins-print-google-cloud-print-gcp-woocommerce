@@ -139,6 +139,10 @@ class Admin
     {
         global $pagenow;
 
+        if ( is_multisite() && is_network_admin() ) {
+            return;
+        }
+
         if (
             isset($_GET['page']) &&
             'zp_bce0c' !== $_GET['page'] &&
@@ -175,62 +179,65 @@ class Admin
         }
 
         add_action('admin_notices', function () {
+            $settings_url = admin_url('admin.php?page=zp_bce0c&tab=bce0c_3676d');
             ?>
-							<div class="zprint-qnotice notice is-dismissible">
-								<div class="zprint-qnotice__header">
-									<span class="dashicons dashicons-megaphone"></span>
-										<h4>
+			<div class="zprint-qnotice notice is-dismissible">
+				<div class="zprint-qnotice__header">
+					<span class="zprint-qnotice__header-icon fal fa-print"></span>
+					<h4>
 						<?php echo esc_html__(
-          'You’re almost there. Easily set up BizPrint to enable printing tools for WooCommerce',
-          'Print-Google-Cloud-Print-GCP-WooCommerce'
-      ); ?>
-										</h4>
-								</div>
-								<div class="zprint-qnotice__body">
-									<div class="zprint-qnotice__img">
-										<img
-											src="<?php echo Plugin::getUrl('assets/quick-start-notice.png'); ?>"
-											alt="<?php echo esc_html__('Quick start logo'); ?>"
-										>
-									</div>
-									<div class="zprint-qnotice__content">
-										<h5>
-									<?php echo esc_html__(
-             'Finish Setup to Start Printing Orders From WooCommerce and Point of Sale Orders',
-             'Print-Google-Cloud-Print-GCP-WooCommerce'
-         ); ?>
-										</h5>
-										<p>
-						<?php echo esc_html__(
-          'Save time, money and the hassle of third-party plugins with our go-to print solution for the WooCommerce community that is reliable and scalable. Bring your current printer. Works on all major brands.',
-          'Print-Google-Cloud-Print-GCP-WooCommerce'
-      ); ?>
-										</p>
-										<p>
-						<?php echo esc_html__(
-          '✅ You’re Almost Ready to Print Automatically. Follow our Quick Start Guide to connect your printer and start printing receipts and orders from WooCommerce.',
-          'Print-Google-Cloud-Print-GCP-WooCommerce'
-      ); ?>
-										</p>
-										<p>
-											<a class="zprint-qnotice__btn" href="https://getbizprint.com/quick-start-guide/" target="_blank">
-						  <?php echo esc_html__(
-            'Launch Quick Start Guide',
-            'Print-Google-Cloud-Print-GCP-WooCommerce'
-        ); ?>
-											</a>
-											<br class="zprint-qnotice__br-after-btn">
-											<a class="zprint-qnotice__link" href="/wp-admin/admin.php?page=zp_bce0c&tab=bce0c_3676d">
-												Or go to print settings<span class="fas fa-arrow-right"></span>
-											</a>
-											<a class="zprint-qnotice__link" href="https://bizswoop.atlassian.net/servicedesk/customer/portal/4/group/4/create/10039" target="_blank">
-												Get Support<span class="fas fa-life-ring"></span>
-											</a>
-										</p>
-									</div>
-								</div>
-							</div>
-			    <?php
+							'You\'re almost there. Set up BizPrint to start printing automatically',
+							'Print-Google-Cloud-Print-GCP-WooCommerce'
+						); ?>
+					</h4>
+				</div>
+				<div class="zprint-qnotice__body">
+					<div class="zprint-qnotice__img">
+						<img
+							src="<?php echo Plugin::getUrl('assets/quick-start-notice.png'); ?>"
+							alt="<?php echo esc_html__('BizPrint setup illustration', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>"
+						>
+					</div>
+					<div class="zprint-qnotice__content">
+						<h5>
+							<?php echo esc_html__(
+								'Finish Setup to Start Printing Automatically',
+								'Print-Google-Cloud-Print-GCP-WooCommerce'
+							); ?>
+						</h5>
+						<p>
+							<?php echo esc_html__(
+								'Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands.',
+								'Print-Google-Cloud-Print-GCP-WooCommerce'
+							); ?>
+						</p>
+						<p class="zprint-qnotice__checklist">
+							<span class="zprint-qnotice__check fal fa-check-circle"></span>
+							<?php echo esc_html__(
+								'You\'re almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders.',
+								'Print-Google-Cloud-Print-GCP-WooCommerce'
+							); ?>
+						</p>
+						<div class="zprint-qnotice__actions">
+							<a class="zprint-qnotice__btn" href="https://getbizprint.com/quick-start-guide/" target="_blank">
+								<?php echo esc_html__(
+									'Launch Quick Start Guide',
+									'Print-Google-Cloud-Print-GCP-WooCommerce'
+								); ?>
+							</a>
+							<a class="zprint-qnotice__link" href="<?php echo esc_url( $settings_url ); ?>">
+								<?php echo esc_html__('Go to print settings', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+								<span class="fas fa-arrow-right"></span>
+							</a>
+							<a class="zprint-qnotice__link" href="https://bizswoop.atlassian.net/servicedesk/customer/portal/4/group/4/create/10039" target="_blank">
+								<?php echo esc_html__('Get Support', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+								<span class="fas fa-life-ring"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php
         });
     }
 }

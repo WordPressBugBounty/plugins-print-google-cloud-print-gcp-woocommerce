@@ -19,7 +19,10 @@ class Layout
 
 	public function pageHeader()
 	{
-		if (!self::$page->isRequested()) {
+		/* Use $_GET['page'] check as primary — Page::isRequested() can fail
+		   on multisite subdirectory installs due to home_url() path doubling. */
+		$on_plugin_page = isset( $_GET['page'] ) && 'zp_bce0c' === $_GET['page'];
+		if ( ! $on_plugin_page && ! self::$page->isRequested() ) {
 			return;
 		} ?>
 				<div class="zprint-layout-wrapper">

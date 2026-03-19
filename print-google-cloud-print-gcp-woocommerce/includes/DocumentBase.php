@@ -18,6 +18,16 @@ abstract class DocumentBase
 
 	public static function template()
 	{
+		if (!empty($_GET['zprint_action']) && $_GET['zprint_action'] === 'drawer_kick') {
+			if (!Client::checkGetAccess()) {
+				echo 'Error: No Access';
+				die(401);
+			}
+			header('Content-Type: text/plain; charset=binary');
+			echo "\x1B\x70\x00\x19\x19";
+			exit();
+		}
+
 		if (empty($_GET['zprint_location']) || empty($_GET['zprint_order'])) {
 			return;
 		}

@@ -24,6 +24,9 @@ class POS
 		add_filter('pre_option_zprint_print_pos_order_only', function () {
 			return Printer::isEnabledPrinting(Printer::ORDER_ONLY_PRINT) ? 'yes' : 'no';
 		});
+		add_filter('pre_option_zprint_auto_print_statuses', function () {
+			return wp_json_encode(Order::getValidOrderStatusForWebPrinting());
+		});
 	}
 
 	/**

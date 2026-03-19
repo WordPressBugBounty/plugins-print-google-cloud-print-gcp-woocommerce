@@ -32,9 +32,10 @@ class Tab
 						<td>
 							<textarea
 								id="zprint-debug-remote-printers-output"
+								class="pm-debug-output"
 								rows="5"
-								style="resize: none; width: 100%; text-align: left"
 								readonly
+								aria-label="Remote printers response"
 							></textarea>
 						</td>
 					</tr>
@@ -75,9 +76,10 @@ class Tab
 						<td>
 							<textarea
 								id="zprint-debug-print-request-output"
+								class="pm-debug-output"
 								rows="5"
-								style="resize: none; width: 100%; text-align: left"
 								readonly
+								aria-label="Print request response"
 							></textarea>
 						</td>
 					</tr>

@@ -43,7 +43,17 @@ return function (Page $setting_page) {
 			<?php }
 		});
 
-	if ($setting_page->isRequested($locations)) {
+	/* Always show the "Add new" button in the tab bar — encourages adding printers from any tab */
+	$setting_page
+		->setArgument(
+			'new_link',
+			'<a href="' . add_query_arg('id', 'new', $setting_page->getUrl($locations)) . '" class="alignright page-title-action">' . __('Add new', 'Print-Google-Cloud-Print-GCP-WooCommerce') . '</a>'
+		);
+
+	$on_printers_tab = ( isset( $_GET['tab'] ) && Page::getName( $setting_page, $locations ) === $_GET['tab'] )
+		|| $setting_page->isRequested( $locations );
+
+	if ($on_printers_tab) {
 		if (!session_id()) {
 			session_start(['read_and_close' => true]);
 		}
@@ -80,12 +90,6 @@ return function (Page $setting_page) {
 				</div>
 			<?php });
 		}
-
-		$setting_page
-			->setArgument(
-				'new_link',
-				'<a href="' . add_query_arg('id', 'new', $setting_page->getUrl($locations)) . '" class="alignright page-title-action">' . __('Add new', 'Print-Google-Cloud-Print-GCP-WooCommerce') . '</a>'
-			);
 	};
 };
 

@@ -44,7 +44,7 @@ class Notice {
 			'admin_notices',
 			function () use ( $message, $level ): void {
 				?>
-				<div class="notice notice-<?php echo esc_attr( $level ); ?> is-dismissible" style="padding-top: 10px; padding-bottom: 10px;">
+				<div class="notice notice-<?php echo esc_attr( $level ); ?> is-dismissible pm-notice-padded">
 					<?php echo wp_kses_post( $message ); ?>
 				</div>
 				<?php

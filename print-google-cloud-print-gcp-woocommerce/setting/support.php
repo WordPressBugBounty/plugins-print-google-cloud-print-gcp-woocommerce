@@ -156,10 +156,10 @@ return function (Page $setting_page) {
 				->setType(Input::TYPE_INFO)
 				->setArgument('content', function () use ($stats) {
 					$html = '<div class="zprint-queue-stats">';
-					$html .= sprintf('<span class="stat"><strong>%s:</strong> %d</span> | ', __('Pending', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $stats['pending']);
-					$html .= sprintf('<span class="stat"><strong>%s:</strong> %d</span> | ', __('Processing', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $stats['processing']);
-					$html .= sprintf('<span class="stat"><strong>%s:</strong> %d</span> | ', __('Completed', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $stats['completed']);
-					$html .= sprintf('<span class="stat" style="color: %s;"><strong>%s:</strong> %d</span>', $stats['failed'] > 0 ? '#dc3232' : 'inherit', __('Failed', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $stats['failed']);
+					$html .= sprintf('<span class="stat"><strong>%s:</strong> %d</span>', __('Pending', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $stats['pending']);
+					$html .= sprintf('<span class="stat"><strong>%s:</strong> %d</span>', __('Processing', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $stats['processing']);
+					$html .= sprintf('<span class="stat"><strong>%s:</strong> %d</span>', __('Completed', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $stats['completed']);
+					$html .= sprintf('<span class="stat%s"><strong>%s:</strong> %d</span>', $stats['failed'] > 0 ? ' pm-text-error' : '', __('Failed', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $stats['failed']);
 					$html .= '</div>';
 					return $html;
 				})

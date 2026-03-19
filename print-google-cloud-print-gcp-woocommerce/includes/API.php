@@ -2,6 +2,7 @@
 
 namespace Zprint;
 
+use Zprint\API\AutoPrintSettings;
 use Zprint\API\Webhook;
 
 class API
@@ -16,5 +17,6 @@ class API
 	public function init()
 	{
 		new Webhook(self::API_NAMESPACE . '/v1');
+		new AutoPrintSettings(self::API_NAMESPACE . '/v1');
 	}
 }

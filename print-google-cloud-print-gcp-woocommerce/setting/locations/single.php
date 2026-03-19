@@ -29,7 +29,7 @@ return function (Location $location, $page, Page $setting_page) {
 	$printers = Printer::getPrinters();
 
 	$languages = array(
-		'global' => __('WordPress Site Default Language Setting', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
+		'global' => __('Site Default Language Setting', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
 		'user' => __('User Profile Language Setting', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
 		'custom' => __('Select a Language', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
 	);
@@ -159,7 +159,7 @@ return function (Location $location, $page, Page $setting_page) {
 					<label for="template"><?php _e('Template', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?></label>
 					<div class="purpose_custom">
 						<?php _e('Need Custom Templates?', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
-						<a class="button" href="https://getbizprint.com/marketplace/">
+						<a class="button" href="https://getbizprint.com/marketplace/" target="_blank">
 							<?php _e('Buy', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
 						</a>
 					</div>
@@ -287,7 +287,7 @@ return function (Location $location, $page, Page $setting_page) {
 				</p>
                 <?php do_action('Zprint\setting\locations\single\templateBoxEnd', $location); ?>
 				<p class="text-centered">
-					<a href="https://getbizprint.com/documentation/developer/">
+					<a href="https://getbizprint.com/documentation/developer/" target="_blank">
 						<?php _e('Developer Documentation', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
 					</a>
 				</p>
@@ -322,15 +322,6 @@ return function (Location $location, $page, Page $setting_page) {
 						};
 					});
 				</script>
-				<style>
-					#logo_preview, #logo_src {
-						display: none;
-					}
-
-					#logo_preview[src], #logo_src[value] {
-						display: inline-block;
-					}
-				</style>
 				<div>
 					<?php
 					$logo = $location->appearance['logo'];

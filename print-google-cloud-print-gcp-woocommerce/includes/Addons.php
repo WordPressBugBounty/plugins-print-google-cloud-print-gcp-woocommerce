@@ -28,7 +28,7 @@ class Addons
 						<span class="fad fa-puzzle" style="--fa-primary-color: #e3dcfa;--fa-secondary-color: #9b86e1;"></span>
 					</div>
 					<p class="zprint-marketplace__subtitle">
-			  		<?php echo esc_html__('Extensions for Popular WooCommerce Plugins', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
+			  		<?php echo esc_html__('Extensions for Popular Plugins', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>
 					</p>
 					<h3 class="zprint-marketplace__title">
 			  		<?php echo esc_html__('Template Extensions', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>

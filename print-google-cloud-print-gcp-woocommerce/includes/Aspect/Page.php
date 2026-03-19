@@ -166,7 +166,7 @@ class Page extends Base
     public function renderPage()
     {
     	?>
-        <div class="wrap">
+        <div class="wrap print-manager-admin">
             <h2><?= get_admin_page_title() ?></h2>
 
             <?php settings_errors(); ?>

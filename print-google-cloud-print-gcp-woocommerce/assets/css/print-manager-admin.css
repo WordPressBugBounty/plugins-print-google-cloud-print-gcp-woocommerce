@@ -1,0 +1,1402 @@
+/**
+ * Print Manager — Modern Admin Stylesheet
+ *
+ * All rules scoped under .print-manager-admin to prevent leakage.
+ * This file overrides legacy styles progressively; original CSS files
+ * remain intact and loaded as dependencies.
+ *
+ * Design tokens are defined as CSS custom properties on the wrapper class
+ * so every value can be changed in one place.
+ */
+
+/* ==========================================================================
+   1. DESIGN TOKENS
+   ========================================================================== */
+
+.print-manager-admin {
+	/* Brand */
+	--pm-brand: #303030;
+	--pm-brand-light: #f0f0f0;
+	--pm-brand-hover: #1a1a1a;
+	--pm-brand-rgb: 48, 48, 48;
+
+	/* Text */
+	--pm-text: #1d2327;
+	--pm-text-muted: #646970;
+	--pm-text-subtle: #8c8f94;
+
+	/* Borders */
+	--pm-border: #c3c4c7;
+	--pm-border-light: #dcdcde;
+
+	/* Backgrounds */
+	--pm-bg: #f0f0f1;
+	--pm-bg-white: #ffffff;
+
+	/* Status */
+	--pm-success: #00a32a;
+	--pm-success-bg: #e8f5ee;
+	--pm-warning: #dba617;
+	--pm-warning-bg: #fcf9e8;
+	--pm-error: #d63638;
+	--pm-error-bg: #fcf0f1;
+	--pm-info: #2271b1;
+	--pm-info-bg: #f0f6fc;
+
+	/* Spacing */
+	--pm-space-1: 4px;
+	--pm-space-2: 8px;
+	--pm-space-3: 12px;
+	--pm-space-4: 16px;
+	--pm-space-5: 20px;
+	--pm-space-6: 24px;
+	--pm-space-8: 32px;
+
+	/* Radius */
+	--pm-radius-sm: 2px;
+	--pm-radius: 4px;
+	--pm-radius-md: 6px;
+	--pm-radius-lg: 8px;
+
+	/* Shadows */
+	--pm-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+	--pm-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	--pm-shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+	/* Typography */
+	--pm-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--pm-text-xs: 11px;
+	--pm-text-sm: 12px;
+	--pm-text-base: 13px;
+	--pm-text-md: 14px;
+	--pm-text-lg: 16px;
+	--pm-text-xl: 20px;
+	--pm-text-2xl: 23px;
+}
+
+
+/* ==========================================================================
+   2. HEADER — LOGO + TITLE BAR (unified with tabs below)
+   NOTE: .zprint-layout-wrapper is OUTSIDE .print-manager-admin in the DOM,
+   so CSS custom properties from Section 1 are NOT available here.
+   All values must be hardcoded.
+   ========================================================================== */
+
+/* Remove WP admin gutters so the full page goes edge-to-edge.
+   This stylesheet only loads on the plugin settings page, so other admin
+   pages are unaffected. */
+#wpcontent {
+	padding: 0 !important;
+}
+
+/* Close the gap above the header caused by WP screen-meta elements */
+#screen-meta,
+#screen-meta-links {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Make the wrapper auto-height, flush to top */
+.zprint-layout-wrapper {
+	height: auto !important;
+	margin: 0;
+}
+
+/* Static bar — no more position:fixed; no bottom border (tabs provide it) */
+.zprint-layout-wrapper .zprint-layout {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	position: static !important;
+	width: 100% !important;
+	left: auto !important;
+	top: auto !important;
+	padding: 20px 20px 12px 20px;
+	border-bottom: none;
+	box-shadow: none;
+	background: #ffffff;
+}
+
+/* Logo and title row */
+.zprint-layout-wrapper .zprint-base {
+	height: auto;
+	align-items: center;
+}
+
+.zprint-layout-wrapper .zprint-logo {
+	height: 36px;
+}
+
+.zprint-layout-wrapper .zprint-title {
+	font-size: 24px;
+	font-weight: 600;
+	color: #1d2327;
+	margin-left: 8px;
+}
+
+.zprint-layout-wrapper .zprint-title a {
+	color: #1d2327;
+	text-decoration: none;
+}
+
+.zprint-layout-wrapper .zprint-title a:hover {
+	color: #1d2327;
+	text-decoration: none;
+}
+
+/* Hide the slogan — logo + title is enough */
+.zprint-layout-wrapper .zprint-slogan {
+	display: none;
+}
+
+/* Hide the icon navigation — tabs below replace it */
+.zprint-layout-wrapper .zprint-navigation {
+	display: none !important;
+}
+
+
+/* ==========================================================================
+   3. TAB NAVIGATION — WooCommerce-style underline tabs
+   ========================================================================== */
+
+/* Remove all WP .wrap margins — #wpcontent padding already zeroed */
+.print-manager-admin {
+	margin: 0 !important;
+}
+
+/* Add horizontal spacing to all content EXCEPT the full-width tab bar */
+.print-manager-admin > :not(.nav-tab-wrapper) {
+	margin-left: var(--pm-space-5);
+	margin-right: var(--pm-space-5);
+}
+
+/* Hide the redundant "Print Manager" page title */
+.print-manager-admin > h2:first-child {
+	display: none;
+}
+
+/* Tab wrapper — full-width background, flush to edges */
+.print-manager-admin .nav-tab-wrapper {
+	display: flex;
+	align-items: stretch;
+	gap: 0;
+	margin: 0;
+	padding: 0 var(--pm-space-5);
+	background: var(--pm-bg-white);
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid var(--pm-border-light);
+}
+
+/* Individual tab — clean text link */
+.print-manager-admin .nav-tab {
+	display: inline-flex;
+	align-items: center;
+	padding: var(--pm-space-3) var(--pm-space-4);
+	margin: 0;
+	font-size: var(--pm-text-md);
+	font-weight: 400;
+	color: var(--pm-text-muted);
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid transparent;
+	border-radius: 0;
+	cursor: pointer;
+	transition: color 0.15s ease, border-color 0.15s ease;
+	white-space: nowrap;
+}
+
+.print-manager-admin .nav-tab:hover {
+	color: var(--pm-text);
+	background: transparent;
+	border-color: transparent;
+	border-bottom-color: var(--pm-border);
+}
+
+.print-manager-admin .nav-tab:focus-visible {
+	outline: 2px solid var(--pm-brand);
+	outline-offset: -2px;
+	border-radius: 0;
+}
+
+/* Active tab — bold text with dark underline */
+.print-manager-admin .nav-tab-active,
+.print-manager-admin .nav-tab-active:hover,
+.print-manager-admin .nav-tab-active:focus {
+	color: var(--pm-text);
+	font-weight: 600;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid var(--pm-text);
+}
+
+/* "Add new" button in the tab bar (Printers tab) */
+.print-manager-admin .nav-tab-wrapper .page-title-action {
+	align-self: center;
+	margin-left: auto;
+	padding: var(--pm-space-1) var(--pm-space-4);
+	font-size: var(--pm-text-sm);
+	font-weight: 500;
+	color: var(--pm-brand);
+	border: 1px solid var(--pm-brand);
+	border-radius: var(--pm-radius);
+	background: transparent;
+	text-decoration: none;
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.print-manager-admin .nav-tab-wrapper .page-title-action:hover {
+	color: var(--pm-bg-white);
+	background: var(--pm-brand);
+	border-color: var(--pm-brand);
+}
+
+
+/* ==========================================================================
+   4. GENERAL TAB — DASHBOARD CARDS
+   ========================================================================== */
+
+.print-manager-admin .zprint-connection-box {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: var(--pm-space-4);
+	margin: var(--pm-space-5) var(--pm-space-5) var(--pm-space-8);
+	padding: 0;
+	background: transparent;
+	border: 0;
+}
+
+.print-manager-admin .zprint-connection-card {
+	flex: none;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: var(--pm-space-4);
+	margin: 0;
+	padding: var(--pm-space-5);
+	text-decoration: none;
+	color: var(--pm-text);
+	background: var(--pm-bg-white);
+	border: 1px solid var(--pm-border-light);
+	border-radius: var(--pm-radius-lg);
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+	overflow: hidden;
+}
+
+.print-manager-admin .zprint-connection-card:hover {
+	color: var(--pm-text);
+	border-color: var(--pm-border);
+	box-shadow: var(--pm-shadow);
+}
+
+.print-manager-admin .zprint-connection-card:focus-visible {
+	outline: 2px solid var(--pm-brand);
+	outline-offset: 2px;
+}
+
+/* Header becomes inline icon + title group */
+.print-manager-admin .zprint-connection-card__header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: var(--pm-space-3);
+	padding: 0;
+	background: none;
+	border-bottom: none;
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.print-manager-admin .zprint-connection-card__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 0;
+	font-size: 18px;
+	color: var(--pm-text);
+	background: var(--pm-bg);
+	border-radius: var(--pm-radius-md);
+	box-shadow: none;
+}
+
+.print-manager-admin .zprint-connection-card__title {
+	font-size: var(--pm-text-md);
+	font-weight: 600;
+	color: var(--pm-text);
+}
+
+/* Action link — right-aligned arrow */
+.print-manager-admin .zprint-connection-card__btn {
+	display: flex;
+	align-items: center;
+	gap: var(--pm-space-1);
+	flex-shrink: 0;
+	padding: 0;
+	margin: 0;
+	font-size: var(--pm-text-sm);
+	font-weight: 500;
+	color: var(--pm-text-muted);
+	text-align: right;
+	transition: color 0.15s ease;
+}
+
+.print-manager-admin .zprint-connection-card__btn::after {
+	content: "\2192";
+	font-size: var(--pm-text-md);
+	transition: transform 0.15s ease;
+}
+
+.print-manager-admin .zprint-connection-card:hover .zprint-connection-card__btn {
+	color: var(--pm-text);
+	background: none;
+}
+
+.print-manager-admin .zprint-connection-card:hover .zprint-connection-card__btn::after {
+	transform: translateX(3px);
+}
+
+
+/* ==========================================================================
+   5. SETTINGS FORM TABLES
+   ========================================================================== */
+
+/* --- Card container for form content (General tab, etc.) ---
+   Wraps the entire form in a single card. Section headings act as
+   dividers within the card. No PHP changes needed. */
+
+.print-manager-admin form {
+	background: var(--pm-bg-white);
+	border: 1px solid var(--pm-border-light);
+	border-radius: var(--pm-radius-md);
+	padding: 0 var(--pm-space-5);
+	margin-top: var(--pm-space-5);
+}
+
+/* Settings tab already uses .zprint-settings-section-wrapper cards inside
+   the form — reset the form card so it doesn't double up */
+.print-manager-admin form:has(.zprint-settings-section-wrapper) {
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	margin-top: 0;
+}
+
+/* Section headings — dividers within the card */
+.print-manager-admin form > h2 {
+	margin: 0 calc(-1 * var(--pm-space-5));
+	padding: var(--pm-space-4) var(--pm-space-5);
+	font-size: var(--pm-text-lg);
+	font-weight: 600;
+	color: var(--pm-text);
+	background: linear-gradient(135deg, #f8f8f8 0%, #f5f5f5 100%);
+	border-bottom: 1px solid var(--pm-border-light);
+}
+
+/* First heading — flush to top of card */
+.print-manager-admin form > h2:first-of-type {
+	margin-top: 0;
+	border-radius: var(--pm-radius-md) var(--pm-radius-md) 0 0;
+}
+
+/* Hide empty section headings */
+.print-manager-admin form > h2:empty {
+	display: none;
+}
+
+/* Form tables inside the card */
+.print-manager-admin form > .form-table {
+	margin-top: 0;
+}
+
+.print-manager-admin .form-table th {
+	font-size: var(--pm-text-md);
+	font-weight: 600;
+	color: var(--pm-text);
+	padding-top: var(--pm-space-5);
+	padding-bottom: var(--pm-space-5);
+	vertical-align: top;
+}
+
+.print-manager-admin .form-table td {
+	padding-top: var(--pm-space-5);
+	padding-bottom: var(--pm-space-5);
+}
+
+.print-manager-admin .form-table tr {
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.print-manager-admin .form-table tr:last-child {
+	border-bottom: 0;
+}
+
+.print-manager-admin .form-table td p.description {
+	font-size: var(--pm-text-sm);
+	color: var(--pm-text-muted);
+	margin-top: var(--pm-space-2);
+	line-height: 1.5;
+}
+
+.print-manager-admin .form-table td label {
+	font-size: var(--pm-text-base);
+	line-height: 1.6;
+}
+
+/* Text & password inputs — modern field styling */
+.print-manager-admin .form-table input[type="text"].large-text,
+.print-manager-admin .form-table input[type="password"].large-text,
+.print-manager-admin .form-table input[type="text"].code {
+	border: 1px solid var(--pm-border);
+	border-radius: var(--pm-radius-md);
+	padding: var(--pm-space-2) var(--pm-space-3);
+	font-size: var(--pm-text-md);
+	line-height: 1.5;
+	background: var(--pm-bg-white);
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.print-manager-admin .form-table input[type="text"].large-text:focus,
+.print-manager-admin .form-table input[type="password"].large-text:focus,
+.print-manager-admin .form-table input[type="text"].code:focus {
+	border-color: var(--pm-brand);
+	box-shadow: 0 0 0 2px rgba(var(--pm-brand-rgb), 0.15);
+	outline: none;
+}
+
+/* Number inputs — compact and modern */
+.print-manager-admin .form-table input[type="number"].code {
+	font-family: var(--pm-font);
+	font-size: var(--pm-text-md);
+	border: 1px solid var(--pm-border);
+	border-radius: var(--pm-radius-md);
+	padding: var(--pm-space-2) var(--pm-space-3);
+	min-width: 90px;
+	background: var(--pm-bg-white);
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.print-manager-admin .form-table input[type="number"].code:focus {
+	border-color: var(--pm-brand);
+	box-shadow: 0 0 0 2px rgba(var(--pm-brand-rgb), 0.15);
+	outline: none;
+}
+
+/* Checkbox styling — green filled box when checked, no checkmark icon */
+.print-manager-admin input[type="checkbox"] {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 18px;
+	height: 18px;
+	min-width: 18px;
+	border: 2px solid var(--pm-border);
+	border-radius: var(--pm-radius-sm);
+	background: var(--pm-bg-white);
+	cursor: pointer;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+	transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.print-manager-admin input[type="checkbox"]:checked {
+	background-color: var(--pm-brand);
+	border-color: var(--pm-brand);
+}
+
+/* Remove any browser/WP default checkmark */
+.print-manager-admin input[type="checkbox"]::before {
+	content: none !important;
+}
+
+.print-manager-admin input[type="checkbox"]:focus {
+	outline: 2px solid rgba(var(--pm-brand-rgb), 0.3);
+	outline-offset: 2px;
+}
+
+/* Checkbox group — each label is a selectable row */
+.print-manager-admin .form-table td > label {
+	display: flex;
+	align-items: center;
+	gap: var(--pm-space-2);
+	padding: var(--pm-space-2) var(--pm-space-3);
+	border-radius: var(--pm-radius);
+	cursor: pointer;
+	transition: background-color 0.12s ease;
+}
+
+.print-manager-admin .form-table td > label:hover {
+	background-color: var(--pm-brand-light);
+}
+
+/* Select dropdowns */
+.print-manager-admin .form-table select {
+	border: 1px solid var(--pm-border);
+	border-radius: var(--pm-radius-md);
+	padding: var(--pm-space-2) var(--pm-space-3);
+	font-size: var(--pm-text-base);
+	background-color: var(--pm-bg-white);
+	min-height: 36px;
+	cursor: pointer;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.print-manager-admin .form-table select:focus {
+	border-color: var(--pm-brand);
+	box-shadow: 0 0 0 2px rgba(var(--pm-brand-rgb), 0.15);
+	outline: none;
+}
+
+/* Settings section wrappers — card style */
+.print-manager-admin .zprint-settings-section-wrapper {
+	margin-top: var(--pm-space-6);
+	padding: 0 var(--pm-space-5) var(--pm-space-4);
+	background: var(--pm-bg-white);
+	border: 1px solid var(--pm-border-light);
+	border-radius: var(--pm-radius-md);
+	overflow: hidden;
+}
+
+.print-manager-admin .zprint-settings-section-wrapper + .zprint-settings-section-wrapper {
+	margin-top: var(--pm-space-5);
+}
+
+.print-manager-admin .zprint-settings-section-wrapper h2 {
+	margin: 0 calc(-1 * var(--pm-space-5));
+	padding: var(--pm-space-4) var(--pm-space-5);
+	font-size: var(--pm-text-lg);
+	font-weight: 600;
+	color: var(--pm-text);
+	background: linear-gradient(135deg, #f8f8f8 0%, #f5f5f5 100%);
+	border-bottom: 1px solid var(--pm-border-light);
+}
+
+.print-manager-admin .zprint-settings-section-wrapper .form-table {
+	margin-top: 0;
+	padding: 0;
+}
+
+.print-manager-admin .zprint-settings-section-wrapper .form-table tr:first-child th,
+.print-manager-admin .zprint-settings-section-wrapper .form-table tr:first-child td {
+	padding-top: var(--pm-space-4);
+}
+
+/* Section wrapper with no title (empty box) */
+.print-manager-admin .zprint-settings-section-wrapper:not(:has(h2:not(:empty))) {
+	border-left-color: var(--pm-border-light);
+}
+
+/* Setting title with link */
+.print-manager-admin .zprint-setting-title {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: var(--pm-space-3);
+	margin-top: var(--pm-space-6);
+}
+
+.print-manager-admin .zprint-setting-title__text {
+	display: inline-block;
+	font-size: var(--pm-text-lg);
+	font-weight: 600;
+	margin-right: 0;
+	width: auto;
+}
+
+.print-manager-admin .zprint-setting-title__link {
+	font-size: var(--pm-text-sm);
+	color: var(--pm-brand);
+}
+
+.print-manager-admin .zprint-setting-title__link:hover {
+	color: var(--pm-brand-hover);
+}
+
+.print-manager-admin .zprint-setting-title__link span {
+	font-size: var(--pm-text-xs);
+	margin-left: var(--pm-space-1);
+}
+
+
+/* ==========================================================================
+   6. LOCATIONS LIST TABLE
+   ========================================================================== */
+
+.print-manager-admin .zprint-list-view {
+	overflow-x: auto;
+	margin-top: var(--pm-space-4);
+	border-radius: var(--pm-radius-md);
+	border: 1px solid var(--pm-border-light);
+	box-shadow: var(--pm-shadow-sm);
+}
+
+.print-manager-admin .zprint-list {
+	margin-top: 0;
+	min-width: 900px;
+	border: 0;
+}
+
+.print-manager-admin .zprint-list thead th,
+.print-manager-admin .zprint-list tbody th {
+	font-size: var(--pm-text-sm);
+	font-weight: 600;
+	color: var(--pm-text);
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	padding: var(--pm-space-3) var(--pm-space-4);
+	background: var(--pm-bg);
+	border-bottom: 1px solid var(--pm-border-light);
+}
+
+/* Override the first row acting as header (since it uses tr > th) */
+.print-manager-admin .zprint-list tbody tr:first-child th {
+	font-size: var(--pm-text-sm);
+	font-weight: 600;
+	color: var(--pm-text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	background: var(--pm-bg);
+}
+
+.print-manager-admin .zprint-list td {
+	line-height: 1.6;
+	padding: var(--pm-space-3) var(--pm-space-4);
+	font-size: var(--pm-text-base);
+	color: var(--pm-text);
+	vertical-align: middle;
+}
+
+.print-manager-admin .zprint-list tr:hover td {
+	background-color: #f6f7f7;
+}
+
+.print-manager-admin .zprint-list .list {
+	margin: 0;
+	padding: 0;
+	position: static;
+	max-height: none;
+	line-height: 1.6;
+	overflow: visible;
+	background: transparent;
+	text-overflow: ellipsis;
+}
+
+.print-manager-admin .zprint-list tr:nth-child(2n+1) .list {
+	background: transparent;
+}
+
+.print-manager-admin .zprint-list .list li {
+	display: inline;
+	word-wrap: break-word;
+}
+
+.print-manager-admin .zprint-list .dashicons {
+	margin-top: 0;
+	vertical-align: middle;
+}
+
+/* Status badges for location table */
+.print-manager-admin .pm-badge {
+	display: inline-flex;
+	align-items: center;
+	padding: 2px var(--pm-space-2);
+	font-size: var(--pm-text-xs);
+	font-weight: 600;
+	line-height: 1.6;
+	border-radius: var(--pm-radius-sm);
+	white-space: nowrap;
+}
+
+.print-manager-admin .pm-badge-success {
+	background: var(--pm-success-bg);
+	color: var(--pm-success);
+}
+
+.print-manager-admin .pm-badge-muted {
+	background: var(--pm-bg);
+	color: var(--pm-text-subtle);
+}
+
+.print-manager-admin .pm-badge-error {
+	background: var(--pm-error-bg);
+	color: var(--pm-error);
+}
+
+.print-manager-admin .pm-badge-warning {
+	background: var(--pm-warning-bg);
+	color: #996800;
+}
+
+.print-manager-admin .pm-badge-info {
+	background: var(--pm-info-bg);
+	color: var(--pm-info);
+}
+
+/* Status column styling */
+.print-manager-admin .zprint-list .status {
+	width: 110px;
+	text-align: center;
+}
+
+/* Empty state */
+.print-manager-admin .zprint-empty-list {
+	margin-top: var(--pm-space-8);
+	text-align: center;
+	padding-bottom: var(--pm-space-8);
+}
+
+.print-manager-admin .zprint-empty-list__icon {
+	font-size: 120px;
+	color: var(--pm-border-light);
+}
+
+.print-manager-admin .zprint-empty-list__notice {
+	margin: var(--pm-space-6) 0 var(--pm-space-5);
+	font-size: var(--pm-text-lg);
+	color: var(--pm-text-muted);
+	line-height: 1.6;
+}
+
+.print-manager-admin .zprint-empty-list__notice span {
+	font-size: var(--pm-text-sm);
+}
+
+.print-manager-admin .zprint-empty-list__btn {
+	display: inline-block;
+	padding: var(--pm-space-3) var(--pm-space-6);
+	font-size: var(--pm-text-md);
+	font-weight: 500;
+	color: var(--pm-bg-white);
+	text-decoration: none;
+	background: var(--pm-brand);
+	border-radius: var(--pm-radius);
+	transition: background-color 0.15s ease;
+}
+
+.print-manager-admin .zprint-empty-list__btn:hover,
+.print-manager-admin .zprint-empty-list__btn:focus,
+.print-manager-admin .zprint-empty-list__btn:active {
+	color: var(--pm-bg-white);
+	background: var(--pm-brand-hover);
+	box-shadow: none;
+}
+
+.print-manager-admin .zprint-empty-list__btn:focus-visible {
+	outline: 2px solid var(--pm-brand);
+	outline-offset: 2px;
+}
+
+.print-manager-admin .zprint-empty-list__link {
+	font-size: var(--pm-text-md);
+	color: var(--pm-brand);
+}
+
+.print-manager-admin .zprint-empty-list__link:hover {
+	color: var(--pm-brand-hover);
+}
+
+
+/* ==========================================================================
+   7. LOCATION EDIT FORM — CARD LAYOUT
+   ========================================================================== */
+
+.print-manager-admin .form_wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--pm-space-4);
+	align-items: start;
+	margin-top: var(--pm-space-4);
+}
+
+.print-manager-admin .form_wrapper > br,
+.print-manager-admin .form_wrapper > hr {
+	display: none;
+}
+
+.print-manager-admin .form_wrapper > h3 {
+	grid-column: 1 / -1;
+	margin: var(--pm-space-2) 0 0;
+	font-size: var(--pm-text-lg);
+	font-weight: 600;
+	color: var(--pm-text);
+	padding-bottom: var(--pm-space-2);
+	border-bottom: 1px solid var(--pm-border-light);
+}
+
+.print-manager-admin .box {
+	float: none;
+	width: auto;
+	margin: 0;
+	padding: var(--pm-space-5);
+	background: var(--pm-bg-white);
+	border: 1px solid var(--pm-border-light);
+	border-radius: var(--pm-radius-md);
+	box-shadow: var(--pm-shadow-sm);
+	transition: box-shadow 0.2s ease;
+}
+
+.print-manager-admin .box:hover {
+	box-shadow: var(--pm-shadow);
+}
+
+.print-manager-admin .box.wide {
+	grid-column: 1 / -1;
+	width: auto;
+}
+
+@media (max-width: 782px) {
+	.print-manager-admin .form_wrapper {
+		grid-template-columns: 1fr;
+	}
+}
+
+.print-manager-admin .box h3 {
+	margin: 0 0 var(--pm-space-3);
+	padding: 0 0 var(--pm-space-3);
+	min-height: auto;
+	line-height: 1.4;
+	font-size: var(--pm-text-lg);
+	font-weight: 600;
+	color: var(--pm-text);
+	border-bottom: 1px solid var(--pm-border-light);
+}
+
+.print-manager-admin .box label {
+	font-size: var(--pm-text-base);
+	color: var(--pm-text);
+}
+
+.print-manager-admin .box p {
+	margin: var(--pm-space-3) 0;
+}
+
+.print-manager-admin .box input[type="text"],
+.print-manager-admin .box input[type="number"],
+.print-manager-admin .box select {
+	width: 100%;
+	border-radius: var(--pm-radius);
+	border-color: var(--pm-border);
+}
+
+.print-manager-admin .box input[type="text"]:focus,
+.print-manager-admin .box input[type="number"]:focus,
+.print-manager-admin .box select:focus {
+	border-color: var(--pm-brand);
+	box-shadow: 0 0 0 1px var(--pm-brand);
+	outline: none;
+}
+
+.print-manager-admin .box select[multiple] {
+	min-height: 120px;
+	border-radius: var(--pm-radius);
+}
+
+.print-manager-admin .box input[type="checkbox"] {
+	margin-right: var(--pm-space-1);
+}
+
+/* Delete button */
+.print-manager-admin .wp-core-ui .delete-button {
+	float: right;
+	background-color: var(--pm-error);
+	color: var(--pm-bg-white);
+	border-color: var(--pm-error);
+	box-shadow: none;
+	border-radius: var(--pm-radius);
+	transition: background-color 0.15s ease;
+}
+
+.print-manager-admin .wp-core-ui .delete-button:hover {
+	background-color: #b32d2e;
+	border-color: #b32d2e;
+	color: var(--pm-bg-white);
+}
+
+/* Orientation select */
+.print-manager-admin .box .orientation_select {
+	float: right;
+	width: 200px;
+	height: auto;
+	border-radius: var(--pm-radius);
+}
+
+.print-manager-admin .box.orientation {
+	line-height: 2rem;
+}
+
+/* Custom purpose link */
+.print-manager-admin .purpose_custom {
+	float: right;
+	font-size: var(--pm-text-sm);
+	font-weight: normal;
+	font-style: normal;
+	line-height: 28px;
+	color: var(--pm-text-muted);
+}
+
+.print-manager-admin .purpose_custom .button {
+	font-style: normal;
+	font-size: var(--pm-text-base);
+	border-radius: var(--pm-radius);
+}
+
+/* Text centered */
+.print-manager-admin .text-centered {
+	text-align: center;
+	font-size: var(--pm-text-sm);
+	color: var(--pm-text-muted);
+}
+
+/* Margins section */
+.print-manager-admin .margins label {
+	min-width: 90px;
+	display: inline-block;
+	font-size: var(--pm-text-base);
+	color: var(--pm-text);
+}
+
+.print-manager-admin .margins input {
+	margin-right: var(--pm-space-2);
+	border-radius: var(--pm-radius);
+}
+
+.print-manager-admin .margins input[type="number"] {
+	width: calc(100% - 120px);
+}
+
+/* Logo preview in location edit */
+.print-manager-admin #logo_preview,
+.print-manager-admin #logo_src {
+	display: none;
+}
+
+.print-manager-admin #logo_preview[src],
+.print-manager-admin #logo_src[value] {
+	display: inline-block;
+}
+
+/* Return address block */
+.print-manager-admin #zp-return-address {
+	margin-top: 1em;
+	display: block;
+}
+
+.print-manager-admin #zp-return-address label {
+	display: block;
+}
+
+.print-manager-admin #zp-return-address label + label {
+	margin-top: 1em;
+}
+
+.print-manager-admin #zp-return-address input {
+	max-width: 25rem;
+}
+
+/* Custom sizes conditional */
+.print-manager-admin #custom_sizes {
+	display: none;
+}
+
+.print-manager-admin .sz-custom #custom_sizes {
+	display: block;
+}
+
+/* Submit row */
+.print-manager-admin p.submit {
+	margin-top: var(--pm-space-6);
+	padding-top: var(--pm-space-4);
+	border-top: 1px solid var(--pm-border-light);
+}
+
+
+/* ==========================================================================
+   8. MARKETPLACE / ADDONS TILES
+   ========================================================================== */
+
+.print-manager-admin .zprint-marketplace {
+	font-family: var(--pm-font);
+	gap: 0;
+	border-radius: var(--pm-radius-md);
+	overflow: hidden;
+	box-shadow: var(--pm-shadow-sm);
+}
+
+.print-manager-admin .zprint-marketplace__tile {
+	transition: background-color 0.15s ease;
+}
+
+.print-manager-admin .zprint-marketplace__tile:hover {
+	background-color: #fafafa;
+}
+
+.print-manager-admin .zprint-marketplace__title {
+	font-weight: 600;
+	text-transform: none;
+	color: var(--pm-text);
+	letter-spacing: 0;
+}
+
+.print-manager-admin .zprint-marketplace__subtitle {
+	color: var(--pm-text-muted);
+}
+
+.print-manager-admin .zprint-marketplace__btn {
+	font-weight: 600;
+	text-transform: none;
+	color: var(--pm-brand);
+	border: 2px solid var(--pm-brand);
+	border-radius: var(--pm-radius);
+	transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.print-manager-admin .zprint-marketplace__btn:hover {
+	color: var(--pm-bg-white);
+	background: var(--pm-brand);
+	border-color: var(--pm-brand);
+}
+
+/* Normalize icon colors to brand palette */
+.print-manager-admin .zprint-marketplace__tile:nth-child(1n) .zprint-marketplace__icon {
+	color: #2e7d9a;
+}
+
+.print-manager-admin .zprint-marketplace__tile:nth-child(2n) .zprint-marketplace__icon {
+	color: #7b5fc9;
+}
+
+.print-manager-admin .zprint-marketplace__tile:nth-child(3n) .zprint-marketplace__icon {
+	color: #5a8bd4;
+}
+
+.print-manager-admin .zprint-marketplace__tile:nth-child(4n) .zprint-marketplace__icon {
+	color: var(--pm-brand);
+}
+
+.print-manager-admin .zprint-marketplace__tile:nth-child(5n) .zprint-marketplace__icon {
+	color: var(--pm-text);
+}
+
+
+/* ==========================================================================
+   9. SUPPORT TAB — LOG & QUEUE
+   ========================================================================== */
+
+/* Queue stats */
+.print-manager-admin .zprint-queue-stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--pm-space-4);
+	align-items: center;
+}
+
+.print-manager-admin .zprint-queue-stats .stat {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--pm-space-1);
+	font-size: var(--pm-text-base);
+	color: var(--pm-text);
+}
+
+/* Error text utility */
+.print-manager-admin .pm-text-error {
+	color: var(--pm-error);
+}
+
+/* Failed jobs table */
+.print-manager-admin .zprint-settings-section-wrapper .wp-list-table {
+	border-radius: var(--pm-radius);
+	overflow: hidden;
+}
+
+.print-manager-admin .zprint-settings-section-wrapper .wp-list-table th {
+	font-size: var(--pm-text-sm);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	color: var(--pm-text-muted);
+	background: var(--pm-bg);
+}
+
+.print-manager-admin .zprint-settings-section-wrapper .wp-list-table td {
+	font-size: var(--pm-text-base);
+	vertical-align: middle;
+}
+
+.print-manager-admin .zprint-settings-section-wrapper .wp-list-table tr:hover td {
+	background-color: #f6f7f7;
+}
+
+/* Debug tab */
+.print-manager-admin .pm-debug-output {
+	resize: none;
+	width: 100%;
+	text-align: left;
+	font-family: monospace;
+	font-size: var(--pm-text-sm);
+	border-radius: var(--pm-radius);
+	border-color: var(--pm-border);
+	background: var(--pm-bg);
+}
+
+.print-manager-admin .pm-debug-output:focus {
+	border-color: var(--pm-brand);
+	box-shadow: 0 0 0 1px var(--pm-brand);
+}
+
+
+/* ==========================================================================
+   10. PRINT DIALOG MODAL OVERRIDES
+   ========================================================================== */
+
+.zprint-dialog__window {
+	font-family: var(--pm-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+}
+
+.zprint-dialog__title {
+	font-size: 1.5em;
+}
+
+.zprint-dialog__hide:focus-visible {
+	outline: 2px solid #303030;
+	outline-offset: 2px;
+	border-radius: 4px;
+	opacity: 0.75;
+}
+
+.zprint-dialog__location {
+	transition: background-color 0.15s ease, color 0.15s ease;
+	border-radius: 0;
+}
+
+.zprint-dialog__location:hover {
+	background-color: #f6f7f7;
+}
+
+.zprint-dialog__location-checkbox:checked + .zprint-dialog__location {
+	color: #1d2327;
+	background: #f0f0f0;
+}
+
+/* Accessible hidden checkbox — screen-reader friendly */
+.zprint-dialog__location-checkbox {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.zprint-dialog__submit {
+	border-radius: 4px;
+}
+
+.zprint-dialog__submit:focus-visible {
+	outline: 2px solid #303030;
+	outline-offset: 2px;
+}
+
+
+/* ==========================================================================
+   11. QUICK START / ACTIVATION BANNER
+   Note: Primary banner styles are in admin.css (loads globally).
+   These are scoped refinements for when the banner appears on the
+   plugin settings page.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   12. VERSION SELECTOR
+   ========================================================================== */
+
+.print-manager-admin .zprint-version-selector {
+	display: flex;
+	align-items: center;
+	gap: var(--pm-space-3);
+	height: auto;
+	line-height: 1.6;
+}
+
+.print-manager-admin .zprint-version-selector button.button.button-primary {
+	float: none;
+	border-radius: var(--pm-radius);
+}
+
+
+/* ==========================================================================
+   13. BUTTONS — GLOBAL REFINEMENTS
+   ========================================================================== */
+
+.print-manager-admin .button {
+	border-radius: var(--pm-radius);
+	transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.print-manager-admin .button:focus-visible {
+	outline: 2px solid var(--pm-brand);
+	outline-offset: 1px;
+}
+
+.print-manager-admin .button-primary {
+	border-radius: var(--pm-radius);
+}
+
+.print-manager-admin .button-primary:focus-visible {
+	outline: 2px solid var(--pm-brand);
+	outline-offset: 1px;
+}
+
+/* Smart button (for log/queue actions) */
+.print-manager-admin .button[disabled] {
+	opacity: 0.5;
+}
+
+
+/* ==========================================================================
+   14. NOTICE PADDING UTILITY
+   ========================================================================== */
+
+.pm-notice-padded {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/* ==========================================================================
+   15. GENERAL FORM ENHANCEMENTS
+   ========================================================================== */
+
+/* Collapse <br/> dividers between checkbox labels — flex handles spacing */
+.print-manager-admin .form-table td > label + br {
+	display: none;
+}
+
+/* Template settings checkboxes in location edit */
+.print-manager-admin .templateSetting {
+	margin: var(--pm-space-2) 0;
+}
+
+.print-manager-admin .templateSetting label {
+	display: flex;
+	align-items: center;
+	gap: var(--pm-space-2);
+	cursor: pointer;
+}
+
+/* Submit button — brand-styled primary action */
+.print-manager-admin .zprint-settings-section-wrapper ~ p.submit .button-primary,
+.print-manager-admin form > p.submit .button-primary,
+.print-manager-admin p.submit input[type="submit"].button-primary {
+	background: var(--pm-brand);
+	border-color: var(--pm-brand);
+	color: var(--pm-bg-white);
+	font-size: var(--pm-text-md);
+	font-weight: 600;
+	padding: var(--pm-space-2) var(--pm-space-6);
+	min-height: 36px;
+	border-radius: var(--pm-radius-md);
+	box-shadow: none;
+	transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.print-manager-admin p.submit input[type="submit"].button-primary:hover {
+	background: var(--pm-brand-hover);
+	border-color: var(--pm-brand-hover);
+	color: var(--pm-bg-white);
+}
+
+.print-manager-admin p.submit input[type="submit"].button-primary:focus {
+	background: var(--pm-brand-hover);
+	border-color: var(--pm-brand-hover);
+	color: var(--pm-bg-white);
+	box-shadow: 0 0 0 2px rgba(var(--pm-brand-rgb), 0.25);
+}
+
+/* Let forms fill available width — parent .wrap provides horizontal padding */
+.print-manager-admin form {
+	max-width: none;
+}
+
+
+/* ==========================================================================
+   16. RESPONSIVE REFINEMENTS
+   ========================================================================== */
+
+@media (max-width: 782px) {
+	.print-manager-admin .zprint-setting-title {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.print-manager-admin .zprint-settings-section-wrapper {
+		padding: 0 var(--pm-space-3) var(--pm-space-3);
+	}
+
+	.print-manager-admin .zprint-settings-section-wrapper h2 {
+		margin: 0 calc(-1 * var(--pm-space-3));
+		padding: var(--pm-space-3) var(--pm-space-3);
+	}
+
+	.print-manager-admin .zprint-settings-section-wrapper .form-table {
+		padding: 0;
+	}
+
+	.print-manager-admin .zprint-connection-box {
+		grid-template-columns: 1fr;
+	}
+
+	.print-manager-admin .zprint-connection-card {
+		flex: 1 1 auto;
+	}
+
+	.print-manager-admin .zprint-queue-stats {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.print-manager-admin form {
+		max-width: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.print-manager-admin .box {
+		padding: var(--pm-space-4);
+	}
+
+	.print-manager-admin .box h3 {
+		font-size: var(--pm-text-md);
+	}
+}
+
+
+/* ==========================================================================
+   17. FOCUS & ACCESSIBILITY
+   ========================================================================== */
+
+.print-manager-admin a:focus-visible {
+	outline: 2px solid var(--pm-brand);
+	outline-offset: 2px;
+	border-radius: var(--pm-radius-sm);
+}
+
+.print-manager-admin input:focus-visible,
+.print-manager-admin select:focus-visible,
+.print-manager-admin textarea:focus-visible {
+	border-color: var(--pm-brand);
+	box-shadow: 0 0 0 1px var(--pm-brand);
+	outline: none;
+}
+
+.print-manager-admin button:focus-visible {
+	outline: 2px solid var(--pm-brand);
+	outline-offset: 1px;
+	border-radius: var(--pm-radius);
+}

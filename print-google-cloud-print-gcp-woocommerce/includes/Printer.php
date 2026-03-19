@@ -347,6 +347,41 @@ class Printer
 		}
 	}
 
+	/**
+	 * Send a cash drawer kick command to the printers at a given location.
+	 */
+	public static function kickDrawer(Location $location): array
+	{
+		$printers = $location->printers;
+
+		if (empty($printers)) {
+			return [
+				'status' => false,
+				'error' => 'No printers configured for this location',
+			];
+		}
+
+		$jobData = [
+			'description' => 'Cash Drawer Kick',
+			'url' => add_query_arg(
+				['zprint_action' => 'drawer_kick'],
+				home_url()
+			),
+			'printOption' => json_encode([
+				'version' => '1.0',
+				'print' => [
+					'copies' => ['copies' => 1],
+				],
+			]),
+		];
+
+		if (JobQueue::isAsyncEnabled()) {
+			return self::queuePrintJobs(0, $location->getID(), $printers, $jobData);
+		}
+
+		return self::syncPrintWithFallback(0, $location->getID(), $printers, $jobData);
+	}
+
 	public static function isEnabledPrinting(string $type): bool
 	{
 		if (!in_array($type, [static::WEB_PRINT, static::POS_PRINT, static::ORDER_ONLY_PRINT])) {
