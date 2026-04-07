@@ -8,6 +8,8 @@ class BackgroundPrintProcessor
 {
 	const HOOK_PROCESS_QUEUE = 'zprint_process_job_queue';
 	const BATCH_SIZE = 5;
+	const WEBHOOK_TRANSIENT_CLEANUP_HOOK = 'zprint_cleanup_webhook_transients';
+	const WEBHOOK_TRANSIENT_BATCH_SIZE = 1000;
 
 	/**
 	 * Initialize the background processor.
@@ -20,6 +22,7 @@ class BackgroundPrintProcessor
 		// Schedule recurring cleanup of old completed jobs
 		add_action('init', [$this, 'scheduleCleanup']);
 		add_action('zprint_cleanup_completed_jobs', [$this, 'cleanupCompletedJobs']);
+		add_action(self::WEBHOOK_TRANSIENT_CLEANUP_HOOK, [$this, 'cleanupWebhookTransients']);
 	}
 
 	/**
@@ -154,6 +157,97 @@ class BackgroundPrintProcessor
 				'Pending: ' . $deletedPending,
 				'Failed: ' . $deletedFailed,
 			]);
+		}
+
+		$this->cleanupWebhookTransients();
+	}
+
+	/**
+	 * Clean up stale webhook request transients from wp_options.
+	 *
+	 * Deletes in batches to avoid long-running locks on wp_options,
+	 * which is critical for sites with large backlogs of legacy
+	 * transients created without a TTL. If more rows remain after
+	 * a batch, a follow-up run is scheduled via Action Scheduler.
+	 */
+	public function cleanupWebhookTransients()
+	{
+		global $wpdb;
+
+		$cutoff = time() - 10 * MINUTE_IN_SECONDS;
+		$batch = self::WEBHOOK_TRANSIENT_BATCH_SIZE;
+
+		$deleted = $wpdb->query(
+			$wpdb->prepare(
+				"DELETE FROM {$wpdb->options}
+				 WHERE option_name LIKE %s
+				 AND option_value < %d
+				 LIMIT %d",
+				$wpdb->esc_like('_transient_zprint_webhook_request_') . '%',
+				$cutoff,
+				$batch
+			)
+		);
+
+		if ($deleted === false) {
+			Log::error(Log::BASIC, [
+				'Background Processor',
+				'Failed to clean up webhook transients',
+				'Error: ' . $wpdb->last_error,
+			]);
+			return;
+		}
+
+		// Clean up stale timeout companion rows independently
+		$deletedTimeouts = $wpdb->query(
+			$wpdb->prepare(
+				"DELETE FROM {$wpdb->options}
+				 WHERE option_name LIKE %s
+				 AND option_value < %d
+				 LIMIT %d",
+				$wpdb->esc_like('_transient_timeout_zprint_webhook_request_') . '%',
+				$cutoff,
+				$batch
+			)
+		);
+
+		if ($deletedTimeouts === false) {
+			Log::error(Log::BASIC, [
+				'Background Processor',
+				'Failed to clean up webhook timeout transients',
+				'Error: ' . $wpdb->last_error,
+			]);
+		}
+
+		$totalDeleted = (int) $deleted + (int) $deletedTimeouts;
+		if ($totalDeleted > 0) {
+			Log::info(Log::BASIC, [
+				'Background Processor',
+				'Cleaned up webhook transients',
+				'Transients: ' . (int) $deleted,
+				'Timeouts: ' . (int) $deletedTimeouts,
+			]);
+		}
+
+		// If either delete hit the batch limit, schedule a follow-up pass
+		if ($deleted >= $batch || (int) $deletedTimeouts >= $batch) {
+			$this->scheduleWebhookTransientCleanup();
+		}
+	}
+
+	/**
+	 * Schedule a follow-up webhook transient cleanup batch via Action Scheduler.
+	 */
+	private function scheduleWebhookTransientCleanup()
+	{
+		$hook = self::WEBHOOK_TRANSIENT_CLEANUP_HOOK;
+
+		if (!function_exists('as_next_scheduled_action')) {
+			return;
+		}
+
+		if (!as_next_scheduled_action($hook)) {
+			as_schedule_single_action(time() + 30, $hook);
 		}
 	}
 

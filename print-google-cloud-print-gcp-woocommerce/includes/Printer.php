@@ -96,11 +96,12 @@ class Printer
 
 		$filter = array_map(function (array $argument): LocationFilter {
 			$value = $argument[1];
-			if ($argument[2] === 'bool') {
+			$type = $argument[2] ?? null;
+			if ($type === 'bool') {
 				$value = (bool) $value;
-			} elseif ($argument[2] === 'int') {
+			} elseif ($type === 'int') {
 				$value = (int) $value;
-			} elseif ($argument[2] === 'int_array') {
+			} elseif ($type === 'int_array') {
 				$value = array_map('intval', (array) $value);
 			}
 			return new LocationFilter($argument[0], $value);

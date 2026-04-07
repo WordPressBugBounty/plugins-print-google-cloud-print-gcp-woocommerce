@@ -23,8 +23,25 @@ abstract class DocumentBase
 				echo 'Error: No Access';
 				die(401);
 			}
-			header('Content-Type: text/plain; charset=binary');
-			echo "\x1B\x70\x00\x19\x19";
+
+			$user = wp_get_current_user();
+			$user_name = $user && $user->ID
+				? trim($user->first_name . ' ' . $user->last_name) ?: $user->display_name
+				: 'Unknown';
+			$timestamp = current_time('M j, Y g:i A');
+			$site_name = get_bloginfo('name');
+
+			// ESC/POS drawer kick command (pin 2, 100ms pulse)
+			$esc_pos = "\x1B\x70\x00\x19\x19";
+
+			header('Content-Type: text/html; charset=utf-8');
+			echo '<html><body style="font-family: monospace; font-size: 12px; padding: 10px;">';
+			echo $esc_pos;
+			echo '<p style="font-weight: bold; font-size: 14px; margin: 0 0 8px 0;">Cash Drawer Opened</p>';
+			echo '<p style="margin: 2px 0;">User: ' . esc_html($user_name) . '</p>';
+			echo '<p style="margin: 2px 0;">Date: ' . esc_html($timestamp) . '</p>';
+			echo '<p style="margin: 2px 0;">Store: ' . esc_html($site_name) . '</p>';
+			echo '</body></html>';
 			exit();
 		}
 

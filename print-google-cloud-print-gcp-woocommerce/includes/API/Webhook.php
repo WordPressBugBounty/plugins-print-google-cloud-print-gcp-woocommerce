@@ -68,7 +68,7 @@ class Webhook
 		if (get_transient($transient)) {
 			return $this->alreadyProcessedHandler();
 		}
-		set_transient($transient, time());
+		set_transient($transient, time(), 10 * MINUTE_IN_SECONDS);
 
 		switch ($type) {
 			case 'test-connect':
