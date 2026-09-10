@@ -1,251 +1,141 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Print Manager\n"
-"POT-Creation-Date: 2021-08-12 22:06+0300\n"
-"PO-Revision-Date: \n"
+"Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2021-08-12 22:06+0300\n"
+"PO-Revision-Date: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: includes/Addons.php:20
-msgid "Add more functionality"
-msgstr "添加更多功能"
-
-#: includes/Addons.php:34 setting/logs.php:30
+#: setting/support.php:65
 msgid "Active"
 msgstr "激活"
 
-#: includes/Addons.php:39 setting/general.php:38
-#: setting/locations/single.php:112 setting/locations/single.php:121
+#: setting/general.php:77
+#: setting/locations/single.php:113
+#: setting/locations/single.php:122
+#: setting/setting.php:63
+#: setting/setting.php:85
+#: setting/setting.php:107
+#: setting/setting.php:118
 msgid "Enable"
 msgstr "启用"
 
-#: includes/Addons.php:44
-msgid "Install"
-msgstr "安装"
-
-#: includes/Addons.php:62
-msgid "Explore more products, platforms and services"
-msgstr "探索更多产品、平台和服务"
-
-#: includes/Addons.php:87
-msgid "Your life`s work, our technology"
-msgstr "您毕生的工作，我们的技术"
-
-#: includes/Addons.php:91
-msgid "Visit Us"
-msgstr "到访我们"
-
-#: includes/Addons.php:101
-msgid "More info"
-msgstr "更多信息"
-
-#: includes/Addons.php:105
-msgid "White Label Branding"
-msgstr "白牌"
-
-#: includes/Addons.php:106
-msgid "Remove BizSwoop branding for a while label print template solution."
-msgstr "暂时删除 BizSwoop 品牌标签打印模板解决方案。"
-
-#: includes/Addons.php:113
-msgid "Product Location Mapping"
-msgstr "产品位置映射"
-
-#: includes/Addons.php:114
-msgid ""
-"Easily configure product and category level mapping to specific print "
-"locations."
-msgstr "轻松配置产品和类别级别映射到特定打印位置。"
-
-#: includes/Addons.php:121
-msgid "Sample Print Template"
-msgstr "样本打印模板"
-
-#: includes/Addons.php:122
-msgid "Developer sample template to create a custom print template."
-msgstr "开发人员示例模板，用于创建自定义打印模板。"
-
-#: includes/Addons.php:129
-msgid "Custom Print Templates"
-msgstr "自定义打印模板"
-
-#: includes/Addons.php:130
-msgid ""
-"A custom development service for building your own custom print template."
-msgstr "用于构建您自己的自定义打印模板的定制开发服务。"
-
-#: includes/Addons.php:143
-msgid "WordPress.org"
-msgstr "WordPress.org"
-
-#: includes/Addons.php:144
-msgid "Free plugin apps for the open source community"
-msgstr "面向开源社区的免费插件应用程序"
-
-#: includes/Addons.php:147
-msgid "Explore Free Apps"
-msgstr "探索免费应用程序"
-
-#: includes/Addons.php:150
-msgid "Premium Plugins"
-msgstr "高级插件"
-
-#: includes/Addons.php:151
-msgid "Smart plugin apps for your advanced business requirements"
-msgstr "满足您高级业务需求的智能插件应用程序"
-
-#: includes/Addons.php:154
-msgid "Explore All Apps"
-msgstr "探索所有应用"
-
-#: includes/Addons.php:157
-msgid "Powerful Platforms"
-msgstr "强大的平台"
-
-#: includes/Addons.php:158
-msgid "Advanced platforms for agencies, developers and businesses"
-msgstr "面向代理商、开发人员和企业的高级平台"
-
-#: includes/Addons.php:161
-msgid "Explore Platforms"
-msgstr "探索平台"
-
-#: includes/Addons.php:164
-msgid "Super Services"
-msgstr "超级服务"
-
-#: includes/Addons.php:165
-msgid "High-touch services to boost your business technology solutions"
-msgstr "高接触服务，提升您的业务技术解决方案"
-
-#: includes/Addons.php:168
-msgid "Explore Services"
-msgstr "探索服务"
-
-#: includes/Admin.php:136 includes/Admin.php:137 includes/Admin/Layout.php:32
-#: includes/Admin/Layout.php:37
+#: includes/Admin/Layout.php:35
+#: includes/Admin/Layout.php:40
+#: includes/Admin/PrintDialog.php:109
+#: includes/Admin/PrintDialog.php:112
+#: includes/Admin/PrintDialog.php:189
+#: setting/index.php:13
 msgid "Print Manager"
 msgstr "打印管理器"
 
-#: includes/Admin.php:140
+#: includes/Admin/PrintDialog.php:92
 msgid "Print Order"
 msgstr "打印订单"
 
-#: includes/Admin.php:149
-msgid "Select Location"
-msgstr "选择位置"
-
-#: includes/Admin/Layout.php:41
-msgid "Print to Anywhere"
-msgstr "打印到任何地方"
-
-#: includes/Admin/Layout.php:54 setting/general.php:11
+#: includes/Admin/Layout.php:57
+#: setting/general.php:11
 msgid "General"
 msgstr "常规"
 
-#: includes/Admin/Layout.php:65 setting/locations.php:15
-msgid "Locations"
-msgstr "位置"
-
-#: includes/Admin/Layout.php:76 setting/addons.php:11
+#: includes/Addons.php:45
 msgid "Add-ons"
 msgstr "附加组件"
 
-#: includes/Admin/Layout.php:87 setting/locations/single.php:382
-#: setting/setting/index.php:10
+#: includes/Admin/Layout.php:79
+#: setting/locations/single.php:454
+#: setting/setting.php:11
 msgid "Settings"
 msgstr "设置"
 
-#: includes/Admin/OrdersTable.php:31 includes/Admin/OrdersTable.php:46
-#: setting/logs.php:25
+#: includes/Admin/Order.php:25
+#: includes/Admin/OrderTable.php:61
+#: includes/Admin/OrderTable.php:85
+#: includes/Admin/OrderTable.php:100
+#: includes/Admin/PrintDialog.php:148
+#: setting/support.php:60
 msgid "Print"
 msgstr "打印"
 
-#: includes/Aspect/Input.php:317
-msgid "Upload"
-msgstr "上传"
-
-#: includes/Aspect/Input.php:319
-msgid "Remove"
-msgstr "删除"
-
-#: includes/Debug/Tab.php:13
+#: includes/Debug/Tab.php:16
 msgid "Requests"
 msgstr "请求"
 
-#: includes/Debug/Tab.php:19
+#: includes/Debug/Tab.php:29
 msgid "Get Remote Printers"
 msgstr "获取远程打印机"
 
-#: includes/Debug/Tab.php:37
+#: includes/Debug/Tab.php:48
 msgid "Order:"
 msgstr "排序："
 
-#: includes/Debug/Tab.php:49
+#: includes/Debug/Tab.php:60
 msgid "Location:"
 msgstr "位置："
 
-#: includes/Debug/Tab.php:62
+#: includes/Debug/Tab.php:73
 msgid "Send Print Request"
 msgstr "发送打印请求"
 
-#: includes/Model/Location.php:300
+#: includes/Model/Location.php:303
 msgid "A4"
 msgstr "A4"
 
-#: includes/Model/Location.php:301
+#: includes/Model/Location.php:304
 msgid "Letter"
 msgstr "字母"
 
-#: includes/Model/Location.php:302
+#: includes/Model/Location.php:305
 msgid "Custom"
 msgstr "自定义"
 
-#: includes/Model/Location.php:321
+#: includes/Model/Location.php:324
 msgid "HTML"
 msgstr "HTML"
 
-#: includes/Model/Location.php:322
+#: includes/Model/Location.php:325
 msgid "Plain Text"
 msgstr "纯文本"
 
-#: includes/Model/Location.php:357
+#: includes/Model/Location.php:360
 msgid "Portrait"
 msgstr "纵向"
 
-#: includes/Model/Location.php:358
+#: includes/Model/Location.php:361
 msgid "Landscape"
 msgstr "景观"
 
-#: includes/Model/Location.php:359 setting/locations/index.php:157
-#: setting/locations/index.php:159
+#: includes/Model/Location.php:362
+#: setting/locations/index.php:114
+#: setting/locations/index.php:116
 msgid "Auto"
 msgstr "自动"
 
-#: includes/Setup.php:26
+#: includes/Setup.php:34
 msgid "Due to an unexpected error the database table was not created."
 msgstr "由于出现意外错误，未创建数据库表。"
 
-#: includes/Setup.php:26
+#: includes/Setup.php:34
+#: setting/support.php:219
+#: setting/support.php:330
 msgid "Retry"
 msgstr "重试"
 
-#: includes/Setup.php:30
+#: includes/Setup.php:38
 msgid "Print Manager require WooCommerce"
 msgstr "打印管理器需要 WooCommerce"
 
@@ -257,115 +147,83 @@ msgstr "客户收据"
 msgid "Customer Order Receipt"
 msgstr "客户订单收据"
 
-#: includes/Templates/Order.php:13 templates/details-plain.php:6
+#: includes/Templates/Order.php:13
+#: templates/details-plain.php:11
 msgid "Order Receipt"
 msgstr "收到订单"
 
-#: setting/debug.php:12
-msgid "Debug"
-msgstr "调试"
-
-#: setting/general.php:17
+#: setting/general.php:56
 msgid "Automatic Order Printing"
 msgstr "自动订单打印"
 
-#: setting/general.php:24
+#: setting/general.php:63
 msgid "Enable Automatic Printing"
 msgstr "启用自动打印"
 
-#: setting/general.php:31
-msgid "Web Orders"
-msgstr "网络订单"
-
-#: setting/general.php:32
-msgid "POS Orders"
-msgstr "POS订单"
-
-#: setting/general.php:35
-msgid "POS Orders Save"
-msgstr "POS订单保存"
-
-#: setting/general.php:46
-msgid "Web Orders Automatic Print Statuses"
-msgstr "Web 订单自动打印状态"
-
-#: setting/general.php:51
-msgid "Orders Automatic Print Statuses"
-msgstr "订单自动打印状态"
-
-#: setting/general.php:71
+#: setting/general.php:110
 msgid "Copies"
 msgstr "拷贝"
 
-#: setting/index.php:15
-msgid "Print Settings"
-msgstr "打印设置"
-
-#: setting/locations.php:62
+#: setting/printers.php:72
 msgid "Location deleted"
 msgstr "删除教学点"
 
-#: setting/locations.php:68
+#: setting/printers.php:78
 msgid "Location saved"
 msgstr "位置保存"
 
-#: setting/locations.php:74
+#: setting/printers.php:84
 msgid "Test print initiated, view log for details"
 msgstr "测试打印已启动，请查看日志了解详细信息"
 
-#: setting/locations.php:87
+#: setting/printers.php:50
 msgid "Add new"
 msgstr "添加新的"
 
-#: setting/locations/index.php:87
-msgid "Title"
-msgstr "标题"
-
-#: setting/locations/index.php:91
-msgid "Web Order"
-msgstr "Web 订单"
-
-#: setting/locations/index.php:95
+#: setting/locations/index.php:40
+#: setting/locations/index.php:71
+#: setting/locations/index.php:79
 msgid "Enabled"
 msgstr "启用"
 
-#: setting/locations/index.php:100
-msgid "POS Order"
-msgstr "POS订单"
-
-#: setting/locations/index.php:104 setting/locations/single.php:128
+#: includes/Admin/Layout.php:68
+#: setting/locations/index.php:49
+#: setting/locations/single.php:129
+#: setting/printers.php:15
 msgid "Printers"
 msgstr "打印机"
 
-#: setting/locations/index.php:107 setting/locations/single.php:139
+#: setting/locations/index.php:52
+#: setting/locations/single.php:141
 msgid "Users"
 msgstr "用户"
 
-#: setting/locations/index.php:110 setting/locations/single.php:151
+#: setting/locations/index.php:55
+#: setting/locations/single.php:159
 msgid "Template"
 msgstr "模板"
 
-#: setting/locations/index.php:113
+#: setting/locations/index.php:58
 msgid "Size"
 msgstr "大小"
 
-#: setting/locations/index.php:116
+#: setting/locations/index.php:61
+#: setting/support.php:209
 msgid "Actions"
 msgstr "操作"
 
-#: setting/locations/index.php:155 setting/locations/index.php:157
-#: setting/locations/single.php:483 setting/locations/single.php:488
-#: setting/locations/single.php:493 setting/locations/single.php:498
+#: setting/locations/index.php:112
+#: setting/locations/index.php:114
+#: setting/locations/single.php:555
+#: setting/locations/single.php:560
+#: setting/locations/single.php:565
+#: setting/locations/single.php:570
 msgid "mm"
 msgstr "毫米"
 
-#: setting/locations/index.php:165
+#: setting/locations/index.php:122
 msgid "Edit"
 msgstr "编辑"
-
-#: setting/locations/single.php:32
-msgid "WordPress Site Default Language Setting"
-msgstr "WordPress 网站默认语言设置"
 
 #: setting/locations/single.php:33
 msgid "User Profile Language Setting"
@@ -375,387 +233,1348 @@ msgstr "用户配置文件语言设置"
 msgid "Select a Language"
 msgstr "选择一个语言"
 
-#: setting/locations/single.php:89
-msgid "Location title"
-msgstr "地点标题"
-
-#: setting/locations/single.php:98
+#: setting/locations/single.php:99
 msgid "Test print"
 msgstr "测试打印"
 
-#: setting/locations/single.php:102
+#: setting/locations/single.php:103
 msgid "View Sample"
 msgstr "查看样本"
 
-#: setting/locations/single.php:108
-msgid "Web order printer"
-msgstr "Web 订单打印机"
-
-#: setting/locations/single.php:117
-msgid "POS order printer"
-msgstr "POS订单打印机"
-
-#: setting/locations/single.php:153
+#: setting/locations/single.php:161
 msgid "Need Custom Templates?"
 msgstr "需要自定义模板吗？"
 
-#: setting/locations/single.php:155
+#: setting/locations/single.php:163
 msgid "Buy"
 msgstr "购买"
 
-#: setting/locations/single.php:161
+#: setting/locations/single.php:169
 msgid "Select Template"
 msgstr "选择模板"
 
-#: setting/locations/single.php:169
+#: setting/locations/single.php:177
 msgid "Include Order Cost"
 msgstr "包括订单成本"
 
-#: setting/locations/single.php:175
+#: setting/locations/single.php:183
 msgid "Include Shipping Cost"
 msgstr "包括运费"
 
-#: setting/locations/single.php:182
+#: setting/locations/single.php:190
 msgid "Include Billing & Shipping Details"
 msgstr "包括账单和运输详细信息"
 
-#: setting/locations/single.php:189
+#: setting/locations/single.php:197
 msgid "Include Customer Details"
 msgstr "包括客户详细信息"
 
-#: setting/locations/single.php:196
+#: setting/locations/single.php:204
 msgid "Include Shipping Method"
 msgstr "包括运输方式"
 
-#: setting/locations/single.php:203
+#: setting/locations/single.php:211
 msgid "Include Pickup or Delivery Type"
 msgstr "包括取货或送货类型"
 
-#: setting/locations/single.php:210
+#: setting/locations/single.php:291
 msgid "Developer Documentation"
 msgstr "开发者文档"
 
-#: setting/locations/single.php:216
+#: setting/locations/single.php:297
 msgid "Appearance"
 msgstr "外观"
 
-#: setting/locations/single.php:347
+#: setting/locations/single.php:419
 msgid "Template Language"
 msgstr "模板语言"
 
-#: setting/locations/single.php:386
+#: setting/locations/single.php:458
 msgid "Page Orientation"
 msgstr "页面方向"
 
-#: setting/locations/single.php:390
+#: setting/locations/single.php:462
 msgid "Select Orientation"
-msgstr "选择坐标系  Select Orientation"
+msgstr "选择坐标系 Select Orientation"
 
-#: setting/locations/single.php:405
+#: setting/locations/single.php:477
 msgid "Output Format"
 msgstr "输出格式"
 
-#: setting/locations/single.php:409
+#: setting/locations/single.php:481
 msgid "Select Format"
 msgstr "选择格式"
 
-#: setting/locations/single.php:420
+#: setting/locations/single.php:492
 msgid "Plain text format symbols width"
 msgstr "纯文本格式符号宽度"
 
-#: setting/locations/single.php:428
+#: setting/locations/single.php:500
 msgid "Print symbols for layout debug"
 msgstr "打印符号以进行布局调试"
 
-#: setting/locations/single.php:437
+#: setting/locations/single.php:509
 msgid "Basic Font Size (px)"
 msgstr "基本字体大小 （px）"
 
-#: setting/locations/single.php:444
+#: setting/locations/single.php:516
 msgid "Header Font Size (px)"
 msgstr "标头字体大小（像素）"
 
-#: setting/locations/single.php:451
+#: setting/locations/single.php:523
 msgid "Basic Font Weight (CSS value)"
 msgstr "基本字体粗细（CSS 值）"
 
-#: setting/locations/single.php:458
+#: setting/locations/single.php:530
 msgid "Header Font Weight (CSS value)"
 msgstr "页眉字体粗细（CSS 值）"
 
-#: setting/locations/single.php:469
+#: setting/locations/single.php:541
 msgid "Custom Margins"
 msgstr "自定义边距"
 
-#: setting/locations/single.php:476
+#: setting/locations/single.php:548
 msgid "Layout Margins"
 msgstr "布局边距"
 
-#: setting/locations/single.php:480
+#: setting/locations/single.php:552
 msgid "Top Margin"
 msgstr "上边距"
 
-#: setting/locations/single.php:485
+#: setting/locations/single.php:557
 msgid "Right Margin"
 msgstr "右边距"
 
-#: setting/locations/single.php:490
+#: setting/locations/single.php:562
 msgid "Bottom Margin"
 msgstr "底部边距"
 
-#: setting/locations/single.php:495
+#: setting/locations/single.php:567
 msgid "Left Margin"
 msgstr "左边距"
 
-#: setting/locations/single.php:506
+#: setting/locations/single.php:578
 msgid "Layout Size"
 msgstr "布局大小"
 
-#: setting/locations/single.php:510
+#: setting/locations/single.php:582
 msgid "Select Size"
 msgstr "选择尺寸"
 
-#: setting/locations/single.php:525
+#: setting/locations/single.php:597
 msgid "Custom Width (mm)"
 msgstr "定制宽度 （mm）"
 
-#: setting/locations/single.php:528
+#: setting/locations/single.php:600
 msgid "Note: use 0mm for automatic width (based on printer setting)"
 msgstr "注意：自动宽度使用 0mm（基于打印机设置）"
 
-#: setting/locations/single.php:534
+#: setting/locations/single.php:606
 msgid "Custom Height (mm)"
 msgstr "定制高度 （mm）"
 
-#: setting/locations/single.php:537
-msgid ""
-"Note: use 0mm for continuous feed (some printers may not support this "
-"function)"
+#: setting/locations/single.php:609
+msgid "Note: use 0mm for continuous feed (some printers may not support this function)"
 msgstr "注意：连续进纸使用0mm（某些打印机可能不支持此功能）"
 
-#: setting/locations/single.php:551
+#: setting/locations/single.php:623
 msgid "Save Changes"
 msgstr "保存更改"
 
-#: setting/locations/single.php:558
+#: setting/locations/single.php:630
+#: setting/support.php:220
+#: setting/support.php:353
 msgid "Delete"
 msgstr "删除"
 
-#: setting/logs.php:11
-msgid "Logs"
-msgstr "日志"
-
-#: setting/logs.php:20
+#: setting/support.php:55
 msgid "View log"
 msgstr "查看日志"
 
-#: setting/logs.php:21
+#: setting/support.php:56
 msgid "Copy log"
 msgstr "复制日志"
 
-#: setting/logs.php:32
+#: setting/support.php:67
 msgid "Save info logs"
 msgstr "保存信息日志"
 
-#: setting/logs.php:38 setting/logs.php:76
+#: setting/support.php:74
+#: setting/support.php:115
 msgid "Log file content"
 msgstr "日志文件内容"
 
-#: setting/logs.php:50 setting/logs.php:88
+#: setting/support.php:88
+#: setting/support.php:129
 msgid "Log file"
 msgstr "日志文件"
 
-#: setting/logs.php:51 setting/logs.php:89
+#: setting/support.php:89
+#: setting/support.php:130
 msgid "Clear log file"
 msgstr "清除日志文件"
 
-#: setting/logs.php:57 setting/logs.php:95
+#. translators: %s: human-readable log file size.
+#: setting/support.php:97
+#: setting/support.php:138
 #, php-format
 msgid "Log file (Size: %s)"
 msgstr "日志文件（大小：%s）"
 
-#: setting/logs.php:72
+#: setting/support.php:110
 msgid "Plugin"
 msgstr "插件"
 
-#: setting/setting/access.php:9
+#: setting/application.php:18
 msgid "Application API Keys"
 msgstr "应用程序 API 密钥"
 
-#: setting/setting/index.php:17
-msgid "BizPrint Cloud Service"
-msgstr "BizPrint 云服务"
-
-#: setting/setting/index.php:22
+#: setting/general.php:20
 msgid "Dashboard"
 msgstr "仪表盘"
 
-#: setting/setting/index.php:25
+#: setting/general.php:31
 msgid "Documentation"
 msgstr "文档"
 
-#: setting/setting/userRoles.php:15
+#: setting/setting.php:21
 msgid "Location User Roles"
 msgstr "位置用户角色"
 
-#: setting/setting/userRoles.php:16
+#: setting/setting.php:22
 msgid "Select Roles for Location Mapping to Users"
 msgstr "选择用于将位置映射到用户的角色"
 
-#: setting/setting/userRoles.php:22 setting/setting/userRoles.php:36
+#: setting/setting.php:28
+#: setting/setting.php:42
 msgid "Selected Roles"
 msgstr "选定的角色"
 
-#: setting/setting/userRoles.php:29
+#: setting/setting.php:35
 msgid "Management Access User Roles"
 msgstr "管理访问用户角色"
 
-#: setting/setting/userRoles.php:30
+#: setting/setting.php:36
 msgid "Select Roles for Access to Manage Print Settings"
 msgstr "选择访问权限以管理打印设置"
 
-#: templates/customer-html.php:27 templates/customer-plain.php:10
-#: templates/details-plain.php:7 templates/order-html.php:23
-#: templates/order-plain.php:7
+#: templates/customer-html.php:32
+#: templates/customer-plain.php:16
+#: templates/details-plain.php:13
+#: templates/order-html.php:28
+#: templates/order-plain.php:12
 msgid "Order Number"
 msgstr "订单号"
 
-#: templates/customer-html.php:28 templates/customer-plain.php:11
-#: templates/details-html.php:20 templates/details-plain.php:8
-#: templates/order-html.php:24 templates/order-plain.php:8
+#: templates/customer-html.php:33
+#: templates/customer-plain.php:19
+#: templates/details-html.php:29
+#: templates/details-plain.php:16
+#: templates/order-html.php:29
+#: templates/order-plain.php:15
 msgid "Date"
 msgstr "日期"
 
-#: templates/customer-html.php:30 templates/customer-html.php:66
-#: templates/customer-html.php:92 templates/customer-plain.php:13
-#: templates/customer-plain.php:52 templates/details-html.php:35
-#: templates/details-html.php:61 templates/details-plain.php:42
+#: templates/advanced/dispatch-label-html.php:250
+#: templates/advanced/invoice-html.php:211
+#: templates/customer-html.php:35
+#: templates/customer-html.php:71
+#: templates/customer-html.php:141
+#: templates/customer-plain.php:21
+#: templates/customer-plain.php:66
+#: templates/details-html.php:44
+#: templates/details-html.php:109
+#: templates/details-plain.php:56
 msgid "Total"
 msgstr "总计"
 
-#: templates/customer-html.php:32 templates/customer-html.php:88
-#: templates/customer-plain.php:14 templates/customer-plain.php:51
-#: templates/details-html.php:57 templates/details-plain.php:41
+#: templates/customer-html.php:37
+#: templates/customer-html.php:137
+#: templates/customer-plain.php:22
+#: templates/customer-plain.php:65
+#: templates/details-html.php:105
+#: templates/details-plain.php:55
 msgid "Payment Method"
 msgstr "支付方式"
 
-#: templates/customer-html.php:37 templates/order-html.php:29
+#: templates/customer-html.php:52
+#: templates/order-html.php:40
 msgid "Time ordered"
 msgstr "订购的时间"
 
-#: templates/customer-html.php:65 templates/details-html.php:34
-#: templates/order-html.php:51
+#: templates/advanced/delivery-note-html.php:163
+#: templates/advanced/dispatch-label-html.php:160
+#: templates/advanced/invoice-html.php:125
+#: templates/advanced/packing-slip-html.php:162
+#: templates/advanced/pick-list-html.php:96
+#: templates/customer-html.php:70
+#: templates/details-html.php:43
+#: templates/order-html.php:56
 msgid "Product"
 msgstr "产品"
 
-#: templates/customer-html.php:72 templates/customer-plain.php:44
-#: templates/details-html.php:41 templates/details-plain.php:34
+#: templates/advanced/dispatch-label-html.php:203
+#: templates/advanced/invoice-html.php:164
+#: templates/customer-html.php:121
+#: templates/customer-plain.php:58
+#: templates/details-html.php:89
+#: templates/details-plain.php:48
 msgid "Subtotal"
 msgstr "小计"
 
-#: templates/customer-html.php:78 templates/customer-plain.php:47
-#: templates/details-html.php:47 templates/details-plain.php:37
+#: templates/advanced/dispatch-label-html.php:210
+#: templates/advanced/invoice-html.php:171
+#: templates/customer-html.php:127
+#: templates/customer-plain.php:61
+#: templates/details-html.php:95
+#: templates/details-plain.php:51
 msgid "Shipping"
 msgstr "配送"
 
-#: templates/customer-html.php:84 templates/customer-plain.php:50
-#: templates/details-html.php:53 templates/details-plain.php:40
+#: templates/advanced/dispatch-label-html.php:231
+#: templates/advanced/invoice-html.php:192
+#: templates/customer-html.php:133
+#: templates/customer-plain.php:64
+#: templates/details-html.php:101
+#: templates/details-plain.php:54
 msgid "Tax"
 msgstr "税"
 
-#: templates/customer-html.php:97
+#: templates/advanced/dispatch-label-html.php:237
+#: templates/customer-html.php:146
 msgid "Add Tip Amount"
 msgstr "添加小费金额"
 
-#: templates/customer-html.php:103
+#: templates/advanced/dispatch-label-html.php:244
+#: templates/customer-html.php:152
 msgid "Amount Collected"
 msgstr "收款金额"
 
-#: templates/customer-html.php:147 templates/customer-plain.php:56
-#: templates/details-html.php:102 templates/details-plain.php:46
-#: templates/order-html.php:89 templates/order-plain.php:35
+#: templates/customer-html.php:161
+#: templates/customer-plain.php:70
+#: templates/details-html.php:117
+#: templates/details-plain.php:60
+#: templates/order-html.php:95
+#: templates/order-plain.php:42
 msgid "Customer Details"
 msgstr "客户详细信息"
 
-#: templates/customer-html.php:154 templates/customer-plain.php:58
+#: templates/customer-html.php:169
+#: templates/customer-plain.php:73
 msgid "Name"
 msgstr "名称"
 
-#: templates/customer-html.php:160 templates/customer-plain.php:59
+#: templates/customer-html.php:175
+#: templates/customer-plain.php:74
 msgid "Telephone"
 msgstr "电话"
 
-#: templates/customer-html.php:166 templates/customer-plain.php:60
+#: includes/Support/Support.php:157
+#: templates/advanced/delivery-note-html.php:117
+#: templates/advanced/dispatch-label-html.php:115
+#: templates/advanced/packing-slip-html.php:117
+#: templates/advanced/shipping-label-html.php:84
+#: templates/advanced/shipping-label-plain.php:61
+#: templates/customer-html.php:181
+#: templates/customer-plain.php:75
 msgid "Email"
 msgstr "邮箱"
 
-#: templates/customer-html.php:179 templates/customer-plain.php:63
-#: templates/details-html.php:147 templates/details-plain.php:75
-#: templates/order-html.php:134 templates/order-plain.php:64
+#: templates/customer-html.php:194
+#: templates/customer-plain.php:79
+#: templates/details-html.php:165
+#: templates/details-plain.php:92
+#: templates/order-html.php:142
+#: templates/order-plain.php:74
 msgid "Order Notes"
 msgstr "订单备注"
 
-#: templates/customer-html.php:192 templates/customer-plain.php:66
-#: templates/details-html.php:125 templates/details-plain.php:63
-#: templates/order-html.php:112 templates/order-plain.php:52
+#: templates/advanced/dispatch-label-html.php:217
+#: templates/advanced/invoice-html.php:178
+#: templates/customer-html.php:207
+#: templates/customer-plain.php:82
+#: templates/details-html.php:142
+#: templates/details-plain.php:79
+#: templates/order-html.php:120
+#: templates/order-plain.php:61
 msgid "Shipping method"
 msgstr "配送方式"
 
-#: templates/customer-plain.php:16 templates/order-plain.php:9
+#: templates/customer-plain.php:24
+#: templates/order-plain.php:16
 msgid "Time Ordered"
 msgstr "订购的时间"
 
-#: templates/customer-plain.php:22
+#: templates/customer-plain.php:30
 msgid "Order Information"
 msgstr "订单信息"
 
-#: templates/details-html.php:18
+#. translators: %s: order identifier.
+#: templates/details-html.php:25
 #, php-format
 msgid "Order #%s"
 msgstr "订单 #%s"
 
-#: templates/details-html.php:22
+#: templates/details-html.php:31
 msgid "Time"
 msgstr "时间"
 
-#: templates/details-html.php:109 templates/details-plain.php:48
-#: templates/order-html.php:96 templates/order-plain.php:37
+#: templates/details-html.php:125
+#: templates/details-plain.php:63
+#: templates/order-html.php:103
+#: templates/order-plain.php:45
 msgid "Billing address"
 msgstr "帐单地址"
 
-#: templates/details-html.php:113 templates/details-plain.php:53
-#: templates/order-html.php:100 templates/order-plain.php:42
+#: templates/details-plain.php:68
+#: templates/order-html.php:107
+#: templates/order-plain.php:50
 msgid "N/A"
 msgstr "N/A"
 
-#: templates/details-html.php:135 templates/details-plain.php:67
-#: templates/order-html.php:122 templates/order-plain.php:56
+#: templates/details-html.php:152
+#: templates/details-plain.php:83
+#: templates/order-html.php:130
+#: templates/order-plain.php:65
 msgid "Shipping address"
 msgstr "配送地址"
 
-#. Plugin Name of the plugin/theme
-msgid "Print Manager for WooCommerce"
-msgstr "WooCommerce 的打印管理器"
+#. Description of the plugin
+msgid "Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!"
+msgstr "使用 BizPrint 云打印服务轻松添加对打印 WooCommerce 订单的支持，并打印到世界任何地方！"
 
-#. Plugin URI of the plugin/theme
-msgid "http://www.bizswoop.com/wp/print"
-msgstr "http://www.bizswoop.com/wp/print"
-
-#. Description of the plugin/theme
-msgid ""
-"Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print "
-"Service and Print to Anywhere in the World!"
-msgstr ""
-"使用 BizPrint 云打印服务轻松添加对打印 WooCommerce 订单的支持，并打印到世界任"
-"何地方！"
-
-#. Author of the plugin/theme
+#. Author of the plugin
 msgid "BizSwoop a CPF Concepts, LLC Brand"
 msgstr "BizSwoop 是 CPF Concepts， LLC 品牌"
 
-#. Author URI of the plugin/theme
+#. Author URI of the plugin
 msgid "http://www.bizswoop.com"
 msgstr "http://www.bizswoop.com"
 
-msgid "Print Google Cloud Print GCP WooCommerce require WooCommerce"
-msgstr "打印 Google Cloud Print GCP WooCommerce 需要 WooCommerce"
+#. Plugin Name of the plugin
+msgid "BizPrint Print Manager for WooCommerce"
+msgstr "适用于 WooCommerce 的 BizPrint 打印管理器"
+
+#. Plugin URI of the plugin
+msgid "http://www.getbizprint.com"
+msgstr "http://www.getbizprint.com"
+
+#: includes/Addons.php:17
+msgid "Our Full Collection of Print Templates"
+msgstr "我们的打印模板全集"
+
+#: includes/Addons.php:20
+#: includes/Admin/Layout.php:90
+#: setting/addons.php:11
+msgid "Marketplace"
+msgstr "市场"
+
+#: includes/Addons.php:23
+msgid "Explore templates"
+msgstr "探索模板"
+
+#: includes/Addons.php:31
+msgid "Extensions for Popular Plugins"
+msgstr "流行插件的扩展名"
+
+#: includes/Addons.php:34
+msgid "Template Extensions"
+msgstr "模板扩展"
+
+#: includes/Addons.php:37
+msgid "Shop extensions"
+msgstr "商店扩展"
+
+#: includes/Addons.php:48
+msgid "Custom Branding, Product Mapping & More"
+msgstr "自定义品牌、产品映射和更多"
+
+#: includes/Addons.php:51
+msgid "Shop add-ons"
+msgstr "商店加额"
+
+#: includes/Addons.php:56
+msgid "Hardware"
+msgstr "硬件"
+
+#: includes/Addons.php:59
+msgid "Hardware Designed for BizPrint"
+msgstr "设计用于BizPrint"
+
+#: includes/Addons.php:62
+msgid "View hardware"
+msgstr "查看硬件"
+
+#: includes/Addons.php:70
+msgid "Developers"
+msgstr "开发者"
+
+#: includes/Addons.php:73
+msgid "Tools & Templates"
+msgstr "工具模板( T)"
+
+#: includes/Addons.php:76
+msgid "Use tools"
+msgstr "使用工具"
+
+#: includes/Admin.php:51
+msgid "Order(s) is printing"
+msgstr "顺序是打印"
+
+#: includes/Admin.php:60
+msgid "Print error"
+msgstr "打印错误"
+
+#: includes/Admin.php:188
+msgid "You're almost there. Set up BizPrint to start printing automatically"
+msgstr "你马上就到了 设置BizPrint自动开始打印"
+
+#: includes/Admin.php:198
+msgid "BizPrint setup illustration"
+msgstr "BizPrint设置插图"
+
+#: includes/Admin.php:203
+msgid "Finish Setup to Start Printing Automatically"
+msgstr "完成自动开始打印的设置"
+
+#: includes/Admin.php:209
+msgid "Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands."
+msgstr "用可靠,可缩放的打印解决方案节省时间,减少复杂性. 使用你现有的打印机——在所有主要品牌上工作."
+
+#: includes/Admin.php:216
+msgid "You're almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders."
+msgstr "你几乎准备好打印。 按照我们的快速启动指南连接您的打印机并开始打印收据和订单."
+
+#: includes/Admin.php:223
+msgid "Launch Quick Start Guide"
+msgstr "启动快速启动指南"
+
+#: includes/Admin.php:229
+msgid "Go to print settings"
+msgstr "转到打印设置"
+
+#: includes/Admin.php:233
+msgid "Get Support"
+msgstr "获取支持"
+
+#: includes/Admin/Layout.php:44
+msgid "Print to anywhere with BizPrint"
+msgstr "打印到任何地方BizPrint"
+
+#: includes/Admin/PrintDialog.php:67
+#: includes/Admin/PrintDialog.php:160
+msgid "You do not have permission to perform this action."
+msgstr "您没有执行此动作的权限 。"
+
+#: includes/Admin/PrintDialog.php:81
+#: includes/Admin/PrintDialog.php:181
+msgid "One or more orders could not be found."
+msgstr "找不到一个或多个命令 。"
+
+#: includes/Admin/PrintDialog.php:91
+msgid "Print Orders"
+msgstr "打印命令"
+
+#: includes/Admin/PrintDialog.php:103
+msgid "Close"
+msgstr "关闭"
+
+#: includes/Admin/PrintDialog.php:120
+msgid "Select Location(s)"
+msgstr "选择位置"
+
+#. translators: %s: formatted order ID or list of order IDs.
+#: includes/Admin/PrintDialog.php:191
+msgid "the print job for order %s was sent successfully"
+msgid_plural "the print job for orders %s were sent successfully"
+msgstr[0] "订单 %s 的打印任务已成功发送"
+
+#: includes/Debug/Tab.php:19
+msgid "Create a support request"
+msgstr "创建支持请求"
+
+#: includes/Support/BasePage.php:99
+msgid "Settings saved."
+msgstr "设置已保存。"
+
+#. translators: %s: file path.
+#: includes/Support/Fs.php:37
+msgid "Can't write the %s."
+msgstr "不能写%s."
+
+#. translators: %s: file path.
+#: includes/Support/Fs.php:55
+msgid "Can't read the %s."
+msgstr "不能读%s."
+
+#: includes/Support/Page.php:16
+#: includes/Support/Support.php:41
+msgid "BizSwoop Support"
+msgstr "BizSwoop 支持系统"
+
+#: includes/Support/Support.php:62
+msgid "Support User"
+msgstr "支持用户"
+
+#: includes/Support/Support.php:66
+msgid "This section allows you to quickly create a user with administrator role that can be used by the support team to access the website for debugging purposes."
+msgstr "本节允许您快速创建一个具有管理员角色的用户,由支援团队用于调试目的访问网站."
+
+#: includes/Support/Support.php:74
+msgid "Delete user after days"
+msgstr "几天后删除用户"
+
+#: includes/Support/Support.php:81
+msgid "Set to 0 to disable automatic deletion."
+msgstr "设定为 0 以禁用自动删除 。"
+
+#: includes/Support/Support.php:107
+#: includes/Support/Support.php:284
+msgid "Username"
+msgstr "用户名"
+
+#: includes/Support/Support.php:117
+msgid "Continue existence"
+msgstr "继续存在"
+
+#: includes/Support/Support.php:124
+msgid "Recreate user"
+msgstr "重新创建用户"
+
+#: includes/Support/Support.php:133
+msgid "Delete user"
+msgstr "删除用户"
+
+#: includes/Support/Support.php:165
+msgid "Will be auto-deleted"
+msgstr "将自动删除"
+
+#. translators: %s: number of days before automatic deletion.
+#: includes/Support/Support.php:169
+msgid "after less than %s days"
+msgstr "小于%s天数"
+
+#: includes/Support/Support.php:183
+msgid "Are you sure to recreate the support user? This will cause loss of access for those providing support, you will need to reshare this to keep their access."
+msgstr "您确定要重新创建支持用户吗 ? 这将导致提供支持者失去访问权限,你需要重新分配,以保持他们的访问权限."
+
+#: includes/Support/Support.php:187
+msgid "Are you sure to delete the support user? This will cause loss of access for those providing support."
+msgstr "您确定要删除支持用户吗 ? 这将造成提供支助者无法进入。"
+
+#: includes/Support/Support.php:193
+msgid "Support user not yet created."
+msgstr "支持用户尚未创建 。"
+
+#: includes/Support/Support.php:198
+msgid "Create user in one click"
+msgstr "点击一次创建用户"
+
+#: includes/Support/Support.php:220
+msgid "Support user created."
+msgstr "支持用户创建 。"
+
+#: includes/Support/Support.php:225
+msgid "Support user deleted."
+msgstr "支持用户删除 。"
+
+#: includes/Support/Support.php:231
+msgid "Support user recreated."
+msgstr "支持用户重新创建."
+
+#. translators: %s: site host name.
+#: includes/Support/Support.php:239
+msgid "Support access to %s"
+msgstr "支持访问%s"
+
+#: includes/Support/Support.php:250
+msgid "An error occurred while trying to send the email."
+msgstr "试图发送电子邮件时出错 。"
+
+#. translators: %s: linked site URL.
+#: includes/Support/Support.php:272
+msgid "You have been requested for support and granted administrative access to %s."
+msgstr "您已被请求支持并获准行政访问%s."
+
+#: includes/Support/Support.php:279
+msgid "Note!"
+msgstr "记着!"
+
+#. translators: %s: number of days before automatic deletion.
+#: includes/Support/Support.php:279
+msgid "User will be auto-deleted after less than %s days."
+msgstr "用户在小于%s几天时间。"
+
+#: includes/Support/Support.php:286
+msgid "Password"
+msgstr "密码"
+
+#: includes/Support/Support.php:318
+msgid "Support user existence extended."
+msgstr "支持用户存在扩展 。"
+
+#: includes/Templates/Advanced/AddressLabels.php:13
+msgid "Address Labels"
+msgstr "地址标签"
+
+#: includes/Templates/Advanced/DeliveryNote.php:13
+msgid "Delivery Note"
+msgstr "交货说明"
+
+#: includes/Templates/Advanced/DispatchLabel.php:13
+msgid "Dispatch Label"
+msgstr "调度标签"
+
+#: includes/Templates/Advanced/Invoice.php:13
+#: templates/advanced/invoice-html.php:14
+msgid "Invoice"
+msgstr "发票"
+
+#: includes/Templates/Advanced/PackingSlip.php:13
+msgid "Packing Slip"
+msgstr "包装滑动"
+
+#: includes/Templates/Advanced/PickList.php:13
+msgid "Pick List"
+msgstr "选择列表"
+
+#: includes/Templates/Advanced/ShippingLabel.php:13
+msgid "Shipping Label"
+msgstr "货运标签"
+
+#: includes/Translate.php:128
+msgid "German (Austria)"
+msgstr "奥地利德语"
+
+#: includes/Translate.php:130
+msgid "German (Switzerland)"
+msgstr "瑞士高地德语"
+
+#: includes/Translate.php:132
+msgid "German (Germany)"
+msgstr "德语（德国）"
+
+#: includes/Translate.php:134
+msgid "Spanish (Argentina)"
+msgstr "西班牙语（阿根廷）"
+
+#: includes/Translate.php:136
+msgid "Spanish (Chile)"
+msgstr "西班牙语（智利）"
+
+#: includes/Translate.php:138
+msgid "Spanish (Costa Rica)"
+msgstr "西班牙语（哥斯达黎加）"
+
+#: includes/Translate.php:140
+msgid "Spanish (Colombia)"
+msgstr "西班牙语（哥伦比亚）"
+
+#: includes/Translate.php:142
+msgid "Spanish (Dominican Republic)"
+msgstr "西班牙语（多米尼加共和国）"
+
+#: includes/Translate.php:144
+msgid "Spanish (Ecuador)"
+msgstr "西班牙语（厄瓜多尔）"
+
+#: includes/Translate.php:146
+msgid "Spanish (Spain)"
+msgstr "欧洲西班牙语"
+
+#: includes/Translate.php:148
+msgid "Spanish (Guatemala)"
+msgstr "西班牙语（危地马拉）"
+
+#: includes/Translate.php:150
+msgid "Spanish (Honduras)"
+msgstr "西班牙语（洪都拉斯）"
+
+#: includes/Translate.php:152
+msgid "Spanish (Mexico)"
+msgstr "墨西哥西班牙语"
+
+#: includes/Translate.php:154
+msgid "Spanish (Peru)"
+msgstr "西班牙语（秘鲁）"
+
+#: includes/Translate.php:156
+msgid "Spanish (Puerto Rico)"
+msgstr "西班牙语（波多黎各）"
+
+#: includes/Translate.php:158
+msgid "Spanish (Uruguay)"
+msgstr "西班牙语（乌拉圭）"
+
+#: includes/Translate.php:160
+msgid "Spanish (Venezuela)"
+msgstr "西班牙语（委内瑞拉）"
+
+#: includes/Translate.php:162
+msgid "French (Belgium)"
+msgstr "法语（比利时）"
+
+#: includes/Translate.php:164
+msgid "French (Canada)"
+msgstr "加拿大法语"
+
+#: includes/Translate.php:166
+msgid "French (France)"
+msgstr "法语（法国）"
+
+#: includes/Translate.php:168
+msgid "Hebrew"
+msgstr "希伯来语"
+
+#: includes/Translate.php:170
+msgid "Hungarian"
+msgstr "匈牙利语"
+
+#: includes/Translate.php:172
+msgid "Italian (Italy)"
+msgstr "意大利语（意大利）"
+
+#: includes/Translate.php:174
+msgid "Norwegian Bokmål"
+msgstr "书面挪威语"
+
+#: includes/Translate.php:176
+msgid "Norwegian Nynorsk"
+msgstr "挪威尼诺斯克语"
+
+#: includes/Translate.php:178
+msgid "Dutch (Netherlands)"
+msgstr "荷兰语（荷兰）"
+
+#: includes/Translate.php:180
+msgid "Portuguese (Brazil)"
+msgstr "巴西葡萄牙语"
+
+#: includes/Translate.php:182
+msgid "Portuguese (Portugal)"
+msgstr "欧洲葡萄牙语"
+
+#: includes/Translate.php:184
+msgid "Russian (Russia)"
+msgstr "俄语（俄罗斯）"
+
+#: includes/Translate.php:186
+msgid "Swedish (Åland Islands)"
+msgstr "瑞典语（奥兰群岛）"
+
+#: includes/Translate.php:188
+msgid "Swedish (Finland)"
+msgstr "瑞典语（芬兰）"
+
+#: includes/Translate.php:190
+msgid "Swedish (Sweden)"
+msgstr "瑞典语（瑞典）"
+
+#: includes/Translate.php:192
+msgid "Turkish"
+msgstr "土耳其语"
+
+#: includes/Translate.php:194
+msgid "Ukrainian"
+msgstr "乌克兰语"
+
+#: setting/application.php:13
+msgid "Application"
+msgstr "应用程序"
+
+#: setting/application.php:20
+msgid "Application account settings"
+msgstr "应用程序账户设置"
+
+#: setting/general.php:24
+msgid "Open"
+msgstr "开放"
+
+#: setting/general.php:35
+msgid "View"
+msgstr "查看"
+
+#: setting/general.php:42
+msgid "Quick Start Guide"
+msgstr "快速启动指南"
+
+#: setting/general.php:46
+msgid "Launch"
+msgstr "发射"
+
+#: setting/general.php:70
+msgid "Website Orders"
+msgstr "网站命令"
+
+#: setting/general.php:71
+msgid "Point of Sale Orders"
+msgstr "销售订单点"
+
+#: setting/general.php:74
+msgid "Orders Saved in Point of Sale"
+msgstr "在销售点保存的命令"
+
+#: setting/general.php:85
+msgid "Automatically Printed Website Order Statuses"
+msgstr "自动打印网站顺序状态"
+
+#: setting/general.php:90
+msgid "Automatically Printed Order Statuses"
+msgstr "自动打印顺序状态"
+
+#: setting/locations/index.php:32
+#: setting/locations/single.php:90
+msgid "Description"
+msgstr "描述"
+
+#: setting/locations/index.php:36
+msgid "Automatic Print Website Order"
+msgstr "自动打印网站顺序"
+
+#: setting/locations/index.php:45
+msgid "Automatic Print POS Order"
+msgstr "自动打印 POS 订单"
+
+#: setting/locations/index.php:73
+#: setting/locations/index.php:81
+msgid "Disabled"
+msgstr "已停用"
+
+#: setting/locations/index.php:94
+msgid "All Users (Auto)"
+msgstr "所有用户( 自动)"
+
+#: setting/locations/index.php:149
+msgid "Create your first printer location"
+msgstr "创建您的第一个打印机位置"
+
+#: setting/locations/index.php:154
+msgid "Watch a video"
+msgstr "观看视频"
+
+#: setting/locations/single.php:32
+msgid "Site Default Language Setting"
+msgstr "站点默认语言设置"
+
+#: setting/locations/single.php:109
+msgid "Automatic Printing for Website Orders"
+msgstr "为网站命令自动打印"
+
+#: setting/locations/single.php:118
+msgid "Automatic Printing for Point of Sale Orders"
+msgstr "销售订单点自动打印"
+
+#: setting/locations/single.php:145
+msgid "Automatically include all users (current and future)"
+msgstr "自动包括所有用户(当前和未来)"
+
+#: setting/locations/single.php:218
+msgid "Select Address Type"
+msgstr "选择地址类型"
+
+#: setting/locations/single.php:224
+msgid "Shipping Address"
+msgstr "配送地址"
+
+#: setting/locations/single.php:230
+msgid "Billing Address"
+msgstr "账单地址"
+
+#: setting/locations/single.php:236
+#: templates/advanced/dispatch-label-html.php:52
+#: templates/advanced/pick-list-html.php:52
+msgid "From Address"
+msgstr "从地址"
+
+#: setting/locations/single.php:242
+msgid "Return Address"
+msgstr "返回地址"
+
+#: setting/locations/single.php:253
+msgid "Return Address Line 1"
+msgstr "返回地址线 1"
+
+#: setting/locations/single.php:257
+msgid "Return Address Line 2"
+msgstr "返回地址线 2"
+
+#: setting/locations/single.php:261
+msgid "Return City"
+msgstr "回归城市"
+
+#: setting/locations/single.php:266
+msgid "Return Country / State"
+msgstr "返回国/国家"
+
+#: setting/locations/single.php:283
+msgid "Return Postcode"
+msgstr "返回邮政编码"
+
+#: setting/setting.php:51
+msgid "Network Settings"
+msgstr "网络设置"
+
+#: setting/setting.php:58
+msgid "Custom Request Timeout"
+msgstr "自定义请求超时"
+
+#: setting/setting.php:61
+msgid "Override the default WordPress HTTP timeout (5 seconds) for print service requests."
+msgstr "覆盖默认WordPress HTTP 打印服务请求的超时( 5秒) 。"
+
+#: setting/setting.php:69
+msgid "Timeout (seconds)"
+msgstr "超时( 秒)"
+
+#: setting/setting.php:73
+msgid "Number of seconds to wait for print service response. Recommended: 10-30 seconds."
+msgstr "等待打印服务响应的秒数 。 建议:10-30秒。"
+
+#: setting/setting.php:80
+msgid "Enable Network Retry"
+msgstr "启用网络重试"
+
+#: setting/setting.php:83
+msgid "Retry failed print requests once on connection timeout or network errors. Note: May cause duplicate prints if the server received the original request."
+msgstr "在连接超时或网络错误时重试一次失败的打印请求 。 注:如果服务器收到原始请求,则可能造成重复打印."
+
+#: setting/setting.php:91
+msgid "Disable SSL Verification"
+msgstr "禁用 SSL 校验"
+
+#: setting/setting.php:94
+msgid "Disable SSL certificate verification for print service requests. Only enable if you have TLS inspection or custom certificate authorities in your network."
+msgstr "为打印服务请求禁用 SSL 证书验证 。 只有在您的网络中设置了 TLS 检查或自定义证书权限时才能启用 。"
+
+#: setting/setting.php:96
+msgid "Disable"
+msgstr "禁用"
+
+#: setting/setting.php:102
+msgid "Background Print Processing"
+msgstr "背景打印处理"
+
+#: setting/setting.php:105
+msgid "Process print jobs in the background instead of during checkout. Checkout completes immediately and print jobs are sent asynchronously. Recommended for sites experiencing print service timeouts."
+msgstr "在背景中处理打印任务, 而不是在退出时处理 。 立即完成检查并同步发送打印任务. 建议印刷服务暂停的地点。"
+
+#: setting/setting.php:113
+msgid "Queue Failed Jobs"
+msgstr "队列失败的任务"
+
+#: setting/setting.php:116
+msgid "When a print job fails during checkout, automatically queue it for background retry. Jobs will retry with increasing delays up to 5 times. Only applies when Background Print Processing is disabled."
+msgstr "当一个打印工作在退出时失败, 请自动排队以进行背景重试 。 工作将重复试验,拖延时间会增加多达5次。 只有在背景打印处理被禁用时才适用."
+
+#: setting/support.php:13
+msgid "Support"
+msgstr "支持"
+
+#: setting/support.php:149
+msgid "Delete Data and Reset"
+msgstr "删除数据并重置"
+
+#: setting/support.php:151
+msgid "Yes, Delete data and reset settings when plugin is deactivated and deleted. All settings will be deleted."
+msgstr "是, 当插件被关闭和删除时删除数据并重设设置 。 所有设置将被删除 。"
+
+#: setting/support.php:175
+msgid "Print Job Queue"
+msgstr "打印任务队列"
+
+#: setting/support.php:182
+msgid "Queue Status"
+msgstr "队列状态"
+
+#: setting/support.php:186
+msgid "Pending"
+msgstr "即将进行的"
+
+#: setting/support.php:187
+msgid "Processing"
+msgstr "正在处理"
+
+#: setting/support.php:188
+msgid "Completed"
+msgstr "已完成"
+
+#: setting/support.php:189
+msgid "Failed"
+msgstr "已失败"
+
+#: setting/support.php:200
+msgid "Failed Jobs"
+msgstr "失败的任务"
+
+#: setting/support.php:205
+msgid "ID"
+msgstr "ID"
+
+#: setting/support.php:206
+msgid "Order"
+msgstr "订单"
+
+#: setting/support.php:207
+msgid "Attempts"
+msgstr "尝试"
+
+#: setting/support.php:208
+msgid "Last Error"
+msgstr "上次错误"
+
+#: setting/support.php:234
+msgid "Manual Processing"
+msgstr "手动处理"
+
+#: setting/support.php:235
+msgid "Process Queue Now"
+msgstr "进程队列"
+
+#: setting/support.php:250
+msgid "Cleanup Completed"
+msgstr "清理完成"
+
+#: setting/support.php:251
+msgid "Clear Completed Jobs"
+msgstr "清除已完成的工作"
+
+#: setting/support.php:266
+msgid "Cleanup All"
+msgstr "全部清理"
+
+#: setting/support.php:267
+msgid "Clear All Jobs"
+msgstr "清除全部任务"
+
+#: setting/support.php:269
+msgid "Removes all jobs from queue (completed, pending, and failed)."
+msgstr "删除队列中的所有任务( 已完成、 待决和失败) 。"
+
+#: setting/support.php:291
+msgid "Job queued for retry"
+msgstr "重试任务队列"
+
+#: setting/support.php:293
+msgid "Failed to retry job"
+msgstr "重试任务失败"
+
+#: setting/support.php:303
+msgid "Job deleted"
+msgstr "任务已删除"
+
+#: setting/support.php:305
+msgid "Failed to delete job"
+msgstr "删除任务失败"
+
+#: setting/support.php:319
+msgid "Retrying..."
+msgstr "正在重试..."
+
+#: setting/support.php:336
+msgid "Are you sure you want to delete this job?"
+msgstr "您确定要删除此任务吗 ?"
+
+#: setting/support.php:342
+msgid "Deleting..."
+msgstr "正在删除..."
+
+#: setting/support.php:383
+msgid "Log is empty"
+msgstr "日志为空"
+
+#: templates/advanced/delivery-note-html.php:14
+msgid "Delivery note"
+msgstr "交货说明"
+
+#: templates/advanced/delivery-note-html.php:36
+#: templates/advanced/dispatch-label-html.php:36
+#: templates/advanced/invoice-html.php:36
+#: templates/advanced/packing-slip-html.php:36
+#: templates/advanced/pick-list-html.php:36
+msgid "Logo"
+msgstr "徽标"
+
+#: templates/advanced/delivery-note-html.php:54
+#: templates/advanced/dispatch-label-html.php:81
+#: templates/advanced/packing-slip-html.php:54
+#: templates/advanced/shipping-label-html.php:47
+#: templates/advanced/shipping-label-plain.php:33
+msgid "Order No."
+msgstr "命令号"
+
+#: templates/advanced/delivery-note-html.php:57
+#: templates/advanced/dispatch-label-html.php:84
+#: templates/advanced/packing-slip-html.php:57
+msgid "Order Date"
+msgstr "订单日期"
+
+#: templates/advanced/delivery-note-html.php:61
+#: templates/advanced/packing-slip-html.php:61
+msgid "Shipping Method"
+msgstr "配送方式"
+
+#: templates/advanced/delivery-note-html.php:66
+#: templates/advanced/packing-slip-html.php:66
+msgid "Shipping Details"
+msgstr "运输详情"
+
+#: templates/advanced/delivery-note-html.php:76
+#: templates/advanced/invoice-html.php:52
+#: templates/advanced/packing-slip-html.php:76
+msgid "From"
+msgstr "从"
+
+#: templates/advanced/delivery-note-html.php:98
+#: templates/advanced/dispatch-label-html.php:96
+#: templates/advanced/invoice-html.php:76
+#: templates/advanced/packing-slip-html.php:98
+msgid "Bill to"
+msgstr "账单"
+
+#: templates/advanced/delivery-note-html.php:118
+#: templates/advanced/dispatch-label-html.php:116
+#: templates/advanced/packing-slip-html.php:118
+msgid "Phone"
+msgstr "电话"
+
+#: templates/advanced/delivery-note-html.php:120
+#: templates/advanced/delivery-note-html.php:148
+#: templates/advanced/dispatch-label-html.php:118
+#: templates/advanced/dispatch-label-html.php:146
+#: templates/advanced/functions.php:100
+#: templates/advanced/functions.php:113
+#: templates/advanced/invoice-html.php:97
+#: templates/advanced/packing-slip-html.php:120
+#: templates/advanced/packing-slip-html.php:148
+#: templates/advanced/shipping-label-html.php:86
+#: templates/advanced/shipping-label-plain.php:63
+msgid "Guest"
+msgstr "访客"
+
+#: templates/advanced/delivery-note-html.php:127
+#: templates/advanced/dispatch-label-html.php:125
+#: templates/advanced/packing-slip-html.php:127
+msgid "Ship to"
+msgstr "配送至"
+
+#: templates/advanced/delivery-note-html.php:160
+#: templates/advanced/dispatch-label-html.php:158
+#: templates/advanced/invoice-html.php:124
+#: templates/advanced/packing-slip-html.php:160
+msgid "S.No"
+msgstr "S. 无"
+
+#: templates/advanced/delivery-note-html.php:161
+#: templates/advanced/packing-slip-html.php:161
+#: templates/advanced/pick-list-html.php:94
+msgid "Image"
+msgstr "图像"
+
+#: templates/advanced/delivery-note-html.php:162
+#: templates/advanced/dispatch-label-html.php:159
+#: templates/advanced/pick-list-html.php:95
+msgid "SKU"
+msgstr "SKU"
+
+#: templates/advanced/delivery-note-html.php:164
+#: templates/advanced/dispatch-label-html.php:161
+#: templates/advanced/invoice-html.php:126
+#: templates/advanced/packing-slip-html.php:163
+#: templates/advanced/pick-list-html.php:97
+msgid "Quantity"
+msgstr "数量"
+
+#: templates/advanced/delivery-note-html.php:165
+#: templates/advanced/dispatch-label-html.php:162
+#: templates/advanced/invoice-html.php:127
+msgid "Unit price"
+msgstr "单位价格"
+
+#: templates/advanced/delivery-note-html.php:166
+#: templates/advanced/dispatch-label-html.php:163
+#: templates/advanced/invoice-html.php:128
+msgid "Total price"
+msgstr "总价格"
+
+#: templates/advanced/dispatch-label-html.php:78
+msgid "Invoice No."
+msgstr "发票编号:"
+
+#: templates/advanced/dispatch-label-html.php:87
+msgid "Dispatch Date"
+msgstr "发送日期"
+
+#: templates/advanced/dispatch-label-html.php:224
+#: templates/advanced/invoice-html.php:185
+msgid "Shipping details"
+msgstr "配送详情"
+
+#: templates/advanced/dispatch-label-html.php:259
+#: templates/advanced/invoice-html.php:220
+#: templates/advanced/shipping-label-html.php:54
+#: templates/advanced/shipping-label-plain.php:41
+msgid "Customer note"
+msgstr "客户备注"
+
+#: templates/advanced/functions.php:75
+msgid "n/a"
+msgstr "无"
+
+#: templates/advanced/invoice-html.php:106
+msgid "Invoice no"
+msgstr "无发票"
+
+#: templates/advanced/invoice-html.php:109
+#: templates/advanced/shipping-label-html.php:50
+#: templates/advanced/shipping-label-plain.php:37
+msgid "Order date"
+msgstr "顺序日期"
+
+#: templates/advanced/invoice-html.php:112
+msgid "Payment method"
+msgstr "付款方式"
+
+#: templates/advanced/invoice-html.php:198
+msgid "Add tip amount"
+msgstr "添加小费金额"
+
+#: templates/advanced/invoice-html.php:205
+msgid "Amount collected"
+msgstr "实收数额"
+
+#: templates/advanced/packing-slip-html.php:14
+msgid "Packing slip"
+msgstr "包装单"
+
+#: templates/advanced/packing-slip-html.php:164
+#: templates/advanced/pick-list-html.php:98
+msgid "Total weight"
+msgstr "总重量"
+
+#: templates/advanced/pick-list-html.php:79
+msgid "Orders"
+msgstr "订单"
+
+#: templates/advanced/pick-list-html.php:82
+msgid "Printed on"
+msgstr "打印于"
+
+#: templates/advanced/pick-list-html.php:135
+msgid "Terms and conditions apply"
+msgstr "适用条款和条件"
+
+#: templates/advanced/shipping-label-html.php:64
+#: templates/advanced/shipping-label-plain.php:47
+msgid "To"
+msgstr "改为"
+
+#: templates/advanced/shipping-label-html.php:83
+#: templates/advanced/shipping-label-plain.php:60
+msgid "Tel"
+msgstr "电话"
+
+#. translators: %1$s: line break; %2$s: right-caret icon.
+#: setting/locations/index.php:137
+msgctxt "%1$s - line break, %2$s - caret right icon"
+msgid "Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer."
+msgstr "创建打印机位置, 从 :%1$s您的仓库%2$s BizPrint %2$s您的连接打印机。"

@@ -13,7 +13,7 @@ abstract class Page extends BasePage {
 	}
 
 	public static function get_toplevel_title( bool $lowercase = false ): string {
-		$title = __( 'DevAssistant', 'Print-Google-Cloud-Print-GCP-WooCommerce' );
+		$title = __( 'BizSwoop Support', 'Print-Google-Cloud-Print-GCP-WooCommerce' );
 
 		return $lowercase ? mb_strtolower( $title ) : $title;
 	}
@@ -22,7 +22,7 @@ abstract class Page extends BasePage {
 
 	public function render_page(): void {
 		?>
-		<div class="da-setting-page wrap">
+		<div class="bizswoop-support-setting-page wrap">
 			<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
 			<?php $this->render_content(); ?>
 		</div>

@@ -1,255 +1,141 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Print Google Cloud Print GCP WooCommerce\n"
-"POT-Creation-Date: 2021-08-12 22:36+0300\n"
-"PO-Revision-Date: 2021-08-12 22:39+0300\n"
+"Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-08-12 22:36+0300\n"
+"PO-Revision-Date: 2021-08-12 22:39+0300\n"
+"Language: uk\n"
 "X-Generator: Poedit 3.0\n"
 "X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: includes/Addons.php:20
-msgid "Add more functionality"
-msgstr "Додайте більше функціональних можливостей"
-
-#: includes/Addons.php:34 setting/logs.php:30
+#: setting/support.php:65
 msgid "Active"
 msgstr "Активний"
 
-#: includes/Addons.php:39 setting/general.php:38
-#: setting/locations/single.php:112 setting/locations/single.php:121
+#: setting/general.php:77
+#: setting/locations/single.php:113
+#: setting/locations/single.php:122
+#: setting/setting.php:63
+#: setting/setting.php:85
+#: setting/setting.php:107
+#: setting/setting.php:118
 msgid "Enable"
 msgstr "Увімкнути"
 
-#: includes/Addons.php:44
-msgid "Install"
-msgstr "Встановити"
-
-#: includes/Addons.php:62
-msgid "Explore more products, platforms and services"
-msgstr "Досліджуйте більше продуктів, платформ та послуг"
-
-#: includes/Addons.php:87
-msgid "Your life`s work, our technology"
-msgstr "Справа вашого життя, наші технології"
-
-#: includes/Addons.php:91
-msgid "Visit Us"
-msgstr "Відвідайте нас"
-
-#: includes/Addons.php:101
-msgid "More info"
-msgstr "Детальніше"
-
-#: includes/Addons.php:105
-msgid "White Label Branding"
-msgstr "Брендинг White Label"
-
-#: includes/Addons.php:106
-msgid "Remove BizSwoop branding for a while label print template solution."
-msgstr "Скасуйте на деякий час фірмовий знак BizSwoop."
-
-#: includes/Addons.php:113
-msgid "Product Location Mapping"
-msgstr "Картування розташування товару"
-
-#: includes/Addons.php:114
-msgid ""
-"Easily configure product and category level mapping to specific print "
-"locations."
-msgstr ""
-"Легко налаштуйте відображення рівня продукту та категорії для певних місць "
-"друку."
-
-#: includes/Addons.php:121
-msgid "Sample Print Template"
-msgstr "Зразок шаблону друку"
-
-#: includes/Addons.php:122
-msgid "Developer sample template to create a custom print template."
-msgstr "Зразок шаблону розробника для створення власного шаблону друку."
-
-#: includes/Addons.php:129
-msgid "Custom Print Templates"
-msgstr "Спеціальні шаблони друку"
-
-#: includes/Addons.php:130
-msgid ""
-"A custom development service for building your own custom print template."
-msgstr "Спеціальна служба розробки для створення власного шаблону друку."
-
-#: includes/Addons.php:143
-msgid "WordPress.org"
-msgstr "WordPress.org"
-
-#: includes/Addons.php:144
-msgid "Free plugin apps for the open source community"
-msgstr "Безкоштовні програми плагінів для спільноти з відкритим кодом"
-
-#: includes/Addons.php:147
-msgid "Explore Free Apps"
-msgstr "Дослідіть безкоштовні програми"
-
-#: includes/Addons.php:150
-msgid "Premium Plugins"
-msgstr "Плагіни преміум -класу"
-
-#: includes/Addons.php:151
-msgid "Smart plugin apps for your advanced business requirements"
-msgstr "Розумні додатки для ваших розширених бізнес -вимог"
-
-#: includes/Addons.php:154
-msgid "Explore All Apps"
-msgstr "Дослідіть усі програми"
-
-#: includes/Addons.php:157
-msgid "Powerful Platforms"
-msgstr "Потужні платформи"
-
-#: includes/Addons.php:158
-msgid "Advanced platforms for agencies, developers and businesses"
-msgstr "Розширені платформи для агентств, розробників та бізнесу"
-
-#: includes/Addons.php:161
-msgid "Explore Platforms"
-msgstr "Дослідіть платформи"
-
-#: includes/Addons.php:164
-msgid "Super Services"
-msgstr "Супер послуги"
-
-#: includes/Addons.php:165
-msgid "High-touch services to boost your business technology solutions"
-msgstr ""
-"Послуги високого дотику для покращення ваших бізнес-технологічних рішень"
-
-#: includes/Addons.php:168
-msgid "Explore Services"
-msgstr "Дослідіть послуги"
-
-#: includes/Admin.php:136 includes/Admin.php:137 includes/Admin/Layout.php:32
-#: includes/Admin/Layout.php:37
+#: includes/Admin/Layout.php:35
+#: includes/Admin/Layout.php:40
+#: includes/Admin/PrintDialog.php:109
+#: includes/Admin/PrintDialog.php:112
+#: includes/Admin/PrintDialog.php:189
+#: setting/index.php:13
 msgid "Print Manager"
 msgstr "Менеджер друку"
 
-#: includes/Admin.php:140
+#: includes/Admin/PrintDialog.php:92
 msgid "Print Order"
 msgstr "Надрукувати заказ"
 
-#: includes/Admin.php:149
-msgid "Select Location"
-msgstr "Виберіть Місце"
-
-#: includes/Admin/Layout.php:41
-msgid "Print to Anywhere"
-msgstr "Друк у будь -якому місці"
-
-#: includes/Admin/Layout.php:54 setting/general.php:11
+#: includes/Admin/Layout.php:57
+#: setting/general.php:11
 msgid "General"
 msgstr "Загальні"
 
-#: includes/Admin/Layout.php:65 setting/locations.php:15
-msgid "Locations"
-msgstr "Розташування"
-
-#: includes/Admin/Layout.php:76 setting/addons.php:11
+#: includes/Addons.php:45
 msgid "Add-ons"
 msgstr "Додатки"
 
-#: includes/Admin/Layout.php:87 setting/locations/single.php:382
-#: setting/setting/index.php:10
+#: includes/Admin/Layout.php:79
+#: setting/locations/single.php:454
+#: setting/setting.php:11
 msgid "Settings"
 msgstr "Налаштування"
 
-#: includes/Admin/OrdersTable.php:31 includes/Admin/OrdersTable.php:46
-#: setting/logs.php:25
+#: includes/Admin/Order.php:25
+#: includes/Admin/OrderTable.php:61
+#: includes/Admin/OrderTable.php:85
+#: includes/Admin/OrderTable.php:100
+#: includes/Admin/PrintDialog.php:148
+#: setting/support.php:60
 msgid "Print"
 msgstr "Друк"
 
-#: includes/Aspect/Input.php:317
-msgid "Upload"
-msgstr "Завантажити"
-
-#: includes/Aspect/Input.php:319
-msgid "Remove"
-msgstr "Видалити"
-
-#: includes/Debug/Tab.php:13
+#: includes/Debug/Tab.php:16
 msgid "Requests"
 msgstr "Запити"
 
-#: includes/Debug/Tab.php:19
+#: includes/Debug/Tab.php:29
 msgid "Get Remote Printers"
 msgstr "Отримайте віддалені принтери"
 
-#: includes/Debug/Tab.php:37
+#: includes/Debug/Tab.php:48
 msgid "Order:"
 msgstr "Порядок:"
 
-#: includes/Debug/Tab.php:49
+#: includes/Debug/Tab.php:60
 msgid "Location:"
 msgstr "Розташування:"
 
-#: includes/Debug/Tab.php:62
+#: includes/Debug/Tab.php:73
 msgid "Send Print Request"
 msgstr "Надіслати запит на друк"
 
-#: includes/Model/Location.php:300
+#: includes/Model/Location.php:303
 msgid "A4"
 msgstr "A4"
 
-#: includes/Model/Location.php:301
+#: includes/Model/Location.php:304
 msgid "Letter"
 msgstr "Лист"
 
-#: includes/Model/Location.php:302
+#: includes/Model/Location.php:305
 msgid "Custom"
 msgstr "Користувацький"
 
-#: includes/Model/Location.php:321
+#: includes/Model/Location.php:324
 msgid "HTML"
 msgstr "HTML"
 
-#: includes/Model/Location.php:322
+#: includes/Model/Location.php:325
 msgid "Plain Text"
 msgstr "Звичайний текст"
 
-#: includes/Model/Location.php:357
+#: includes/Model/Location.php:360
 msgid "Portrait"
 msgstr "Портретний"
 
-#: includes/Model/Location.php:358
+#: includes/Model/Location.php:361
 msgid "Landscape"
 msgstr "Ландшафтний"
 
-#: includes/Model/Location.php:359 setting/locations/index.php:157
-#: setting/locations/index.php:159
+#: includes/Model/Location.php:362
+#: setting/locations/index.php:114
+#: setting/locations/index.php:116
 msgid "Auto"
 msgstr "Авто"
 
-#: includes/Setup.php:26
+#: includes/Setup.php:34
 msgid "Due to an unexpected error the database table was not created."
 msgstr "Через несподівану помилку таблицю бази даних не було створено."
 
-#: includes/Setup.php:26
+#: includes/Setup.php:34
+#: setting/support.php:219
+#: setting/support.php:330
 msgid "Retry"
 msgstr "Повторити"
 
-#: includes/Setup.php:30
+#: includes/Setup.php:38
 msgid "Print Manager require WooCommerce"
 msgstr "Менеджер друку вимагає WooCommerce"
 
@@ -261,115 +147,83 @@ msgstr "Клієнтська квитанція"
 msgid "Customer Order Receipt"
 msgstr "Клієнтська квитанція замовлення"
 
-#: includes/Templates/Order.php:13 templates/details-plain.php:6
+#: includes/Templates/Order.php:13
+#: templates/details-plain.php:11
 msgid "Order Receipt"
 msgstr "Квитанція замовлення"
 
-#: setting/debug.php:12
-msgid "Debug"
-msgstr "Налагодження"
-
-#: setting/general.php:17
+#: setting/general.php:56
 msgid "Automatic Order Printing"
 msgstr "Автоматичний друк замовлень"
 
-#: setting/general.php:24
+#: setting/general.php:63
 msgid "Enable Automatic Printing"
 msgstr "Увімкнення автоматичного друку"
 
-#: setting/general.php:31
-msgid "Web Orders"
-msgstr "Веб замовлення"
-
-#: setting/general.php:32
-msgid "POS Orders"
-msgstr "POS замовлення"
-
-#: setting/general.php:35
-msgid "POS Orders Save"
-msgstr "Збереження POS-замовлень"
-
-#: setting/general.php:46
-msgid "Web Orders Automatic Print Statuses"
-msgstr "Стани автоматичного друку для веб-замовлень"
-
-#: setting/general.php:51
-msgid "Orders Automatic Print Statuses"
-msgstr "Автоматичні статуси друку замовлень"
-
-#: setting/general.php:71
+#: setting/general.php:110
 msgid "Copies"
 msgstr "Копії"
 
-#: setting/index.php:15
-msgid "Print Settings"
-msgstr "Параметри друку"
-
-#: setting/locations.php:62
+#: setting/printers.php:72
 msgid "Location deleted"
 msgstr "Розташування видалено"
 
-#: setting/locations.php:68
+#: setting/printers.php:78
 msgid "Location saved"
 msgstr "Розташування збережено"
 
-#: setting/locations.php:74
+#: setting/printers.php:84
 msgid "Test print initiated, view log for details"
 msgstr "Пробний друк розпочато, перегляньте лог-журнал для подробиці"
 
-#: setting/locations.php:87
+#: setting/printers.php:50
 msgid "Add new"
 msgstr "Додати"
 
-#: setting/locations/index.php:87
-msgid "Title"
-msgstr "Назва"
-
-#: setting/locations/index.php:91
-msgid "Web Order"
-msgstr "Веб замовлення"
-
-#: setting/locations/index.php:95
+#: setting/locations/index.php:40
+#: setting/locations/index.php:71
+#: setting/locations/index.php:79
 msgid "Enabled"
 msgstr "Увімкнути"
 
-#: setting/locations/index.php:100
-msgid "POS Order"
-msgstr "POS замовлення"
-
-#: setting/locations/index.php:104 setting/locations/single.php:128
+#: includes/Admin/Layout.php:68
+#: setting/locations/index.php:49
+#: setting/locations/single.php:129
+#: setting/printers.php:15
 msgid "Printers"
 msgstr "Принтери"
 
-#: setting/locations/index.php:107 setting/locations/single.php:139
+#: setting/locations/index.php:52
+#: setting/locations/single.php:141
 msgid "Users"
 msgstr "Користувачі"
 
-#: setting/locations/index.php:110 setting/locations/single.php:151
+#: setting/locations/index.php:55
+#: setting/locations/single.php:159
 msgid "Template"
 msgstr "Шаблон"
 
-#: setting/locations/index.php:113
+#: setting/locations/index.php:58
 msgid "Size"
 msgstr "Розмір"
 
-#: setting/locations/index.php:116
+#: setting/locations/index.php:61
+#: setting/support.php:209
 msgid "Actions"
 msgstr "Дії"
 
-#: setting/locations/index.php:155 setting/locations/index.php:157
-#: setting/locations/single.php:483 setting/locations/single.php:488
-#: setting/locations/single.php:493 setting/locations/single.php:498
+#: setting/locations/index.php:112
+#: setting/locations/index.php:114
+#: setting/locations/single.php:555
+#: setting/locations/single.php:560
+#: setting/locations/single.php:565
+#: setting/locations/single.php:570
 msgid "mm"
 msgstr "мм"
 
-#: setting/locations/index.php:165
+#: setting/locations/index.php:122
 msgid "Edit"
 msgstr "Редагувати"
-
-#: setting/locations/single.php:32
-msgid "WordPress Site Default Language Setting"
-msgstr "Налаштування мови за замовчуванням для сайту WordPress"
 
 #: setting/locations/single.php:33
 msgid "User Profile Language Setting"
@@ -379,476 +233,1350 @@ msgstr "Налаштування мови профілю користувача"
 msgid "Select a Language"
 msgstr "Виберіть мову"
 
-#: setting/locations/single.php:89
-msgid "Location title"
-msgstr "Назва розташування"
-
-#: setting/locations/single.php:98
+#: setting/locations/single.php:99
 msgid "Test print"
 msgstr "Пробний друк"
 
-#: setting/locations/single.php:102
+#: setting/locations/single.php:103
 msgid "View Sample"
 msgstr "Переглянути зразок"
 
-#: setting/locations/single.php:108
-msgid "Web order printer"
-msgstr "Друк Веб-замовлень"
-
-#: setting/locations/single.php:117
-msgid "POS order printer"
-msgstr "Друк POS-замовлень"
-
-#: setting/locations/single.php:153
+#: setting/locations/single.php:161
 msgid "Need Custom Templates?"
 msgstr "Потрібні користувацькі шаблони?"
 
-#: setting/locations/single.php:155
+#: setting/locations/single.php:163
 msgid "Buy"
 msgstr "Придбати"
 
-#: setting/locations/single.php:161
+#: setting/locations/single.php:169
 msgid "Select Template"
 msgstr "Вибрати шаблон"
 
-#: setting/locations/single.php:169
+#: setting/locations/single.php:177
 msgid "Include Order Cost"
 msgstr "Включити вартість замовлення"
 
-#: setting/locations/single.php:175
+#: setting/locations/single.php:183
 msgid "Include Shipping Cost"
 msgstr "Включити вартість доставки"
 
-#: setting/locations/single.php:182
+#: setting/locations/single.php:190
 msgid "Include Billing & Shipping Details"
 msgstr "Включити подробиці оплати і доставки"
 
-#: setting/locations/single.php:189
+#: setting/locations/single.php:197
 msgid "Include Customer Details"
 msgstr "Включити відомості про клієнта"
 
-#: setting/locations/single.php:196
+#: setting/locations/single.php:204
 msgid "Include Shipping Method"
 msgstr "Включити метод доставки"
 
-#: setting/locations/single.php:203
+#: setting/locations/single.php:211
 msgid "Include Pickup or Delivery Type"
 msgstr "Включити тип доставки або доставки"
 
-#: setting/locations/single.php:210
+#: setting/locations/single.php:291
 msgid "Developer Documentation"
 msgstr "Документація розробника"
 
-#: setting/locations/single.php:216
+#: setting/locations/single.php:297
 msgid "Appearance"
 msgstr "Вигляд"
 
-#: setting/locations/single.php:347
+#: setting/locations/single.php:419
 msgid "Template Language"
 msgstr "Мова шаблонів"
 
-#: setting/locations/single.php:386
+#: setting/locations/single.php:458
 msgid "Page Orientation"
 msgstr "Орієнтація сторінки"
 
-#: setting/locations/single.php:390
+#: setting/locations/single.php:462
 msgid "Select Orientation"
 msgstr "Вибрати орієнтацію"
 
-#: setting/locations/single.php:405
+#: setting/locations/single.php:477
 msgid "Output Format"
 msgstr "Формат виводу"
 
-#: setting/locations/single.php:409
+#: setting/locations/single.php:481
 msgid "Select Format"
 msgstr "Виберіть формат"
 
-#: setting/locations/single.php:420
+#: setting/locations/single.php:492
 msgid "Plain text format symbols width"
 msgstr "Ширина символів у форматі звичайного тексту"
 
-#: setting/locations/single.php:428
+#: setting/locations/single.php:500
 msgid "Print symbols for layout debug"
 msgstr "Друкувати символи для налагодження макета"
 
-#: setting/locations/single.php:437
+#: setting/locations/single.php:509
 msgid "Basic Font Size (px)"
 msgstr "Стандартний розмір шрифта (пікс.)"
 
-#: setting/locations/single.php:444
+#: setting/locations/single.php:516
 msgid "Header Font Size (px)"
 msgstr "Розмір шрифту заголовка (пікс.)"
 
-#: setting/locations/single.php:451
+#: setting/locations/single.php:523
 msgid "Basic Font Weight (CSS value)"
 msgstr "Базова вага шрифту (значення CSS)"
 
-#: setting/locations/single.php:458
+#: setting/locations/single.php:530
 msgid "Header Font Weight (CSS value)"
 msgstr "Вага шрифту заголовку (значення CSS)"
 
-#: setting/locations/single.php:469
+#: setting/locations/single.php:541
 msgid "Custom Margins"
 msgstr "Настроювані поля"
 
-#: setting/locations/single.php:476
+#: setting/locations/single.php:548
 msgid "Layout Margins"
 msgstr "Поля макета"
 
-#: setting/locations/single.php:480
+#: setting/locations/single.php:552
 msgid "Top Margin"
 msgstr "Верхнє поле"
 
-#: setting/locations/single.php:485
+#: setting/locations/single.php:557
 msgid "Right Margin"
 msgstr "Праве полі"
 
-#: setting/locations/single.php:490
+#: setting/locations/single.php:562
 msgid "Bottom Margin"
 msgstr "Нижнє поле"
 
-#: setting/locations/single.php:495
+#: setting/locations/single.php:567
 msgid "Left Margin"
 msgstr "Ліве поле"
 
-#: setting/locations/single.php:506
+#: setting/locations/single.php:578
 msgid "Layout Size"
 msgstr "Розмір макету"
 
-#: setting/locations/single.php:510
+#: setting/locations/single.php:582
 msgid "Select Size"
 msgstr "Виберіть розмір"
 
-#: setting/locations/single.php:525
+#: setting/locations/single.php:597
 msgid "Custom Width (mm)"
 msgstr "Настроювана ширина (мм)"
 
-#: setting/locations/single.php:528
+#: setting/locations/single.php:600
 msgid "Note: use 0mm for automatic width (based on printer setting)"
-msgstr ""
-"Примітка: використовуйте 0 мм для автоматичної ширини (на основі параметрів "
-"принтера)"
+msgstr "Примітка: використовуйте 0 мм для автоматичної ширини (на основі параметрів принтера)"
 
-#: setting/locations/single.php:534
+#: setting/locations/single.php:606
 msgid "Custom Height (mm)"
 msgstr "Настроювана висота (мм)"
 
-#: setting/locations/single.php:537
-msgid ""
-"Note: use 0mm for continuous feed (some printers may not support this "
-"function)"
-msgstr ""
-"Примітка: використовуйте 0 мм для безперервної подачі (деякі принтери можуть "
-"не підтримувати цю функцію)"
+#: setting/locations/single.php:609
+msgid "Note: use 0mm for continuous feed (some printers may not support this function)"
+msgstr "Примітка: використовуйте 0 мм для безперервної подачі (деякі принтери можуть не підтримувати цю функцію)"
 
-#: setting/locations/single.php:551
+#: setting/locations/single.php:623
 msgid "Save Changes"
 msgstr "Зберегти зміни"
 
-#: setting/locations/single.php:558
+#: setting/locations/single.php:630
+#: setting/support.php:220
+#: setting/support.php:353
 msgid "Delete"
 msgstr "Видалити"
 
-#: setting/logs.php:11
-msgid "Logs"
-msgstr "Логи"
-
-#: setting/logs.php:20
+#: setting/support.php:55
 msgid "View log"
 msgstr "Перегляд журналу"
 
-#: setting/logs.php:21
+#: setting/support.php:56
 msgid "Copy log"
 msgstr "Копіювати журнал"
 
-#: setting/logs.php:32
+#: setting/support.php:67
 msgid "Save info logs"
 msgstr "Зберегти логи"
 
-#: setting/logs.php:38 setting/logs.php:76
+#: setting/support.php:74
+#: setting/support.php:115
 msgid "Log file content"
 msgstr "Вміст лог-файлу"
 
-#: setting/logs.php:50 setting/logs.php:88
+#: setting/support.php:88
+#: setting/support.php:129
 msgid "Log file"
 msgstr "Файл лог-журналу"
 
-#: setting/logs.php:51 setting/logs.php:89
+#: setting/support.php:89
+#: setting/support.php:130
 msgid "Clear log file"
 msgstr "Очистити файл лог-журналу"
 
-#: setting/logs.php:57 setting/logs.php:95
+#. translators: %s: human-readable log file size.
+#: setting/support.php:97
+#: setting/support.php:138
 #, php-format
 msgid "Log file (Size: %s)"
 msgstr "Файл журналу (розмір: %s)"
 
-#: setting/logs.php:72
+#: setting/support.php:110
 msgid "Plugin"
 msgstr "Плагін"
 
-#: setting/setting/access.php:9
+#: setting/application.php:18
 msgid "Application API Keys"
 msgstr "Ключі API додатків"
 
-#: setting/setting/index.php:17
-msgid "BizPrint Cloud Service"
-msgstr "Хмарний сервіс BizPrint"
-
-#: setting/setting/index.php:22
+#: setting/general.php:20
 msgid "Dashboard"
 msgstr "Консоль"
 
-#: setting/setting/index.php:25
+#: setting/general.php:31
 msgid "Documentation"
 msgstr "Документація"
 
-#: setting/setting/userRoles.php:15
+#: setting/setting.php:21
 msgid "Location User Roles"
 msgstr "Фільтр користувачів по типу для розташувань"
 
-#: setting/setting/userRoles.php:16
+#: setting/setting.php:22
 msgid "Select Roles for Location Mapping to Users"
 msgstr "Виберіть Ролі для відображення місцеположення для користувачів"
 
-#: setting/setting/userRoles.php:22 setting/setting/userRoles.php:36
+#: setting/setting.php:28
+#: setting/setting.php:42
 msgid "Selected Roles"
 msgstr "Вибрані типи користувачів"
 
-#: setting/setting/userRoles.php:29
+#: setting/setting.php:35
 msgid "Management Access User Roles"
 msgstr "Ролі користувачів у доступі до управління"
 
-#: setting/setting/userRoles.php:30
+#: setting/setting.php:36
 msgid "Select Roles for Access to Manage Print Settings"
 msgstr "Виберіть Ролі для доступу до керування параметрами друку"
 
-#: templates/customer-html.php:27 templates/customer-plain.php:10
-#: templates/details-plain.php:7 templates/order-html.php:23
-#: templates/order-plain.php:7
+#: templates/customer-html.php:32
+#: templates/customer-plain.php:16
+#: templates/details-plain.php:13
+#: templates/order-html.php:28
+#: templates/order-plain.php:12
 msgid "Order Number"
 msgstr "Номер замовлення"
 
-#: templates/customer-html.php:28 templates/customer-plain.php:11
-#: templates/details-html.php:20 templates/details-plain.php:8
-#: templates/order-html.php:24 templates/order-plain.php:8
+#: templates/customer-html.php:33
+#: templates/customer-plain.php:19
+#: templates/details-html.php:29
+#: templates/details-plain.php:16
+#: templates/order-html.php:29
+#: templates/order-plain.php:15
 msgid "Date"
 msgstr "Дата"
 
-#: templates/customer-html.php:30 templates/customer-html.php:66
-#: templates/customer-html.php:92 templates/customer-plain.php:13
-#: templates/customer-plain.php:52 templates/details-html.php:35
-#: templates/details-html.php:61 templates/details-plain.php:42
+#: templates/advanced/dispatch-label-html.php:250
+#: templates/advanced/invoice-html.php:211
+#: templates/customer-html.php:35
+#: templates/customer-html.php:71
+#: templates/customer-html.php:141
+#: templates/customer-plain.php:21
+#: templates/customer-plain.php:66
+#: templates/details-html.php:44
+#: templates/details-html.php:109
+#: templates/details-plain.php:56
 msgid "Total"
 msgstr "Разом"
 
-#: templates/customer-html.php:32 templates/customer-html.php:88
-#: templates/customer-plain.php:14 templates/customer-plain.php:51
-#: templates/details-html.php:57 templates/details-plain.php:41
+#: templates/customer-html.php:37
+#: templates/customer-html.php:137
+#: templates/customer-plain.php:22
+#: templates/customer-plain.php:65
+#: templates/details-html.php:105
+#: templates/details-plain.php:55
 msgid "Payment Method"
 msgstr "Спосіб оплати"
 
-#: templates/customer-html.php:37 templates/order-html.php:29
+#: templates/customer-html.php:52
+#: templates/order-html.php:40
 msgid "Time ordered"
 msgstr "Час замовлення"
 
-#: templates/customer-html.php:65 templates/details-html.php:34
-#: templates/order-html.php:51
+#: templates/advanced/delivery-note-html.php:163
+#: templates/advanced/dispatch-label-html.php:160
+#: templates/advanced/invoice-html.php:125
+#: templates/advanced/packing-slip-html.php:162
+#: templates/advanced/pick-list-html.php:96
+#: templates/customer-html.php:70
+#: templates/details-html.php:43
+#: templates/order-html.php:56
 msgid "Product"
 msgstr "Товар"
 
-#: templates/customer-html.php:72 templates/customer-plain.php:44
-#: templates/details-html.php:41 templates/details-plain.php:34
+#: templates/advanced/dispatch-label-html.php:203
+#: templates/advanced/invoice-html.php:164
+#: templates/customer-html.php:121
+#: templates/customer-plain.php:58
+#: templates/details-html.php:89
+#: templates/details-plain.php:48
 msgid "Subtotal"
 msgstr "Підсумок"
 
-#: templates/customer-html.php:78 templates/customer-plain.php:47
-#: templates/details-html.php:47 templates/details-plain.php:37
+#: templates/advanced/dispatch-label-html.php:210
+#: templates/advanced/invoice-html.php:171
+#: templates/customer-html.php:127
+#: templates/customer-plain.php:61
+#: templates/details-html.php:95
+#: templates/details-plain.php:51
 msgid "Shipping"
 msgstr "Доставка"
 
-#: templates/customer-html.php:84 templates/customer-plain.php:50
-#: templates/details-html.php:53 templates/details-plain.php:40
+#: templates/advanced/dispatch-label-html.php:231
+#: templates/advanced/invoice-html.php:192
+#: templates/customer-html.php:133
+#: templates/customer-plain.php:64
+#: templates/details-html.php:101
+#: templates/details-plain.php:54
 msgid "Tax"
 msgstr "Податок"
 
-#: templates/customer-html.php:97
+#: templates/advanced/dispatch-label-html.php:237
+#: templates/customer-html.php:146
 msgid "Add Tip Amount"
 msgstr "Додаткова суму на чай"
 
-#: templates/customer-html.php:103
+#: templates/advanced/dispatch-label-html.php:244
+#: templates/customer-html.php:152
 msgid "Amount Collected"
 msgstr "Зібрана сума"
 
-#: templates/customer-html.php:147 templates/customer-plain.php:56
-#: templates/details-html.php:102 templates/details-plain.php:46
-#: templates/order-html.php:89 templates/order-plain.php:35
+#: templates/customer-html.php:161
+#: templates/customer-plain.php:70
+#: templates/details-html.php:117
+#: templates/details-plain.php:60
+#: templates/order-html.php:95
+#: templates/order-plain.php:42
 msgid "Customer Details"
 msgstr "Деталі про клієнта"
 
-#: templates/customer-html.php:154 templates/customer-plain.php:58
+#: templates/customer-html.php:169
+#: templates/customer-plain.php:73
 msgid "Name"
 msgstr "Ім'я"
 
-#: templates/customer-html.php:160 templates/customer-plain.php:59
+#: templates/customer-html.php:175
+#: templates/customer-plain.php:74
 msgid "Telephone"
 msgstr "Номер телефону"
 
-#: templates/customer-html.php:166 templates/customer-plain.php:60
+#: includes/Support/Support.php:157
+#: templates/advanced/delivery-note-html.php:117
+#: templates/advanced/dispatch-label-html.php:115
+#: templates/advanced/packing-slip-html.php:117
+#: templates/advanced/shipping-label-html.php:84
+#: templates/advanced/shipping-label-plain.php:61
+#: templates/customer-html.php:181
+#: templates/customer-plain.php:75
 msgid "Email"
 msgstr "Email"
 
-#: templates/customer-html.php:179 templates/customer-plain.php:63
-#: templates/details-html.php:147 templates/details-plain.php:75
-#: templates/order-html.php:134 templates/order-plain.php:64
+#: templates/customer-html.php:194
+#: templates/customer-plain.php:79
+#: templates/details-html.php:165
+#: templates/details-plain.php:92
+#: templates/order-html.php:142
+#: templates/order-plain.php:74
 msgid "Order Notes"
 msgstr "Примітка до замовлення"
 
-#: templates/customer-html.php:192 templates/customer-plain.php:66
-#: templates/details-html.php:125 templates/details-plain.php:63
-#: templates/order-html.php:112 templates/order-plain.php:52
+#: templates/advanced/dispatch-label-html.php:217
+#: templates/advanced/invoice-html.php:178
+#: templates/customer-html.php:207
+#: templates/customer-plain.php:82
+#: templates/details-html.php:142
+#: templates/details-plain.php:79
+#: templates/order-html.php:120
+#: templates/order-plain.php:61
 msgid "Shipping method"
 msgstr "Метод доставки"
 
-#: templates/customer-plain.php:16 templates/order-plain.php:9
+#: templates/customer-plain.php:24
+#: templates/order-plain.php:16
 msgid "Time Ordered"
 msgstr "Час замовлення"
 
-#: templates/customer-plain.php:22
+#: templates/customer-plain.php:30
 msgid "Order Information"
 msgstr "Відомості про замовлення"
 
-#: templates/details-html.php:18
+#. translators: %s: order identifier.
+#: templates/details-html.php:25
 #, php-format
 msgid "Order #%s"
 msgstr "Замовлення #%s"
 
-#: templates/details-html.php:22
+#: templates/details-html.php:31
 msgid "Time"
 msgstr "Час"
 
-#: templates/details-html.php:109 templates/details-plain.php:48
-#: templates/order-html.php:96 templates/order-plain.php:37
+#: templates/details-html.php:125
+#: templates/details-plain.php:63
+#: templates/order-html.php:103
+#: templates/order-plain.php:45
 msgid "Billing address"
 msgstr "Платіжна адреса"
 
-#: templates/details-html.php:113 templates/details-plain.php:53
-#: templates/order-html.php:100 templates/order-plain.php:42
+#: templates/details-plain.php:68
+#: templates/order-html.php:107
+#: templates/order-plain.php:50
 msgid "N/A"
 msgstr "Н/Д"
 
-#: templates/details-html.php:135 templates/details-plain.php:67
-#: templates/order-html.php:122 templates/order-plain.php:56
+#: templates/details-html.php:152
+#: templates/details-plain.php:83
+#: templates/order-html.php:130
+#: templates/order-plain.php:65
 msgid "Shipping address"
 msgstr "Адреса доставки"
 
-#. Plugin Name of the plugin/theme
-msgid "Print Manager for WooCommerce"
-msgstr "Менеджер друку для WooCommerce"
+#. Description of the plugin
+msgid "Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!"
+msgstr "Легко додайте підтримку для друку замовлень WooCommerce за допомогою служби хмарного друку BizPrint та друкуйте в будь -якій точці світу!"
 
-#. Plugin URI of the plugin/theme
-msgid "http://www.bizswoop.com/wp/print"
-msgstr "http://www.bizswoop.com/wp/print"
-
-#. Description of the plugin/theme
-msgid ""
-"Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print "
-"Service and Print to Anywhere in the World!"
-msgstr ""
-"Легко додайте підтримку для друку замовлень WooCommerce за допомогою служби "
-"хмарного друку BizPrint та друкуйте в будь -якій точці світу!"
-
-#. Author of the plugin/theme
+#. Author of the plugin
 msgid "BizSwoop a CPF Concepts, LLC Brand"
 msgstr "Марка BizSwoop a CPF Concepts, LLC"
 
-#. Author URI of the plugin/theme
+#. Author URI of the plugin
 msgid "http://www.bizswoop.com"
 msgstr "http://www.bizswoop.com"
 
-#~ msgid "Pending Payment"
-#~ msgstr "Очікується платіж"
+#. Plugin Name of the plugin
+msgid "BizPrint Print Manager for WooCommerce"
+msgstr "BizPrint Менеджер з друку WooCommerce"
 
+#. Plugin URI of the plugin
+msgid "http://www.getbizprint.com"
+msgstr "http://www.getbizprint.com"
+
+#: includes/Addons.php:17
+msgid "Our Full Collection of Print Templates"
+msgstr "Наша повна колекція шаблонів друку"
+
+#: includes/Addons.php:20
+#: includes/Admin/Layout.php:90
+#: setting/addons.php:11
+msgid "Marketplace"
+msgstr "Маркетплейс"
+
+#: includes/Addons.php:23
+msgid "Explore templates"
+msgstr "Переглянути шаблони"
+
+#: includes/Addons.php:31
+msgid "Extensions for Popular Plugins"
+msgstr "Розширення для популярних плагінів"
+
+#: includes/Addons.php:34
+msgid "Template Extensions"
+msgstr "Розширення шаблону"
+
+#: includes/Addons.php:37
+msgid "Shop extensions"
+msgstr "Розширення магазину"
+
+#: includes/Addons.php:48
+msgid "Custom Branding, Product Mapping & More"
+msgstr "Користувальницькі Брендинг, Продукт Mapping & More"
+
+#: includes/Addons.php:51
+msgid "Shop add-ons"
+msgstr "Магазин додатків"
+
+#: includes/Addons.php:56
+msgid "Hardware"
+msgstr "Обладнання"
+
+#: includes/Addons.php:59
+msgid "Hardware Designed for BizPrint"
+msgstr "Обладнання Призначений для BizPrint"
+
+#: includes/Addons.php:62
+msgid "View hardware"
+msgstr "Переглянути обладнання"
+
+#: includes/Addons.php:70
+msgid "Developers"
+msgstr "Розробники"
+
+#: includes/Addons.php:73
+msgid "Tools & Templates"
+msgstr "Інструменти та шаблони"
+
+#: includes/Addons.php:76
+msgid "Use tools"
+msgstr "Використання інструментів"
+
+#: includes/Admin.php:51
+msgid "Order(s) is printing"
+msgstr "Замовити (s) друк"
+
+#: includes/Admin.php:60
+msgid "Print error"
+msgstr "Друк помилок"
+
+#: includes/Admin.php:188
+msgid "You're almost there. Set up BizPrint to start printing automatically"
+msgstr "Ти майже там. Налаштування BizPrint автоматично запустіть друк"
+
+#: includes/Admin.php:198
+msgid "BizPrint setup illustration"
+msgstr "BizPrint налаштування ілюстрації"
+
+#: includes/Admin.php:203
+msgid "Finish Setup to Start Printing Automatically"
+msgstr "Оздоблення для початку друку Автоматично"
+
+#: includes/Admin.php:209
+msgid "Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands."
+msgstr "Заощаджуйте час і знижуйте складність з надійним, масштабним рішенням для друку. Використовуйте наявний принтер — працює на всіх основних брендах."
+
+#: includes/Admin.php:216
+msgid "You're almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders."
+msgstr "Ви майже готові друкувати. Стежте за нашим посібником швидкого старту для підключення принтера та запуску друку чеків та замовлень."
+
+#: includes/Admin.php:223
+msgid "Launch Quick Start Guide"
+msgstr "Путівник швидкого старту"
+
+#: includes/Admin.php:229
+msgid "Go to print settings"
+msgstr "Перейти на налаштування друку"
+
+#: includes/Admin.php:233
+msgid "Get Support"
+msgstr "Отримати підтримку"
+
+#: includes/Admin/Layout.php:44
+msgid "Print to anywhere with BizPrint"
+msgstr "Друкувати в будь-яку точку світу BizPrint"
+
+#: includes/Admin/PrintDialog.php:67
+#: includes/Admin/PrintDialog.php:160
+msgid "You do not have permission to perform this action."
+msgstr "Ви не маєте дозволу на виконання цієї дії."
+
+#: includes/Admin/PrintDialog.php:81
+#: includes/Admin/PrintDialog.php:181
+msgid "One or more orders could not be found."
+msgstr "Не знайдено замовлення."
+
+#: includes/Admin/PrintDialog.php:91
+msgid "Print Orders"
+msgstr "Друк замовлень"
+
+#: includes/Admin/PrintDialog.php:103
+msgid "Close"
+msgstr "Закрити"
+
+#: includes/Admin/PrintDialog.php:120
+msgid "Select Location(s)"
+msgstr "Виберіть Місцезнаходження(s)"
+
+#. translators: %s: formatted order ID or list of order IDs.
+#: includes/Admin/PrintDialog.php:191
+msgid "the print job for order %s was sent successfully"
+msgid_plural "the print job for orders %s were sent successfully"
+msgstr[0] "Завдання друку для замовлення %s успішно надіслано"
+msgstr[1] "Завдання друку для замовлень %s успішно надіслано"
+msgstr[2] "Завдань друку для замовлень %s успішно надіслано"
+
+#: includes/Debug/Tab.php:19
+msgid "Create a support request"
+msgstr "Створити запит підтримки"
+
+#: includes/Support/BasePage.php:99
+msgid "Settings saved."
+msgstr "Налаштування збережено."
+
+#. translators: %s: file path.
+#: includes/Support/Fs.php:37
+msgid "Can't write the %s."
+msgstr "Не вдається записати %s."
+
+#. translators: %s: file path.
+#: includes/Support/Fs.php:55
+msgid "Can't read the %s."
+msgstr "Не вдається прочитати %s."
+
+#: includes/Support/Page.php:16
+#: includes/Support/Support.php:41
+msgid "BizSwoop Support"
+msgstr "Підтримка BizSwoop"
+
+#: includes/Support/Support.php:62
+msgid "Support User"
+msgstr "Користувач підтримки"
+
+#: includes/Support/Support.php:66
+msgid "This section allows you to quickly create a user with administrator role that can be used by the support team to access the website for debugging purposes."
+msgstr "Цей розділ дозволяє швидко створити користувача з роллю адміністратора, якого команда підтримки може використовувати для доступу до вебсайту з метою налагодження."
+
+#: includes/Support/Support.php:74
+msgid "Delete user after days"
+msgstr "Видалити користувача через днів"
+
+#: includes/Support/Support.php:81
+msgid "Set to 0 to disable automatic deletion."
+msgstr "Установіть 0, щоб вимкнути автоматичне видалення."
+
+#: includes/Support/Support.php:107
+#: includes/Support/Support.php:284
+msgid "Username"
+msgstr "Ім’я користувача"
+
+#: includes/Support/Support.php:117
+msgid "Continue existence"
+msgstr "Продовжити існування"
+
+#: includes/Support/Support.php:124
+msgid "Recreate user"
+msgstr "Відтворити користувача"
+
+#: includes/Support/Support.php:133
+msgid "Delete user"
+msgstr "Видалити користувача"
+
+#: includes/Support/Support.php:165
+msgid "Will be auto-deleted"
+msgstr "Буде видалено автоматично"
+
+#. translators: %s: number of days before automatic deletion.
+#: includes/Support/Support.php:169
+msgid "after less than %s days"
+msgstr "менш ніж за %s днів"
+
+#: includes/Support/Support.php:183
+msgid "Are you sure to recreate the support user? This will cause loss of access for those providing support, you will need to reshare this to keep their access."
+msgstr "Ви впевнені, що хочете відтворити користувача підтримки? Це призведе до втрати доступу для тих, хто надає підтримку; вам потрібно буде поділитися цим повторно, щоб зберегти їхній доступ."
+
+#: includes/Support/Support.php:187
+msgid "Are you sure to delete the support user? This will cause loss of access for those providing support."
+msgstr "Ви впевнені, що хочете видалити користувача підтримки? Це призведе до втрати доступу для тих, хто надає підтримку."
+
+#: includes/Support/Support.php:193
+msgid "Support user not yet created."
+msgstr "Користувача підтримки ще не створено."
+
+#: includes/Support/Support.php:198
+msgid "Create user in one click"
+msgstr "Створити користувача одним кліком"
+
+#: includes/Support/Support.php:220
+msgid "Support user created."
+msgstr "Користувача підтримки створено."
+
+#: includes/Support/Support.php:225
+msgid "Support user deleted."
+msgstr "Користувача підтримки видалено."
+
+#: includes/Support/Support.php:231
+msgid "Support user recreated."
+msgstr "Користувача підтримки відтворено."
+
+#. translators: %s: site host name.
+#: includes/Support/Support.php:239
+msgid "Support access to %s"
+msgstr "Доступ підтримки до %s"
+
+#: includes/Support/Support.php:250
+msgid "An error occurred while trying to send the email."
+msgstr "Під час спроби надіслати електронний лист сталася помилка."
+
+#. translators: %s: linked site URL.
+#: includes/Support/Support.php:272
+msgid "You have been requested for support and granted administrative access to %s."
+msgstr "Вас попросили про підтримку та надали адміністративний доступ до %s."
+
+#: includes/Support/Support.php:279
+msgid "Note!"
+msgstr "Примітка!"
+
+#. translators: %s: number of days before automatic deletion.
+#: includes/Support/Support.php:279
+msgid "User will be auto-deleted after less than %s days."
+msgstr "Користувача буде автоматично видалено менш ніж за %s днів."
+
+#: includes/Support/Support.php:286
+msgid "Password"
+msgstr "Пароль"
+
+#: includes/Support/Support.php:318
+msgid "Support user existence extended."
+msgstr "Існування користувача підтримки продовжено."
+
+#: includes/Templates/Advanced/AddressLabels.php:13
+msgid "Address Labels"
+msgstr "Адреса етикетки"
+
+#: includes/Templates/Advanced/DeliveryNote.php:13
+msgid "Delivery Note"
+msgstr "Доставка Примітка"
+
+#: includes/Templates/Advanced/DispatchLabel.php:13
+msgid "Dispatch Label"
+msgstr "Дискаптова етикетка"
+
+#: includes/Templates/Advanced/Invoice.php:13
+#: templates/advanced/invoice-html.php:14
+msgid "Invoice"
+msgstr "Інвойс"
+
+#: includes/Templates/Advanced/PackingSlip.php:13
+msgid "Packing Slip"
+msgstr "Упаковка кліп"
+
+#: includes/Templates/Advanced/PickList.php:13
+msgid "Pick List"
+msgstr "Список"
+
+#: includes/Templates/Advanced/ShippingLabel.php:13
+msgid "Shipping Label"
+msgstr "Мітка доставки"
+
+#: includes/Translate.php:128
+msgid "German (Austria)"
+msgstr "австрійська німецька"
+
+#: includes/Translate.php:130
+msgid "German (Switzerland)"
+msgstr "швейцарська верхньонімецька"
+
+#: includes/Translate.php:132
+msgid "German (Germany)"
+msgstr "німецька (Німеччина)"
+
+#: includes/Translate.php:134
+msgid "Spanish (Argentina)"
+msgstr "іспанська (Аргентина)"
+
+#: includes/Translate.php:136
+msgid "Spanish (Chile)"
+msgstr "іспанська (Чилі)"
+
+#: includes/Translate.php:138
+msgid "Spanish (Costa Rica)"
+msgstr "іспанська (Коста-Рика)"
+
+#: includes/Translate.php:140
+msgid "Spanish (Colombia)"
+msgstr "іспанська (Колумбія)"
+
+#: includes/Translate.php:142
+msgid "Spanish (Dominican Republic)"
+msgstr "іспанська (Домініканська Республіка)"
+
+#: includes/Translate.php:144
+msgid "Spanish (Ecuador)"
+msgstr "іспанська (Еквадор)"
+
+#: includes/Translate.php:146
+msgid "Spanish (Spain)"
+msgstr "європейська іспанська"
+
+#: includes/Translate.php:148
+msgid "Spanish (Guatemala)"
+msgstr "іспанська (Гватемала)"
+
+#: includes/Translate.php:150
+msgid "Spanish (Honduras)"
+msgstr "іспанська (Гондурас)"
+
+#: includes/Translate.php:152
+msgid "Spanish (Mexico)"
+msgstr "мексиканська іспанська"
+
+#: includes/Translate.php:154
+msgid "Spanish (Peru)"
+msgstr "іспанська (Перу)"
+
+#: includes/Translate.php:156
+msgid "Spanish (Puerto Rico)"
+msgstr "іспанська (Пуерто-Рико)"
+
+#: includes/Translate.php:158
+msgid "Spanish (Uruguay)"
+msgstr "іспанська (Уругвай)"
+
+#: includes/Translate.php:160
+msgid "Spanish (Venezuela)"
+msgstr "іспанська (Венесуела)"
+
+#: includes/Translate.php:162
+msgid "French (Belgium)"
+msgstr "французька (Бельгія)"
+
+#: includes/Translate.php:164
+msgid "French (Canada)"
+msgstr "канадська французька"
+
+#: includes/Translate.php:166
+msgid "French (France)"
+msgstr "французька (Франція)"
+
+#: includes/Translate.php:168
+msgid "Hebrew"
+msgstr "Іврит"
+
+#: includes/Translate.php:170
+msgid "Hungarian"
+msgstr "Угорський"
+
+#: includes/Translate.php:172
+msgid "Italian (Italy)"
+msgstr "італійська (Італія)"
+
+#: includes/Translate.php:174
+msgid "Norwegian Bokmål"
+msgstr "норвезька (букмол)"
+
+#: includes/Translate.php:176
+msgid "Norwegian Nynorsk"
+msgstr "норвезька (нюношк)"
+
+#: includes/Translate.php:178
+msgid "Dutch (Netherlands)"
+msgstr "нідерландська (Нідерланди)"
+
+#: includes/Translate.php:180
+msgid "Portuguese (Brazil)"
+msgstr "бразильська португальська"
+
+#: includes/Translate.php:182
+msgid "Portuguese (Portugal)"
+msgstr "європейська португальська"
+
+#: includes/Translate.php:184
+msgid "Russian (Russia)"
+msgstr "російська (Росія)"
+
+#: includes/Translate.php:186
+msgid "Swedish (Åland Islands)"
+msgstr "шведська (Аландські Острови)"
+
+#: includes/Translate.php:188
+msgid "Swedish (Finland)"
+msgstr "шведська (Фінляндія)"
+
+#: includes/Translate.php:190
+msgid "Swedish (Sweden)"
+msgstr "шведська (Швеція)"
+
+#: includes/Translate.php:192
+msgid "Turkish"
+msgstr "Турецький"
+
+#: includes/Translate.php:194
+msgid "Ukrainian"
+msgstr "Українська"
+
+#: setting/application.php:13
+msgid "Application"
+msgstr "Додаток"
+
+#: setting/application.php:20
+msgid "Application account settings"
+msgstr "Налаштування облікового запису"
+
+#: setting/general.php:24
+msgid "Open"
+msgstr "Відкрити"
+
+#: setting/general.php:35
+msgid "View"
+msgstr "Переглянути"
+
+#: setting/general.php:42
+msgid "Quick Start Guide"
+msgstr "Посібник швидкого старту"
+
+#: setting/general.php:46
+msgid "Launch"
+msgstr "Запустити"
+
+#: setting/general.php:70
+msgid "Website Orders"
+msgstr "Замовлення сайтів"
+
+#: setting/general.php:71
+msgid "Point of Sale Orders"
+msgstr "Точка продажу Замовлення"
+
+#: setting/general.php:74
+msgid "Orders Saved in Point of Sale"
+msgstr "Замовлення, що зберігаються в точці продажу"
+
+#: setting/general.php:85
+msgid "Automatically Printed Website Order Statuses"
+msgstr "Автоматично друкується статуси сайту"
+
+#: setting/general.php:90
+msgid "Automatically Printed Order Statuses"
+msgstr "Автоматично друкуються статуси замовлення"
+
+#: setting/locations/index.php:32
+#: setting/locations/single.php:90
+msgid "Description"
+msgstr "Опис"
+
+#: setting/locations/index.php:36
+msgid "Automatic Print Website Order"
+msgstr "Автоматичний друк веб-сайту"
+
+#: setting/locations/index.php:45
+msgid "Automatic Print POS Order"
+msgstr "Автоматичний друк POS Замовити"
+
+#: setting/locations/index.php:73
+#: setting/locations/index.php:81
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: setting/locations/index.php:94
+msgid "All Users (Auto)"
+msgstr "Всі Користувачі (Авто)"
+
+#: setting/locations/index.php:149
+msgid "Create your first printer location"
+msgstr "Створення вашого першого розташування принтера"
+
+#: setting/locations/index.php:154
+msgid "Watch a video"
+msgstr "Дивіться відео"
+
+#: setting/locations/single.php:32
+msgid "Site Default Language Setting"
+msgstr "Налаштування мови за замовчуванням"
+
+#: setting/locations/single.php:109
+msgid "Automatic Printing for Website Orders"
+msgstr "Автоматичний друк на замовлення сайтів"
+
+#: setting/locations/single.php:118
+msgid "Automatic Printing for Point of Sale Orders"
+msgstr "Автоматичний друк для точок продажу замовлень"
+
+#: setting/locations/single.php:145
+msgid "Automatically include all users (current and future)"
+msgstr "Автоматично включають всі користувачі (поточні та майбутні)"
+
+#: setting/locations/single.php:218
+msgid "Select Address Type"
+msgstr "Виберіть тип адреси"
+
+#: setting/locations/single.php:224
+msgid "Shipping Address"
+msgstr "Адреса доставки"
+
+#: setting/locations/single.php:230
+msgid "Billing Address"
+msgstr "Платіжна адреса"
+
+#: setting/locations/single.php:236
+#: templates/advanced/dispatch-label-html.php:52
+#: templates/advanced/pick-list-html.php:52
+msgid "From Address"
+msgstr "Адреса"
+
+#: setting/locations/single.php:242
+msgid "Return Address"
+msgstr "Зворотній зв'язок"
+
+#: setting/locations/single.php:253
+msgid "Return Address Line 1"
+msgstr "Повернути лінію адреси 1"
+
+#: setting/locations/single.php:257
+msgid "Return Address Line 2"
+msgstr "Повернути лінію адреси 2"
+
+#: setting/locations/single.php:261
+msgid "Return City"
+msgstr "Повернення міста"
+
+#: setting/locations/single.php:266
+msgid "Return Country / State"
+msgstr "Країна повернення / Держава"
+
+#: setting/locations/single.php:283
+msgid "Return Postcode"
+msgstr "Повернення поштових індексів"
+
+#: setting/setting.php:51
+msgid "Network Settings"
+msgstr "Налаштування мережі"
+
+#: setting/setting.php:58
+msgid "Custom Request Timeout"
+msgstr "Замовлення замовлення"
+
+#: setting/setting.php:61
+msgid "Override the default WordPress HTTP timeout (5 seconds) for print service requests."
+msgstr "За замовчуванням WordPress HTTP-timeout (5 секунд) для друку запитів."
+
+#: setting/setting.php:69
+msgid "Timeout (seconds)"
+msgstr "Розклад (секунди)"
+
+#: setting/setting.php:73
+msgid "Number of seconds to wait for print service response. Recommended: 10-30 seconds."
+msgstr "Кількість секунд для очікування відповіді на послуги друку. Рекомендовано: 10-30 секунд."
+
+#: setting/setting.php:80
+msgid "Enable Network Retry"
+msgstr "Увімкнути мережеву зону"
+
+#: setting/setting.php:83
+msgid "Retry failed print requests once on connection timeout or network errors. Note: May cause duplicate prints if the server received the original request."
+msgstr "Зняття не вдалося друкувати запити один раз на час підключення або помилки мережі. Примітка: Може викликати дублікати друку, якщо сервер отримав оригінальний запит."
+
+#: setting/setting.php:91
+msgid "Disable SSL Verification"
+msgstr "Перевірити перевірку SSL"
+
+#: setting/setting.php:94
+msgid "Disable SSL certificate verification for print service requests. Only enable if you have TLS inspection or custom certificate authorities in your network."
+msgstr "Вимкніть перевірку SSL сертифікатів для запитів на послуги друку. Увімкніть, якщо у вас є перевірки TLS або спеціальні довідкові органи."
+
+#: setting/setting.php:96
+msgid "Disable"
+msgstr "Вимкнути"
+
+#: setting/setting.php:102
+msgid "Background Print Processing"
+msgstr "Обробка фонового друку"
+
+#: setting/setting.php:105
+msgid "Process print jobs in the background instead of during checkout. Checkout completes immediately and print jobs are sent asynchronously. Recommended for sites experiencing print service timeouts."
+msgstr "Процес друку робочих місць на фоні замість виїзду. Перевірка завершується відразу і друку робочих місць, відправлених асинхронно. Рекомендовано для сайтів, які відчувають час друку послуг."
+
+#: setting/setting.php:113
+msgid "Queue Failed Jobs"
+msgstr "Queue Похилий Робота"
+
+#: setting/setting.php:116
+msgid "When a print job fails during checkout, automatically queue it for background retry. Jobs will retry with increasing delays up to 5 times. Only applies when Background Print Processing is disabled."
+msgstr "Коли робота друку не вдається під час оформлення замовлення, автоматично чергуйте його на фонову ретрію. Ведуться роботи з підвищенням затримки до 5 разів. Вимкнено тільки при переробка фонового друку."
+
+#: setting/support.php:13
+msgid "Support"
+msgstr "Підтримка"
+
+#: setting/support.php:149
+msgid "Delete Data and Reset"
+msgstr "Видалити дані та скинути налаштування"
+
+#: setting/support.php:151
+msgid "Yes, Delete data and reset settings when plugin is deactivated and deleted. All settings will be deleted."
+msgstr "Так, Видалити дані та налаштування скидання при видаленні плагіна та видаленні. Всі налаштування будуть видалені."
+
+#: setting/support.php:175
+msgid "Print Job Queue"
+msgstr "Друк Робота Queue"
+
+#: setting/support.php:182
+msgid "Queue Status"
+msgstr "Статус на сервери"
+
+#: setting/support.php:186
+msgid "Pending"
+msgstr "Очікує перевірки"
+
+#: setting/support.php:188
+msgid "Completed"
+msgstr "Виконано"
+
+#: setting/support.php:189
+msgid "Failed"
+msgstr "Не вдалося"
+
+#: setting/support.php:200
+msgid "Failed Jobs"
+msgstr "Неприємні роботи"
+
+#: setting/support.php:205
+msgid "ID"
+msgstr "ID"
+
+#: setting/support.php:206
+msgid "Order"
+msgstr "Замовлення"
+
+#: setting/support.php:207
+msgid "Attempts"
+msgstr "Атемпти"
+
+#: setting/support.php:208
+msgid "Last Error"
+msgstr "Остання помилка"
+
+#: setting/support.php:234
+msgid "Manual Processing"
+msgstr "Ручна обробка"
+
+#: setting/support.php:235
+msgid "Process Queue Now"
+msgstr "Процес Queue зараз"
+
+#: setting/support.php:250
+msgid "Cleanup Completed"
+msgstr "Очищувач завершено"
+
+#: setting/support.php:251
+msgid "Clear Completed Jobs"
+msgstr "Очистити заповнені роботи"
+
+#: setting/support.php:266
+msgid "Cleanup All"
+msgstr "Очищення"
+
+#: setting/support.php:267
+msgid "Clear All Jobs"
+msgstr "Очистити всі вакансії"
+
+#: setting/support.php:269
+msgid "Removes all jobs from queue (completed, pending, and failed)."
+msgstr "Видаліть всі вакансії з черги (повний, загин і не вдалося)."
+
+#: setting/support.php:291
+msgid "Job queued for retry"
+msgstr "Робота черги для птиця"
+
+#: setting/support.php:293
+msgid "Failed to retry job"
+msgstr "Покинути роботу"
+
+#: setting/support.php:303
+msgid "Job deleted"
+msgstr "Робота видалена"
+
+#: setting/support.php:305
+msgid "Failed to delete job"
+msgstr "Не вдалося видалити роботу"
+
+#: setting/support.php:319
+msgid "Retrying..."
+msgstr "Зрада"
+
+#: setting/support.php:336
+msgid "Are you sure you want to delete this job?"
+msgstr "Ви впевнені, що ви хочете видалити цю роботу?"
+
+#: setting/support.php:342
+msgid "Deleting..."
+msgstr "Видалення ..."
+
+#: setting/support.php:383
+msgid "Log is empty"
+msgstr "Увійти"
+
+#: templates/advanced/delivery-note-html.php:14
+msgid "Delivery note"
+msgstr "Замітка доставки"
+
+#: templates/advanced/delivery-note-html.php:54
+#: templates/advanced/dispatch-label-html.php:81
+#: templates/advanced/packing-slip-html.php:54
+#: templates/advanced/shipping-label-html.php:47
+#: templates/advanced/shipping-label-plain.php:33
+msgid "Order No."
+msgstr "Замовлення No."
+
+#: templates/advanced/delivery-note-html.php:57
+#: templates/advanced/dispatch-label-html.php:84
+#: templates/advanced/packing-slip-html.php:57
+msgid "Order Date"
+msgstr "Дата замовлення"
+
+#: templates/advanced/delivery-note-html.php:61
+#: templates/advanced/packing-slip-html.php:61
+msgid "Shipping Method"
+msgstr "Метод доставки"
+
+#: templates/advanced/delivery-note-html.php:66
+#: templates/advanced/packing-slip-html.php:66
+msgid "Shipping Details"
+msgstr "Деталі доставки"
+
+#: templates/advanced/delivery-note-html.php:76
+#: templates/advanced/invoice-html.php:52
+#: templates/advanced/packing-slip-html.php:76
+msgid "From"
+msgstr "Від"
+
+#: templates/advanced/delivery-note-html.php:98
+#: templates/advanced/dispatch-label-html.php:96
+#: templates/advanced/invoice-html.php:76
+#: templates/advanced/packing-slip-html.php:98
+msgid "Bill to"
+msgstr "Законодавство"
+
+#: templates/advanced/delivery-note-html.php:118
+#: templates/advanced/dispatch-label-html.php:116
+#: templates/advanced/packing-slip-html.php:118
+msgid "Phone"
+msgstr "Телефон"
+
+#: templates/advanced/delivery-note-html.php:120
+#: templates/advanced/delivery-note-html.php:148
+#: templates/advanced/dispatch-label-html.php:118
+#: templates/advanced/dispatch-label-html.php:146
+#: templates/advanced/functions.php:100
+#: templates/advanced/functions.php:113
+#: templates/advanced/invoice-html.php:97
+#: templates/advanced/packing-slip-html.php:120
+#: templates/advanced/packing-slip-html.php:148
+#: templates/advanced/shipping-label-html.php:86
+#: templates/advanced/shipping-label-plain.php:63
+msgid "Guest"
+msgstr "Гість"
+
+#: templates/advanced/delivery-note-html.php:127
+#: templates/advanced/dispatch-label-html.php:125
+#: templates/advanced/packing-slip-html.php:127
+msgid "Ship to"
+msgstr "Доставка в"
+
+#: templates/advanced/delivery-note-html.php:160
+#: templates/advanced/dispatch-label-html.php:158
+#: templates/advanced/invoice-html.php:124
+#: templates/advanced/packing-slip-html.php:160
+msgid "S.No"
+msgstr "С.Н."
+
+#: templates/advanced/delivery-note-html.php:161
+#: templates/advanced/packing-slip-html.php:161
+#: templates/advanced/pick-list-html.php:94
+msgid "Image"
+msgstr "Зображення"
+
+#: templates/advanced/delivery-note-html.php:162
+#: templates/advanced/dispatch-label-html.php:159
+#: templates/advanced/pick-list-html.php:95
+msgid "SKU"
+msgstr "Артикул"
+
+#: templates/advanced/delivery-note-html.php:164
+#: templates/advanced/dispatch-label-html.php:161
+#: templates/advanced/invoice-html.php:126
+#: templates/advanced/packing-slip-html.php:163
+#: templates/advanced/pick-list-html.php:97
+msgid "Quantity"
+msgstr "Кількість"
+
+#: templates/advanced/delivery-note-html.php:165
+#: templates/advanced/dispatch-label-html.php:162
+#: templates/advanced/invoice-html.php:127
+msgid "Unit price"
+msgstr "Ціна за одиницю"
+
+#: templates/advanced/delivery-note-html.php:166
+#: templates/advanced/dispatch-label-html.php:163
+#: templates/advanced/invoice-html.php:128
+msgid "Total price"
+msgstr "Загальна ціна"
+
+#: templates/advanced/dispatch-label-html.php:78
+msgid "Invoice No."
+msgstr "Надія No."
+
+#: templates/advanced/dispatch-label-html.php:87
+msgid "Dispatch Date"
+msgstr "Дата деформації"
+
+#: templates/advanced/dispatch-label-html.php:224
+#: templates/advanced/invoice-html.php:185
+msgid "Shipping details"
+msgstr "Реквізити доставки"
+
+#: templates/advanced/dispatch-label-html.php:259
+#: templates/advanced/invoice-html.php:220
+#: templates/advanced/shipping-label-html.php:54
+#: templates/advanced/shipping-label-plain.php:41
+msgid "Customer note"
+msgstr "Нотатка покупця"
+
+#: templates/advanced/functions.php:75
+msgid "n/a"
+msgstr "н/д"
+
+#: templates/advanced/invoice-html.php:106
+msgid "Invoice no"
+msgstr "Надія без"
+
+#: templates/advanced/invoice-html.php:109
+#: templates/advanced/shipping-label-html.php:50
+#: templates/advanced/shipping-label-plain.php:37
+msgid "Order date"
+msgstr "Дата замовлення"
+
+#: templates/advanced/invoice-html.php:112
+msgid "Payment method"
+msgstr "Спосіб оплати"
+
+#: templates/advanced/invoice-html.php:198
+msgid "Add tip amount"
+msgstr "Додати суму наконечника"
+
+#: templates/advanced/invoice-html.php:205
+msgid "Amount collected"
+msgstr "Сума зібрана"
+
+#: templates/advanced/packing-slip-html.php:14
+msgid "Packing slip"
+msgstr "Упаковка тапочки"
+
+#: templates/advanced/packing-slip-html.php:164
+#: templates/advanced/pick-list-html.php:98
+msgid "Total weight"
+msgstr "Загальна вага"
+
+#: templates/advanced/pick-list-html.php:79
+msgid "Orders"
+msgstr "Замовлення"
+
+#: templates/advanced/pick-list-html.php:82
+msgid "Printed on"
+msgstr "Друкувати"
+
+#: templates/advanced/pick-list-html.php:135
+msgid "Terms and conditions apply"
+msgstr "Умови використання"
+
+#: templates/advanced/shipping-label-html.php:64
+#: templates/advanced/shipping-label-plain.php:47
+msgid "To"
+msgstr "До"
+
+#: templates/advanced/shipping-label-html.php:83
+#: templates/advanced/shipping-label-plain.php:60
+msgid "Tel"
+msgstr "Твитнуть"
+
+#. translators: %1$s: line break; %2$s: right-caret icon.
+#: setting/locations/index.php:137
+msgctxt "%1$s - line break, %2$s - caret right icon"
+msgid "Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer."
+msgstr "Створіть розташування принтера для відправки завдань друку з:%1$sМагазини%2$s BizPrint %2$sВаш підключений принтер."
+
+#: setting/support.php:187
 #~ msgid "Processing"
 #~ msgstr "В обробці"
 
-#~ msgid "Optimization"
-#~ msgstr "Оптимізації"
-
-#~ msgid "Hosting Providers May Block Background Printing"
-#~ msgstr "Хостинг-провайдери можуть блокувати фоновий друк"
-
-#~ msgid "Print Optimization"
-#~ msgstr "Оптимізація друку"
-
-#~ msgid "Background Printing"
-#~ msgstr "Фоновий друк"
-
-#~ msgid ""
-#~ "Sorry, Background printing test failed. Contact hosting provider or "
-#~ "submit a plug-in support request."
-#~ msgstr ""
-#~ "Вибачте, тест фонового друк не вдався. Зверніться до хостинг-провайдера "
-#~ "або надішліть запит на підтримку плагіна."
-
-#~ msgid "Activation takes few seconds"
-#~ msgstr "Активація триває кілька секунд"
-
+#: templates/advanced/delivery-note-html.php:36
+#: templates/advanced/dispatch-label-html.php:36
+#: templates/advanced/invoice-html.php:36
+#: templates/advanced/packing-slip-html.php:36
+#: templates/advanced/pick-list-html.php:36
 #~ msgid "Logo"
 #~ msgstr "Логотип"
-
-#~ msgid "Check Header"
-#~ msgstr "Заголовок квитанції"
-
-#~ msgid "Company Name"
-#~ msgstr "Назва компанії"
-
-#~ msgid "Company Info"
-#~ msgstr "Інформація Про Компанію"
-
-#~ msgid "Order Details Header"
-#~ msgstr "Заголовок відомостей про замовлення"
-
-#~ msgid "Footer Information #1"
-#~ msgstr "Відомості про колонтитули #1"
-
-#~ msgid "Footer Information #2"
-#~ msgstr "Відомості про колонтитули #2"
-
-#~ msgid "Customer Order Receipt & Customer Receipt Template"
-#~ msgstr "Шаблон клієнтських квитанцій"
-
-#~ msgid "Order Header"
-#~ msgstr "Заголовок квитанції"
-
-#~ msgid "See print.log"
-#~ msgstr "Дивитись print.log"
-
-#~ msgid "Google Print Access"
-#~ msgstr "Доступи до Google Print"
-
-#~ msgid "Setup Google API Credentials"
-#~ msgstr "Налаштування облікових даних Google API"
-
-#~ msgid "Setup"
-#~ msgstr "Налаштування"
-
-#~ msgid "Redirect URI"
-#~ msgstr "Переспрямування URI"
-
-#~ msgid "Client Secret"
-#~ msgstr "Секретний ключ клієнта"
-
-#~ msgid "Reset"
-#~ msgstr "Скинути"
-
-#~ msgid "Are you sure?"
-#~ msgstr "Ви впевнені?"
-
-#~ msgid "Logout"
-#~ msgstr "Кінець сеансу Google Print"
-
-#~ msgid "Login"
-#~ msgstr "Авторизація Google Print"
-
-#~ msgid "Please provide access to Google Cloud Print."
-#~ msgstr "Будь ласка, надайте доступ до служби Google Cloud Print."

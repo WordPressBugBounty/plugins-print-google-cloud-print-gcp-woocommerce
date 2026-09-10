@@ -21,6 +21,7 @@ use WC_Order_Item;
 		<h2><?= get_appearance_setting('Company Name'); ?></h2>
 	<?php } ?>
 	<h3><?= sprintf(
+		/* translators: %s: order identifier. */
 		__('Order #%s', 'Print-Google-Cloud-Print-GCP-WooCommerce'),
 		apply_filters( 'Zprint\templates\general\orderIdLabel', $order->get_id(), $order )
 	) ?></h3>

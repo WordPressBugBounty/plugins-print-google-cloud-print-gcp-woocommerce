@@ -19,7 +19,7 @@ class Text extends Control {
 		$max         = $args['max'] ?? false;
 		$step        = $args['step'] ?? false;
 		?>
-		<div class="da-setting-text">
+		<div class="bizswoop-support-setting-text">
 			<label>
 				<span>
 					<input
@@ -42,7 +42,7 @@ class Text extends Control {
 				<?php
 				if ( isset( $args['description'] ) && $args['description'] ) {
 					?>
-					<span class="da-setting-text__description">
+					<span class="bizswoop-support-setting-text__description">
 						<?php echo wp_kses_post( $args['description'] ); ?>
 					</span>
 					<?php

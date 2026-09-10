@@ -33,6 +33,7 @@ class Fs {
 		$output = error_log( '/*test*/', '3', $path ); // phpcs:ignore
 
 		if ( ! $output ) {
+			/* translators: %s: file path. */
 			Notice::add_transient( sprintf( __( 'Can\'t write the %s.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ), $path ), 'error' );
 
 			return false;
@@ -50,6 +51,7 @@ class Fs {
 	 */
 	public static function read( string $path ) {
 		if ( ! file_exists( $path ) ) {
+			/* translators: %s: file path. */
 			Notice::add_transient( sprintf( __( 'Can\'t read the %s.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ), $path ), 'error' );
 
 			return false;

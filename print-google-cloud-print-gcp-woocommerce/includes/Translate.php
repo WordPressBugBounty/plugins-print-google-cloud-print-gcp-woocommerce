@@ -60,6 +60,49 @@ class Translate {
 		}
 	}
 
+	public static function get_javascript_config(): array {
+		$locale = function_exists( 'determine_locale' ) ? determine_locale() : get_locale();
+		$base   = strtolower( preg_replace( '/[-_].*$/', '', (string) $locale ) );
+		$dir    = PLUGIN_ROOT . '/lang/print-manager';
+		$list   = static::read_json_file( $dir . '/locales.json' );
+
+		if ( ! is_array( $list ) || ! in_array( $base, $list, true ) ) {
+			$base = 'en';
+		}
+
+		$resources = null;
+		if ( 'en' !== $base ) {
+			$file    = $dir . '/json/' . $base . '.json';
+			$decoded = static::read_json_file( $file );
+
+			if ( is_array( $decoded ) ) {
+				$resources = $decoded;
+			} else {
+				$base = 'en';
+			}
+		}
+
+		return array(
+			'locale'    => $base,
+			'resources' => $resources,
+		);
+	}
+
+	private static function read_json_file( string $path ): ?array {
+		if ( ! is_readable( $path ) ) {
+			return null;
+		}
+
+		$contents = file_get_contents( $path );
+		if ( false === $contents ) {
+			return null;
+		}
+
+		$decoded = json_decode( $contents, true );
+
+		return is_array( $decoded ) ? $decoded : null;
+	}
+
 	public static function get_available_languages(): array {
 		return array_merge(
 			array(

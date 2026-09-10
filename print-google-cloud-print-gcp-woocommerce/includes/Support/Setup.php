@@ -15,7 +15,6 @@ class Setup {
 		add_action( 'plugins_loaded', array( $this, 'init' ) );
 
 		new Notice();
-		new DevAssist();
 	}
 
 	public function init(): void {

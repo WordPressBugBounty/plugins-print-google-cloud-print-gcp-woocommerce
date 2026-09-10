@@ -1,36 +1,33 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Print Google Cloud Print GCP WooCommerce\n"
-"POT-Creation-Date: 2021-08-12 22:36+0300\n"
-"PO-Revision-Date: 2021-08-12 22:39+0300\n"
+"Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: ta\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-08-12 22:36+0300\n"
+"PO-Revision-Date: 2021-08-12 22:39+0300\n"
+"Language: ta\n"
 "X-Generator: Poedit 3.0\n"
 "X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: includes/Admin/PrintDialog.php:147
+#. translators: %s: formatted order ID or list of order IDs.
+#: includes/Admin/PrintDialog.php:191
 msgid "the print job for order %s was sent successfully"
-msgstr "ஆர்டர் %s க்கான அச்சு வேலை வெற்றிகரமாக அனுப்பப்பட்டது"
+msgid_plural "the print job for orders %s were sent successfully"
+msgstr[0] "%s ஆர்டருக்கான அச்சுப் பணி வெற்றிகரமாக அனுப்பப்பட்டது"
+msgstr[1] "%s ஆர்டர்களுக்கான அச்சுப் பணிகள் வெற்றிகரமாக அனுப்பப்பட்டன"
 
-#: includes/Admin/PrintDialog.php:146
-msgid "the print job for orders %s were sent successfully"
-msgstr "ஆர்டர் %s க்கான அச்சு வேலை வெற்றிகரமாக அனுப்பப்பட்டது"
-
-#: includes/Admin/PrintDialog.php:71
+#: includes/Admin/PrintDialog.php:103
 msgid "Close"
 msgstr "மூடு"
 
@@ -42,13 +39,13 @@ msgstr "பாயின்ட் ஆணைகளுக்கான தானி�
 msgid "Automatic Printing for Website Orders"
 msgstr "வலைத்தள ஆர்டர்களுக்கான தானியங்கி அச்சிடுதல்"
 
-#: setting/locations/index.php:100
+#: setting/locations/index.php:45
 msgid "Automatic Print POS Order"
-msgstr "ஆர்டர் %s க்கான அச்சு வேலை வெற்றிகரமாக அனுப்பப்பட்டது"
+msgstr "ஆர்டர் க்கான அச்சு வேலை வெற்றிகரமாக அனுப்பப்பட்டது"
 
-#: setting/locations/index.php:91
+#: setting/locations/index.php:36
 msgid "Automatic Print Website Order"
-msgstr "ஆர்டர் %s க்கான அச்சு வேலை வெற்றிகரமாக அனுப்பப்பட்டது"
+msgstr "ஆர்டர் க்கான அச்சு வேலை வெற்றிகரமாக அனுப்பப்பட்டது"
 
 #: setting/general.php:90
 msgid "Automatically Printed Order Statuses"
@@ -71,40 +68,26 @@ msgid "Website Orders"
 msgstr "இணையதள ஆர்டர்கள்"
 
 #. Plugin URI of the plugin
-#: index.php
 msgid "http://www.getbizprint.com"
 msgstr "http://www.getbizprint.com"
 
-#: setting/locations/index.php:248
+#: setting/locations/index.php:154
 msgid "Watch a video"
 msgstr "வீடியோவைப் பாருங்கள்"
 
-#: setting/locations/index.php:243
+#: setting/locations/index.php:149
 msgid "Create your first printer location"
 msgstr "உங்கள் முதல் அச்சுப்பொறி இருப்பிடத்தை உருவாக்கவும்"
 
-#: setting/locations/index.php:231
-msgctxt "%1$s - line break, %2$s - caret right icon"
-msgid ""
-"Create a printer location to send print jobs from: %1$s WooCommerce %2$s "
-"BizPrint %2$s your connected printer."
-msgstr ""
-"அச்சு வேலைகளை அனுப்ப அச்சுப்பொறி இருப்பிடத்தை உருவாக்கவும்: %1$s WooCommerce %2$s "
-"BizPrint %2$s உங்கள் இணைக்கப்பட்ட அச்சுப்பொறியில்."
+#: setting/support.php:151
+msgid "Yes, Delete data and reset settings when plugin is deactivated and deleted. All settings will be deleted."
+msgstr "ஆம், சொருகி செயலிழக்கப்பட்டு நீக்கப்படும் போது தரவை நீக்கி அமைப்புகளை மீட்டமைக்கவும். அனைத்து அமைப்புகளும் நீக்கப்படும்."
 
-#: setting/support.php:124
-msgid ""
-"Yes, Delete data and reset settings when plugin is deactivated and deleted. "
-"All settings will be deleted."
-msgstr ""
-"ஆம், சொருகி செயலிழக்கப்பட்டு நீக்கப்படும் போது தரவை நீக்கி அமைப்புகளை மீட்டமைக்கவும். "
-"அனைத்து அமைப்புகளும் நீக்கப்படும்."
-
-#: setting/support.php:122
+#: setting/support.php:149
 msgid "Delete Data and Reset"
 msgstr "அழி"
 
-#: setting/support.php:165
+#: setting/support.php:383
 msgid "Log is empty"
 msgstr "பதிவு காலியாக உள்ளது"
 
@@ -112,7 +95,8 @@ msgstr "பதிவு காலியாக உள்ளது"
 msgid "Support"
 msgstr "ஆதரவு"
 
-#: setting/locations/index.php:87 setting/locations/single.php:90
+#: setting/locations/index.php:32
+#: setting/locations/single.php:90
 msgid "Description"
 msgstr "வருணனை"
 
@@ -144,56 +128,17 @@ msgstr "பயன்பாடு"
 msgid "Create a support request"
 msgstr "ஆதரவு கோரிக்கையை உருவாக்குதல்"
 
-#: includes/Admin/PrintDialog.php:59
+#: includes/Admin/PrintDialog.php:91
 msgid "Print Orders"
 msgstr "அச்சிடு"
 
-#: includes/Admin/Layout.php:41
+#: includes/Admin/Layout.php:44
 msgid "Print to anywhere with BizPrint"
 msgstr "அச்சிடு"
 
-#: includes/Admin.php:216
+#: includes/Admin.php:223
 msgid "Launch Quick Start Guide"
 msgstr "விரைவு தொடக்க வழிகாட்டியைத் தொடங்கவும்"
-
-#: includes/Admin.php:209
-msgid ""
-"Save time, money and the hassle of third-party plugins with our go-to print "
-"solution for the WooCommerce community that is reliable and scalable. Bring "
-"your current printer. Works on all major brands."
-msgstr ""
-"நம்பகமான மற்றும் அளவிடக்கூடிய WooCommerce சமூகத்திற்கான எங்கள் செல்ல வேண்டிய அச்சு "
-"தீர்வுடன் நேரம், பணம் மற்றும் மூன்றாம் தரப்பு செருகுநிரல்களின் தொந்தரவு ஆகியவற்றைச் "
-"சேமிக்கவும். உங்கள் தற்போதைய அச்சுப்பொறியைக் கொண்டு வாருங்கள். அனைத்து முக்கிய "
-"பிராண்டுகளிலும் வேலை செய்கிறது."
-
-#: includes/Admin.php:203
-msgid ""
-"BizPrint makes it easy to create and manage customer orders, receipts and "
-"invoices for your restaurant, retail store or fulfillment station."
-msgstr ""
-"உங்கள் உணவகம், சில்லறை விற்பனை நிலையம் அல்லது ஃபுல்ஃபில்லிங் ஸ்டேஷனுக்கான வாடிக்கையாளர் "
-"ஆர்டர்கள், ரசீதுகள் மற்றும் விலைப்பட்டியல்களை உருவாக்குவதையும் நிர்வகிப்பதையும் BizPrint "
-"எளிதாக்குகிறது."
-
-#: includes/Admin.php:197
-msgid ""
-"Print Receipts & Invoices Automatically From WooCommerce and Point of Sale "
-"Orders"
-msgstr ""
-"WooCommerce மற்றும் விற்பனை புள்ளி ஆர்டர்களில் இருந்து தானாக ரசீதுகள் மற்றும் "
-"விலைப்பட்டியல்களை அச்சிடுங்கள்"
-
-#: includes/Admin.php:192
-msgid "Quick start logo"
-msgstr "விரைவு தொடக்க லோகோ"
-
-#: includes/Admin.php:182
-msgid ""
-"You’re almost done. Set up BizPrint to enable printing tools for WooCommerce"
-msgstr ""
-"நீங்கள் கிட்டத்தட்ட முடித்துவிட்டீர்கள். WooCommerce க்கான அச்சிடும் கருவிகளை இயக்க "
-"BizPrint ஐ அமைக்கவும்"
 
 #: includes/Admin.php:60
 msgid "Print error"
@@ -243,15 +188,13 @@ msgstr "கடை நீட்டிப்புகள்"
 msgid "Template Extensions"
 msgstr "வார்ப்புரு நீட்டிப்புகள்"
 
-#: includes/Addons.php:31
-msgid "Extensions for Popular WooCommerce Plugins"
-msgstr "பிரபலமான WooCommerce செருகுநிரல்களுக்கான நீட்டிப்புகள்"
-
 #: includes/Addons.php:23
 msgid "Explore templates"
 msgstr "டெம்ப்ளேட்களை ஆராயுங்கள்"
 
-#: includes/Addons.php:20 includes/Admin/Layout.php:87 setting/addons.php:11
+#: includes/Addons.php:20
+#: includes/Admin/Layout.php:90
+#: setting/addons.php:11
 msgid "Marketplace"
 msgstr "சந்தை"
 
@@ -260,11 +203,10 @@ msgid "Our Full Collection of Print Templates"
 msgstr "அச்சு வார்ப்புருக்களின் எங்கள் முழு தொகுப்பு"
 
 #. Plugin Name of the plugin
-#: index.php
 msgid "BizPrint Print Manager for WooCommerce"
 msgstr "WooCommerce க்கான BizPrint அச்சு மேலாளர்"
 
-#: setting/locations/single.php:350
+#: setting/locations/single.php:419
 msgid "Template Language"
 msgstr "வார்ப்புரு மொழி"
 
@@ -276,10 +218,6 @@ msgstr "ஒரு மொழியைத் தெரிவு செய்யவ
 msgid "User Profile Language Setting"
 msgstr "பயனர் சுயவிவர மொழி அமைப்பு"
 
-#: setting/locations/single.php:32
-msgid "WordPress Site Default Language Setting"
-msgstr "WordPress தள இயல்புநிலை மொழி அமைப்பு"
-
 #: setting/setting.php:36
 msgid "Select Roles for Access to Manage Print Settings"
 msgstr "அச்சு அமைப்புகளை நிர்வகிப்பதற்கான அணுகலுக்கான பாத்திரங்களைத் தேர்ந்தெடுக்கவும்"
@@ -288,45 +226,47 @@ msgstr "அச்சு அமைப்புகளை நிர்வகிப�
 msgid "Management Access User Roles"
 msgstr "மேலாண்மை அணுகல் பயனர் பாத்திரங்கள்"
 
-#: includes/Setup.php:37
+#: includes/Setup.php:38
 msgid "Print Manager require WooCommerce"
 msgstr "அச்சு மேலாளருக்கு WooCommerce தேவை"
 
-#: includes/Setup.php:33
+#: includes/Setup.php:34
+#: setting/support.php:219
+#: setting/support.php:330
 msgid "Retry"
 msgstr "மறுமுயற்சி"
 
-#: includes/Setup.php:33
+#: includes/Setup.php:34
 msgid "Due to an unexpected error the database table was not created."
 msgstr "எதிர்பாராத பிழை காரணமாக, தரவுதள அட்டவணை உருவாக்கப்படவில்லை."
 
-#: includes/Admin/PrintDialog.php:88
+#: includes/Admin/PrintDialog.php:120
 msgid "Select Location(s)"
 msgstr "இருப்பிடம்(கள்) தேர்ந்தெடு"
 
-#: includes/Admin/PrintDialog.php:60
+#: includes/Admin/PrintDialog.php:92
 msgid "Print Order"
 msgstr "அச்சிடு"
 
-#: setting/support.php:31
+#: setting/support.php:56
 msgid "Copy log"
 msgstr "பதிவு நகல்"
 
-#: setting/support.php:30
+#: setting/support.php:55
 msgid "View log"
 msgstr "பார்வை"
 
-#: includes/Debug/Tab.php:72
+#: includes/Debug/Tab.php:73
 msgid "Send Print Request"
 msgstr "அச்சிடு"
 
-#: includes/Debug/Tab.php:59
+#: includes/Debug/Tab.php:60
 msgid "Location:"
 msgstr "இடம்:"
 
-#: includes/Debug/Tab.php:47
+#: includes/Debug/Tab.php:48
 msgid "Order:"
-msgstr "ஆர்டர் %s க்கான அச்சு வேலை வெற்றிகரமாக அனுப்பப்பட்டது"
+msgstr "ஆர்டர் க்கான அச்சு வேலை வெற்றிகரமாக அனுப்பப்பட்டது"
 
 #: includes/Debug/Tab.php:29
 msgid "Get Remote Printers"
@@ -348,22 +288,20 @@ msgstr "ஆவணப்படுத்தல்"
 msgid "Dashboard"
 msgstr "கட்டுப்பாட்டகம்"
 
-#: includes/Admin/Layout.php:32 includes/Admin/Layout.php:37
-#: includes/Admin/PrintDialog.php:77 includes/Admin/PrintDialog.php:80
-#: includes/Admin/PrintDialog.php:144 setting/index.php:13
+#: includes/Admin/Layout.php:35
+#: includes/Admin/Layout.php:40
+#: includes/Admin/PrintDialog.php:109
+#: includes/Admin/PrintDialog.php:112
+#: includes/Admin/PrintDialog.php:189
+#: setting/index.php:13
 msgid "Print Manager"
 msgstr "அச்சிடு"
 
 #. Description of the plugin
-#: index.php
-msgid ""
-"Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print "
-"Service and Print to Anywhere in the World!"
-msgstr ""
-"BizPrint கிளவுட் பிரிண்ட் சேவையுடன் WooCommerce ஆர்டர்களை அச்சிடுவதற்கான ஆதரவை "
-"எளிதாகச் சேர்க்கவும் மற்றும் உலகில் எங்கும் அச்சிடவும்!"
+msgid "Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!"
+msgstr "BizPrint கிளவுட் பிரிண்ட் சேவையுடன் WooCommerce ஆர்டர்களை அச்சிடுவதற்கான ஆதரவை எளிதாகச் சேர்க்கவும் மற்றும் உலகில் எங்கும் அச்சிடவும்!"
 
-#: setting/locations/single.php:205
+#: setting/locations/single.php:211
 msgid "Include Pickup or Delivery Type"
 msgstr "பிக்-அப் அல்லது டெலிவரி வகையைச் சேர்க்கவும்"
 
@@ -371,45 +309,54 @@ msgstr "பிக்-அப் அல்லது டெலிவரி வக�
 msgid "Add-ons"
 msgstr "துணை நிரல்கள்"
 
-#: setting/locations/single.php:171
+#: setting/locations/single.php:177
 msgid "Include Order Cost"
 msgstr "ஆர்டர் செலவைச் சேர்க்கவும்"
 
-#: setting/support.php:42
+#: setting/support.php:67
 msgid "Save info logs"
 msgstr "தகவல் பதிவுகளை சேமி"
 
-#: setting/support.php:40
+#: setting/support.php:65
 msgid "Active"
 msgstr "சுறுசுறுப்பான"
 
-#: includes/Admin/Order.php:25 includes/Admin/OrderTable.php:61
-#: includes/Admin/OrderTable.php:85 includes/Admin/OrderTable.php:100
-#: includes/Admin/PrintDialog.php:116 setting/support.php:35
+#: includes/Admin/Order.php:25
+#: includes/Admin/OrderTable.php:61
+#: includes/Admin/OrderTable.php:85
+#: includes/Admin/OrderTable.php:100
+#: includes/Admin/PrintDialog.php:148
+#: setting/support.php:60
 msgid "Print"
 msgstr "அச்சிடு"
 
-#: setting/support.php:71 setting/support.php:111
+#. translators: %s: human-readable log file size.
+#: setting/support.php:97
+#: setting/support.php:138
 msgid "Log file (Size: %s)"
 msgstr "குறிப்பேடு கோப்பு (அளவு: %s)"
 
-#: setting/support.php:64 setting/support.php:104
+#: setting/support.php:89
+#: setting/support.php:130
 msgid "Clear log file"
 msgstr "பதிவு கோப்பை அழிக்கவும்"
 
-#: setting/support.php:63 setting/support.php:103
+#: setting/support.php:88
+#: setting/support.php:129
 msgid "Log file"
 msgstr "பதிவு கோப்பு"
 
-#: setting/support.php:49 setting/support.php:89
+#: setting/support.php:74
+#: setting/support.php:115
 msgid "Log file content"
 msgstr "பதிவு கோப்பு உள்ளடக்கம்"
 
-#: setting/support.php:84
+#: setting/support.php:110
 msgid "Plugin"
 msgstr "செருகுநிரல்"
 
-#: setting/setting.php:28 setting/setting.php:42
+#: setting/setting.php:28
+#: setting/setting.php:42
 msgid "Selected Roles"
 msgstr "தேர்ந்தெடுக்கப்பட்ட பாத்திரங்கள்"
 
@@ -421,7 +368,7 @@ msgstr "பயனர்களுக்கு இருப்பிட மேப�
 msgid "Location User Roles"
 msgstr "இருப்பிட பயனர் பாத்திரங்கள்"
 
-#: setting/locations/single.php:219
+#: setting/locations/single.php:297
 msgid "Appearance"
 msgstr "தோற்றம்"
 
@@ -437,185 +384,199 @@ msgstr "தானியங்கி அச்சிடலை இயக்கு"
 msgid "Automatic Order Printing"
 msgstr "தானியங்கி ஆர்டர் அச்சிடுதல்"
 
-#: includes/Admin/Layout.php:54 setting/general.php:11
+#: includes/Admin/Layout.php:57
+#: setting/general.php:11
 msgid "General"
 msgstr "பொது"
 
-#: setting/locations/index.php:165
+#: setting/locations/index.php:122
 msgid "Edit"
 msgstr "தொகு"
 
-#: setting/locations/index.php:116
+#: setting/locations/index.php:61
+#: setting/support.php:209
 msgid "Actions"
 msgstr "செயல்கள்"
 
-#: setting/locations/index.php:113
+#: setting/locations/index.php:58
 msgid "Size"
 msgstr "அளவு"
 
-#: setting/locations/index.php:95
+#: setting/locations/index.php:40
+#: setting/locations/index.php:71
+#: setting/locations/index.php:79
 msgid "Enabled"
 msgstr "இயக்கப்பட்ட"
 
-#: setting/locations/single.php:561
+#: setting/locations/single.php:630
+#: setting/support.php:220
+#: setting/support.php:353
 msgid "Delete"
 msgstr "அழி"
 
-#: setting/locations/single.php:554
+#: setting/locations/single.php:623
 msgid "Save Changes"
 msgstr "மாற்றங்களைச் சேமி"
 
-#: setting/locations/single.php:540
-msgid ""
-"Note: use 0mm for continuous feed (some printers may not support this "
-"function)"
-msgstr ""
-"குறிப்பு: தொடர்ச்சியான ஊட்டத்திற்கு 0 மிமீ பயன்படுத்தவும் (சில அச்சுப்பொறிகள் இந்த "
-"செயல்பாட்டை ஆதரிக்காமல் இருக்கலாம்)"
+#: setting/locations/single.php:609
+msgid "Note: use 0mm for continuous feed (some printers may not support this function)"
+msgstr "குறிப்பு: தொடர்ச்சியான ஊட்டத்திற்கு 0 மிமீ பயன்படுத்தவும் (சில அச்சுப்பொறிகள் இந்த செயல்பாட்டை ஆதரிக்காமல் இருக்கலாம்)"
 
-#: setting/locations/single.php:537
+#: setting/locations/single.php:606
 msgid "Custom Height (mm)"
 msgstr "விருப்ப உயரம் (மிமீ)"
 
-#: setting/locations/single.php:531
+#: setting/locations/single.php:600
 msgid "Note: use 0mm for automatic width (based on printer setting)"
-msgstr ""
-"குறிப்பு: தானியங்கி அகலத்திற்கு 0mm ஐப் பயன்படுத்தவும் (அச்சுப்பொறி அமைப்பின் அடிப்படையில்)"
+msgstr "குறிப்பு: தானியங்கி அகலத்திற்கு 0mm ஐப் பயன்படுத்தவும் (அச்சுப்பொறி அமைப்பின் அடிப்படையில்)"
 
-#: setting/locations/single.php:528
+#: setting/locations/single.php:597
 msgid "Custom Width (mm)"
 msgstr "விருப்ப அகலம் (மிமீ)"
 
-#: setting/locations/single.php:513
+#: setting/locations/single.php:582
 msgid "Select Size"
 msgstr "அளவு"
 
-#: setting/locations/single.php:509
+#: setting/locations/single.php:578
 msgid "Layout Size"
 msgstr "அளவு"
 
-#: setting/locations/single.php:498
+#: setting/locations/single.php:567
 msgid "Left Margin"
 msgstr "இடது ஓரம்"
 
-#: setting/locations/single.php:493
+#: setting/locations/single.php:562
 msgid "Bottom Margin"
 msgstr "பாட்டம் மார்ஜின்"
 
-#: setting/locations/single.php:488
+#: setting/locations/single.php:557
 msgid "Right Margin"
 msgstr "வலது ஓரம்"
 
-#: setting/locations/index.php:155 setting/locations/index.php:157
-#: setting/locations/single.php:486 setting/locations/single.php:491
-#: setting/locations/single.php:496 setting/locations/single.php:501
+#: setting/locations/index.php:112
+#: setting/locations/index.php:114
+#: setting/locations/single.php:555
+#: setting/locations/single.php:560
+#: setting/locations/single.php:565
+#: setting/locations/single.php:570
 msgid "mm"
 msgstr "மிமீ"
 
-#: setting/locations/single.php:483
+#: setting/locations/single.php:552
 msgid "Top Margin"
 msgstr "டாப் மார்ஜின்"
 
-#: setting/locations/single.php:479
+#: setting/locations/single.php:548
 msgid "Layout Margins"
 msgstr "தளவமைப்பு மார்ஜின்கள்"
 
-#: setting/locations/single.php:472
+#: setting/locations/single.php:541
 msgid "Custom Margins"
 msgstr "விருப்ப மார்ஜின்கள்"
 
-#: setting/locations/single.php:461
+#: setting/locations/single.php:530
 msgid "Header Font Weight (CSS value)"
 msgstr "தலைப்பு எழுத்துரு எடை (CSS மதிப்பு)"
 
-#: setting/locations/single.php:454
+#: setting/locations/single.php:523
 msgid "Basic Font Weight (CSS value)"
 msgstr "அடிப்படை எழுத்துரு எடை (CSS மதிப்பு)"
 
-#: setting/locations/single.php:447
+#: setting/locations/single.php:516
 msgid "Header Font Size (px)"
 msgstr "தலைப்பு எழுத்துரு அளவு (px)"
 
-#: setting/locations/single.php:440
+#: setting/locations/single.php:509
 msgid "Basic Font Size (px)"
 msgstr "அடிப்படை எழுத்துரு அளவு (px)"
 
-#: setting/locations/single.php:431
+#: setting/locations/single.php:500
 msgid "Print symbols for layout debug"
 msgstr "தளவமைப்பு பிழைத்திருத்தத்திற்கான சின்னங்களை அச்சிடுங்கள்"
 
-#: setting/locations/single.php:423
+#: setting/locations/single.php:492
 msgid "Plain text format symbols width"
 msgstr "எளிய உரை வடிவமைப்பு சின்னங்கள் அகலம்"
 
-#: setting/locations/single.php:412
+#: setting/locations/single.php:481
 msgid "Select Format"
 msgstr "வடிவமைப்பு தேர்ந்தெடு"
 
-#: setting/locations/single.php:408
+#: setting/locations/single.php:477
 msgid "Output Format"
 msgstr "வெளியீட்டு வடிவம்"
 
-#: setting/locations/single.php:393
+#: setting/locations/single.php:462
 msgid "Select Orientation"
 msgstr "நோக்குநிலையைத் தேர்ந்தெடு"
 
-#: setting/locations/single.php:389
+#: setting/locations/single.php:458
 msgid "Page Orientation"
 msgstr "பக்க நோக்குநிலை"
 
-#: includes/Admin/Layout.php:76 setting/locations/single.php:385
+#: includes/Admin/Layout.php:79
+#: setting/locations/single.php:454
 #: setting/setting.php:11
 msgid "Settings"
 msgstr "அமைவுகள்"
 
-#: setting/locations/single.php:213
+#: setting/locations/single.php:291
 msgid "Developer Documentation"
 msgstr "டெவலப்பர் ஆவணப்படுத்தல்"
 
-#: setting/locations/single.php:198
+#: setting/locations/single.php:204
 msgid "Include Shipping Method"
 msgstr "அனுப்பும் முறையைச் சேர்க்கவும்"
 
-#: setting/locations/single.php:191
+#: setting/locations/single.php:197
 msgid "Include Customer Details"
 msgstr "வாடிக்கையாளர் விபரங்களைச் சேர்க்கவும்"
 
-#: setting/locations/single.php:184
+#: setting/locations/single.php:190
 msgid "Include Billing & Shipping Details"
 msgstr "பில்லிங் & ஷிப்பிங் விவரங்களைச் சேர்க்கவும்"
 
-#: setting/locations/single.php:177
+#: setting/locations/single.php:183
 msgid "Include Shipping Cost"
 msgstr "கப்பல் செலவைச் சேர்க்கவும்"
 
-#: setting/locations/single.php:163
+#: setting/locations/single.php:169
 msgid "Select Template"
 msgstr "வார்ப்புரு தேர்ந்தெடு"
 
-#: setting/locations/single.php:157
+#: setting/locations/single.php:163
 msgid "Buy"
 msgstr "வாங்கு"
 
-#: setting/locations/single.php:155
+#: setting/locations/single.php:161
 msgid "Need Custom Templates?"
 msgstr "தனிப்பயன் வார்ப்புருக்கள் வேண்டுமா?"
 
-#: setting/locations/index.php:110 setting/locations/single.php:153
+#: setting/locations/index.php:55
+#: setting/locations/single.php:159
 msgid "Template"
 msgstr "வார்ப்புரு"
 
-#: setting/locations/index.php:107 setting/locations/single.php:141
+#: setting/locations/index.php:52
+#: setting/locations/single.php:141
 msgid "Users"
 msgstr "பயனர்கள்"
 
-#: includes/Admin/Layout.php:65 setting/locations/index.php:104
-#: setting/locations/single.php:129 setting/printers.php:15
+#: includes/Admin/Layout.php:68
+#: setting/locations/index.php:49
+#: setting/locations/single.php:129
+#: setting/printers.php:15
 msgid "Printers"
 msgstr "அச்சுப்பொறிகள்"
 
-#: setting/general.php:77 setting/locations/single.php:113
+#: setting/general.php:77
+#: setting/locations/single.php:113
 #: setting/locations/single.php:122
+#: setting/setting.php:63
+#: setting/setting.php:85
+#: setting/setting.php:107
+#: setting/setting.php:118
 msgid "Enable"
 msgstr "சாத்தியமாக்கு"
 
@@ -627,158 +588,221 @@ msgstr "பார்வை"
 msgid "Test print"
 msgstr "அச்சிடு"
 
-#: setting/printers.php:87
+#: setting/printers.php:50
 msgid "Add new"
 msgstr "புதியதைச் சேர்க்கவும்"
 
-#: setting/printers.php:74
+#: setting/printers.php:84
 msgid "Test print initiated, view log for details"
 msgstr "சோதனை அச்சு தொடங்கப்பட்டது, விவரங்களுக்கு பதிவைப் பார்க்கவும்"
 
-#: setting/printers.php:68
+#: setting/printers.php:78
 msgid "Location saved"
 msgstr "இருப்பிடம் சேமிக்கப்பட்டது"
 
-#: setting/printers.php:62
+#: setting/printers.php:72
 msgid "Location deleted"
 msgstr "இருப்பிடம் நீக்கப்பட்டது"
 
-#: templates/customer-html.php:147
+#: templates/advanced/dispatch-label-html.php:244
+#: templates/customer-html.php:152
 msgid "Amount Collected"
 msgstr "வசூலிக்கப்பட்ட தொகை"
 
-#: templates/customer-html.php:141
+#: templates/advanced/dispatch-label-html.php:237
+#: templates/customer-html.php:146
 msgid "Add Tip Amount"
 msgstr "டிப்ஸ் தொகையைச் சேர்க்கவும்"
 
-#: templates/details-html.php:22
+#: templates/details-html.php:31
 msgid "Time"
 msgstr "நேரம்"
 
-#: templates/details-html.php:18
+#. translators: %s: order identifier.
+#: templates/details-html.php:25
 msgid "Order #%s"
 msgstr "ஆர்டர் %s க்கான அச்சு வேலை வெற்றிகரமாக அனுப்பப்பட்டது"
 
-#: templates/customer-html.php:65 templates/details-html.php:34
-#: templates/order-html.php:51
+#: templates/advanced/delivery-note-html.php:163
+#: templates/advanced/dispatch-label-html.php:160
+#: templates/advanced/invoice-html.php:125
+#: templates/advanced/packing-slip-html.php:162
+#: templates/advanced/pick-list-html.php:96
+#: templates/customer-html.php:70
+#: templates/details-html.php:43
+#: templates/order-html.php:56
 msgid "Product"
 msgstr "விளைபொருள்"
 
-#: templates/customer-html.php:47 templates/order-html.php:35
+#: templates/customer-html.php:52
+#: templates/order-html.php:40
 msgid "Time ordered"
 msgstr "ஆர்டர் செய்த நேரம்"
 
-#: templates/details-html.php:143 templates/details-plain.php:75
-#: templates/order-html.php:124 templates/order-plain.php:58
+#: templates/details-html.php:152
+#: templates/details-plain.php:83
+#: templates/order-html.php:130
+#: templates/order-plain.php:65
 msgid "Shipping address"
 msgstr "கப்பல் முகவரி"
 
-#: templates/details-html.php:120 templates/details-plain.php:60
-#: templates/order-html.php:101 templates/order-plain.php:43
+#: templates/details-plain.php:68
+#: templates/order-html.php:107
+#: templates/order-plain.php:50
 msgid "N/A"
 msgstr "N / A"
 
-#: templates/details-html.php:116 templates/details-plain.php:55
-#: templates/order-html.php:97 templates/order-plain.php:38
+#: templates/details-html.php:125
+#: templates/details-plain.php:63
+#: templates/order-html.php:103
+#: templates/order-plain.php:45
 msgid "Billing address"
 msgstr "பில்லிங் முகவரி"
 
-#: templates/customer-html.php:202 templates/customer-plain.php:74
-#: templates/details-html.php:133 templates/details-plain.php:71
-#: templates/order-html.php:114 templates/order-plain.php:54
+#: templates/advanced/dispatch-label-html.php:217
+#: templates/advanced/invoice-html.php:178
+#: templates/customer-html.php:207
+#: templates/customer-plain.php:82
+#: templates/details-html.php:142
+#: templates/details-plain.php:79
+#: templates/order-html.php:120
+#: templates/order-plain.php:61
 msgid "Shipping method"
 msgstr "கப்பல் முறை"
 
-#: templates/customer-html.php:189 templates/customer-plain.php:71
-#: templates/details-html.php:156 templates/details-plain.php:84
-#: templates/order-html.php:136 templates/order-plain.php:67
+#: templates/customer-html.php:194
+#: templates/customer-plain.php:79
+#: templates/details-html.php:165
+#: templates/details-plain.php:92
+#: templates/order-html.php:142
+#: templates/order-plain.php:74
 msgid "Order Notes"
 msgstr "ஆர்டர் குறிப்புகள்"
 
-#: templates/customer-html.php:176 templates/customer-plain.php:67
+#: includes/Support/Support.php:157
+#: templates/advanced/delivery-note-html.php:117
+#: templates/advanced/dispatch-label-html.php:115
+#: templates/advanced/packing-slip-html.php:117
+#: templates/advanced/shipping-label-html.php:84
+#: templates/advanced/shipping-label-plain.php:61
+#: templates/customer-html.php:181
+#: templates/customer-plain.php:75
 msgid "Email"
 msgstr "மின்னஞ்சல்"
 
-#: templates/customer-html.php:170 templates/customer-plain.php:66
+#: templates/customer-html.php:175
+#: templates/customer-plain.php:74
 msgid "Telephone"
 msgstr "தொலைபேசி"
 
-#: templates/customer-html.php:164 templates/customer-plain.php:65
+#: templates/customer-html.php:169
+#: templates/customer-plain.php:73
 msgid "Name"
 msgstr "பெயர்"
 
-#: templates/customer-html.php:156 templates/customer-plain.php:62
-#: templates/details-html.php:108 templates/details-plain.php:52
-#: templates/order-html.php:89 templates/order-plain.php:35
+#: templates/customer-html.php:161
+#: templates/customer-plain.php:70
+#: templates/details-html.php:117
+#: templates/details-plain.php:60
+#: templates/order-html.php:95
+#: templates/order-plain.php:42
 msgid "Customer Details"
 msgstr "வாடிக்கையாளர் விபரங்கள்"
 
-#: templates/customer-html.php:128 templates/customer-plain.php:56
-#: templates/details-html.php:92 templates/details-plain.php:46
+#: templates/advanced/dispatch-label-html.php:231
+#: templates/advanced/invoice-html.php:192
+#: templates/customer-html.php:133
+#: templates/customer-plain.php:64
+#: templates/details-html.php:101
+#: templates/details-plain.php:54
 msgid "Tax"
 msgstr "வரி"
 
-#: templates/customer-html.php:122 templates/customer-plain.php:53
-#: templates/details-html.php:86 templates/details-plain.php:43
+#: templates/advanced/dispatch-label-html.php:210
+#: templates/advanced/invoice-html.php:171
+#: templates/customer-html.php:127
+#: templates/customer-plain.php:61
+#: templates/details-html.php:95
+#: templates/details-plain.php:51
 msgid "Shipping"
 msgstr "கப்பல்"
 
-#: templates/customer-html.php:116 templates/customer-plain.php:50
-#: templates/details-html.php:80 templates/details-plain.php:40
+#: templates/advanced/dispatch-label-html.php:203
+#: templates/advanced/invoice-html.php:164
+#: templates/customer-html.php:121
+#: templates/customer-plain.php:58
+#: templates/details-html.php:89
+#: templates/details-plain.php:48
 msgid "Subtotal"
 msgstr "துணைத்தொகை"
 
-#: templates/customer-plain.php:22
+#: templates/customer-plain.php:30
 msgid "Order Information"
 msgstr "ஆர்டர் தகவல்"
 
-#: templates/customer-plain.php:16 templates/order-plain.php:9
+#: templates/customer-plain.php:24
+#: templates/order-plain.php:16
 msgid "Time Ordered"
 msgstr "ஆர்டர் செய்த நேரம்"
 
-#: templates/customer-html.php:32 templates/customer-html.php:132
-#: templates/customer-plain.php:14 templates/customer-plain.php:57
-#: templates/details-html.php:96 templates/details-plain.php:47
+#: templates/customer-html.php:37
+#: templates/customer-html.php:137
+#: templates/customer-plain.php:22
+#: templates/customer-plain.php:65
+#: templates/details-html.php:105
+#: templates/details-plain.php:55
 msgid "Payment Method"
 msgstr "கொடுப்பனவு முறை"
 
-#: templates/customer-html.php:30 templates/customer-html.php:66
-#: templates/customer-html.php:136 templates/customer-plain.php:13
-#: templates/customer-plain.php:58 templates/details-html.php:35
-#: templates/details-html.php:100 templates/details-plain.php:48
+#: templates/advanced/dispatch-label-html.php:250
+#: templates/advanced/invoice-html.php:211
+#: templates/customer-html.php:35
+#: templates/customer-html.php:71
+#: templates/customer-html.php:141
+#: templates/customer-plain.php:21
+#: templates/customer-plain.php:66
+#: templates/details-html.php:44
+#: templates/details-html.php:109
+#: templates/details-plain.php:56
 msgid "Total"
 msgstr "மொத்தம்"
 
-#: templates/customer-html.php:28 templates/customer-plain.php:11
-#: templates/details-html.php:20 templates/details-plain.php:8
-#: templates/order-html.php:24 templates/order-plain.php:8
+#: templates/customer-html.php:33
+#: templates/customer-plain.php:19
+#: templates/details-html.php:29
+#: templates/details-plain.php:16
+#: templates/order-html.php:29
+#: templates/order-plain.php:15
 msgid "Date"
 msgstr "தேதி"
 
-#: templates/customer-html.php:27 templates/customer-plain.php:10
-#: templates/details-plain.php:7 templates/order-html.php:23
-#: templates/order-plain.php:7
+#: templates/customer-html.php:32
+#: templates/customer-plain.php:16
+#: templates/details-plain.php:13
+#: templates/order-html.php:28
+#: templates/order-plain.php:12
 msgid "Order Number"
 msgstr "ஆர்டர் எண்"
 
-#: includes/Model/Location.php:360 setting/locations/index.php:157
-#: setting/locations/index.php:159
+#: includes/Model/Location.php:362
+#: setting/locations/index.php:114
+#: setting/locations/index.php:116
 msgid "Auto"
 msgstr "தானாக"
 
-#: includes/Model/Location.php:359
+#: includes/Model/Location.php:361
 msgid "Landscape"
 msgstr "நிலைபரப்பு"
 
-#: includes/Model/Location.php:358
+#: includes/Model/Location.php:360
 msgid "Portrait"
 msgstr "உருவப்படம்"
 
-#: includes/Model/Location.php:323
+#: includes/Model/Location.php:325
 msgid "Plain Text"
 msgstr "எளிய உரை"
 
-#: includes/Model/Location.php:322
+#: includes/Model/Location.php:324
 msgid "HTML"
 msgstr "HTML"
 
@@ -790,36 +814,766 @@ msgstr "வாடிக்கையாளர் ஆர்டர் ரசீத�
 msgid "Customer Receipt"
 msgstr "வாடிக்கையாளர் ரசீது"
 
-#: includes/Templates/Order.php:13 templates/details-plain.php:6
+#: includes/Templates/Order.php:13
+#: templates/details-plain.php:11
 msgid "Order Receipt"
 msgstr "ஆர்டர் ரசீது"
 
-#: includes/Model/Location.php:303
+#: includes/Model/Location.php:305
 msgid "Custom"
 msgstr "வழக்கம்"
 
-#: includes/Model/Location.php:302
+#: includes/Model/Location.php:304
 msgid "Letter"
 msgstr "கடிதம்"
 
-#: includes/Model/Location.php:301
+#: includes/Model/Location.php:303
 msgid "A4"
 msgstr "ஏ4"
 
-#: includes/Aspect/Input.php:319
-msgid "Remove"
-msgstr "அகற்று"
-
-#: includes/Aspect/Input.php:317
-msgid "Upload"
-msgstr "மேலேற்று"
-
 #. Author URI of the plugin
-#: index.php
 msgid "http://www.bizswoop.com"
 msgstr "http://www.bizswoop.com"
 
 #. Author of the plugin
-#: index.php
 msgid "BizSwoop a CPF Concepts, LLC Brand"
 msgstr "BizSwoop a CPF Concepts, LLC பிராண்ட்"
+
+#: includes/Addons.php:31
+msgid "Extensions for Popular Plugins"
+msgstr "பிரபல சொருகுப்பொருள்களுக்கான விரிவாக்கங்கள்"
+
+#: includes/Admin.php:188
+msgid "You're almost there. Set up BizPrint to start printing automatically"
+msgstr "நீங்கள் கிட்டத்தட்ட அங்கே இருக்கிறீர்கள்.BizPrint தானாக அச்சிட துவங்குகிறது"
+
+#: includes/Admin.php:198
+msgid "BizPrint setup illustration"
+msgstr "BizPrint விளக்கத்தை அமை"
+
+#: includes/Admin.php:203
+msgid "Finish Setup to Start Printing Automatically"
+msgstr "அச்சை தானாகவே துவக்க முடிவு அமைப்பு"
+
+#: includes/Admin.php:209
+msgid "Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands."
+msgstr "உங்கள் அச்சியந்திரத்தைப் பயன்படுத்துங்கள் — அது இருக்கும் எல்லா பெரிய பிரெண்டிலும் வேலை செய்கிறது."
+
+#: includes/Admin.php:216
+msgid "You're almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders."
+msgstr "நீங்கள் கிட்டத்தட்ட அச்சு செய்ய தயாராக இருக்கிறீர்கள். உங்களது அச்சியந்திரத்தை இணைக்க எங்கள் விரைவான துவக்க வழிகாட்டியைப் பின்பற்றுங்கள் மற்றும் அச்சியந்திர ரசீதுகள் மற்றும் ஆணைகளை தொடங்கவும்."
+
+#: includes/Admin.php:229
+msgid "Go to print settings"
+msgstr "அச்சிட வேண்டிய அமைப்புகளை அச்சிடு"
+
+#: includes/Admin.php:233
+msgid "Get Support"
+msgstr "ஆதரவைப் பெறுக"
+
+#: includes/Admin/PrintDialog.php:67
+#: includes/Admin/PrintDialog.php:160
+msgid "You do not have permission to perform this action."
+msgstr "இந்த செயலை செய்ய உங்களுக்கு அனுமதி இல்லை."
+
+#: includes/Admin/PrintDialog.php:81
+#: includes/Admin/PrintDialog.php:181
+msgid "One or more orders could not be found."
+msgstr "ஒன்று அல்லது அதற்கு மேற்பட்ட ஆணைகள் கண்டுபிடிக்கப்படவில்லை."
+
+#: includes/Support/BasePage.php:99
+msgid "Settings saved."
+msgstr "அமைப்புகள் சேமிக்கப்பட்டது"
+
+#. translators: %s: file path.
+#: includes/Support/Fs.php:37
+msgid "Can't write the %s."
+msgstr "எழுத முடியவில்லை%s."
+
+#. translators: %s: file path.
+#: includes/Support/Fs.php:55
+msgid "Can't read the %s."
+msgstr "படிக்க முடியவில்லை%s."
+
+#: includes/Support/Page.php:16
+#: includes/Support/Support.php:41
+msgid "BizSwoop Support"
+msgstr "பிஸ்ஸூப் ஆதரவு"
+
+#: includes/Support/Support.php:62
+msgid "Support User"
+msgstr "பயனருக்கு ஆதரவு"
+
+#: includes/Support/Support.php:66
+msgid "This section allows you to quickly create a user with administrator role that can be used by the support team to access the website for debugging purposes."
+msgstr "இந்த பகுதி உங்களை விரைவில் நிர்வாகிப் பணியுடன் ஒரு பயனரை உருவாக்க அனுமதிக்கிறது. இது பிழைதிருத்த நோக்கங்களுக்காக வலைத்தளத்தை அணுக துணை குழுவால் பயன்படுத்த இயலும்."
+
+#: includes/Support/Support.php:74
+msgid "Delete user after days"
+msgstr "நாட்களிற்கு பிறகு பயனரை நீக்கு"
+
+#: includes/Support/Support.php:81
+msgid "Set to 0 to disable automatic deletion."
+msgstr "தானியங்கியாக சேர்க்கப்படுவதை இயலுமைபடுத்த 0 என அமை."
+
+#: includes/Support/Support.php:107
+#: includes/Support/Support.php:284
+msgid "Username"
+msgstr "பயனர் பெயர்"
+
+#: includes/Support/Support.php:117
+msgid "Continue existence"
+msgstr "உள்ளீட்டை தொடரவும்"
+
+#: includes/Support/Support.php:124
+msgid "Recreate user"
+msgstr "பயனரை மறு உருவாக்குதல்"
+
+#: includes/Support/Support.php:133
+msgid "Delete user"
+msgstr "பயனரை நீக்கு"
+
+#: includes/Support/Support.php:165
+msgid "Will be auto-deleted"
+msgstr "அப்போது (தவறானவர்கள்) தன்னைத் தானே அழித்துக் கொண்டனர்,"
+
+#. translators: %s: number of days before automatic deletion.
+#: includes/Support/Support.php:169
+msgid "after less than %s days"
+msgstr "குறைந்த பிறகு%s தினங்கள்"
+
+#: includes/Support/Support.php:183
+msgid "Are you sure to recreate the support user? This will cause loss of access for those providing support, you will need to reshare this to keep their access."
+msgstr "நீங்கள் பயனரை மறு உருவாக்க உறுதியாக இருக்கிறீர்களா? இது ஆதரவை வழங்குபவர்களுக்கு இழப்பை ஏற்படுத்தும், நீங்கள் மறுபடியும் அனுமதி பெற வேண்டும்."
+
+#: includes/Support/Support.php:187
+msgid "Are you sure to delete the support user? This will cause loss of access for those providing support."
+msgstr "துணையை நீக்க வேண்டுமா? இது துணைபுரியும் வாய்ப்பை இழக்கச் செய்யும்."
+
+#: includes/Support/Support.php:193
+msgid "Support user not yet created."
+msgstr "பயனீட்டாளர் இன்னும் உருவாக்கப்படவில்லை"
+
+#: includes/Support/Support.php:198
+msgid "Create user in one click"
+msgstr "ஒரே சொடுக்கில் பயனரை உருவாக்கு"
+
+#: includes/Support/Support.php:220
+msgid "Support user created."
+msgstr "பயனர் உருவாக்கப்பட்டது."
+
+#: includes/Support/Support.php:225
+msgid "Support user deleted."
+msgstr "பயனர் நீக்கப்பட்டது"
+
+#: includes/Support/Support.php:231
+msgid "Support user recreated."
+msgstr "பயனர் மறு உருவாக்கப்பட்டது."
+
+#. translators: %s: site host name.
+#: includes/Support/Support.php:239
+msgid "Support access to %s"
+msgstr "அணுகலுக்கான ஆதரவு%s"
+
+#: includes/Support/Support.php:250
+msgid "An error occurred while trying to send the email."
+msgstr "மின்னஞ்சலை அனுப்பும் போது பிழை ஏற்பட்டுள்ளது."
+
+#. translators: %s: linked site URL.
+#: includes/Support/Support.php:272
+msgid "You have been requested for support and granted administrative access to %s."
+msgstr "நீங்கள் ஆதரவிற்காக கோரப்பட்டீர்கள் மற்றும் நிர்வாக அணுகல் வழங்கப்பட்டது%s."
+
+#: includes/Support/Support.php:279
+msgid "Note!"
+msgstr "குறிப்பு!"
+
+#. translators: %s: number of days before automatic deletion.
+#: includes/Support/Support.php:279
+msgid "User will be auto-deleted after less than %s days."
+msgstr "குறைவான பிறகு பயனர் தானாகவே வெளியேற்றப்படுவர்.%s நாட்கள்."
+
+#: includes/Support/Support.php:286
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: includes/Support/Support.php:318
+msgid "Support user existence extended."
+msgstr "பயனர் இருப்பிடம் விரிவாக்கப்பட்டது"
+
+#: includes/Templates/Advanced/AddressLabels.php:13
+msgid "Address Labels"
+msgstr "முகவரிப்புத்தகம்"
+
+#: includes/Templates/Advanced/DeliveryNote.php:13
+msgid "Delivery Note"
+msgstr "வழங்கும் குறிப்பு"
+
+#: includes/Templates/Advanced/DispatchLabel.php:13
+msgid "Dispatch Label"
+msgstr "விளக்கச்சீட்டு"
+
+#: includes/Templates/Advanced/Invoice.php:13
+#: templates/advanced/invoice-html.php:14
+msgid "Invoice"
+msgstr "வரிசையில்"
+
+#: includes/Templates/Advanced/PackingSlip.php:13
+msgid "Packing Slip"
+msgstr "கட்டும் கோளப்பாதை"
+
+#: includes/Templates/Advanced/PickList.php:13
+msgid "Pick List"
+msgstr "பட்டியலை தேர்ந்தெடு"
+
+#: includes/Templates/Advanced/ShippingLabel.php:13
+msgid "Shipping Label"
+msgstr "விளக்கச்சீட்டு விளக்கச்சீட்டு"
+
+#: includes/Translate.php:128
+msgid "German (Austria)"
+msgstr "ஆஸ்திரிய ஜெர்மன்"
+
+#: includes/Translate.php:130
+msgid "German (Switzerland)"
+msgstr "ஸ்விஸ் ஹை ஜெர்மன்"
+
+#: includes/Translate.php:132
+msgid "German (Germany)"
+msgstr "ஜெர்மன் (ஜெர்மனி)"
+
+#: includes/Translate.php:134
+msgid "Spanish (Argentina)"
+msgstr "ஸ்பானிஷ் (அர்ஜென்டினா)"
+
+#: includes/Translate.php:136
+msgid "Spanish (Chile)"
+msgstr "ஸ்பானிஷ் (சிலி)"
+
+#: includes/Translate.php:138
+msgid "Spanish (Costa Rica)"
+msgstr "ஸ்பானிஷ் (கோஸ்டாரிகா)"
+
+#: includes/Translate.php:140
+msgid "Spanish (Colombia)"
+msgstr "ஸ்பானிஷ் (கொலம்பியா)"
+
+#: includes/Translate.php:142
+msgid "Spanish (Dominican Republic)"
+msgstr "ஸ்பானிஷ் (டொமினிகன் குடியரசு)"
+
+#: includes/Translate.php:144
+msgid "Spanish (Ecuador)"
+msgstr "ஸ்பானிஷ் (ஈக்வடார்)"
+
+#: includes/Translate.php:146
+msgid "Spanish (Spain)"
+msgstr "ஐரோப்பிய ஸ்பானிஷ்"
+
+#: includes/Translate.php:148
+msgid "Spanish (Guatemala)"
+msgstr "ஸ்பானிஷ் (கவுதமாலா)"
+
+#: includes/Translate.php:150
+msgid "Spanish (Honduras)"
+msgstr "ஸ்பானிஷ் (ஹோண்டூராஸ்)"
+
+#: includes/Translate.php:152
+msgid "Spanish (Mexico)"
+msgstr "மெக்ஸிகன் ஸ்பானிஷ்"
+
+#: includes/Translate.php:154
+msgid "Spanish (Peru)"
+msgstr "ஸ்பானிஷ் (பெரு)"
+
+#: includes/Translate.php:156
+msgid "Spanish (Puerto Rico)"
+msgstr "ஸ்பானிஷ் (பியூர்டோ ரிகோ)"
+
+#: includes/Translate.php:158
+msgid "Spanish (Uruguay)"
+msgstr "ஸ்பானிஷ் (உருகுவே)"
+
+#: includes/Translate.php:160
+msgid "Spanish (Venezuela)"
+msgstr "ஸ்பானிஷ் (வெனிசுலா)"
+
+#: includes/Translate.php:162
+msgid "French (Belgium)"
+msgstr "பிரெஞ்சு (பெல்ஜியம்)"
+
+#: includes/Translate.php:164
+msgid "French (Canada)"
+msgstr "கனடிய பிரெஞ்சு"
+
+#: includes/Translate.php:166
+msgid "French (France)"
+msgstr "பிரெஞ்சு (பிரான்ஸ்)"
+
+#: includes/Translate.php:168
+msgid "Hebrew"
+msgstr "ஹீப்ரூ"
+
+#: includes/Translate.php:170
+msgid "Hungarian"
+msgstr "ஹங்கேரியன்"
+
+#: includes/Translate.php:172
+msgid "Italian (Italy)"
+msgstr "இத்தாலியன் (இத்தாலி)"
+
+#: includes/Translate.php:174
+msgid "Norwegian Bokmål"
+msgstr "நார்வேஜியன் பொக்மால்"
+
+#: includes/Translate.php:176
+msgid "Norwegian Nynorsk"
+msgstr "நார்வேஜியன் நியூநார்ஸ்க்"
+
+#: includes/Translate.php:178
+msgid "Dutch (Netherlands)"
+msgstr "டச்சு (நெதர்லாந்து)"
+
+#: includes/Translate.php:180
+msgid "Portuguese (Brazil)"
+msgstr "பிரேசிலிய போர்ச்சுகீஸ்"
+
+#: includes/Translate.php:182
+msgid "Portuguese (Portugal)"
+msgstr "ஐரோப்பிய போர்ச்சுகீஸ்"
+
+#: includes/Translate.php:184
+msgid "Russian (Russia)"
+msgstr "ரஷியன் (ரஷ்யா)"
+
+#: includes/Translate.php:186
+msgid "Swedish (Åland Islands)"
+msgstr "ஸ்வீடிஷ் (ஆலந்து தீவுகள்)"
+
+#: includes/Translate.php:188
+msgid "Swedish (Finland)"
+msgstr "ஸ்வீடிஷ் (பின்லாந்து)"
+
+#: includes/Translate.php:190
+msgid "Swedish (Sweden)"
+msgstr "ஸ்வீடிஷ் (ஸ்வீடன்)"
+
+#: includes/Translate.php:192
+msgid "Turkish"
+msgstr "துருக்கிஷ்"
+
+#: includes/Translate.php:194
+msgid "Ukrainian"
+msgstr "உக்ரைனியன்"
+
+#: setting/locations/index.php:73
+#: setting/locations/index.php:81
+msgid "Disabled"
+msgstr "முடக்கிய"
+
+#: setting/locations/index.php:94
+msgid "All Users (Auto)"
+msgstr "எல்லா பயனர்களும் (தானாக)"
+
+#: setting/locations/single.php:32
+msgid "Site Default Language Setting"
+msgstr "தளம் முன்னிருப்பு மொழி அமைப்பு"
+
+#: setting/locations/single.php:145
+msgid "Automatically include all users (current and future)"
+msgstr "தன்னியக்கமாக எல்லா பயனர்களையும் சேர் (தற்போதைய மற்றும் எதிர்காலத்தை)"
+
+#: setting/locations/single.php:218
+msgid "Select Address Type"
+msgstr "முகவரி வகையை தேர்வு செய்"
+
+#: setting/locations/single.php:224
+msgid "Shipping Address"
+msgstr "SPH முகவரி"
+
+#: setting/locations/single.php:230
+msgid "Billing Address"
+msgstr "இந்த முகவரிக்கு அனுப்பவும்."
+
+#: setting/locations/single.php:236
+#: templates/advanced/dispatch-label-html.php:52
+#: templates/advanced/pick-list-html.php:52
+msgid "From Address"
+msgstr "முகவரியிலிருந்து"
+
+#: setting/locations/single.php:242
+msgid "Return Address"
+msgstr "முகவரியை திரும்பு"
+
+#: setting/locations/single.php:253
+msgid "Return Address Line 1"
+msgstr "முகவரி வரி 1யை திரும்பு"
+
+#: setting/locations/single.php:257
+msgid "Return Address Line 2"
+msgstr "முகவரி வரி 2யை திரும்பு"
+
+#: setting/locations/single.php:261
+msgid "Return City"
+msgstr "நகரம் திரும்பு"
+
+#: setting/locations/single.php:266
+msgid "Return Country / State"
+msgstr "திரும்பு நாடு / நிலை"
+
+#: setting/locations/single.php:283
+msgid "Return Postcode"
+msgstr "பின்கோப்பினைத் திருப்பிவிடு"
+
+#: setting/setting.php:51
+msgid "Network Settings"
+msgstr "பிணைய அமைவுகள்"
+
+#: setting/setting.php:58
+msgid "Custom Request Timeout"
+msgstr "தனிப்பயன் கோரிக்கை நேரமுடிவு"
+
+#: setting/setting.php:61
+msgid "Override the default WordPress HTTP timeout (5 seconds) for print service requests."
+msgstr "இயல்பானதை மேலனுப்புWordPress அச்சிடும் சேவை கோரிக்கைகளுக்கு HTTP நேரம் முடிந்தது (5 நொடிகள்)."
+
+#: setting/setting.php:69
+msgid "Timeout (seconds)"
+msgstr "நேரமுடிவு (விநாடிகளில்)"
+
+#: setting/setting.php:73
+msgid "Number of seconds to wait for print service response. Recommended: 10-30 seconds."
+msgstr "அச்சு சேவையின் பதிலுக்கு காத்திருக்க வேண்டிய நொடிகளின் எண்ணிக்கை. பரிந்துரைக்கப்படுகிறது 10- 30 நொடிகள்."
+
+#: setting/setting.php:80
+msgid "Enable Network Retry"
+msgstr "வலைப்பின்னல் மறுமுயற்சியை செயல்படுத்து"
+
+#: setting/setting.php:83
+msgid "Retry failed print requests once on connection timeout or network errors. Note: May cause duplicate prints if the server received the original request."
+msgstr "இணைப்பில் நேரம் அல்லது பிணையத்தில் தவறுகள் நிகழ்ந்தால் அச்சு கோரிக்கைகளை மீண்டும் முயற்சி செய். குறிப்பு: சேவையகம் மூல வேண்டுகோள் பெற்றால் போலி அச்சிடுகைகளை உருவாக்கும்."
+
+#: setting/setting.php:91
+msgid "Disable SSL Verification"
+msgstr "SSL சரிபார்த்தலை முடக்கு"
+
+#: setting/setting.php:94
+msgid "Disable SSL certificate verification for print service requests. Only enable if you have TLS inspection or custom certificate authorities in your network."
+msgstr "Print சேவை கோரிக்கைகளுக்கு SSL சான்றிதழ் CRL நினைவகத்தை செயல் நீக்கு. உங்கள் பிணையத்தில் டிஎல்எஸ் சோதனை அல்லது தனிப்பயன் சான்றிதழ் அதிகாரிகள் இருந்தால் மட்டுமே செயல்படும்."
+
+#: setting/setting.php:96
+msgid "Disable"
+msgstr "முடக்கு"
+
+#: setting/setting.php:102
+msgid "Background Print Processing"
+msgstr "பின்னணி அச்சு செயலாக்கம்"
+
+#: setting/setting.php:105
+msgid "Process print jobs in the background instead of during checkout. Checkout completes immediately and print jobs are sent asynchronously. Recommended for sites experiencing print service timeouts."
+msgstr "சோதனையின் போது அல்லாமல் அச்சுப்பணிகள் பின்னணியில் இயங்கும். அச்சுப்பணிகள் உடனடியாக முடிக்கப்பட்டு அச்சு பணிகள் ஒத்திசைக்கப்படாத வகையில் அனுப்பப்படும். அச்சு சேவை காலாவதியை அனுபவிக்கும்படி பரிந்துரைக்கப்படுகிறது."
+
+#: setting/setting.php:113
+msgid "Queue Failed Jobs"
+msgstr "வரிசையில்லா பணிகள்"
+
+#: setting/setting.php:116
+msgid "When a print job fails during checkout, automatically queue it for background retry. Jobs will retry with increasing delays up to 5 times. Only applies when Background Print Processing is disabled."
+msgstr "அச்சு பணி காலாவதியாகும் போது, பின்புலத்தை மீண்டும் முயற்சிக்க தன்னியக்கமாக வரிசையை வரையவும். அதிக தாமதம் இருந்தால் பணிகள் 5 முறை திரும்ப நிகழும். பின்னணி அச்சிடல் செயல் முடக்கப்படும் போது மட்டுமே செயல்படுத்தப்படும்."
+
+#: setting/support.php:175
+msgid "Print Job Queue"
+msgstr "பணி வரிசையை அச்சிடு"
+
+#: setting/support.php:182
+msgid "Queue Status"
+msgstr "வரிசை நிலை"
+
+#: setting/support.php:186
+msgid "Pending"
+msgstr "அனுப்புதல்"
+
+#: setting/support.php:187
+msgid "Processing"
+msgstr "பணி நடைபெறுகிறது"
+
+#: setting/support.php:188
+msgid "Completed"
+msgstr "முடிக்கப்பட்டது"
+
+#: setting/support.php:189
+msgid "Failed"
+msgstr "தோற்றது"
+
+#: setting/support.php:200
+msgid "Failed Jobs"
+msgstr "பணிகள் தோல்வியடைந்தது"
+
+#: setting/support.php:205
+msgid "ID"
+msgstr "அடையாளம்"
+
+#: setting/support.php:206
+msgid "Order"
+msgstr "வரிசை"
+
+#: setting/support.php:207
+msgid "Attempts"
+msgstr "முயற்சிகள்"
+
+#: setting/support.php:208
+msgid "Last Error"
+msgstr "கடைசி பிழை"
+
+#: setting/support.php:234
+msgid "Manual Processing"
+msgstr "கைமுறை இயக்கம்"
+
+#: setting/support.php:235
+msgid "Process Queue Now"
+msgstr "பணி வரிசை இப்போது"
+
+#: setting/support.php:250
+msgid "Cleanup Completed"
+msgstr "சுத்தம் முடிந்தது"
+
+#: setting/support.php:251
+msgid "Clear Completed Jobs"
+msgstr "முடிக்கப்பட்ட பணிகளை துடை"
+
+#: setting/support.php:266
+msgid "Cleanup All"
+msgstr "அனைத்தையும் துடை"
+
+#: setting/support.php:267
+msgid "Clear All Jobs"
+msgstr "அனைத்து பணிகளையும் துடை"
+
+#: setting/support.php:269
+msgid "Removes all jobs from queue (completed, pending, and failed)."
+msgstr "வரிசையில் இருந்து அனைத்து பணிகளையும் நீக்கு (முடிந்தது, నిలువப்பட்டது மற்றும் தோல்வி அடைந்தது)."
+
+#: setting/support.php:291
+msgid "Job queued for retry"
+msgstr "மீண்டும் முயற்சிக்கு பணி வரிசை"
+
+#: setting/support.php:293
+msgid "Failed to retry job"
+msgstr "பணியை மீண்டும் முயற்சித்தல் தோல்வியுற்றது"
+
+#: setting/support.php:303
+msgid "Job deleted"
+msgstr "பணி நீக்கப்பட்டது"
+
+#: setting/support.php:305
+msgid "Failed to delete job"
+msgstr "பணியை நீக்க முடியவில்லை"
+
+#: setting/support.php:319
+msgid "Retrying..."
+msgstr "மறு முயற்சிக்கிறது..."
+
+#: setting/support.php:336
+msgid "Are you sure you want to delete this job?"
+msgstr "நிச்சயமாக இந்த பணியை நீக்க வேண்டுமா?"
+
+#: setting/support.php:342
+msgid "Deleting..."
+msgstr "அழிக்கிறது..."
+
+#: templates/advanced/delivery-note-html.php:14
+msgid "Delivery note"
+msgstr "வழங்குக்குறிப்பு"
+
+#: templates/advanced/delivery-note-html.php:36
+#: templates/advanced/dispatch-label-html.php:36
+#: templates/advanced/invoice-html.php:36
+#: templates/advanced/packing-slip-html.php:36
+#: templates/advanced/pick-list-html.php:36
+msgid "Logo"
+msgstr "சின்னம்"
+
+#: templates/advanced/delivery-note-html.php:54
+#: templates/advanced/dispatch-label-html.php:81
+#: templates/advanced/packing-slip-html.php:54
+#: templates/advanced/shipping-label-html.php:47
+#: templates/advanced/shipping-label-plain.php:33
+msgid "Order No."
+msgstr "வரிசை எண்."
+
+#: templates/advanced/delivery-note-html.php:57
+#: templates/advanced/dispatch-label-html.php:84
+#: templates/advanced/packing-slip-html.php:57
+msgid "Order Date"
+msgstr "வரிசை தேதி"
+
+#: templates/advanced/delivery-note-html.php:61
+#: templates/advanced/packing-slip-html.php:61
+msgid "Shipping Method"
+msgstr "குறிமுறை"
+
+#: templates/advanced/delivery-note-html.php:66
+#: templates/advanced/packing-slip-html.php:66
+msgid "Shipping Details"
+msgstr "முன்வைப்பு விவரங்கள்"
+
+#: templates/advanced/delivery-note-html.php:76
+#: templates/advanced/invoice-html.php:52
+#: templates/advanced/packing-slip-html.php:76
+msgid "From"
+msgstr "அனுப்புநர்"
+
+#: templates/advanced/delivery-note-html.php:98
+#: templates/advanced/dispatch-label-html.php:96
+#: templates/advanced/invoice-html.php:76
+#: templates/advanced/packing-slip-html.php:98
+msgid "Bill to"
+msgstr "பில்லிலிருந்து"
+
+#: templates/advanced/delivery-note-html.php:118
+#: templates/advanced/dispatch-label-html.php:116
+#: templates/advanced/packing-slip-html.php:118
+msgid "Phone"
+msgstr "தொலைபேசி எண்"
+
+#: templates/advanced/delivery-note-html.php:120
+#: templates/advanced/delivery-note-html.php:148
+#: templates/advanced/dispatch-label-html.php:118
+#: templates/advanced/dispatch-label-html.php:146
+#: templates/advanced/functions.php:100
+#: templates/advanced/functions.php:113
+#: templates/advanced/invoice-html.php:97
+#: templates/advanced/packing-slip-html.php:120
+#: templates/advanced/packing-slip-html.php:148
+#: templates/advanced/shipping-label-html.php:86
+#: templates/advanced/shipping-label-plain.php:63
+msgid "Guest"
+msgstr "விருந்தினன்"
+
+#: templates/advanced/delivery-note-html.php:127
+#: templates/advanced/dispatch-label-html.php:125
+#: templates/advanced/packing-slip-html.php:127
+msgid "Ship to"
+msgstr "ஷிப்"
+
+#: templates/advanced/delivery-note-html.php:160
+#: templates/advanced/dispatch-label-html.php:158
+#: templates/advanced/invoice-html.php:124
+#: templates/advanced/packing-slip-html.php:160
+msgid "S.No"
+msgstr "எஸ். இல்லை"
+
+#: templates/advanced/delivery-note-html.php:161
+#: templates/advanced/packing-slip-html.php:161
+#: templates/advanced/pick-list-html.php:94
+msgid "Image"
+msgstr "பிம்பம்"
+
+#: templates/advanced/delivery-note-html.php:162
+#: templates/advanced/dispatch-label-html.php:159
+#: templates/advanced/pick-list-html.php:95
+msgid "SKU"
+msgstr "எஸ்கேயூ"
+
+#: templates/advanced/delivery-note-html.php:164
+#: templates/advanced/dispatch-label-html.php:161
+#: templates/advanced/invoice-html.php:126
+#: templates/advanced/packing-slip-html.php:163
+#: templates/advanced/pick-list-html.php:97
+msgid "Quantity"
+msgstr "அலிகேட்டர்"
+
+#: templates/advanced/delivery-note-html.php:165
+#: templates/advanced/dispatch-label-html.php:162
+#: templates/advanced/invoice-html.php:127
+msgid "Unit price"
+msgstr "அலகு விலை"
+
+#: templates/advanced/delivery-note-html.php:166
+#: templates/advanced/dispatch-label-html.php:163
+#: templates/advanced/invoice-html.php:128
+msgid "Total price"
+msgstr "மொத்த விலை"
+
+#: templates/advanced/dispatch-label-html.php:78
+msgid "Invoice No."
+msgstr "இல்லை."
+
+#: templates/advanced/dispatch-label-html.php:87
+msgid "Dispatch Date"
+msgstr "தேதியை பிரிக்கவும்"
+
+#: templates/advanced/dispatch-label-html.php:224
+#: templates/advanced/invoice-html.php:185
+msgid "Shipping details"
+msgstr "பின்னோக்கு விவரங்கள்"
+
+#: templates/advanced/dispatch-label-html.php:259
+#: templates/advanced/invoice-html.php:220
+#: templates/advanced/shipping-label-html.php:54
+#: templates/advanced/shipping-label-plain.php:41
+msgid "Customer note"
+msgstr "தனிப்பயன் குறிப்பு"
+
+#: templates/advanced/functions.php:75
+msgid "n/a"
+msgstr "இருப்பில் இல்லை"
+
+#: templates/advanced/invoice-html.php:106
+msgid "Invoice no"
+msgstr "இல்லை"
+
+#: templates/advanced/invoice-html.php:109
+#: templates/advanced/shipping-label-html.php:50
+#: templates/advanced/shipping-label-plain.php:37
+msgid "Order date"
+msgstr "முறையின் தேதி"
+
+#: templates/advanced/invoice-html.php:112
+msgid "Payment method"
+msgstr "கட்டண முறை"
+
+#: templates/advanced/invoice-html.php:198
+msgid "Add tip amount"
+msgstr "குறி தொகையை சேர்"
+
+#: templates/advanced/invoice-html.php:205
+msgid "Amount collected"
+msgstr "மொத்தம் சேகரிக்கப்பட்டது"
+
+#: templates/advanced/packing-slip-html.php:14
+msgid "Packing slip"
+msgstr "சுழலும் வழிமுறை"
+
+#: templates/advanced/packing-slip-html.php:164
+#: templates/advanced/pick-list-html.php:98
+msgid "Total weight"
+msgstr "மொத்த எடை"
+
+#: templates/advanced/pick-list-html.php:79
+msgid "Orders"
+msgstr "வரிசைகள்"
+
+#: templates/advanced/pick-list-html.php:82
+msgid "Printed on"
+msgstr "அச்சடிக்கப்பட்ட"
+
+#: templates/advanced/pick-list-html.php:135
+msgid "Terms and conditions apply"
+msgstr "உறுப்புகள் மற்றும் நிலைமைகள் பொருந்தும்"
+
+#: templates/advanced/shipping-label-html.php:64
+#: templates/advanced/shipping-label-plain.php:47
+msgid "To"
+msgstr "இதற்கு"
+
+#: templates/advanced/shipping-label-html.php:83
+#: templates/advanced/shipping-label-plain.php:60
+msgid "Tel"
+msgstr "டெல்"
+
+#. translators: %1$s: line break; %2$s: right-caret icon.
+#: setting/locations/index.php:137
+msgctxt "%1$s - line break, %2$s - caret right icon"
+msgid "Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer."
+msgstr "அச்சிடும் பணிகளை அனுப்ப ஒரு அச்சடிப்பி இடத்தை உருவாக்கு:%1$sஉங்கள் சேமிப்பு%2$s BizPrint %2$sஉங்கள் இணைக்கப்பட்ட அச்சுப்பொறி."

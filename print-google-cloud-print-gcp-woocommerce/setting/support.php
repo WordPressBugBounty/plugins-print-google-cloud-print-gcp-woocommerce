@@ -23,7 +23,32 @@ return function (Page $setting_page) {
 
 	if ($setting_page->isRequested($support)) {
 		add_action('admin_enqueue_scripts', function () {
-			wp_enqueue_script('zprint-clipboard', plugins_url('assets/clipboard.js', PLUGIN_ROOT_FILE), [], PLUGIN_VERSION);
+			wp_register_script(
+				'zprint-i18next',
+				plugins_url('assets/vendor/i18next.min.js', PLUGIN_ROOT_FILE),
+				array(),
+				PLUGIN_VERSION,
+				true
+			);
+			wp_register_script(
+				'zprint-i18n',
+				plugins_url('assets/i18n.js', PLUGIN_ROOT_FILE),
+				array('zprint-i18next'),
+				PLUGIN_VERSION,
+				true
+			);
+			wp_add_inline_script(
+				'zprint-i18n',
+				'window.ZPRINT_I18N_CONFIG = ' . wp_json_encode(Translate::get_javascript_config()) . ';',
+				'before'
+			);
+			wp_enqueue_script(
+				'zprint-clipboard',
+				plugins_url('assets/clipboard.js', PLUGIN_ROOT_FILE),
+				array('jquery', 'zprint-i18n'),
+				PLUGIN_VERSION,
+				true
+			);
 		});
 	}
 
@@ -68,6 +93,7 @@ return function (Page $setting_page) {
 
 			if ($setting_page->isRequested($support)) {
 				$size = human_filesize(file_exists(Log::getPrintLogFilePath()) ? filesize(Log::getPrintLogFilePath()): 0);
+				/* translators: %s: human-readable log file size. */
 				$clear->setLabel('singular_name', sprintf(__('Log file (Size: %s)', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $size));
 			}
 			add_filter('\Zprint\Aspect\Input\saveBefore', function ($data, $object, $key_name) use ($clear) {
@@ -108,6 +134,7 @@ return function (Page $setting_page) {
 
 			if ($setting_page->isRequested($support)) {
 				$size = human_filesize(file_exists(Log::getBasicLogFilePath()) ? filesize(Log::getBasicLogFilePath()) : 0);
+				/* translators: %s: human-readable log file size. */
 				$clear->setLabel('singular_name', sprintf(__('Log file (Size: %s)', 'Print-Google-Cloud-Print-GCP-WooCommerce'), $size));
 			}
 			add_filter('\Zprint\Aspect\Input\saveBefore', function ($data, $object, $key_name) use ($clear) {

@@ -133,6 +133,7 @@ return function ($tab, $page) {
 			<p class="zprint-empty-list__notice">
 		  <?php
 		  echo sprintf(
+			  /* translators: %1$s: line break; %2$s: right-caret icon. */
 			  esc_html_x(
 				  'Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer.',
 				  '%1$s - line break, %2$s - caret right icon',

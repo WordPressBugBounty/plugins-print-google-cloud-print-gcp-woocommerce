@@ -4,17 +4,17 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb7b6bf29a42896e20338eb7bbec6a9ce
+class ComposerStaticInitf55dbba5a6884d1e730310233e65234a
 {
     public static $prefixLengthsPsr4 = array (
-        'Z' => 
+        'Z' =>
         array (
             'Zprint\\' => 7,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Zprint\\' => 
+        'Zprint\\' =>
         array (
             0 => __DIR__ . '/../..' . '/includes',
         ),
@@ -23,6 +23,7 @@ class ComposerStaticInitb7b6bf29a42896e20338eb7bbec6a9ce
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Zprint\\API' => __DIR__ . '/../..' . '/includes/API.php',
+        'Zprint\\API\\AutoPrintSettings' => __DIR__ . '/../..' . '/includes/API/AutoPrintSettings.php',
         'Zprint\\API\\Webhook' => __DIR__ . '/../..' . '/includes/API/Webhook.php',
         'Zprint\\Activate' => __DIR__ . '/../..' . '/includes/Activate.php',
         'Zprint\\Addons' => __DIR__ . '/../..' . '/includes/Addons.php',
@@ -71,12 +72,32 @@ class ComposerStaticInitb7b6bf29a42896e20338eb7bbec6a9ce
         'Zprint\\RestClient' => __DIR__ . '/../..' . '/includes/RestClient.php',
         'Zprint\\SettingsTabPage' => __DIR__ . '/../..' . '/includes/SettingsTabPage.php',
         'Zprint\\Setup' => __DIR__ . '/../..' . '/includes/Setup.php',
+        'Zprint\\Support\\ActionQuery' => __DIR__ . '/../..' . '/includes/Support/ActionQuery.php',
+        'Zprint\\Support\\Asset' => __DIR__ . '/../..' . '/includes/Support/Asset.php',
+        'Zprint\\Support\\BasePage' => __DIR__ . '/../..' . '/includes/Support/BasePage.php',
+        'Zprint\\Support\\Control\\Checkbox' => __DIR__ . '/../..' . '/includes/Support/Control/Checkbox.php',
+        'Zprint\\Support\\Control\\Control' => __DIR__ . '/../..' . '/includes/Support/Control/Control.php',
+        'Zprint\\Support\\Control\\Text' => __DIR__ . '/../..' . '/includes/Support/Control/Text.php',
+        'Zprint\\Support\\Fs' => __DIR__ . '/../..' . '/includes/Support/Fs.php',
+        'Zprint\\Support\\Model\\Link' => __DIR__ . '/../..' . '/includes/Support/Model/Link.php',
+        'Zprint\\Support\\Notice' => __DIR__ . '/../..' . '/includes/Support/Notice.php',
+        'Zprint\\Support\\Page' => __DIR__ . '/../..' . '/includes/Support/Page.php',
+        'Zprint\\Support\\Setup' => __DIR__ . '/../..' . '/includes/Support/Setup.php',
+        'Zprint\\Support\\Support' => __DIR__ . '/../..' . '/includes/Support/Support.php',
         'Zprint\\TabPage' => __DIR__ . '/../..' . '/includes/TabPage.php',
+        'Zprint\\Template\\Advanced' => __DIR__ . '/../..' . '/includes/Template/Advanced.php',
         'Zprint\\Template\\Basic' => __DIR__ . '/../..' . '/includes/Template/Basic.php',
         'Zprint\\Template\\Index' => __DIR__ . '/../..' . '/includes/Template/Index.php',
         'Zprint\\Template\\Options' => __DIR__ . '/../..' . '/includes/Template/Options.php',
         'Zprint\\Template\\TemplateSettings' => __DIR__ . '/../..' . '/includes/Template/TemplateSettings.php',
         'Zprint\\Templates' => __DIR__ . '/../..' . '/includes/Templates.php',
+        'Zprint\\Templates\\Advanced\\AddressLabels' => __DIR__ . '/../..' . '/includes/Templates/Advanced/AddressLabels.php',
+        'Zprint\\Templates\\Advanced\\DeliveryNote' => __DIR__ . '/../..' . '/includes/Templates/Advanced/DeliveryNote.php',
+        'Zprint\\Templates\\Advanced\\DispatchLabel' => __DIR__ . '/../..' . '/includes/Templates/Advanced/DispatchLabel.php',
+        'Zprint\\Templates\\Advanced\\Invoice' => __DIR__ . '/../..' . '/includes/Templates/Advanced/Invoice.php',
+        'Zprint\\Templates\\Advanced\\PackingSlip' => __DIR__ . '/../..' . '/includes/Templates/Advanced/PackingSlip.php',
+        'Zprint\\Templates\\Advanced\\PickList' => __DIR__ . '/../..' . '/includes/Templates/Advanced/PickList.php',
+        'Zprint\\Templates\\Advanced\\ShippingLabel' => __DIR__ . '/../..' . '/includes/Templates/Advanced/ShippingLabel.php',
         'Zprint\\Templates\\Customer' => __DIR__ . '/../..' . '/includes/Templates/Customer.php',
         'Zprint\\Templates\\Details' => __DIR__ . '/../..' . '/includes/Templates/Details.php',
         'Zprint\\Templates\\Order' => __DIR__ . '/../..' . '/includes/Templates/Order.php',
@@ -87,9 +108,9 @@ class ComposerStaticInitb7b6bf29a42896e20338eb7bbec6a9ce
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb7b6bf29a42896e20338eb7bbec6a9ce::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb7b6bf29a42896e20338eb7bbec6a9ce::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitb7b6bf29a42896e20338eb7bbec6a9ce::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf55dbba5a6884d1e730310233e65234a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf55dbba5a6884d1e730310233e65234a::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf55dbba5a6884d1e730310233e65234a::$classMap;
 
         }, null, ClassLoader::class);
     }

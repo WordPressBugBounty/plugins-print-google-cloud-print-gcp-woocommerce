@@ -15,7 +15,7 @@ class Checkbox extends Control {
 		$value       = get_option( $args['name'], $args['default'] );
 		$is_disabled = isset( $args['disabled'] ) && $args['disabled'];
 		?>
-		<div class="da-setting-checkbox <?php echo $is_disabled ? 'da-setting-checkbox_disabled' : ''; ?>">
+		<div class="bizswoop-support-setting-checkbox <?php echo $is_disabled ? 'bizswoop-support-setting-checkbox_disabled' : ''; ?>">
 			<input
 				type="hidden"
 				name="<?php echo esc_attr( $args['name'] ); ?>"
@@ -34,7 +34,7 @@ class Checkbox extends Control {
 				<?php
 				if ( isset( $args['description'] ) && $args['description'] ) {
 					?>
-					<span class="da-setting-checkbox__description">
+					<span class="bizswoop-support-setting-checkbox__description">
 						<?php echo wp_kses_post( $args['description'] ); ?>
 					</span>
 					<?php

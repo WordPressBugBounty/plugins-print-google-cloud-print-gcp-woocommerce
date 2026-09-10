@@ -26,7 +26,7 @@ abstract class BasePage {
 
 		return function () use ( $render ): void {
 			?>
-			<div class="da-setting-section__description">
+			<div class="bizswoop-support-setting-section__description">
 				<?php $render(); ?>
 			</div>
 			<?php
@@ -74,7 +74,7 @@ abstract class BasePage {
 
 	protected function get_title_info_link( string $url, string $title, string $target = '_blank' ): string {
 		return '<a
-			class="da-setting-page__title-info-link dashicons dashicons-info-outline"
+			class="bizswoop-support-setting-page__title-info-link dashicons dashicons-info-outline"
 			href="' . esc_url( $url ) . '"
 			title="' . esc_attr( $title ) . '"
 			target="' . esc_attr( $target ) . '"

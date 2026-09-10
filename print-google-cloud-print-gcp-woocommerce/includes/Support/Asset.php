@@ -6,7 +6,7 @@ use Exception;
 defined( 'ABSPATH' ) || exit;
 
 class Asset {
-	protected const ASSET_DIR  = 'assets/dev-assist';
+	protected const ASSET_DIR  = 'assets/support';
 	protected const SCRIPT_DIR = 'script';
 	protected const STYLE_DIR  = 'style';
 	protected const POSTFIX    = '';

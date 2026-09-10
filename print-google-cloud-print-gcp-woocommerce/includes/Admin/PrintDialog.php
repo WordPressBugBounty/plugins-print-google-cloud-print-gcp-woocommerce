@@ -187,9 +187,13 @@ class PrintDialog
 		}
 
 		$message  = '<b>' . __( 'Print Manager', 'Print-Google-Cloud-Print-GCP-WooCommerce' ) . ':</b> ';
-		$message .= 1 < count( $order_ids ) ?
-			__( 'the print job for orders %s were sent successfully', 'Print-Google-Cloud-Print-GCP-WooCommerce' ) :
-			__( 'the print job for order %s was sent successfully', 'Print-Google-Cloud-Print-GCP-WooCommerce');
+		/* translators: %s: formatted order ID or list of order IDs. */
+		$message .= _n(
+			'the print job for order %s was sent successfully',
+			'the print job for orders %s were sent successfully',
+			count( $order_ids ),
+			'Print-Google-Cloud-Print-GCP-WooCommerce'
+		);
 		$message  = sprintf( $message . '.', $this->get_formatted_order_ids( $order_ids ) );
 
 		Plugin\Notice::add_transient( $message, 'success' );

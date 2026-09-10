@@ -62,7 +62,7 @@ class Support extends Page {
 			__( 'Support User', 'Print-Google-Cloud-Print-GCP-WooCommerce' ),
 			function(): void {
 				?>
-				<div class="da-setting-section__description">
+				<div class="bizswoop-support-setting-section__description">
 					<?php echo wp_kses( __( 'This section allows you to quickly create a user with administrator role that can be used by the support team to access the website for debugging purposes.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ), array( 'b' => array() ) ); ?>
 				</div>
 				<?php
@@ -93,7 +93,7 @@ class Support extends Page {
 
 	public function render_user_data_section(): void {
 		?>
-		<div class="da-support-user">
+		<div class="bizswoop-support-user">
 			<?php
 			if ( 0 === get_option( static::ID_KEY, self::ID_DEFAULT ) ) {
 				$this->render_user_data_section_empty();
@@ -101,14 +101,14 @@ class Support extends Page {
 				return;
 			}
 			?>
-			<ul class="da-support-user__credentials" id="da-support-user-credentials">
+			<ul class="bizswoop-support-user__credentials" id="bizswoop-support-user-credentials">
 				<li style="display: none;"><?php echo esc_html( wp_login_url() ); ?></li>
 				<li>
 					<b><?php echo esc_html__( 'Username', 'Print-Google-Cloud-Print-GCP-WooCommerce' ); ?>:</b> <span><?php echo esc_html( get_option( static::LOGIN_KEY, static::LOGIN_DEFAULT ) ); ?></span>
 				</li>
 			</ul>
-			<?php echo wp_kses_post( static::get_details( 'da-support-user__details' ) ); ?>
-			<ul class="da-support-user__controls">
+			<?php echo wp_kses_post( static::get_details( 'bizswoop-support-user__details' ) ); ?>
+			<ul class="bizswoop-support-user__controls">
 				<?php if ( static::is_allowed_continue_existence() ) { ?>
 					<li>
 						<a
@@ -134,7 +134,7 @@ class Support extends Page {
 						ActionQuery::get_url( static::DELETE_QUERY_KEY ),
 						static::get_deletion_confirmation_massage(),
 						false,
-						'da-support-user__link-danger'
+						'bizswoop-support-user__link-danger'
 					) )->render();
 					?>
 				</li>
@@ -165,6 +165,7 @@ class Support extends Page {
 						<b><?php echo esc_html__( 'Will be auto-deleted', 'Print-Google-Cloud-Print-GCP-WooCommerce' ); ?>:</b>
 						<?php
 						echo sprintf(
+							/* translators: %s: number of days before automatic deletion. */
 							esc_html__( 'after less than %s days', 'Print-Google-Cloud-Print-GCP-WooCommerce' ),
 							esc_html( static::get_days_for_auto_delete() )
 						);
@@ -188,13 +189,10 @@ class Support extends Page {
 
 	protected function render_user_data_section_empty(): void {
 		?>
-		<div class="da-support-user__description">
+		<div class="bizswoop-support-user__description">
 			<?php echo esc_html__( 'Support user not yet created.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ); ?>
 		</div>
-		<div class="da-support-user__notice">
-			<b><?php echo esc_html__( 'Note', 'Print-Google-Cloud-Print-GCP-WooCommerce' ); ?>:</b> <?php echo esc_html__( 'A temporary Development Assistant plugin is added to create the support user. It appears under Plugins and will be automatically removed along with the support user when the session ends.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ); ?>
-		</div>
-		<ul class="da-support-user__controls">
+		<ul class="bizswoop-support-user__controls">
 			<li>
 				<a href="<?php echo esc_url( ActionQuery::get_url( static::CREATE_QUERY_KEY ) ); ?>">
 					<?php echo esc_html__( 'Create user in one click', 'Print-Google-Cloud-Print-GCP-WooCommerce' ); ?>
@@ -220,7 +218,6 @@ class Support extends Page {
 	public function handle_create_user(): void {
 		static::create_user();
 		Notice::add_transient( __( 'Support user created.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ), 'success' );
-		$this->render_dev_assist_installed_notice();
 	}
 
 	public function handle_delete_user(): void {
@@ -232,20 +229,13 @@ class Support extends Page {
 		static::delete_user();
 		static::create_user();
 		Notice::add_transient( __( 'Support user recreated.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ), 'success' );
-		$this->render_dev_assist_installed_notice();
-	}
-
-	public function render_dev_assist_installed_notice(): void {
-		Notice::add_transient(
-			__('Development Assistant was automatically installed to provide support from BizSwoop. It will be automatically deleted along with the support user.', 'zpos-wp-api'),
-			'default'
-		);
 	}
 
 	protected static function share_to_email( string $login, string $password ): void {
 		$email = 'support@bizswoop.com';
 
 		$subject = sprintf(
+			/* translators: %s: site host name. */
 			__( 'Support access to %s', 'Print-Google-Cloud-Print-GCP-WooCommerce' ),
 			str_replace( array( 'http://', 'https://' ), '', home_url() )
 		);
@@ -278,6 +268,7 @@ class Support extends Page {
 		ob_start();
 
 		echo sprintf(
+			/* translators: %s: linked site URL. */
 			esc_html__( 'You have been requested for support and granted administrative access to %s.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ),
 			'<a href="' . esc_url( $home_url ) . '">' . esc_html( $home_url ) . '</a>'
 		);
@@ -285,7 +276,7 @@ class Support extends Page {
 		if ( 0 < intval( get_option( static::DELETE_AFTER_DAYS_KEY, static::DELETE_AFTER_DAYS_DEFAULT ) ) ) {
 			?>
 			<br><br>
-			<b><?php echo esc_html__( 'Note!', 'Print-Google-Cloud-Print-GCP-WooCommerce' ); ?></b> <?php echo sprintf( esc_html__( 'User will be auto-deleted after less than %s days.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ), esc_html( static::get_days_for_auto_delete() ) ); ?>
+			<b><?php echo esc_html__( 'Note!', 'Print-Google-Cloud-Print-GCP-WooCommerce' ); ?></b> <?php /* translators: %s: number of days before automatic deletion. */ echo sprintf( esc_html__( 'User will be auto-deleted after less than %s days.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ), esc_html( static::get_days_for_auto_delete() ) ); ?>
 		<?php } ?>
 		<br><br>
 		<a href="<?php echo esc_url( $login_url ); ?>"><?php echo esc_html( $login_url ); ?></a>
@@ -320,7 +311,6 @@ class Support extends Page {
 		update_option( static::LOGIN_KEY, $login );
 		update_option( static::CREATED_AT_KEY, $time );
 		static::share_to_email( $login, $password );
-		DevAssist::install();
 	}
 
 	public function handle_update_create_at(): void {
@@ -359,7 +349,6 @@ class Support extends Page {
 		}
 
 		static::delete_user_data();
-		DevAssist::uninstall();
 	}
 
 	protected static function delete_user_data(): void {
