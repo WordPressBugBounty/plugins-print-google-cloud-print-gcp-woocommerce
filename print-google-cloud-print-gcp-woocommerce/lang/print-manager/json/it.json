@@ -1,4 +1,16 @@
 {
 	"copied_successfully": "Copiato correttamente!",
+	"quick_print_accepted_formats": "Accettati: {{formats}}. Max: {{size}} MB.",
+	"quick_print_file_ready": "File pronto. Scegli una stampante e invia.",
+	"quick_print_generic_error": "Si è verificato un problema. Riprova.",
+	"quick_print_need_file": "Scegli prima un file.",
+	"quick_print_need_printer": "Scegli una stampante di destinazione.",
+	"quick_print_ready": "Pronto per la stampa.",
+	"quick_print_sending": "Invio alla stampante…",
+	"quick_print_sent": "Lavoro di stampa inviato correttamente.",
+	"quick_print_too_large": "Questo file supera il limite consentito di {{size}} MB.",
+	"quick_print_unsupported_type": "Sono accettati solo file PDF e HTML.",
+	"quick_print_uploading": "Caricamento del file…",
+	"quick_print_uploading_percent": "Caricamento del file… {{percent}}%",
 	"something_went_wrong": "Qualcosa è andato storto!"
 }

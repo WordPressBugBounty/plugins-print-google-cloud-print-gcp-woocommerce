@@ -27,17 +27,16 @@ msgstr "Ενεργό"
 #: setting/general.php:77
 #: setting/locations/single.php:113
 #: setting/locations/single.php:122
-#: setting/setting.php:63
-#: setting/setting.php:85
-#: setting/setting.php:107
-#: setting/setting.php:118
+#: setting/setting.php:131
+#: setting/setting.php:153
+#: setting/setting.php:175
+#: setting/setting.php:186
 msgid "Enable"
 msgstr "Ενεργοποίηση"
 
-#: includes/Admin/Layout.php:35
-#: includes/Admin/Layout.php:40
+#: includes/Admin/Layout.php:37
+#: includes/Admin/Layout.php:42
 #: includes/Admin/PrintDialog.php:109
-#: includes/Admin/PrintDialog.php:112
 #: includes/Admin/PrintDialog.php:189
 #: setting/index.php:13
 msgid "Print Manager"
@@ -47,7 +46,7 @@ msgstr "Διαχείριση εκτυπώσεων"
 msgid "Print Order"
 msgstr "Εκτύπωση παραγγελίας"
 
-#: includes/Admin/Layout.php:57
+#: includes/Admin/Layout.php:59
 #: setting/general.php:11
 msgid "General"
 msgstr "Γενικά"
@@ -56,7 +55,7 @@ msgstr "Γενικά"
 msgid "Add-ons"
 msgstr "Πρόσθετα"
 
-#: includes/Admin/Layout.php:79
+#: includes/Admin/Layout.php:81
 #: setting/locations/single.php:454
 #: setting/setting.php:11
 msgid "Settings"
@@ -164,19 +163,19 @@ msgstr "Ενεργοποίηση αυτόματης εκτύπωσης"
 msgid "Copies"
 msgstr "Αντίγραφα"
 
-#: setting/printers.php:72
+#: setting/printers.php:86
 msgid "Location deleted"
 msgstr "Η τοποθεσία διαγράφηκε"
 
-#: setting/printers.php:78
+#: setting/printers.php:92
 msgid "Location saved"
 msgstr "Αποθηκευμένη τοποθεσία"
 
-#: setting/printers.php:84
+#: setting/printers.php:98
 msgid "Test print initiated, view log for details"
 msgstr "Έναρξη δοκιμαστικής εκτύπωσης, προβολή αρχείου καταγραφής για λεπτομέρειες"
 
-#: setting/printers.php:50
+#: setting/printers.php:62
 msgid "Add new"
 msgstr "Προσθήκη νέου"
 
@@ -186,7 +185,7 @@ msgstr "Προσθήκη νέου"
 msgid "Enabled"
 msgstr "Ενεργοποιημένο"
 
-#: includes/Admin/Layout.php:68
+#: includes/Admin/Layout.php:70
 #: setting/locations/index.php:49
 #: setting/locations/single.php:129
 #: setting/printers.php:15
@@ -447,6 +446,7 @@ msgstr "Επιλογή ρόλων για αντιστοίχιση τοποθεσ
 
 #: setting/setting.php:28
 #: setting/setting.php:42
+#: setting/setting.php:59
 msgid "Selected Roles"
 msgstr "Επιλεγμένοι ρόλοι"
 
@@ -640,22 +640,27 @@ msgid "Shipping address"
 msgstr "Διεύθυνση Αποστολής"
 
 #. Description of the plugin
+#: index.php
 msgid "Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!"
 msgstr "Προσθέστε εύκολα υποστήριξη για εκτύπωση παραγγελιών WooCommerce με την υπηρεσία BizPrint Cloud Print και εκτυπώστε οπουδήποτε στον κόσμο!"
 
 #. Author of the plugin
+#: index.php
 msgid "BizSwoop a CPF Concepts, LLC Brand"
 msgstr "BizSwoop μια μάρκα CPF Concepts, LLC"
 
 #. Author URI of the plugin
+#: index.php
 msgid "http://www.bizswoop.com"
 msgstr "http://www.bizswoop.com"
 
 #. Plugin Name of the plugin
+#: index.php
 msgid "BizPrint Print Manager for WooCommerce"
 msgstr "BizPrint Διαχειριστής εκτύπωσης για WooCommerce"
 
 #. Plugin URI of the plugin
+#: index.php
 msgid "http://www.getbizprint.com"
 msgstr "http://www.getbizprint.com"
 
@@ -664,7 +669,7 @@ msgid "Our Full Collection of Print Templates"
 msgstr "Η πλήρης συλλογή προτύπων εκτύπωσης"
 
 #: includes/Addons.php:20
-#: includes/Admin/Layout.php:90
+#: includes/Admin/Layout.php:92
 #: setting/addons.php:11
 msgid "Marketplace"
 msgstr "Marketplace"
@@ -717,47 +722,47 @@ msgstr "Εργαλεία & πρότυπα"
 msgid "Use tools"
 msgstr "Χρήση εργαλείων"
 
-#: includes/Admin.php:51
+#: includes/Admin.php:52
 msgid "Order(s) is printing"
 msgstr "Σειρά(-ες) εκτύπωσης"
 
-#: includes/Admin.php:60
+#: includes/Admin.php:61
 msgid "Print error"
 msgstr "Σφάλμα εκτύπωσης"
 
-#: includes/Admin.php:188
+#: includes/Admin.php:189
 msgid "You're almost there. Set up BizPrint to start printing automatically"
 msgstr "Σχεδόν έφτασες. Set BizPrint για να ξεκινήσει αυτόματα η εκτύπωση"
 
-#: includes/Admin.php:198
+#: includes/Admin.php:199
 msgid "BizPrint setup illustration"
 msgstr "BizPrint Εικόνα ρύθμισης"
 
-#: includes/Admin.php:203
+#: includes/Admin.php:204
 msgid "Finish Setup to Start Printing Automatically"
 msgstr "Finish τερματισμού για αυτόματη εκτύπωση"
 
-#: includes/Admin.php:209
+#: includes/Admin.php:210
 msgid "Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands."
 msgstr "Εξοικονομήστε χρόνο και μειώστε την πολυπλοκότητα με ένα αξιόπιστο, κλιμακωτό διάλυμα εκτύπωσης. Χρησιμοποιήστε τον υπάρχοντα εκτυπωτή σας — λειτουργεί σε όλες τις μεγάλες μάρκες."
 
-#: includes/Admin.php:216
+#: includes/Admin.php:217
 msgid "You're almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders."
 msgstr "Είσαι σχεδόν έτοιμη για εκτύπωση. Ακολουθήστε τον Οδηγό Γρήγορης Έναρξης για να συνδέσετε τον εκτυπωτή σας και να αρχίσετε να εκτυπώνετε αποδείξεις και παραγγελίες."
 
-#: includes/Admin.php:223
+#: includes/Admin.php:224
 msgid "Launch Quick Start Guide"
 msgstr "Εκκίνηση οδηγού γρήγορης εκκίνησης"
 
-#: includes/Admin.php:229
+#: includes/Admin.php:230
 msgid "Go to print settings"
 msgstr "Μετάβαση στις ρυθμίσεις εκτύπωσης"
 
-#: includes/Admin.php:233
+#: includes/Admin.php:234
 msgid "Get Support"
 msgstr "Λήψη υποστήριξης"
 
-#: includes/Admin/Layout.php:44
+#: includes/Admin/Layout.php:46
 msgid "Print to anywhere with BizPrint"
 msgstr "Εκτύπωση οπουδήποτε με BizPrint"
 
@@ -1211,59 +1216,59 @@ msgstr "Χώρα επιστροφής / Κράτος"
 msgid "Return Postcode"
 msgstr "Επιστροφή ταχυδρομικού κώδικα"
 
-#: setting/setting.php:51
+#: setting/setting.php:119
 msgid "Network Settings"
 msgstr "Ρυθμίσεις δικτύου"
 
-#: setting/setting.php:58
+#: setting/setting.php:126
 msgid "Custom Request Timeout"
 msgstr "Χρονικό όριο αίτησης συνήθειας"
 
-#: setting/setting.php:61
+#: setting/setting.php:129
 msgid "Override the default WordPress HTTP timeout (5 seconds) for print service requests."
 msgstr "Αντικατάσταση της προκαθορισμένης WordPress Χρονικό όριο HTTP (5 δευτερόλεπτα) για αιτήσεις υπηρεσιών εκτύπωσης."
 
-#: setting/setting.php:69
+#: setting/setting.php:137
 msgid "Timeout (seconds)"
 msgstr "Χρονικό όριο (δευτερόλεπτα)"
 
-#: setting/setting.php:73
+#: setting/setting.php:141
 msgid "Number of seconds to wait for print service response. Recommended: 10-30 seconds."
 msgstr "Αριθμός δευτερολέπτων για την απόκριση της υπηρεσίας εκτύπωσης. Συνιστάται: 10-30 δευτερόλεπτα."
 
-#: setting/setting.php:80
+#: setting/setting.php:148
 msgid "Enable Network Retry"
 msgstr "Ενεργοποίηση επανάληψης δικτύου"
 
-#: setting/setting.php:83
+#: setting/setting.php:151
 msgid "Retry failed print requests once on connection timeout or network errors. Note: May cause duplicate prints if the server received the original request."
 msgstr "Επανέναρξη αποτυχημένων αιτήσεων εκτύπωσης μία φορά στο χρονικό όριο σύνδεσης ή σε σφάλματα δικτύου. Σημείωση: Μπορεί να προκαλέσει αντίγραφα εκτυπώσεων αν ο διακομιστής λάβει την αρχική αίτηση."
 
-#: setting/setting.php:91
+#: setting/setting.php:159
 msgid "Disable SSL Verification"
 msgstr "Απενεργοποίηση επαλήθευσης SSL"
 
-#: setting/setting.php:94
+#: setting/setting.php:162
 msgid "Disable SSL certificate verification for print service requests. Only enable if you have TLS inspection or custom certificate authorities in your network."
 msgstr "Απενεργοποίηση επαλήθευσης πιστοποιητικού SSL για αιτήματα υπηρεσιών εκτύπωσης. Ενεργοποίηση μόνο αν έχετε TLS επιθεώρηση ή προσαρμοσμένες αρχές πιστοποιητικών στο δίκτυό σας."
 
-#: setting/setting.php:96
+#: setting/setting.php:164
 msgid "Disable"
 msgstr "Απενεργοποίηση"
 
-#: setting/setting.php:102
+#: setting/setting.php:170
 msgid "Background Print Processing"
 msgstr "Επεξεργασία εκτύπωσης φόντου"
 
-#: setting/setting.php:105
+#: setting/setting.php:173
 msgid "Process print jobs in the background instead of during checkout. Checkout completes immediately and print jobs are sent asynchronously. Recommended for sites experiencing print service timeouts."
 msgstr "Επεξεργασία εργασιών εκτύπωσης στο παρασκήνιο αντί κατά τη διάρκεια της εξόδου. Το checkout ολοκληρώνεται αμέσως και οι εργασίες εκτύπωσης αποστέλλονται ασύγχρονα. Συνιστάται για ιστοσελίδες που βιώνουν timeouts υπηρεσία εκτύπωσης."
 
-#: setting/setting.php:113
+#: setting/setting.php:181
 msgid "Queue Failed Jobs"
 msgstr "Αποτυχία αναμονής εργασιών"
 
-#: setting/setting.php:116
+#: setting/setting.php:184
 msgid "When a print job fails during checkout, automatically queue it for background retry. Jobs will retry with increasing delays up to 5 times. Only applies when Background Print Processing is disabled."
 msgstr "Όταν μια εργασία εκτύπωσης αποτυγχάνει κατά τη διάρκεια της παραγγελίας, αυτόματα περιμένετε στην ουρά για την επανάληψη του φόντου. Οι δουλειές θα ξαναδοκιμάσουν με αυξανόμενες καθυστερήσεις μέχρι 5 φορές. Ισχύει μόνο όταν απενεργοποιείται η Επεξεργασία Εκτύπωσης."
 
@@ -1579,3 +1584,147 @@ msgstr "Τηλ."
 msgctxt "%1$s - line break, %2$s - caret right icon"
 msgid "Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer."
 msgstr "Δημιουργία τοποθεσίας εκτυπωτή για αποστολή εργασιών εκτύπωσης από:%1$sΤο Κατάστημα σας%2$s BizPrint %2$sτον συνδεδεμένο εκτυπωτή σας."
+
+#: includes/Admin/AdminBar.php:28
+#: setting/printers.php:60
+#: setting/quick-print.php:30
+#: setting/quick-print.php:31
+#: setting/quick-print.php:196
+msgid "Print a File"
+msgstr "Εκτύπωση αρχείου"
+
+#: includes/Admin/AdminBar.php:31
+msgid "Open the BizPrint drag-and-drop Print a File page"
+msgstr "Άνοιγμα της σελίδας Εκτύπωση αρχείου του BizPrint με μεταφορά και απόθεση"
+
+#: includes/API/QuickPrint.php:66
+msgid "You do not have permission to print files."
+msgstr "Δεν έχετε άδεια να εκτυπώνετε αρχεία."
+
+#. translators: 1: max prints, 2: minutes.
+#: includes/API/QuickPrint.php:82
+msgid "Rate limit exceeded: %1$d prints per %2$d minutes."
+msgstr "Υπέρβαση ορίου: %1$d εκτυπώσεις ανά %2$d λεπτά."
+
+#: includes/API/QuickPrint.php:94
+msgid "No file was uploaded."
+msgstr "Δεν μεταφορτώθηκε κανένα αρχείο."
+
+#. translators: %s: file name.
+#: includes/API/QuickPrint.php:104
+msgid "Quick print: %s"
+msgstr "Γρήγορη εκτύπωση: %s"
+
+#: includes/API/QuickPrint.php:112
+msgid "Choose a destination printer."
+msgstr "Επιλέξτε εκτυπωτή προορισμού."
+
+#: includes/API/QuickPrint.php:121
+msgid "That printer is not available on this site."
+msgstr "Αυτός ο εκτυπωτής δεν είναι διαθέσιμος σε αυτόν τον ιστότοπο."
+
+#. translators: %d: max size in MB.
+#: includes/API/QuickPrint.php:133
+msgid "That file is larger than the allowed limit of %d MB."
+msgstr "Το αρχείο υπερβαίνει το επιτρεπόμενο όριο των %d MB."
+
+#: includes/API/QuickPrint.php:145
+msgid "Only PDF and HTML files are accepted."
+msgstr "Γίνονται δεκτά μόνο αρχεία PDF και HTML."
+
+#: includes/API/QuickPrint.php:153
+msgid "BizPrint API keys are not configured."
+msgstr "Τα κλειδιά API του BizPrint δεν έχουν ρυθμιστεί."
+
+#: includes/API/QuickPrint.php:204
+msgid "Unexpected response from print service."
+msgstr "Μη αναμενόμενη απάντηση από την υπηρεσία εκτύπωσης."
+
+#: includes/API/QuickPrint.php:308
+msgid "Could not save uploaded file."
+msgstr "Δεν ήταν δυνατή η αποθήκευση του αρχείου που μεταφορτώθηκε."
+
+#: setting/quick-print.php:157
+msgid "You do not have permission to access this page."
+msgstr "Δεν έχετε άδεια πρόσβασης σε αυτή τη σελίδα."
+
+#. translators: %s: settings page URL.
+#: setting/quick-print.php:180
+msgid "BizPrint API keys are not configured. <a href=\"%s\">Add your keys on the Application tab</a> before printing."
+msgstr "Τα κλειδιά API του BizPrint δεν έχουν ρυθμιστεί. <a href=\"%s\">Προσθέστε τα κλειδιά σας στην καρτέλα Εφαρμογή</a> πριν από την εκτύπωση."
+
+#: setting/quick-print.php:202
+msgid "Drag a file here"
+msgstr "Σύρετε ένα αρχείο εδώ"
+
+#: setting/quick-print.php:203
+msgid "or click to browse"
+msgstr "ή κάντε κλικ για αναζήτηση"
+
+#: setting/quick-print.php:220
+msgid "Remove selected file"
+msgstr "Αφαίρεση επιλεγμένου αρχείου"
+
+#: setting/quick-print.php:227
+msgid "Printer"
+msgstr "Εκτυπωτής"
+
+#: setting/quick-print.php:230
+msgid "Select a printer…"
+msgstr "Επιλέξτε εκτυπωτή…"
+
+#: setting/quick-print.php:237
+msgid "No printers found. Add printers in the Printers tab or verify your API keys."
+msgstr "Δεν βρέθηκαν εκτυπωτές. Προσθέστε εκτυπωτές στην καρτέλα Εκτυπωτές ή ελέγξτε τα κλειδιά API σας."
+
+#: setting/quick-print.php:244
+msgid "Description (optional)"
+msgstr "Περιγραφή (προαιρετικό)"
+
+#: setting/quick-print.php:251
+msgid "e.g. Daily report"
+msgstr "π.χ. Ημερήσια αναφορά"
+
+#: setting/quick-print.php:272
+msgid "Send to Printer"
+msgstr "Αποστολή στον εκτυπωτή"
+
+#: setting/setting.php:50
+msgid "Quick Print Access Roles"
+msgstr "Ρόλοι πρόσβασης γρήγορης εκτύπωσης"
+
+#: setting/setting.php:51
+msgid "Select roles that can access the drag-and-drop Print a File page, admin bar shortcut, and file-print endpoint."
+msgstr "Επιλέξτε τους ρόλους που έχουν πρόσβαση στη σελίδα Εκτύπωση αρχείου με μεταφορά και απόθεση, στη συντόμευση της γραμμής διαχείρισης και στο endpoint εκτύπωσης αρχείων."
+
+#: setting/setting.php:67
+msgid "Quick Print Limits"
+msgstr "Όρια γρήγορης εκτύπωσης"
+
+#: setting/setting.php:72
+msgid "Maximum File Size (MB)"
+msgstr "Μέγιστο μέγεθος αρχείου (MB)"
+
+#: setting/setting.php:75
+msgid "Maximum file size allowed for Print a File uploads. Larger files increase the risk of a timeout between your server and BizPrint, especially on shared hosting. Default: 2 MB. Hard maximum: 50 MB."
+msgstr "Μέγιστο επιτρεπόμενο μέγεθος αρχείου για μεταφορτώσεις στην Εκτύπωση αρχείου. Τα μεγαλύτερα αρχεία αυξάνουν τον κίνδυνο λήξης χρονικού ορίου μεταξύ του διακομιστή σας και του BizPrint, ειδικά σε κοινόχρηστη φιλοξενία. Προεπιλογή: 2 MB. Απόλυτο μέγιστο: 50 MB."
+
+#: setting/setting.php:80
+msgid "Keep Files For (Hours)"
+msgstr "Διατήρηση αρχείων για (ώρες)"
+
+#: setting/setting.php:83
+msgid "How long an uploaded file stays available to your printers. A printer that is offline fetches the file when it reconnects, and Reprint fetches it again, so both only work within this window. Files are deleted after it ends. Default: 24 hours. Maximum: 720 hours."
+msgstr "Πόσο καιρό ένα μεταφορτωμένο αρχείο παραμένει διαθέσιμο στους εκτυπωτές σας. Ένας εκτυπωτής εκτός σύνδεσης λαμβάνει το αρχείο όταν επανασυνδεθεί και η Επανεκτύπωση το λαμβάνει ξανά, οπότε και τα δύο λειτουργούν μόνο εντός αυτού του διαστήματος. Τα αρχεία διαγράφονται όταν λήξει. Προεπιλογή: 24 ώρες. Μέγιστο: 720 ώρες."
+
+#: setting/setting.php:91
+msgid "Default Printer"
+msgstr "Προεπιλεγμένος εκτυπωτής"
+
+#: setting/setting.php:94
+msgid "Pre-select this printer on the Print a File page so users can send a file without choosing a printer first. Leave blank to require a choice each time."
+msgstr "Προεπιλέξτε αυτόν τον εκτυπωτή στη σελίδα Εκτύπωση αρχείου, ώστε οι χρήστες να μπορούν να στείλουν ένα αρχείο χωρίς να επιλέξουν πρώτα εκτυπωτή. Αφήστε το κενό για να απαιτείται επιλογή κάθε φορά."
+
+#: setting/setting.php:96
+msgid "None — let the user choose"
+msgstr "Κανένας — αφήστε τον χρήστη να επιλέξει"

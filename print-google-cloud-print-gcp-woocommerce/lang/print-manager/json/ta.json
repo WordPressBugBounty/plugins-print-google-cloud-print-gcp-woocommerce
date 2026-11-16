@@ -1,4 +1,16 @@
 {
 	"copied_successfully": "வெற்றிகரமாக நகலெடுக்கப்பட்டது!",
+	"quick_print_accepted_formats": "ஏற்கப்படுபவை: {{formats}}. அதிகபட்சம்: {{size}} MB.",
+	"quick_print_file_ready": "கோப்பு தயார். அச்சுப்பொறியைத் தேர்ந்தெடுத்து அனுப்பவும்.",
+	"quick_print_generic_error": "ஏதோ தவறு நடந்தது. மீண்டும் முயற்சிக்கவும்.",
+	"quick_print_need_file": "முதலில் ஒரு கோப்பைத் தேர்ந்தெடுக்கவும்.",
+	"quick_print_need_printer": "இலக்கு அச்சுப்பொறியைத் தேர்ந்தெடுக்கவும்.",
+	"quick_print_ready": "அச்சிடத் தயார்.",
+	"quick_print_sending": "அச்சுப்பொறிக்கு அனுப்பப்படுகிறது…",
+	"quick_print_sent": "அச்சுப் பணி வெற்றிகரமாக அனுப்பப்பட்டது.",
+	"quick_print_too_large": "அந்தக் கோப்பு அனுமதிக்கப்பட்ட {{size}} MB வரம்பை விடப் பெரியது.",
+	"quick_print_unsupported_type": "PDF மற்றும் HTML கோப்புகள் மட்டுமே ஏற்கப்படும்.",
+	"quick_print_uploading": "கோப்பு பதிவேற்றப்படுகிறது…",
+	"quick_print_uploading_percent": "கோப்பு பதிவேற்றப்படுகிறது… {{percent}}%",
 	"something_went_wrong": "ஏதோ தவறு ஏற்பட்டது!"
 }

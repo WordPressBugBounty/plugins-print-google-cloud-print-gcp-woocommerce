@@ -43,12 +43,26 @@ return function (Page $setting_page) {
 			<?php }
 		});
 
-	/* Always show the "Add new" button in the tab bar — encourages adding printers from any tab */
-	$setting_page
-		->setArgument(
-			'new_link',
-			'<a href="' . add_query_arg('id', 'new', $setting_page->getUrl($locations)) . '" class="alignright page-title-action">' . __('Add new', 'Print-Google-Cloud-Print-GCP-WooCommerce') . '</a>'
-		);
+	/* Tab-bar action buttons. Both are wrapped in a single span so flex/float
+	   quirks can't separate them — the wrapper aligns right, the buttons
+	   sit immediately next to each other inside it. "Add new" ends on the
+	   far right; "Print a File" has a distinct primary style.
+	   Deferred to admin_init priority 20 so that User::sync_quick_print_cap()
+	   (priority 10) has already run. */
+	add_action('admin_init', function () use ($setting_page, $locations) {
+		$inner = '';
+		if ( \Zprint\User::current_user_can_quick_print() ) {
+			$quick_print_url = add_query_arg(
+				'page',
+				'zprint-quick-print',
+				admin_url('admin.php')
+			);
+			$inner .= '<a href="' . esc_url($quick_print_url) . '" class="page-title-action zprint-print-file-btn"><span class="dashicons dashicons-printer" aria-hidden="true"></span>' . esc_html__('Print a File', 'Print-Google-Cloud-Print-GCP-WooCommerce') . '</a>';
+		}
+		$inner .= '<a href="' . add_query_arg('id', 'new', $setting_page->getUrl($locations)) . '" class="page-title-action">' . __('Add new', 'Print-Google-Cloud-Print-GCP-WooCommerce') . '</a>';
+
+		$setting_page->setArgument('new_link', '<span class="zprint-tab-actions">' . $inner . '</span>');
+	}, 20);
 
 	$on_printers_tab = ( isset( $_GET['tab'] ) && Page::getName( $setting_page, $locations ) === $_GET['tab'] )
 		|| $setting_page->isRequested( $locations );

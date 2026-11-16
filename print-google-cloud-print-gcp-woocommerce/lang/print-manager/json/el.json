@@ -1,4 +1,16 @@
 {
 	"copied_successfully": "Αντιγράφηκε με επιτυχία!",
+	"quick_print_accepted_formats": "Αποδεκτά: {{formats}}. Μέγιστο: {{size}} MB.",
+	"quick_print_file_ready": "Το αρχείο είναι έτοιμο. Επιλέξτε εκτυπωτή και στείλτε το.",
+	"quick_print_generic_error": "Κάτι πήγε στραβά. Δοκιμάστε ξανά.",
+	"quick_print_need_file": "Επιλέξτε πρώτα ένα αρχείο.",
+	"quick_print_need_printer": "Επιλέξτε εκτυπωτή προορισμού.",
+	"quick_print_ready": "Έτοιμο για εκτύπωση.",
+	"quick_print_sending": "Αποστολή στον εκτυπωτή…",
+	"quick_print_sent": "Η εργασία εκτύπωσης στάλθηκε με επιτυχία.",
+	"quick_print_too_large": "Το αρχείο υπερβαίνει το επιτρεπόμενο όριο των {{size}} MB.",
+	"quick_print_unsupported_type": "Γίνονται δεκτά μόνο αρχεία PDF και HTML.",
+	"quick_print_uploading": "Μεταφόρτωση αρχείου…",
+	"quick_print_uploading_percent": "Μεταφόρτωση αρχείου… {{percent}}%",
 	"something_went_wrong": "Κάτι πήγε στραβά!"
 }

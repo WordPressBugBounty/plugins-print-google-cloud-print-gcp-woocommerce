@@ -27,17 +27,16 @@ msgstr "Aktiva"
 #: setting/general.php:77
 #: setting/locations/single.php:113
 #: setting/locations/single.php:122
-#: setting/setting.php:63
-#: setting/setting.php:85
-#: setting/setting.php:107
-#: setting/setting.php:118
+#: setting/setting.php:131
+#: setting/setting.php:153
+#: setting/setting.php:175
+#: setting/setting.php:186
 msgid "Enable"
 msgstr "Gör det möjligt"
 
-#: includes/Admin/Layout.php:35
-#: includes/Admin/Layout.php:40
+#: includes/Admin/Layout.php:37
+#: includes/Admin/Layout.php:42
 #: includes/Admin/PrintDialog.php:109
-#: includes/Admin/PrintDialog.php:112
 #: includes/Admin/PrintDialog.php:189
 #: setting/index.php:13
 msgid "Print Manager"
@@ -47,7 +46,7 @@ msgstr "Utskriftshanterare"
 msgid "Print Order"
 msgstr "Skriv ut beställning"
 
-#: includes/Admin/Layout.php:57
+#: includes/Admin/Layout.php:59
 #: setting/general.php:11
 msgid "General"
 msgstr "Allmän"
@@ -56,7 +55,7 @@ msgstr "Allmän"
 msgid "Add-ons"
 msgstr "Tillägg"
 
-#: includes/Admin/Layout.php:79
+#: includes/Admin/Layout.php:81
 #: setting/locations/single.php:454
 #: setting/setting.php:11
 msgid "Settings"
@@ -164,19 +163,19 @@ msgstr "Aktivera automatisk utskrift"
 msgid "Copies"
 msgstr "Kopior"
 
-#: setting/printers.php:72
+#: setting/printers.php:86
 msgid "Location deleted"
 msgstr "Plats raderad"
 
-#: setting/printers.php:78
+#: setting/printers.php:92
 msgid "Location saved"
 msgstr "Platsen har sparats"
 
-#: setting/printers.php:84
+#: setting/printers.php:98
 msgid "Test print initiated, view log for details"
 msgstr "Testutskrift initierad, se logg för detaljer"
 
-#: setting/printers.php:50
+#: setting/printers.php:62
 msgid "Add new"
 msgstr "Lägg till ny"
 
@@ -186,7 +185,7 @@ msgstr "Lägg till ny"
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#: includes/Admin/Layout.php:68
+#: includes/Admin/Layout.php:70
 #: setting/locations/index.php:49
 #: setting/locations/single.php:129
 #: setting/printers.php:15
@@ -447,6 +446,7 @@ msgstr "Välj Roller för platsmappning till användare"
 
 #: setting/setting.php:28
 #: setting/setting.php:42
+#: setting/setting.php:59
 msgid "Selected Roles"
 msgstr "Valda roller"
 
@@ -640,22 +640,27 @@ msgid "Shipping address"
 msgstr "Leveransadress"
 
 #. Description of the plugin
+#: index.php
 msgid "Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!"
 msgstr "Lägg enkelt till stöd för utskrift av WooCommerce-ordrar med BizPrint Cloud Print Service och Print var som helst i världen!"
 
 #. Author of the plugin
+#: index.php
 msgid "BizSwoop a CPF Concepts, LLC Brand"
 msgstr "BizSwoop och CPF Concepts, LLC varumärke"
 
 #. Author URI of the plugin
+#: index.php
 msgid "http://www.bizswoop.com"
 msgstr "http://www.bizswoop.com"
 
 #. Plugin Name of the plugin
+#: index.php
 msgid "BizPrint Print Manager for WooCommerce"
 msgstr "BizPrint Print Manager för WooCommerce"
 
 #. Plugin URI of the plugin
+#: index.php
 msgid "http://www.getbizprint.com"
 msgstr "http://www.getbizprint.com"
 
@@ -664,7 +669,7 @@ msgid "Our Full Collection of Print Templates"
 msgstr "Vår fullständiga samling av utskriftsmallar"
 
 #: includes/Addons.php:20
-#: includes/Admin/Layout.php:90
+#: includes/Admin/Layout.php:92
 #: setting/addons.php:11
 msgid "Marketplace"
 msgstr "Marknadsplats"
@@ -717,47 +722,47 @@ msgstr "Verktyg & mallar"
 msgid "Use tools"
 msgstr "Använd verktyg"
 
-#: includes/Admin.php:51
+#: includes/Admin.php:52
 msgid "Order(s) is printing"
 msgstr "Beställning(ar) skrivs ut"
 
-#: includes/Admin.php:60
+#: includes/Admin.php:61
 msgid "Print error"
 msgstr "Utskriftsfel"
 
-#: includes/Admin.php:188
+#: includes/Admin.php:189
 msgid "You're almost there. Set up BizPrint to start printing automatically"
 msgstr "Du är nästan där. Ställ in BizPrint att börja skriva automatiskt"
 
-#: includes/Admin.php:198
+#: includes/Admin.php:199
 msgid "BizPrint setup illustration"
 msgstr "BizPrint setup illustration"
 
-#: includes/Admin.php:203
+#: includes/Admin.php:204
 msgid "Finish Setup to Start Printing Automatically"
 msgstr "Avsluta inställning för att starta utskrift automatiskt"
 
-#: includes/Admin.php:209
+#: includes/Admin.php:210
 msgid "Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands."
 msgstr "Spara tid och minska komplexiteten med en pålitlig, skalbar trycklösning. Använd din befintliga skrivare - fungerar på alla stora varumärken."
 
-#: includes/Admin.php:216
+#: includes/Admin.php:217
 msgid "You're almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders."
 msgstr "Du är nästan redo att skriva ut. Följ vår snabbstartsguide för att ansluta din skrivare och börja skriva ut kvitton och beställningar."
 
-#: includes/Admin.php:223
+#: includes/Admin.php:224
 msgid "Launch Quick Start Guide"
 msgstr "Starta snabbstartguide"
 
-#: includes/Admin.php:229
+#: includes/Admin.php:230
 msgid "Go to print settings"
 msgstr "Gå till print inställningar"
 
-#: includes/Admin.php:233
+#: includes/Admin.php:234
 msgid "Get Support"
 msgstr "Få stöd"
 
-#: includes/Admin/Layout.php:44
+#: includes/Admin/Layout.php:46
 msgid "Print to anywhere with BizPrint"
 msgstr "Skriv ut till var som helst med BizPrint"
 
@@ -1211,59 +1216,59 @@ msgstr "Return Country / State"
 msgid "Return Postcode"
 msgstr "Return Postkod"
 
-#: setting/setting.php:51
+#: setting/setting.php:119
 msgid "Network Settings"
 msgstr "Nätverksinställningar"
 
-#: setting/setting.php:58
+#: setting/setting.php:126
 msgid "Custom Request Timeout"
 msgstr "Anpassad begäran timeout"
 
-#: setting/setting.php:61
+#: setting/setting.php:129
 msgid "Override the default WordPress HTTP timeout (5 seconds) for print service requests."
 msgstr "åsidosätter standarden WordPress HTTP timeout (5 sekunder) för utskriftstjänstförfrågningar."
 
-#: setting/setting.php:69
+#: setting/setting.php:137
 msgid "Timeout (seconds)"
 msgstr "Timeout (andra)"
 
-#: setting/setting.php:73
+#: setting/setting.php:141
 msgid "Number of seconds to wait for print service response. Recommended: 10-30 seconds."
 msgstr "Antal sekunder för att vänta på tryckt servicerespons. Rekommenderas: 10-30 sekunder."
 
-#: setting/setting.php:80
+#: setting/setting.php:148
 msgid "Enable Network Retry"
 msgstr "Aktivera Network Retry"
 
-#: setting/setting.php:83
+#: setting/setting.php:151
 msgid "Retry failed print requests once on connection timeout or network errors. Note: May cause duplicate prints if the server received the original request."
 msgstr "Retry misslyckade utskriftsförfrågningar en gång på anslutningstid eller nätverksfel. Obs!: Kan orsaka dubbla utskrifter om servern fick den ursprungliga begäran."
 
-#: setting/setting.php:91
+#: setting/setting.php:159
 msgid "Disable SSL Verification"
 msgstr "Inaktivera SSL Verification"
 
-#: setting/setting.php:94
+#: setting/setting.php:162
 msgid "Disable SSL certificate verification for print service requests. Only enable if you have TLS inspection or custom certificate authorities in your network."
 msgstr "Inaktivera SSL-certifikatverifiering för utskriftstjänstförfrågningar. Endast aktivera om du har TLS-kontroll eller anpassade certifikatmyndigheter i ditt nätverk."
 
-#: setting/setting.php:96
+#: setting/setting.php:164
 msgid "Disable"
 msgstr "Inaktivera"
 
-#: setting/setting.php:102
+#: setting/setting.php:170
 msgid "Background Print Processing"
 msgstr "Utskriftsbearbetning i bakgrunden"
 
-#: setting/setting.php:105
+#: setting/setting.php:173
 msgid "Process print jobs in the background instead of during checkout. Checkout completes immediately and print jobs are sent asynchronously. Recommended for sites experiencing print service timeouts."
 msgstr "Processtryck jobb i bakgrunden istället för under kassan. Checkout slutförs omedelbart och tryckta jobb skickas asynkront. Rekommenderas för webbplatser som upplever print service timeouts."
 
-#: setting/setting.php:113
+#: setting/setting.php:181
 msgid "Queue Failed Jobs"
 msgstr "Köa misslyckade jobb"
 
-#: setting/setting.php:116
+#: setting/setting.php:184
 msgid "When a print job fails during checkout, automatically queue it for background retry. Jobs will retry with increasing delays up to 5 times. Only applies when Background Print Processing is disabled."
 msgstr "När ett tryckt jobb misslyckas under kassan, köa det automatiskt för bakgrundsretry. Jobben kommer att fördröjas med ökande förseningar upp till 5 gånger. Det gäller endast när Background Print Processing är inaktiverad."
 
@@ -1579,3 +1584,147 @@ msgstr "Tel"
 msgctxt "%1$s - line break, %2$s - caret right icon"
 msgid "Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer."
 msgstr "Skapa en skrivarplats för att skicka ut skrivjobb från:%1$sDin butik%2$s BizPrint %2$sDin anslutna skrivare."
+
+#: includes/Admin/AdminBar.php:28
+#: setting/printers.php:60
+#: setting/quick-print.php:30
+#: setting/quick-print.php:31
+#: setting/quick-print.php:196
+msgid "Print a File"
+msgstr "Skriv ut en fil"
+
+#: includes/Admin/AdminBar.php:31
+msgid "Open the BizPrint drag-and-drop Print a File page"
+msgstr "Öppna BizPrints sida Skriv ut en fil med dra och släpp"
+
+#: includes/API/QuickPrint.php:66
+msgid "You do not have permission to print files."
+msgstr "Du har inte behörighet att skriva ut filer."
+
+#. translators: 1: max prints, 2: minutes.
+#: includes/API/QuickPrint.php:82
+msgid "Rate limit exceeded: %1$d prints per %2$d minutes."
+msgstr "Gränsen har överskridits: %1$d utskrifter per %2$d minuter."
+
+#: includes/API/QuickPrint.php:94
+msgid "No file was uploaded."
+msgstr "Ingen fil laddades upp."
+
+#. translators: %s: file name.
+#: includes/API/QuickPrint.php:104
+msgid "Quick print: %s"
+msgstr "Snabbutskrift: %s"
+
+#: includes/API/QuickPrint.php:112
+msgid "Choose a destination printer."
+msgstr "Välj en målskrivare."
+
+#: includes/API/QuickPrint.php:121
+msgid "That printer is not available on this site."
+msgstr "Den skrivaren är inte tillgänglig på den här webbplatsen."
+
+#. translators: %d: max size in MB.
+#: includes/API/QuickPrint.php:133
+msgid "That file is larger than the allowed limit of %d MB."
+msgstr "Filen är större än den tillåtna gränsen på %d MB."
+
+#: includes/API/QuickPrint.php:145
+msgid "Only PDF and HTML files are accepted."
+msgstr "Endast PDF- och HTML-filer accepteras."
+
+#: includes/API/QuickPrint.php:153
+msgid "BizPrint API keys are not configured."
+msgstr "BizPrint API-nycklar är inte konfigurerade."
+
+#: includes/API/QuickPrint.php:204
+msgid "Unexpected response from print service."
+msgstr "Oväntat svar från utskriftstjänsten."
+
+#: includes/API/QuickPrint.php:308
+msgid "Could not save uploaded file."
+msgstr "Det gick inte att spara den uppladdade filen."
+
+#: setting/quick-print.php:157
+msgid "You do not have permission to access this page."
+msgstr "Du har inte behörighet att komma åt den här sidan."
+
+#. translators: %s: settings page URL.
+#: setting/quick-print.php:180
+msgid "BizPrint API keys are not configured. <a href=\"%s\">Add your keys on the Application tab</a> before printing."
+msgstr "BizPrint API-nycklar är inte konfigurerade. <a href=\"%s\">Lägg till dina nycklar på fliken Ansökan</a> innan du skriver ut."
+
+#: setting/quick-print.php:202
+msgid "Drag a file here"
+msgstr "Dra en fil hit"
+
+#: setting/quick-print.php:203
+msgid "or click to browse"
+msgstr "eller klicka för att bläddra"
+
+#: setting/quick-print.php:220
+msgid "Remove selected file"
+msgstr "Ta bort vald fil"
+
+#: setting/quick-print.php:227
+msgid "Printer"
+msgstr "Skrivare"
+
+#: setting/quick-print.php:230
+msgid "Select a printer…"
+msgstr "Välj en skrivare…"
+
+#: setting/quick-print.php:237
+msgid "No printers found. Add printers in the Printers tab or verify your API keys."
+msgstr "Inga skrivare hittades. Lägg till skrivare på fliken Skrivare eller kontrollera dina API-nycklar."
+
+#: setting/quick-print.php:244
+msgid "Description (optional)"
+msgstr "Beskrivning (valfritt)"
+
+#: setting/quick-print.php:251
+msgid "e.g. Daily report"
+msgstr "t.ex. Daglig rapport"
+
+#: setting/quick-print.php:272
+msgid "Send to Printer"
+msgstr "Skicka till skrivare"
+
+#: setting/setting.php:50
+msgid "Quick Print Access Roles"
+msgstr "Roller med åtkomst till snabbutskrift"
+
+#: setting/setting.php:51
+msgid "Select roles that can access the drag-and-drop Print a File page, admin bar shortcut, and file-print endpoint."
+msgstr "Välj roller som får åtkomst till sidan Skriv ut en fil med dra och släpp, genvägen i adminfältet och slutpunkten för filutskrift."
+
+#: setting/setting.php:67
+msgid "Quick Print Limits"
+msgstr "Gränser för snabbutskrift"
+
+#: setting/setting.php:72
+msgid "Maximum File Size (MB)"
+msgstr "Maximal filstorlek (MB)"
+
+#: setting/setting.php:75
+msgid "Maximum file size allowed for Print a File uploads. Larger files increase the risk of a timeout between your server and BizPrint, especially on shared hosting. Default: 2 MB. Hard maximum: 50 MB."
+msgstr "Maximal tillåten filstorlek för uppladdningar via Skriv ut en fil. Större filer ökar risken för en timeout mellan din server och BizPrint, särskilt på delat webbhotell. Standard: 2 MB. Absolut maximum: 50 MB."
+
+#: setting/setting.php:80
+msgid "Keep Files For (Hours)"
+msgstr "Behåll filer i (timmar)"
+
+#: setting/setting.php:83
+msgid "How long an uploaded file stays available to your printers. A printer that is offline fetches the file when it reconnects, and Reprint fetches it again, so both only work within this window. Files are deleted after it ends. Default: 24 hours. Maximum: 720 hours."
+msgstr "Hur länge en uppladdad fil är tillgänglig för dina skrivare. En skrivare som är offline hämtar filen när den ansluter igen, och Skriv ut igen hämtar den på nytt, så båda fungerar bara inom detta tidsfönster. Filerna raderas när det har gått ut. Standard: 24 timmar. Maximum: 720 timmar."
+
+#: setting/setting.php:91
+msgid "Default Printer"
+msgstr "Standardskrivare"
+
+#: setting/setting.php:94
+msgid "Pre-select this printer on the Print a File page so users can send a file without choosing a printer first. Leave blank to require a choice each time."
+msgstr "Förvälj den här skrivaren på sidan Skriv ut en fil så att användare kan skicka en fil utan att först välja skrivare. Lämna tomt för att kräva ett val varje gång."
+
+#: setting/setting.php:96
+msgid "None — let the user choose"
+msgstr "Ingen — låt användaren välja"

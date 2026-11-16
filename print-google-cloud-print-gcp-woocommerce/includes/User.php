@@ -9,6 +9,7 @@ use Zprint\Aspect\Page;
 class User {
 
 	public const PRINT_MANAGEMENT_CAP_KEY = 'zprint_management';
+	public const PRINT_QUICK_PRINT_CAP_KEY = 'zprint_quick_print';
 
 	private const SETTINGS_TAB_PAGE_KEYS = array(
 		'general',
@@ -25,10 +26,15 @@ class User {
 
 	public function init() {
 		$this->add_management_cap();
+		$this->sync_quick_print_cap();
 
 		foreach ( $this->get_settings_tab_page_names() as $tab_page_name ) {
 			add_filter( 'option_page_capability_' . $tab_page_name, array( $this, 'add_option_page_cap' ) );
 		}
+	}
+
+	public static function current_user_can_quick_print(): bool {
+		return current_user_can( self::PRINT_QUICK_PRINT_CAP_KEY );
 	}
 
 	private function add_management_cap() {
@@ -48,6 +54,23 @@ class User {
 		}
 	}
 
+	private function sync_quick_print_cap() {
+		global $wp_roles;
+
+		$allowed_roles = $this->get_quick_print_roles();
+
+		foreach ( $wp_roles->roles as $role_key => $role ) {
+			$role = get_role( $role_key );
+
+			if ( in_array( $role_key, $allowed_roles, true ) ) {
+				$role->add_cap( self::PRINT_QUICK_PRINT_CAP_KEY );
+
+			} elseif ( $role->has_cap( self::PRINT_QUICK_PRINT_CAP_KEY ) ) {
+				$role->remove_cap( self::PRINT_QUICK_PRINT_CAP_KEY );
+			}
+		}
+	}
+
 	private function get_management_roles(): ?array {
 		return InstanceStorage::getGlobalStorage()->asCurrentStorage( function () {
 			$page = Page::get( 'printer setting' );
@@ -60,6 +83,33 @@ class User {
 				return $input->getValue( $box, null, $tab );
 			} );
 		} );
+	}
+
+	private function get_quick_print_roles(): array {
+		$roles = InstanceStorage::getGlobalStorage()->asCurrentStorage( function () {
+			$page = Page::get( 'printer setting' );
+
+			return $page->scope( function () {
+				$tab   = TabPage::get( 'setting' );
+				$box   = Box::get( 'quick print roles' );
+				$input = Input::get( 'quick print access roles' );
+
+				return $input->getValue( $box, null, $tab );
+			} );
+		} );
+
+		if ( ! is_array( $roles ) ) {
+			$roles = array();
+		}
+
+		/* Administrator is hard-locked on in the UI; guarantee it here too. */
+		if ( ! in_array( 'administrator', $roles, true ) ) {
+			$roles[] = 'administrator';
+		}
+
+		$roles = apply_filters( 'zprint_quick_print_allowed_roles', $roles );
+
+		return array_values( array_unique( array_filter( (array) $roles ) ) );
 	}
 
 	private function get_settings_tab_page_names(): array {

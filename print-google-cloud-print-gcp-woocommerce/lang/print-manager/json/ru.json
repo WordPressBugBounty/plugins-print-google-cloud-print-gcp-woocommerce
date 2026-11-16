@@ -1,4 +1,16 @@
 {
 	"copied_successfully": "Успешно скопировано!",
+	"quick_print_accepted_formats": "Допустимые форматы: {{formats}}. Макс.: {{size}} MB.",
+	"quick_print_file_ready": "Файл готов. Выберите принтер и отправьте.",
+	"quick_print_generic_error": "Что-то пошло не так. Попробуйте ещё раз.",
+	"quick_print_need_file": "Сначала выберите файл.",
+	"quick_print_need_printer": "Выберите принтер назначения.",
+	"quick_print_ready": "Готово к печати.",
+	"quick_print_sending": "Отправка на принтер…",
+	"quick_print_sent": "Задание печати успешно отправлено.",
+	"quick_print_too_large": "Размер файла превышает допустимый лимит {{size}} MB.",
+	"quick_print_unsupported_type": "Принимаются только файлы PDF и HTML.",
+	"quick_print_uploading": "Загрузка файла…",
+	"quick_print_uploading_percent": "Загрузка файла… {{percent}}%",
 	"something_went_wrong": "Что-то пошло не так!"
 }

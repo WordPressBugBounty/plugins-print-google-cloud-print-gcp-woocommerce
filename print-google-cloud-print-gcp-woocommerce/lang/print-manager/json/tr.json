@@ -1,4 +1,16 @@
 {
 	"copied_successfully": "Başarıyla kopyalandı!",
+	"quick_print_accepted_formats": "Kabul edilenler: {{formats}}. Maks.: {{size}} MB.",
+	"quick_print_file_ready": "Dosya hazır. Bir yazıcı seçin ve gönderin.",
+	"quick_print_generic_error": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+	"quick_print_need_file": "Önce bir dosya seçin.",
+	"quick_print_need_printer": "Bir hedef yazıcı seçin.",
+	"quick_print_ready": "Yazdırmaya hazır.",
+	"quick_print_sending": "Yazıcıya gönderiliyor…",
+	"quick_print_sent": "Yazdırma işi başarıyla gönderildi.",
+	"quick_print_too_large": "Bu dosya izin verilen {{size}} MB sınırından büyük.",
+	"quick_print_unsupported_type": "Yalnızca PDF ve HTML dosyaları kabul edilir.",
+	"quick_print_uploading": "Dosya yükleniyor…",
+	"quick_print_uploading_percent": "Dosya yükleniyor… %{{percent}}",
 	"something_went_wrong": "Bir şeyler ters gitti!"
 }

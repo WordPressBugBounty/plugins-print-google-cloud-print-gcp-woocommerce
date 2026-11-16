@@ -1,4 +1,16 @@
 {
 	"copied_successfully": "Kopiert!",
+	"quick_print_accepted_formats": "Godtas: {{formats}}. Maks: {{size}} MB.",
+	"quick_print_file_ready": "Filen er klar. Velg en skriver og send.",
+	"quick_print_generic_error": "Noe gikk galt. Prøv igjen.",
+	"quick_print_need_file": "Velg en fil først.",
+	"quick_print_need_printer": "Velg en målskriver.",
+	"quick_print_ready": "Klar til utskrift.",
+	"quick_print_sending": "Sender til skriveren…",
+	"quick_print_sent": "Utskriftsjobben ble sendt.",
+	"quick_print_too_large": "Filen er større enn den tillatte grensen på {{size}} MB.",
+	"quick_print_unsupported_type": "Bare PDF- og HTML-filer godtas.",
+	"quick_print_uploading": "Laster opp fil…",
+	"quick_print_uploading_percent": "Laster opp fil… {{percent}}%",
 	"something_went_wrong": "Noe gikk galt!"
 }

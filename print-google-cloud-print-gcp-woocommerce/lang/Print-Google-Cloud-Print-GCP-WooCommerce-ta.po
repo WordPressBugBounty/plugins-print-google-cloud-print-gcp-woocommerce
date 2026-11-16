@@ -68,6 +68,7 @@ msgid "Website Orders"
 msgstr "இணையதள ஆர்டர்கள்"
 
 #. Plugin URI of the plugin
+#: index.php
 msgid "http://www.getbizprint.com"
 msgstr "http://www.getbizprint.com"
 
@@ -132,19 +133,19 @@ msgstr "ஆதரவு கோரிக்கையை உருவாக்க�
 msgid "Print Orders"
 msgstr "அச்சிடு"
 
-#: includes/Admin/Layout.php:44
+#: includes/Admin/Layout.php:46
 msgid "Print to anywhere with BizPrint"
 msgstr "அச்சிடு"
 
-#: includes/Admin.php:223
+#: includes/Admin.php:224
 msgid "Launch Quick Start Guide"
 msgstr "விரைவு தொடக்க வழிகாட்டியைத் தொடங்கவும்"
 
-#: includes/Admin.php:60
+#: includes/Admin.php:61
 msgid "Print error"
 msgstr "அச்சிடு"
 
-#: includes/Admin.php:51
+#: includes/Admin.php:52
 msgid "Order(s) is printing"
 msgstr "ஆணை(கள்) அச்சிடப்படுகிறது"
 
@@ -193,7 +194,7 @@ msgid "Explore templates"
 msgstr "டெம்ப்ளேட்களை ஆராயுங்கள்"
 
 #: includes/Addons.php:20
-#: includes/Admin/Layout.php:90
+#: includes/Admin/Layout.php:92
 #: setting/addons.php:11
 msgid "Marketplace"
 msgstr "சந்தை"
@@ -203,6 +204,7 @@ msgid "Our Full Collection of Print Templates"
 msgstr "அச்சு வார்ப்புருக்களின் எங்கள் முழு தொகுப்பு"
 
 #. Plugin Name of the plugin
+#: index.php
 msgid "BizPrint Print Manager for WooCommerce"
 msgstr "WooCommerce க்கான BizPrint அச்சு மேலாளர்"
 
@@ -288,16 +290,16 @@ msgstr "ஆவணப்படுத்தல்"
 msgid "Dashboard"
 msgstr "கட்டுப்பாட்டகம்"
 
-#: includes/Admin/Layout.php:35
-#: includes/Admin/Layout.php:40
+#: includes/Admin/Layout.php:37
+#: includes/Admin/Layout.php:42
 #: includes/Admin/PrintDialog.php:109
-#: includes/Admin/PrintDialog.php:112
 #: includes/Admin/PrintDialog.php:189
 #: setting/index.php:13
 msgid "Print Manager"
 msgstr "அச்சிடு"
 
 #. Description of the plugin
+#: index.php
 msgid "Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!"
 msgstr "BizPrint கிளவுட் பிரிண்ட் சேவையுடன் WooCommerce ஆர்டர்களை அச்சிடுவதற்கான ஆதரவை எளிதாகச் சேர்க்கவும் மற்றும் உலகில் எங்கும் அச்சிடவும்!"
 
@@ -357,6 +359,7 @@ msgstr "செருகுநிரல்"
 
 #: setting/setting.php:28
 #: setting/setting.php:42
+#: setting/setting.php:59
 msgid "Selected Roles"
 msgstr "தேர்ந்தெடுக்கப்பட்ட பாத்திரங்கள்"
 
@@ -384,7 +387,7 @@ msgstr "தானியங்கி அச்சிடலை இயக்கு"
 msgid "Automatic Order Printing"
 msgstr "தானியங்கி ஆர்டர் அச்சிடுதல்"
 
-#: includes/Admin/Layout.php:57
+#: includes/Admin/Layout.php:59
 #: setting/general.php:11
 msgid "General"
 msgstr "பொது"
@@ -515,7 +518,7 @@ msgstr "நோக்குநிலையைத் தேர்ந்தெட�
 msgid "Page Orientation"
 msgstr "பக்க நோக்குநிலை"
 
-#: includes/Admin/Layout.php:79
+#: includes/Admin/Layout.php:81
 #: setting/locations/single.php:454
 #: setting/setting.php:11
 msgid "Settings"
@@ -563,7 +566,7 @@ msgstr "வார்ப்புரு"
 msgid "Users"
 msgstr "பயனர்கள்"
 
-#: includes/Admin/Layout.php:68
+#: includes/Admin/Layout.php:70
 #: setting/locations/index.php:49
 #: setting/locations/single.php:129
 #: setting/printers.php:15
@@ -573,10 +576,10 @@ msgstr "அச்சுப்பொறிகள்"
 #: setting/general.php:77
 #: setting/locations/single.php:113
 #: setting/locations/single.php:122
-#: setting/setting.php:63
-#: setting/setting.php:85
-#: setting/setting.php:107
-#: setting/setting.php:118
+#: setting/setting.php:131
+#: setting/setting.php:153
+#: setting/setting.php:175
+#: setting/setting.php:186
 msgid "Enable"
 msgstr "சாத்தியமாக்கு"
 
@@ -588,19 +591,19 @@ msgstr "பார்வை"
 msgid "Test print"
 msgstr "அச்சிடு"
 
-#: setting/printers.php:50
+#: setting/printers.php:62
 msgid "Add new"
 msgstr "புதியதைச் சேர்க்கவும்"
 
-#: setting/printers.php:84
+#: setting/printers.php:98
 msgid "Test print initiated, view log for details"
 msgstr "சோதனை அச்சு தொடங்கப்பட்டது, விவரங்களுக்கு பதிவைப் பார்க்கவும்"
 
-#: setting/printers.php:78
+#: setting/printers.php:92
 msgid "Location saved"
 msgstr "இருப்பிடம் சேமிக்கப்பட்டது"
 
-#: setting/printers.php:72
+#: setting/printers.php:86
 msgid "Location deleted"
 msgstr "இருப்பிடம் நீக்கப்பட்டது"
 
@@ -832,10 +835,12 @@ msgid "A4"
 msgstr "ஏ4"
 
 #. Author URI of the plugin
+#: index.php
 msgid "http://www.bizswoop.com"
 msgstr "http://www.bizswoop.com"
 
 #. Author of the plugin
+#: index.php
 msgid "BizSwoop a CPF Concepts, LLC Brand"
 msgstr "BizSwoop a CPF Concepts, LLC பிராண்ட்"
 
@@ -843,31 +848,31 @@ msgstr "BizSwoop a CPF Concepts, LLC பிராண்ட்"
 msgid "Extensions for Popular Plugins"
 msgstr "பிரபல சொருகுப்பொருள்களுக்கான விரிவாக்கங்கள்"
 
-#: includes/Admin.php:188
+#: includes/Admin.php:189
 msgid "You're almost there. Set up BizPrint to start printing automatically"
 msgstr "நீங்கள் கிட்டத்தட்ட அங்கே இருக்கிறீர்கள்.BizPrint தானாக அச்சிட துவங்குகிறது"
 
-#: includes/Admin.php:198
+#: includes/Admin.php:199
 msgid "BizPrint setup illustration"
 msgstr "BizPrint விளக்கத்தை அமை"
 
-#: includes/Admin.php:203
+#: includes/Admin.php:204
 msgid "Finish Setup to Start Printing Automatically"
 msgstr "அச்சை தானாகவே துவக்க முடிவு அமைப்பு"
 
-#: includes/Admin.php:209
+#: includes/Admin.php:210
 msgid "Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands."
 msgstr "உங்கள் அச்சியந்திரத்தைப் பயன்படுத்துங்கள் — அது இருக்கும் எல்லா பெரிய பிரெண்டிலும் வேலை செய்கிறது."
 
-#: includes/Admin.php:216
+#: includes/Admin.php:217
 msgid "You're almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders."
 msgstr "நீங்கள் கிட்டத்தட்ட அச்சு செய்ய தயாராக இருக்கிறீர்கள். உங்களது அச்சியந்திரத்தை இணைக்க எங்கள் விரைவான துவக்க வழிகாட்டியைப் பின்பற்றுங்கள் மற்றும் அச்சியந்திர ரசீதுகள் மற்றும் ஆணைகளை தொடங்கவும்."
 
-#: includes/Admin.php:229
+#: includes/Admin.php:230
 msgid "Go to print settings"
 msgstr "அச்சிட வேண்டிய அமைப்புகளை அச்சிடு"
 
-#: includes/Admin.php:233
+#: includes/Admin.php:234
 msgid "Get Support"
 msgstr "ஆதரவைப் பெறுக"
 
@@ -1225,59 +1230,59 @@ msgstr "திரும்பு நாடு / நிலை"
 msgid "Return Postcode"
 msgstr "பின்கோப்பினைத் திருப்பிவிடு"
 
-#: setting/setting.php:51
+#: setting/setting.php:119
 msgid "Network Settings"
 msgstr "பிணைய அமைவுகள்"
 
-#: setting/setting.php:58
+#: setting/setting.php:126
 msgid "Custom Request Timeout"
 msgstr "தனிப்பயன் கோரிக்கை நேரமுடிவு"
 
-#: setting/setting.php:61
+#: setting/setting.php:129
 msgid "Override the default WordPress HTTP timeout (5 seconds) for print service requests."
 msgstr "இயல்பானதை மேலனுப்புWordPress அச்சிடும் சேவை கோரிக்கைகளுக்கு HTTP நேரம் முடிந்தது (5 நொடிகள்)."
 
-#: setting/setting.php:69
+#: setting/setting.php:137
 msgid "Timeout (seconds)"
 msgstr "நேரமுடிவு (விநாடிகளில்)"
 
-#: setting/setting.php:73
+#: setting/setting.php:141
 msgid "Number of seconds to wait for print service response. Recommended: 10-30 seconds."
 msgstr "அச்சு சேவையின் பதிலுக்கு காத்திருக்க வேண்டிய நொடிகளின் எண்ணிக்கை. பரிந்துரைக்கப்படுகிறது 10- 30 நொடிகள்."
 
-#: setting/setting.php:80
+#: setting/setting.php:148
 msgid "Enable Network Retry"
 msgstr "வலைப்பின்னல் மறுமுயற்சியை செயல்படுத்து"
 
-#: setting/setting.php:83
+#: setting/setting.php:151
 msgid "Retry failed print requests once on connection timeout or network errors. Note: May cause duplicate prints if the server received the original request."
 msgstr "இணைப்பில் நேரம் அல்லது பிணையத்தில் தவறுகள் நிகழ்ந்தால் அச்சு கோரிக்கைகளை மீண்டும் முயற்சி செய். குறிப்பு: சேவையகம் மூல வேண்டுகோள் பெற்றால் போலி அச்சிடுகைகளை உருவாக்கும்."
 
-#: setting/setting.php:91
+#: setting/setting.php:159
 msgid "Disable SSL Verification"
 msgstr "SSL சரிபார்த்தலை முடக்கு"
 
-#: setting/setting.php:94
+#: setting/setting.php:162
 msgid "Disable SSL certificate verification for print service requests. Only enable if you have TLS inspection or custom certificate authorities in your network."
 msgstr "Print சேவை கோரிக்கைகளுக்கு SSL சான்றிதழ் CRL நினைவகத்தை செயல் நீக்கு. உங்கள் பிணையத்தில் டிஎல்எஸ் சோதனை அல்லது தனிப்பயன் சான்றிதழ் அதிகாரிகள் இருந்தால் மட்டுமே செயல்படும்."
 
-#: setting/setting.php:96
+#: setting/setting.php:164
 msgid "Disable"
 msgstr "முடக்கு"
 
-#: setting/setting.php:102
+#: setting/setting.php:170
 msgid "Background Print Processing"
 msgstr "பின்னணி அச்சு செயலாக்கம்"
 
-#: setting/setting.php:105
+#: setting/setting.php:173
 msgid "Process print jobs in the background instead of during checkout. Checkout completes immediately and print jobs are sent asynchronously. Recommended for sites experiencing print service timeouts."
 msgstr "சோதனையின் போது அல்லாமல் அச்சுப்பணிகள் பின்னணியில் இயங்கும். அச்சுப்பணிகள் உடனடியாக முடிக்கப்பட்டு அச்சு பணிகள் ஒத்திசைக்கப்படாத வகையில் அனுப்பப்படும். அச்சு சேவை காலாவதியை அனுபவிக்கும்படி பரிந்துரைக்கப்படுகிறது."
 
-#: setting/setting.php:113
+#: setting/setting.php:181
 msgid "Queue Failed Jobs"
 msgstr "வரிசையில்லா பணிகள்"
 
-#: setting/setting.php:116
+#: setting/setting.php:184
 msgid "When a print job fails during checkout, automatically queue it for background retry. Jobs will retry with increasing delays up to 5 times. Only applies when Background Print Processing is disabled."
 msgstr "அச்சு பணி காலாவதியாகும் போது, பின்புலத்தை மீண்டும் முயற்சிக்க தன்னியக்கமாக வரிசையை வரையவும். அதிக தாமதம் இருந்தால் பணிகள் 5 முறை திரும்ப நிகழும். பின்னணி அச்சிடல் செயல் முடக்கப்படும் போது மட்டுமே செயல்படுத்தப்படும்."
 
@@ -1577,3 +1582,147 @@ msgstr "டெல்"
 msgctxt "%1$s - line break, %2$s - caret right icon"
 msgid "Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer."
 msgstr "அச்சிடும் பணிகளை அனுப்ப ஒரு அச்சடிப்பி இடத்தை உருவாக்கு:%1$sஉங்கள் சேமிப்பு%2$s BizPrint %2$sஉங்கள் இணைக்கப்பட்ட அச்சுப்பொறி."
+
+#: includes/Admin/AdminBar.php:28
+#: setting/printers.php:60
+#: setting/quick-print.php:30
+#: setting/quick-print.php:31
+#: setting/quick-print.php:196
+msgid "Print a File"
+msgstr "ஒரு கோப்பை அச்சிடு"
+
+#: includes/Admin/AdminBar.php:31
+msgid "Open the BizPrint drag-and-drop Print a File page"
+msgstr "BizPrint இழுத்து விடும் கோப்பு அச்சிடும் பக்கத்தைத் திறக்கவும்"
+
+#: includes/API/QuickPrint.php:66
+msgid "You do not have permission to print files."
+msgstr "கோப்புகளை அச்சிட உங்களுக்கு அனுமதி இல்லை."
+
+#. translators: 1: max prints, 2: minutes.
+#: includes/API/QuickPrint.php:82
+msgid "Rate limit exceeded: %1$d prints per %2$d minutes."
+msgstr "விகித வரம்பு மீறப்பட்டது: %2$d நிமிடங்களுக்கு %1$d அச்சுகள்."
+
+#: includes/API/QuickPrint.php:94
+msgid "No file was uploaded."
+msgstr "எந்தக் கோப்பும் பதிவேற்றப்படவில்லை."
+
+#. translators: %s: file name.
+#: includes/API/QuickPrint.php:104
+msgid "Quick print: %s"
+msgstr "விரைவு அச்சு: %s"
+
+#: includes/API/QuickPrint.php:112
+msgid "Choose a destination printer."
+msgstr "இலக்கு அச்சுப்பொறியைத் தேர்ந்தெடுக்கவும்."
+
+#: includes/API/QuickPrint.php:121
+msgid "That printer is not available on this site."
+msgstr "அந்த அச்சுப்பொறி இந்தத் தளத்தில் கிடைக்கவில்லை."
+
+#. translators: %d: max size in MB.
+#: includes/API/QuickPrint.php:133
+msgid "That file is larger than the allowed limit of %d MB."
+msgstr "அந்தக் கோப்பு அனுமதிக்கப்பட்ட %d MB வரம்பை விடப் பெரியது."
+
+#: includes/API/QuickPrint.php:145
+msgid "Only PDF and HTML files are accepted."
+msgstr "PDF மற்றும் HTML கோப்புகள் மட்டுமே ஏற்கப்படும்."
+
+#: includes/API/QuickPrint.php:153
+msgid "BizPrint API keys are not configured."
+msgstr "BizPrint API விசைகள் கட்டமைக்கப்படவில்லை."
+
+#: includes/API/QuickPrint.php:204
+msgid "Unexpected response from print service."
+msgstr "அச்சு சேவையிலிருந்து எதிர்பாராத பதில்."
+
+#: includes/API/QuickPrint.php:308
+msgid "Could not save uploaded file."
+msgstr "பதிவேற்றிய கோப்பைச் சேமிக்க முடியவில்லை."
+
+#: setting/quick-print.php:157
+msgid "You do not have permission to access this page."
+msgstr "இந்தப் பக்கத்தை அணுக உங்களுக்கு அனுமதி இல்லை."
+
+#. translators: %s: settings page URL.
+#: setting/quick-print.php:180
+msgid "BizPrint API keys are not configured. <a href=\"%s\">Add your keys on the Application tab</a> before printing."
+msgstr "BizPrint API விசைகள் கட்டமைக்கப்படவில்லை. அச்சிடும் முன் <a href=\"%s\">பயன்பாடு தாவலில் உங்கள் விசைகளைச் சேர்க்கவும்</a>."
+
+#: setting/quick-print.php:202
+msgid "Drag a file here"
+msgstr "கோப்பை இங்கே இழுக்கவும்"
+
+#: setting/quick-print.php:203
+msgid "or click to browse"
+msgstr "அல்லது உலாவ கிளிக் செய்யவும்"
+
+#: setting/quick-print.php:220
+msgid "Remove selected file"
+msgstr "தேர்ந்தெடுத்த கோப்பை அகற்று"
+
+#: setting/quick-print.php:227
+msgid "Printer"
+msgstr "அச்சுப்பொறி"
+
+#: setting/quick-print.php:230
+msgid "Select a printer…"
+msgstr "அச்சுப்பொறியைத் தேர்ந்தெடுக்கவும்…"
+
+#: setting/quick-print.php:237
+msgid "No printers found. Add printers in the Printers tab or verify your API keys."
+msgstr "அச்சுப்பொறிகள் எதுவும் கிடைக்கவில்லை. அச்சுப்பொறிகள் தாவலில் அச்சுப்பொறிகளைச் சேர்க்கவும் அல்லது உங்கள் API விசைகளைச் சரிபார்க்கவும்."
+
+#: setting/quick-print.php:244
+msgid "Description (optional)"
+msgstr "வருணனை (விருப்பத்தேர்வு)"
+
+#: setting/quick-print.php:251
+msgid "e.g. Daily report"
+msgstr "எ.கா. தினசரி அறிக்கை"
+
+#: setting/quick-print.php:272
+msgid "Send to Printer"
+msgstr "அச்சுப்பொறிக்கு அனுப்பு"
+
+#: setting/setting.php:50
+msgid "Quick Print Access Roles"
+msgstr "விரைவு அச்சு அணுகல் பாத்திரங்கள்"
+
+#: setting/setting.php:51
+msgid "Select roles that can access the drag-and-drop Print a File page, admin bar shortcut, and file-print endpoint."
+msgstr "இழுத்து விடும் கோப்பு அச்சிடும் பக்கம், நிர்வாகப் பட்டி குறுக்குவழி மற்றும் கோப்பு அச்சிடும் முனையத்தை அணுகக்கூடிய பாத்திரங்களைத் தேர்ந்தெடுக்கவும்."
+
+#: setting/setting.php:67
+msgid "Quick Print Limits"
+msgstr "விரைவு அச்சு வரம்புகள்"
+
+#: setting/setting.php:72
+msgid "Maximum File Size (MB)"
+msgstr "அதிகபட்ச கோப்பு அளவு (MB)"
+
+#: setting/setting.php:75
+msgid "Maximum file size allowed for Print a File uploads. Larger files increase the risk of a timeout between your server and BizPrint, especially on shared hosting. Default: 2 MB. Hard maximum: 50 MB."
+msgstr "கோப்பு அச்சிடும் பதிவேற்றங்களுக்கு அனுமதிக்கப்படும் அதிகபட்ச கோப்பு அளவு. பெரிய கோப்புகள் உங்கள் சேவையகத்துக்கும் BizPrint-க்கும் இடையே நேரமுடிவு ஏற்படும் அபாயத்தை அதிகரிக்கின்றன, குறிப்பாகப் பகிரப்பட்ட ஹோஸ்டிங்கில். இயல்புநிலை: 2 MB. கடும் அதிகபட்சம்: 50 MB."
+
+#: setting/setting.php:80
+msgid "Keep Files For (Hours)"
+msgstr "கோப்புகளை வைத்திருக்கும் காலம் (மணிநேரம்)"
+
+#: setting/setting.php:83
+msgid "How long an uploaded file stays available to your printers. A printer that is offline fetches the file when it reconnects, and Reprint fetches it again, so both only work within this window. Files are deleted after it ends. Default: 24 hours. Maximum: 720 hours."
+msgstr "பதிவேற்றிய கோப்பு உங்கள் அச்சுப்பொறிகளுக்கு எவ்வளவு நேரம் கிடைக்கும். இணைப்பில்லாத அச்சுப்பொறி மீண்டும் இணையும்போது கோப்பைப் பெறுகிறது, மறுஅச்சு அதை மீண்டும் பெறுகிறது, எனவே இரண்டும் இந்தக் காலத்திற்குள் மட்டுமே செயல்படும். இது முடிந்ததும் கோப்புகள் நீக்கப்படும். இயல்புநிலை: 24 மணிநேரம். அதிகபட்சம்: 720 மணிநேரம்."
+
+#: setting/setting.php:91
+msgid "Default Printer"
+msgstr "இயல்புநிலை அச்சுப்பொறி"
+
+#: setting/setting.php:94
+msgid "Pre-select this printer on the Print a File page so users can send a file without choosing a printer first. Leave blank to require a choice each time."
+msgstr "கோப்பு அச்சிடும் பக்கத்தில் இந்த அச்சுப்பொறியை முன்கூட்டியே தேர்ந்தெடுக்கவும், இதனால் பயனர்கள் முதலில் அச்சுப்பொறியைத் தேர்ந்தெடுக்காமல் கோப்பை அனுப்பலாம். ஒவ்வொரு முறையும் தேர்வு தேவைப்பட வெறுமையாக விடவும்."
+
+#: setting/setting.php:96
+msgid "None — let the user choose"
+msgstr "எதுவுமில்லை — பயனர் தேர்ந்தெடுக்கட்டும்"

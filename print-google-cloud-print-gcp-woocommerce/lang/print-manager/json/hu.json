@@ -1,4 +1,16 @@
 {
 	"copied_successfully": "Sikeresen másolva!",
+	"quick_print_accepted_formats": "Elfogadott: {{formats}}. Max.: {{size}} MB.",
+	"quick_print_file_ready": "A fájl kész. Válasszon nyomtatót, és küldje el.",
+	"quick_print_generic_error": "Hiba történt. Kérjük, próbálja újra.",
+	"quick_print_need_file": "Először válasszon fájlt.",
+	"quick_print_need_printer": "Válasszon célnyomtatót.",
+	"quick_print_ready": "Nyomtatásra kész.",
+	"quick_print_sending": "Küldés a nyomtatóra…",
+	"quick_print_sent": "A nyomtatási feladat sikeresen elküldve.",
+	"quick_print_too_large": "A fájl nagyobb a megengedett {{size}} MB-os korlátnál.",
+	"quick_print_unsupported_type": "Csak PDF- és HTML-fájlok fogadhatók el.",
+	"quick_print_uploading": "Fájl feltöltése…",
+	"quick_print_uploading_percent": "Fájl feltöltése… {{percent}}%",
 	"something_went_wrong": "Hiba történt!"
 }

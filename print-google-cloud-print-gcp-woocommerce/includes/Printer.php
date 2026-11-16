@@ -429,4 +429,43 @@ class Printer
 			return [];
 		}
 	}
+
+	/* Transient-cached wrapper around getPrinters(). Used by settings-page
+	   dropdowns that would otherwise re-hit the BizPrint API on every
+	   admin page load. The live Print a File page still calls
+	   getPrinters() directly so users always see current status.
+
+	   Cache behavior:
+	     - Non-empty result → cached for $ttl (default 5 min).
+	     - Empty result with API keys configured → cached briefly (60 s)
+	       so we don't hammer the API on transient errors.
+	     - No API keys yet → return empty WITHOUT caching, so the
+	       dropdown populates immediately once the user adds keys. */
+	public static function getPrintersCached(int $ttl = 300): array
+	{
+		$key = 'zprint_printers_cache';
+
+		$cached = get_transient($key);
+		if (is_array($cached) && !empty($cached)) {
+			return $cached;
+		}
+
+		if (!Client::hasAccess()) {
+			delete_transient($key);
+			return array();
+		}
+
+		$printers = self::getPrinters();
+		if (!empty($printers)) {
+			set_transient($key, $printers, max(30, $ttl));
+		} else {
+			set_transient($key, array(), 60);
+		}
+		return $printers;
+	}
+
+	public static function clearPrintersCache(): void
+	{
+		delete_transient('zprint_printers_cache');
+	}
 }

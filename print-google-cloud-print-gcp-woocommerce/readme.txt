@@ -1,188 +1,245 @@
-=== Print Anywhere & Create PDFs of Order Receipts, Invoices, Labels & More. ===
+=== BizPrint – Automatic Order Printing for WooCommerce ===
 
 Contributors: bizswoop
 Tags: print, PDF, automatic print, shipping labels, woocommerce print
 Requires at least: 4.4
 Requires PHP: 5.6
-Tested up to: 7.1
-Stable tag: 4.9.5
+Tested up to: 7.1.4
+Stable tag: 4.10.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Print Anywhere & Create PDFs of Receipts, Order Invoice, Packing Slip, PDF, Packing List, Shipping Labels, Credit Notes and More for WooCommerce - BizPrint.
+Auto-print WooCommerce orders to thermal, kitchen, Sunmi or office printers: receipts, invoices, packing slips, labels & PDFs. Set up in minutes.
 
 == Description ==
-BizPrint is simply the best way to print documents for your WooCommerce orders to any printer around your home office, restaurant, warehouse or business of any type or create PDFs. Print Manager formats your WooCommerce order data into an organized and branded [receipt](https://getbizprint.com/woocommerce-thermal-printer/), [invoice](https://getbizprint.com/woocommerce-custom-invoice/), [packing slip](https://getbizprint.com/woocommerce-packing-slip-print), [delivery note](http://getbizprint.com/woocommerce-delivery-notes), [shipping label](https://getbizprint.com/woocommerce-shipping-labels) or order printout, for your customers and staff to use!
 
-This free Print Manager Plugin connects to [BizPrint](https://getbizprint.com/) cloud service to enable automatic printing to anywhere in the world! In just one year, BizPrint has helped businesses to automate over 1,250,000+ Prints and saved over 575,000+ employee hours! It’s easy to set up with no coding required in just a few simple steps. You can read the full list of benefits for store owners and get started at [GetBizPrint.com](https://getbizprint.com/)
+BizPrint is a WooCommerce plugin and cloud print service by BizSwoop that automatically prints orders to the printers you already own: kitchen tickets for restaurants, packing slips and shipping labels for warehouses, and receipts and invoices for the front counter. Orders print on a station, a Windows, Mac or Linux computer or an Android device at your business, connected to your receipt, label or office printers.
 
-BizPrint prints your WooCommerce orders automatically to your existing printer, and has the reliability, flexibility, and customizability you need for your specific use case. You’ve found the right plugin!
+New accounts start with free prints, no credit card required. See [plans and pricing](https://getbizprint.com/pricing/) and the full [BizPrint documentation](https://docs.getbizprint.com/).
 
-= Why Create Printed Receipts For Your Store? =
-Any transaction between a store and customer needs some evidence of purchase. There are many reasons to make your WooCommerce order details physical. For example:
+**[Create your free BizPrint account](https://login.bizswoop.app/register)**
 
-*   If you run a restaurant, the kitchen and wait staff will need physical copies of the order so they can prepare the food and serve customers with maximum efficiency.
-*   For warehouses or fulfillment centers, a printed order will help pickers and packers to prepare and fulfill an order without delay.
-*   In lots of cases, a customer will want a printed receipt in order to prove a purchase, for product returns, employer reimbursement or for tax purposes.
+= How It Works =
 
-BizPrint has a customer satisfaction rating of 4.8 stars and boasts 99.5% reliability uptime on our globally distributed servers that power the cloud. We have answered over 7,500 support tickets last year alone and can’t wait to help save you time!
+1. Create a free [BizPrint account](https://login.bizswoop.app/register) and a station: install the BizPrint desktop app on a computer, or the BizPrint Android app on a phone or tablet, and add your printers.
+2. Install this plugin and connect it to your BizPrint account. Its settings appear under WooCommerce > Print Manager.
+3. Create a printer location for each printer, choose a template, and turn on automatic printing. New orders now print on their own.
 
-But don’t just take our word for it! This is what Chris from Kyoto Sushi had to say about how BizPrint is helping their business:
-> “We started taking orders online and printing them with BizPrint, and it has been game changing. BizPrint improves the customer experience, reduces kitchen downtime, and frees up my time. My staff are 30% more productive. I can outperform our competitors (including on UberEat, Deliveroo, etc) whilst having lower costs, better quality, and lower prices. If you own a restaurant, getting BizPrint is a no-brainer.” - Chris L. Owner Kyoto Sushi Restaurant.
+Follow the step-by-step guide in [Choose your BizPrint setup path](https://docs.getbizprint.com/start-here/choose-your-setup/).
 
+= Auto-Print WooCommerce Orders to Your Kitchen Printer =
 
-= BizPrint for WooCommerce Includes All The Features You Need =
+Restaurants, cafés, food trucks and ghost kitchens get every online order on paper the moment it is placed, so the kitchen starts cooking without anyone watching a screen. Print a ticket without prices for the line and a customer receipt at the counter from the same order, each from its own printer location. See [Print kitchen tickets](https://docs.getbizprint.com/print/kitchen-tickets/).
 
-*   Supports Automatic Prints by Order Status
-*   Adds Manual Print Button Option on WooCommerce Orders & Details Page
-*   Set Up An Unlimited Number of Printer Stations and Locations
-*   Use Your Current Thermal or Inkjet Printers
-*   Supports All Major Brands like HP, Dymo, Cannon, Star, Epson, Brother & more
-*   Supports Local, Network, USB, Serial, Wifi and Bluetooth Based Printers
-*   Choose Single Print or Print Multiple Copies Instantly
-*   Support with Popular WordPress Plugins like Product Add-ons, Point of Sale, Pickup Delivery Scheduler and More
-*   Over 25 Templates Available Including, Receipt Template, Customer Invoice, Order Pick List, Pickup & Delivery Invoice etc
-*   Custom Branding to Add Your Logo and Additional Store Information
-*   Supports Over 36 Languages including the ability to select a language for specific printer locations
-*   Generate PDF Receipts & Invoices
-*   Product Mapping To Print Selected Product Category on Specific Print Stations
+> "We started taking orders online and printing them with BizPrint, and it has been game changing. BizPrint improves the customer experience, reduces kitchen downtime, and frees up my time. My staff are 30% more productive. I can outperform our competitors (including on UberEats, Deliveroo, etc.) whilst having lower costs, better quality, and lower prices. If you own a restaurant, getting BizPrint is a no-brainer."
+> — Chris L., Owner, Kyoto Sushi Restaurant
 
-= Template Integrations To Work With: =
+= Print Packing Slips and Shipping Labels for Fulfillment =
 
-*   [Jovvie Point of Sale by BizSwoop](https://jovvie.com/)
-*   [BizSwoop Pickup Delivery Scheduler](https://www.bizswoop.com/pickup-delivery-scheduler/)
-*   [BizSwoop Product Manager](https://www.bizswoop.com/product-manager/)
-*   [Flow Notify by BizSwoop](https://flownotify.com/)
-*   [WooCommerce Product Add-Ons](https://woocommerce.com/products/product-add-ons/)
-*   [YITH WooCommerce Product Add-Ons](https://wordpress.org/plugins/yith-woocommerce-product-add-ons/)
-*   [Delivery & Pickup Date Time for WooCommerce](https://wordpress.org/plugins/woo-delivery/)
-*   [Order Delivery Date for WooCommerce](https://wordpress.org/plugins/order-delivery-date-for-woocommerce/)
-*   [WooCommerce Local Pickup Plus](https://www.skyverge.com/product/woocommerce-local-pickup-plus/)
-*   [WooCommerce Delivery Slots](https://iconicwp.com/products/woocommerce-delivery-slots/)
-*   [Order Delivery, Order Pickup, Order Date, Order Time](https://wordpress.org/plugins/pi-woocommerce-order-date-time-and-type/)
-*   [Food Store - Online Food Delivery & Pickup](https://wordpress.org/plugins/food-store/)
-*   [WooCommerce Food - Restaurant Menu & Food](https://codecanyon.net/item/woocommerce-food-restaurant-menu-food-ordering/25457330)
-*   [Extra Product Options (Product Addons) for WooCommerce](https://wordpress.org/plugins/woo-extra-product-options/)
-*   [And More Compatibility Is Added Everyday!](https://getbizprint.com/template-store/)
+Warehouses and fulfillment teams automatically print packing slips, pick lists with product images and SKUs, and [shipping and address labels](https://docs.getbizprint.com/print/labels/), so pickers and packers work from paper instead of wp-admin. Map printers by shipping zone or method to send each order to the right location or station.
 
-Steps To Getting Started:
-1. Visit [GetBizPrint.com](https://getbizprint.com/) to read more about BizPrint.
-2. Signup for [an account](https://login.bizswoop.app/register). It's FREE.
-3. Select a plan - [Get started with free prints.](https://getbizprint.com/pricing/)
-4. Follow the [Quick Start Guide.](https://getbizprint.com/quick-start-guide/) You’ll be printing in 5 minutes.
+> "One of the strengths to us was the ability to support multiple printers in different locations. We're using BizPrint to automatically print customer receipts at our ordering station and simultaneously print in the kitchen to fulfill the order. The impact is improved kitchen times, increased sales, and happier customers. I'd highly recommend BizPrint to other small businesses for in-store Point of Sale orders or orders placed online by your customers."
+> — Chris R., Co-Owner, Mighty Moose Marts
 
-We’re ecstatic that Tiffany is having so much success using BizPrint:
-> “I can create a customizable receipt for the customer that’s easy to read.
->
-> If you need to use WooCommerce in-person, want to save money by emailing your receipts, or just need great looking receipts (I receive compliments about our receipts), I’d highly recommend BizPrint. The team and software are excellent, and easy to work with.” - Tiffany W. Owner, Swatty Creek Mill.
+= Receipts, Invoices and PDFs for Customers =
 
-== BizPrint WooCommerce Mapping:  ==
-*   Product & Category Mapping: Using the [Product & Category Mapping feature](https://getbizprint.com/features/mapping/) you can setup specific printers to only display printed items from chosen WooCommerce products & categories. Setup multiple printer stations, and create efficient workflows to optimize fulfillment within your business.
-*   Shipping Zones & Methods Mapping: Using the [Shipping Zones & Methods Mapping](http://getbizprint.com/features/mapping/#shipping) you can setup printers to only print orders from defined shipping zones and methods. This can really help businesses that have multiple locations, fulfillment stations or other creative uses, like food trucks!
+Customers often need proof of purchase for returns, employer reimbursement or taxes. BizPrint turns WooCommerce order data into branded receipts, invoices, delivery notes and dispatch labels, printed at the counter or saved as PDF files with the desktop app's [Save to PDF printer](https://docs.getbizprint.com/set-up/desktop-save-to-pdf/).
 
-Our users really enjoy this feature. This is what the owner of Mighty Moose Marts, a retail & online store had to say about printer stations:
-> “One of the strengths to us was the ability to support multiple printers in different locations.
-> 
-> We’re using BizPrint to automatically print customer receipts at our ordering station and simultaneously print in the kitchen to fulfill the order. The impact is improved kitchen times, increased sales, and happier customers. I’d highly recommend BizPrint to other small businesses for in-store Point of Sale orders or orders placed online by your customers.” - Chris R. Co-Owner, Mighty Moose Marts.
+> "I can create a customizable receipt for the customer that's easy to read. If you need to use WooCommerce in-person, want to save money by emailing your receipts, or just need great looking receipts (I receive compliments about our receipts), I'd highly recommend BizPrint. The team and software are excellent, and easy to work with."
+> — Tiffany W., Owner, Swatty Creek Mill
 
-== BizPrint Hardware: ==
-BizPrint was designed to work with any printer that can be connected to a Windows, Mac, Linux, Raspberry Pi or Android! This means you can use your current thermal or Inkjet Printers with support for all major brands like HP, Dymo, Cannon, Star, Epson, Brother and more. Supported connection types include Local, Network, USB, Serial, Wifi and Bluetooth Based Printers. If you do not want to use your own computer or Android device, learn more about [BizPrint Hub](https://getbizprint.com/bizprint-hub-hardware/).
+= Print WooCommerce Orders on Sunmi POS Devices =
 
-== BizPrint User Documentation & Support: ==
-If you need help with BizPrint, you have multiple options for getting help:
-1. Please ensure you have setup BizPrint properly using the [Quick Start Guide.](https://getbizprint.com/quick-start-guide/) 
-2. Refer to the [BizPrint documentation](https://getbizprint.com/documentation/) for troubleshooting information.
-3. Get in touch with our [support team.](https://getbizprint.com/support/)
+Sunmi handheld and countertop POS devices run Android and have a built-in receipt printer. Install the BizPrint Android app on a Sunmi device and it becomes your station: new WooCommerce orders print automatically on the Sunmi built-in printer, with no separate receipt printer, computer or cables. Use it at the counter, in the kitchen, or for curbside and delivery handoffs. The Sunmi device needs Android 8.0 or later. See [Install the BizPrint Android app](https://docs.getbizprint.com/set-up/install-android-app/).
 
-== BizPrint Expert Developer Documentation: ==
-Although BizPrint doesn’t require any coding knowledge to use, there are instances where you want to print WooCommerce Orders in a more customized manner. For this, we provide [developer documentation](https://getbizprint.com/documentation/developer/) which provides you the plugin development structure to add your own custom WooCommerce Order Receipt, Invoice, Packing Slip and other templates.
+= Features =
 
-You can also find developer resources in the [BizPrint marketplace](https://getbizprint.com/#developer) including the Sample print template.
+* Automatic printing by order status
+* Print button on WooCommerce orders, plus bulk printing of several orders at once
+* Multiple printers, stations and printer locations, each with its own template
+* Print one copy or several at once
+* 10 built-in templates: Customer Receipt, Customer Order Receipt, Order Receipt (kitchen and packing tickets without prices), Invoice, Packing Slip, Pick List, Delivery Note, Dispatch Label, Shipping Label and Address Labels
+* HTML and plain-text layouts for receipt, label and office printers
+* Send print jobs from any device, including iPhone and iPad, to a desktop or Android station
+* Print to the built-in receipt printer on Sunmi POS devices
+* Your logo and store details on printouts, with page size, margins and fonts you control
+* Print each printer location in its own language
+* Save printouts as PDF files with the desktop app
+* Reprint any job from the BizPrint dashboard, with a print log and job queue in WordPress
+* Prints orders taken in [Jovvie Point of Sale](https://jovvie.com/)
 
-Also provided are WP Actions to Extend Third-party plugin meta data into templates. By default, BizPrint works with all [BizSwoop Plugins](https://www.bizswoop.com/) and there have been a number of [templates developed](https://getbizprint.com/marketplace/) for other 3rd party plugins. If the template is not compatible with your 3rd party plugin, you can develop your own template integration, or reach out to the BizPrint team to request compatibility.
+Add-ons included with some plans:
 
-== What features are included in BizPrint?: ==
-*   **Instant Printing:** Automatically print WooCommerce orders in a receipt format based on order status anywhere in your restaurant, retail store or fulfillment station instantly.
-*   **Supports All Printer Models:** All printers that can connect to a Mac, PC, Linux Raspberry Pi, or Android and have a supported driver will work. Easy to adjust margins and formatting.
-*   **Custom Branding on Receipts:** Easily customize invoice and order print templates to include your company logo or other company information.
-*   **WooCommerce Compatibility:** Native WooCommerce compatibility means that it works with other plugins. No need for third-party solutions to generate orders/invoices!
-*   **Print to Multiple Printers:** A scalable cloud solution that can print to multiple printers at once. And we support any printer model! If it connects to a Windows, Mac, Linux, Raspberry Pi or Android, it will work.
-*   **Generates PDF Receipts:** With the ability to generate a PDF of the receipt, BizPrint offers an easier and less fragmented solution for your WooCommerce printing needs.
-*   **Simple to Set Up & Easy to Use:** Don’t worry, we make it simple to set up – even for non-technical people! Create a BizSwoop account, configure the BizPrint plugin, and start printing in under 5 minutes.
-*   **Supports 36 Languages:** We speak your language! Plugin and receipt templates support 36 languages, including the ability to select a language for specific printer locations.
-*   **Unlimited Printer Locations:** Set up an unlimited number of printers and print to multiple locations. iOS & Android devices can also send print jobs.
-*   **Supports Thermal Receipt Printers:** Order printing is formatted for both Thermal receipt and Inkjet printers. Supports standard printers Letter/A4 for customer and order receipts.
-*   **Cloud Printing:** Fast and secure printing with BizPrint Cloud infrastructure enables printing to anywhere in the world. The Cloud Printing functionality is compatible with the POS.
-*   **Automatically Print WooCommerce Packing Slips:** Package Fulfillment for retail to ship packages to customers, packing slips and receipts. Shipping from your store is easier than ever.
-*   **Print WooCommerce Orders Straight to the Kitchen:** Restaurant printing orders for customer receipts and fulfillment inside their restaurant. Enjoy a more efficient workflow and higher productivity with orders instantly printed in the kitchen.
-*   **Print On-Demand At Point of Sale:** Point of Sale to print customer receipts transaction (any POS using WooCommerce is compatible). Print professional-looking receipts every time!
-*   **Product Mapping Add-On:** Map specific printers to only print items from defined products and categories. The add-ons allow the admin to select products and categories to print for only specific locations.
-*   **Pickup and Delivery Add-On:** Easily [add pick-up, take-out, curbside or local delivery](https://www.bizswoop.com/pickup-delivery-scheduler/) functionality to the checkout workflow on your WooCommerce store. We make it simple!
-*   [View All](https://getbizprint.com/features/)
+* [Product & category mapping](https://docs.getbizprint.com/manage/product-mapping/): send selected items to specific stations, like drinks to the bar and food to the kitchen
+* [Shipping zone & method mapping](https://docs.getbizprint.com/manage/shipping-mapping/): route orders by location or fulfillment type
+* [Status triggers](https://docs.getbizprint.com/manage/status-triggers/): print when an order changes status, for example a packing slip when it moves to Completed
+* [Barcode scan](https://docs.getbizprint.com/manage/barcode-scan/): scan a printed receipt to update the order's status
+* QR codes and metadata mapping
 
-== Learn More About Specific Print Topics On Our Blog:  == 
-*   [How To Print Order Receipts in WooCommerce](https://getbizprint.com/woocommerce-print-receipt/)
-*   [How To Automatically Print Packing Slips from WooCommerce](https://getbizprint.com/woocommerce-packing-slip-print/)
-*   [Print Receipts on Thermal Printer with WooCommerce￼](https://getbizprint.com/woocommerce-thermal-printer/)
-*   [How to Print an Order List in WooCommerce (Automatically)](https://getbizprint.com/woocommerce-print-order-list/)
-*   [Generate a Simple Invoice in WooCommerce (For Email and Print)](https://getbizprint.com/how-to-generate-invoice-in-woocommerce/)
+= Supported Printers and Stations =
 
-== What Else? == 
-*   BizPrint is developed by BizSwoop based in the United States. If you like BizPrint for Order & Receipt, consider checking out the other projects from [BizSwoop:](https://www.bizswoop.com/)
-*   [Jovvie Point of Sale for WooCommerce](https://jovvie.com/) - A fast, complete Point of Sale system built for WooCommerce stores of all sizes. Restaurants, retailers and sales teams around the globe love using Jovvie POS. Load the POS on any device and sell anywhere!
-*   [Flow Notify](https://flownotify.com/) - The Best SMS, WhatsApp & Email Notification Plugin for your store. Create order statuses and send order alert info to customers through automated SMS, WhatsApp, and Emails in WordPress and WooCommerce.
-*   [Product Manager Add-ons](https://www.bizswoop.com/product-manager/) - The #1 Product Manager Add-ons plugin for WooCommerce! Create easy product up-sells, checkout add-ons, product tables, samples, bundles and more. Your store is going to get a major boost, you won’t find a better Product Manager plugin for WooCommerce with more to offer.
-*   [Store Order Hours](https://www.bizswoop.com/store-order-hours) - Create your online open sign with a store hours scheduler. Automatically toggle WooCommerce customer checkout functionality on/off on a schedule. Create visual notification settings, Add floating hours widget, custom branding, and more. 
-*   [Pickup Delivery Scheduler](https://www.bizswoop.com/pickup-delivery-scheduler/) - Easily add pick-up, take-out, curbside and local delivery functionality to your WooCommerce store. Smart logic features allow for easy implementation of calendar ordering scheduling, defined pre-order days, minimum wait times, delivery cut-off times and order volume time slot management for your business.
-*   [Store Plus B2B Wholesale for WooCommerce](https://www.bizswoop.com/store-plus/) - Wholesale, B2B and Enterprise business account functionality for customer level pricing, customer business profiles & more. The software automatically uses your defined pricing rules to calculate and display the product price on simple, variable and variation prices dynamically in real-time on customer accounts.
+A station is the device that receives print jobs and sends them to your printers. It must stay on, with the BizPrint app running, whenever you want orders to print.
+
+* **BizPrint desktop app** (Windows, Mac, and Linux including ARM devices such as Raspberry Pi): prints to any printer the computer can use, such as receipt, label and office printers from Star, Epson, Brother, HP, Dymo, Canon and more, connected by USB, over the network or shared. Prints formatted HTML layouts and PDFs.
+* **BizPrint Android app** (Android 8.0 or later): prints HTML receipts, PDFs, full pages on office printers, shipping labels on Zebra (ZPL) and TSPL label printers, and plain-text tickets on ESC/POS or StarPRNT receipt printers, over your network or Bluetooth. Also prints to the built-in printers on Sunmi devices.
+
+You can send print jobs from any device, including an iPhone or iPad; the printing itself runs on a desktop or Android station.
+
+Not sure which to use? See [Desktop app or Android app?](https://docs.getbizprint.com/start-here/desktop-or-android/)
+
+= Works With =
+
+BizSwoop plugins:
+
+* [Jovvie Point of Sale](https://jovvie.com/)
+* [Pickup Delivery Agent](https://www.bizswoop.com/pickup-delivery-agent/)
+* [Product Manager](https://productaddons.com/)
+* [Flow Notify](https://flownotify.com/)
+
+Product add-ons:
+
+* [WooCommerce Product Add-Ons](https://woocommerce.com/products/product-add-ons/)
+* [YITH WooCommerce Product Add-Ons](https://wordpress.org/plugins/yith-woocommerce-product-add-ons/)
+* [Extra Product Options (Product Addons) for WooCommerce](https://wordpress.org/plugins/woo-extra-product-options/)
+
+Delivery, pickup and restaurant ordering:
+
+* [Delivery & Pickup Date Time for WooCommerce](https://wordpress.org/plugins/woo-delivery/)
+* [Order Delivery Date for WooCommerce](https://wordpress.org/plugins/order-delivery-date-for-woocommerce/)
+* [WooCommerce Local Pickup Plus](https://www.skyverge.com/product/woocommerce-local-pickup-plus/)
+* [WooCommerce Delivery Slots](https://iconicwp.com/products/woocommerce-delivery-slots/)
+* [Order Delivery, Order Pickup, Order Date, Order Time](https://wordpress.org/plugins/pi-woocommerce-order-date-time-and-type/)
+* [Food Store – Online Food Delivery & Pickup](https://wordpress.org/plugins/food-store/)
+* [WooCommerce Food – Restaurant Menu & Food Ordering](https://codecanyon.net/item/woocommerce-food-restaurant-menu-food-ordering/25457330)
+
+New template integrations are added regularly. [Browse the template store](https://getbizprint.com/template-store/) or ask our team to add yours.
+
+= Print API and AI Agents =
+
+BizPrint is also a print platform for developers and AI agents. Send PDF documents to your printers from any app with the [BizPrint Print API](https://docs.getbizprint.com/developers/), or let an AI assistant such as Claude Desktop list your printers, print a document and check a job's status with the [BizPrint MCP server](https://docs.getbizprint.com/developers/mcp-server/).
+
+= For Developers =
+
+Build your own WooCommerce receipt, invoice, packing slip and other layouts with [custom templates](https://docs.getbizprint.com/developers/custom-templates/), and pass third-party plugin data into printouts with [WooCommerce hooks](https://docs.getbizprint.com/developers/woocommerce-hooks/). The [developer docs](https://docs.getbizprint.com/developers/) cover API keys, print jobs, webhooks and the Node SDK, and the full documentation is available to AI tools at [docs.getbizprint.com/llms.txt](https://docs.getbizprint.com/llms.txt).
+
+= Guides =
+
+* [How to Print Order Receipts in WooCommerce](https://getbizprint.com/woocommerce-print-receipt/)
+* [How to Automatically Print Packing Slips from WooCommerce](https://getbizprint.com/woocommerce-packing-slip-print/)
+* [Print Receipts on a Thermal Printer with WooCommerce](https://getbizprint.com/woocommerce-thermal-printer/)
+* [How to Print an Order List in WooCommerce (Automatically)](https://getbizprint.com/woocommerce-print-order-list/)
+* [Generate a Simple Invoice in WooCommerce (for Email and Print)](https://getbizprint.com/how-to-generate-invoice-in-woocommerce/)
+
+= Documentation and Support =
+
+* Set up: [Choose your setup path](https://docs.getbizprint.com/start-here/choose-your-setup/)
+* Not printing? [Orders are not printing automatically](https://docs.getbizprint.com/troubleshooting/automatic-printing/)
+* All docs: [docs.getbizprint.com](https://docs.getbizprint.com/)
+* Help: [contact our support team](https://getbizprint.com/support/)
+
+= More from BizSwoop =
+
+BizPrint is built by BizSwoop, a US-based team making WooCommerce tools since 2016.
+
+* [Jovvie Point of Sale](https://jovvie.com/) – A fast, complete point of sale for WooCommerce. Run it on any device and sell anywhere.
+* [Flow Notify](https://flownotify.com/) – Custom order statuses with automated SMS, WhatsApp and email notifications for WooCommerce.
+* [Product Manager Add-ons](https://productaddons.com/) – Product add-ons, upsells, product tables, samples and bundles.
+* [Store Order Hours](https://wordpress.org/plugins/order-hours-scheduler-for-woocommerce/) – Turn WooCommerce checkout on and off on a schedule, with a store hours widget.
+* [Pickup Delivery Agent](https://www.bizswoop.com/pickup-delivery-agent/) – Pickup, takeout, curbside and local delivery scheduling with time slots and cut-off times.
+* [Store Plus B2B Wholesale](https://www.bizswoop.com/b2b-wholesale/) – Wholesale and B2B accounts with customer-level pricing.
 
 == Frequently Asked Questions ==
-= How Do I Get Started Using BizPrint? =
-Start by creating a [free account](https://login.bizswoop.app/register) and then following our [quick start setup guide](https://getbizprint.com/quick-start-guide/).
 
-= Is Print Manager & BizPrint Free? =
-Print Manager is a free plugin and is used to connect to BizPrint to power cloud printing services. BizPrint offers free prints to get started. You can learn more about plans and pricing at [GetBizPrint.com/Pricing](https://getbizprint.com/pricing/)
+= How do I get started? =
 
-= Do I Need An Account to Print? =
-Yes, you need a BizSwoop account to use BizPrint. The BizSwoop account is Free to create. You can get started [here](https://login.bizswoop.app/register).
+To get started with BizPrint, create a [free BizPrint account](https://login.bizswoop.app/register), set up a station with the desktop or Android app, then install and connect this plugin. [Choose your BizPrint setup path](https://docs.getbizprint.com/start-here/choose-your-setup/) walks through every step.
 
-= Where Do I Find Out More Information About The BizPrint Cloud Service? =
-Visit our website for more information at [GetBizPrint.com](https://getbizprint.com/)
+= Is BizPrint free? =
 
-= Do You Provide Support? = 
-Yes, we actively support and develop the Print Manager plugin and BizPrint Cloud Print. You can contact us at any time by visiting [https://getbizprint.com/support/](https://getbizprint.com/support/) to submit a support request, report bugs or submit request features.
+The BizPrint plugin is free, and every new BizPrint account starts with free prints, no credit card required. After that, printing runs on a paid BizPrint plan. See current plans and pricing at [GetBizPrint.com/pricing](https://getbizprint.com/pricing/) and how prints are counted in [Plans, print limits and usage](https://docs.getbizprint.com/start-here/plans-and-limits/).
 
-= Will you support Order Receipt Print plugin version 3.0.16 and older? =
-Sorry, no. Order Receipt Print plugin was developed for Google Cloud Print. Google Cloud Print shuts down effective December 31, 2020. Once the Google system is shut down, we are not able to support legacy versions of the plugin Order Receipt Print. To continue using the plugin, you need to update to the latest version Print Manager using the BizPrint Cloud Print SaaS service for all printing requirements with WooCommerce.
+= Do I need an account to print? =
+
+Yes, BizPrint requires a free account, created on BizSwoop, to connect your store to your printers. [Create one here](https://login.bizswoop.app/register).
+
+= Which printers does BizPrint work with? =
+
+BizPrint works with any printer your Windows, Mac or Linux computer can already print to, using the BizPrint desktop app, including receipt, label and office printers connected by USB, network or sharing. With the BizPrint Android app, it prints to ESC/POS and StarPRNT receipt printers, Zebra (ZPL) and TSPL label printers, office printers and the built-in printers on Sunmi devices, over the network or Bluetooth. See [What you need to use BizPrint](https://docs.getbizprint.com/start-here/requirements/).
+
+= Does a computer need to stay on to print? =
+
+Yes, for automatic printing the station must stay on with the BizPrint app running. A station is the Windows, Mac or Linux computer or Android phone or tablet connected to your printers. Your WooCommerce store must also be online, because the station loads each printout from it.
+
+= Does BizPrint work with Sunmi POS printers? =
+
+Yes, BizPrint prints WooCommerce orders to the built-in printers on Sunmi POS devices. Install the BizPrint Android app on the Sunmi device (Android 8.0 or later), add its built-in printer, and choose it in a printer location in WooCommerce > Print Manager. Orders then print automatically on the Sunmi device, with no separate printer needed.
+
+= Can I print from an iPhone or iPad? =
+
+Yes, you can send BizPrint print jobs from an iPhone or iPad, for example by printing an order from WooCommerce or Jovvie Point of Sale. The printing itself runs on a station: the BizPrint desktop app on a Windows, Mac or Linux computer, or the BizPrint Android app on an Android device. BizPrint has no station app for iPhone or iPad.
+
+= Will orders print automatically, or do I click Print? =
+
+BizPrint does both. It prints orders automatically when they reach the order statuses you choose, and it adds a Print button to every WooCommerce order for printing on demand.
+
+= Can I send different orders or products to different printers? =
+
+Yes, BizPrint supports multiple printers and printer locations. Product & category mapping and shipping zone & method mapping route each order, or each item, to the right station; mapping is included on select plans, listed on the [pricing page](https://getbizprint.com/pricing/).
+
+= Do I need technical skills to set it up? =
+
+No, BizPrint needs no coding. Create an account, install the app on your station, connect the plugin and choose your settings. The [setup guide](https://docs.getbizprint.com/start-here/choose-your-setup/) covers each step.
+
+= How is BizPrint different from a PDF invoice plugin? =
+
+PDF invoice plugins create documents that you download, email or print by hand. BizPrint prints orders automatically to the right printer the moment they arrive, with layouts for thermal receipt and kitchen printers, routing by product or shipping method, and multiple stations. The BizPrint desktop app can also save printouts as PDF files.
+
+= Can I print from my own app or an AI assistant? =
+
+Yes, the BizPrint Print API sends PDF documents to your printers from any app, and the BizPrint MCP server lets AI assistants such as Claude Desktop list printers, print documents and check print jobs. See [BizPrint for developers](https://docs.getbizprint.com/developers/).
+
+= An order did not print. What should I check? =
+
+BizPrint's troubleshooting guides cover the common causes, such as a station that is offline, a paused print service or an automatic printing setting. Start with [Orders are not printing automatically](https://docs.getbizprint.com/troubleshooting/automatic-printing/), and check the order's print job before printing it again so nothing prints twice.
+
+= Do you provide support? =
+
+Yes, BizSwoop actively develops and supports the BizPrint plugin and cloud service. Read the [BizPrint documentation](https://docs.getbizprint.com/) or [contact support](https://getbizprint.com/support/) to get help, report a bug or request a feature.
+
+= Will you support Order Receipt Print version 3.0.16 and older? =
+
+No, BizPrint does not support Order Receipt Print 3.0.16 and older. Those versions were built for Google Cloud Print, which shut down on December 31, 2020. Update to the latest version of BizPrint to keep printing.
 
 == Installation ==
 
-1. Upload Print Manager to the /wp-content/plugins/ directory
-2. Activate the plugin through the Plugins menu in WordPress
-3. Now select from the WooCommerce menu Printer Settings
-4. Click the General Tab and Customize Printer Settings and Company Information
-5. [Setup a BizSwoop account for BizPrint Service] (https://getbizprint.com/quick-start-guide/)
-5. Click the Locations Tab and Select Printers your Account. Orders will Start Printing
-6. If you have any issues contact, visit [support](https://getbizprint.com/support/)
+1. Create a free [BizPrint account](https://login.bizswoop.app/register) and a station: install the BizPrint desktop app or Android app and add your printers.
+2. In the BizPrint dashboard, create a WooCommerce application to get your connection details.
+3. In WordPress, go to Plugins > Add New, search for "BizPrint", then install and activate it.
+4. Go to WooCommerce > Print Manager and connect the plugin to your BizPrint application.
+5. On the Printers tab, create a printer location: choose a printer, a template and an output format.
+6. Turn on automatic printing for the order statuses you want, then send a test print.
 
+Full instructions: [Choose your BizPrint setup path](https://docs.getbizprint.com/start-here/choose-your-setup/). Need help? [Contact support](https://getbizprint.com/support/).
 
 == Screenshots ==
 
-1. General Settings Tab for Print Template & Automatic Printing
-
-2. BizPrint Cloud Management Dashboard
-
-3. Sample of HTML Receipt/Invoice Template
-
-4. Sample of Plain Text Receipt/Invoice Template
-
-5. Add a Printer, Configure Settings and Select Printer
-
-6. Printers Tab Showing List of All Configured Printers with BizPrint Cloud
-
-
+1. General settings in Print Manager: choose which order statuses print automatically.
+2. BizPrint dashboard for managing stations, printers and print jobs.
+3. Branded HTML receipt and invoice template for WooCommerce orders.
+4. Plain-text receipt template formatted for thermal receipt printers.
+5. Add a printer, configure its settings and assign it to a printer location.
+6. All connected printers listed in the BizPrint dashboard.
 
 == Changelog ==
+= 4.10.0 =
+* New: Print a File - drag and drop a PDF or HTML file to print it on any BizPrint printer, from the Print a File button in the admin bar
+* Security: tighten permission and request checks on admin actions (reported by buiih, coordinated by VulnCheck)
+* Security: protect plugin log files from direct web access
+* Security: stricter validation of signed print requests and webhooks
+* Bug fixes and performance improvements
+* WC 11.3.0 compatibility
+* WP 7.1.4 compatibility
+
 = 4.9.5 = 
 * Bug fixes and performance improvements
 * WC 11.1.0 compatibility

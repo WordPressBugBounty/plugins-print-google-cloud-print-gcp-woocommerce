@@ -7,6 +7,7 @@ use Zprint\Client;
 use Zprint\Document;
 use Zprint\Model\Location;
 use Zprint\Exception\DB as DBException;
+use Zprint\Support\AdminRequest;
 
 defined('ABSPATH') or die('No script kiddies please!');
 
@@ -16,20 +17,21 @@ class Core
 	const ERROR = 'ERROR';
 	const EXCEPTION = 'EXCEPTION';
 
-	const AJAX_ACTIONS = [
-		'getPrinters',
-		'sendPrintRequest'
-	];
+	const ACTION_GET_PRINTERS = 'zprint_debug_get_printers';
+	const ACTION_SEND_PRINT = 'zprint_debug_send_print_request';
+	const NONCE = 'zprint_debug';
 
 	public function __construct()
 	{
-		foreach (self::AJAX_ACTIONS as $action) {
-			add_action('wp_ajax_'.$action, [$this, $action]);
-		}
+		/* Support tab tools: Print Manager managers only, never public. */
+		add_action('wp_ajax_' . self::ACTION_GET_PRINTERS, [$this, 'getPrinters']);
+		add_action('wp_ajax_' . self::ACTION_SEND_PRINT, [$this, 'sendPrintRequest']);
 	}
 
 	public function getPrinters()
 	{
+		AdminRequest::authorize(self::NONCE);
+
 		try {
 			$response = Client::getRequest('printers');
 		} catch (\Exception $exception) {
@@ -47,11 +49,23 @@ class Core
 
 	public function sendPrintRequest()
 	{
-		$order_id 	 = $_POST['data']['order_id'];
-		$location_id = $_POST['data']['location_id'];
+		AdminRequest::authorize(self::NONCE);
+
+		$data        = isset($_POST['data']) && is_array($_POST['data']) ? $_POST['data'] : [];
+		$order_id    = absint($data['order_id'] ?? 0);
+		$location_id = absint($data['location_id'] ?? 0);
+
+		$order = $order_id ? wc_get_order($order_id) : false;
+		if (!$order) {
+			wp_send_json_error(['code' => 'invalid_order'], 400);
+		}
+		/* Location(0) builds an empty, unsaved location instead of failing. */
+		if (!$location_id) {
+			wp_send_json_error(['code' => 'invalid_location'], 400);
+		}
 
 		try {
-			$location = new Location((int) $location_id);
+			$location = new Location($location_id);
 		} catch (DBException $exception) {
 			wp_send_json_error($exception->getMessage());
 
@@ -66,7 +80,7 @@ class Core
 				[
 					'zprint_order' => $order_id,
 					'zprint_location' => $template_data['id'],
-					'zprint_order_user' => wc_get_order( $order_id )->get_user_id(),
+					'zprint_order_user' => $order->get_user_id(),
 				],
 				home_url()
 			),

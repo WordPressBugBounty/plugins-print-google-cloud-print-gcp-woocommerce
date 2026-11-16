@@ -13,6 +13,8 @@ class PrintDialog
 	 */
 	const DEFAULT_CAPABILITY = 'edit_shop_orders';
 
+	const NONCE = 'zprint_print_dialog';
+
 	public function __construct()
 	{
         add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_assets' ) );
@@ -56,7 +58,10 @@ class PrintDialog
         Plugin\Asset::enqueue_script(
 			'print-dialog',
 			array(),
-			array( 'ajax_url' => admin_url( 'admin-ajax.php' ) )
+			array(
+				'ajax_url' => admin_url( 'admin-ajax.php' ),
+				'nonce'    => wp_create_nonce( self::NONCE ),
+			)
         );
 	    Plugin\Asset::enqueue_style( 'print-dialog' );
     }
@@ -105,7 +110,7 @@ class PrintDialog
 			<div class="zprint-dialog__logo">
 				<img
 					class="zprint-dialog__logo-emblem"
-					src="<?php echo esc_url( Plugin\Fs::get_url( 'assets/logo.png', true ) ); ?>"
+					src="<?php echo esc_url( Plugin\Fs::get_url( 'assets/logo-mark.svg', true ) ); ?>"
 					alt="<?php echo esc_attr__( 'Print Manager', 'Print-Google-Cloud-Print-GCP-WooCommerce' ); ?>"
 				>
 				<div class="zprint-dialog__logo-title">
@@ -154,8 +159,22 @@ class PrintDialog
         die();
 	}
 
+	/**
+	 * Printing must come from our own pages, not from a link or form on another
+	 * site (CSRF). Our script sends a nonce. Older callers (such as Order Board's
+	 * print dialog) send none, but jQuery marks them with X-Requested-With, a
+	 * header a cross-site link or form cannot set.
+	 */
+	public static function is_trusted_request(): bool {
+		if ( check_ajax_referer( self::NONCE, 'nonce', false ) ) {
+			return true;
+		}
+
+		return isset( $_SERVER['HTTP_X_REQUESTED_WITH'] ) && 'xmlhttprequest' === strtolower( (string) $_SERVER['HTTP_X_REQUESTED_WITH'] );
+	}
+
 	public function print(): void {
-		if ( ! current_user_can( self::get_required_capability() ) ) {
+		if ( ! current_user_can( self::get_required_capability() ) || ! self::is_trusted_request() ) {
 			wp_send_json_error(
 				array( 'message' => __( 'You do not have permission to perform this action.', 'Print-Google-Cloud-Print-GCP-WooCommerce' ) ),
 				403

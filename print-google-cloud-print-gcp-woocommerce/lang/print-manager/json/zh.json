@@ -1,4 +1,16 @@
 {
 	"copied_successfully": "复制成功！",
+	"quick_print_accepted_formats": "支持格式：{{formats}}。最大：{{size}} MB。",
+	"quick_print_file_ready": "文件已就绪。请选择打印机并发送。",
+	"quick_print_generic_error": "出现问题，请重试。",
+	"quick_print_need_file": "请先选择文件。",
+	"quick_print_need_printer": "请选择目标打印机。",
+	"quick_print_ready": "可以打印。",
+	"quick_print_sending": "正在发送到打印机…",
+	"quick_print_sent": "打印任务已成功发送。",
+	"quick_print_too_large": "该文件超出了 {{size}} MB 的允许上限。",
+	"quick_print_unsupported_type": "仅接受 PDF 和 HTML 文件。",
+	"quick_print_uploading": "正在上传文件…",
+	"quick_print_uploading_percent": "正在上传文件… {{percent}}%",
 	"something_went_wrong": "出错了！"
 }

@@ -50,6 +50,7 @@ class Setup
 		new Templates();
 		new Document();
 		new Debug\Core();
+		new Admin\LogAccess();
 		new API();
 
 		do_action('zprint_loaded');

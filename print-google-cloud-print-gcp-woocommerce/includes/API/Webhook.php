@@ -35,14 +35,8 @@ class Webhook
 		}
 
 		$body = json_decode($request->get_body(), JSON_OBJECT_AS_ARRAY);
-		unset($body['hash']);
 
-		$publicKey = Client::getAccess('publicKey');
-		$secretKey = Client::getAccess('secretKey');
-
-		$hash = hash('sha256', json_encode($body, JSON_UNESCAPED_SLASHES) . ':' . $secretKey);
-
-		if ($request->get_param('hash') !== $hash || $request->get_param('publicKey') !== $publicKey) {
+		if (!self::isAuthentic(is_array($body) ? $body : [], $request->get_param('hash'), $request->get_param('publicKey'), Client::getAccess('publicKey'), Client::getAccess('secretKey'))) {
 			Log::info(Log::PRINTING, [
 				'Webhook-Error-Connect', 'Incorrect auth data'
 			]);
@@ -53,6 +47,23 @@ class Webhook
 		}
 
 		return false;
+	}
+
+	/**
+	 * BizPrint signs the JSON body (without its hash) as sha256(body + ":" + secretKey).
+	 */
+	public static function isAuthentic(array $body, $hash, $public_key, $site_public_key, $site_secret_key): bool
+	{
+		$site_public_key = (string) $site_public_key;
+		$site_secret_key = (string) $site_secret_key;
+		if ($site_public_key === '' || $site_secret_key === '' || !is_string($hash) || !is_string($public_key)) {
+			return false;
+		}
+
+		unset($body['hash']);
+		$expected = hash('sha256', json_encode($body, JSON_UNESCAPED_SLASHES) . ':' . $site_secret_key);
+
+		return hash_equals($expected, $hash) && hash_equals($site_public_key, $public_key);
 	}
 
 	public function handler(WP_REST_Request $request): WP_REST_Response

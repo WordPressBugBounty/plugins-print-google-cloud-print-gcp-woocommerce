@@ -50,7 +50,7 @@ class RestClient
 
 	public static function filterQueryParams($queryParams)
 	{
-		$allowedParams = ['zprint_order', 'zprint_location', 'zprint_order_user', 'publicKey', 'time'];
+		$allowedParams = ['zprint_order', 'zprint_location', 'zprint_order_user', 'zprint_quickprint_file', 'publicKey', 'time'];
 
 		parse_str($queryParams, $params);
 
@@ -63,30 +63,39 @@ class RestClient
 
 	public static function checkGetAccess()
 	{
-		if(!isset($_GET['publicKey']) || !isset($_GET['hash'])) return false;
+		return self::verifySignedQuery($_GET, self::getAccess(), self::getCurrentQueryArgs(), time());
+	}
 
-		$time = +$_GET['time'];
-		$serverTime = time();
-		if ($serverTime - $time > 60 * 10) {
+	/**
+	 * Checks a url signed by BizPrint (application version 1): publicKey, time
+	 * and hash = sha256(allowlisted query + ":" + secretKey), at most 10 minutes old.
+	 */
+	public static function verifySignedQuery(array $get, array $keys, string $query, int $now): bool
+	{
+		$public = (string) ($keys['publicKey'] ?? '');
+		$secret = (string) ($keys['secretKey'] ?? '');
+		/* An unconfigured secret would let anyone who knows the public key sign urls. */
+		if ($public === '' || $secret === '') {
 			return false;
 		}
 
-		$keys = self::getAccess();
-		if ($keys['publicKey'] !== $_GET['publicKey'] || $keys['publicKey'] === '') {
+		foreach (['publicKey', 'hash', 'time'] as $param) {
+			if (!isset($get[$param]) || !is_string($get[$param])) {
+				return false;
+			}
+		}
+
+		if (!ctype_digit($get['time']) || $now - (int) $get['time'] > 60 * 10) {
 			return false;
 		}
 
-		 $currentQueryArgs = self::getCurrentQueryArgs();
-         $baseQuery = self::filterQueryParams($currentQueryArgs);
-
-         $validateHash = hash('sha256', $baseQuery . ':' . $keys['secretKey']);
-         $hash = $_GET['hash'];
-
-		if ($validateHash !== $hash) {
+		if (!hash_equals($public, $get['publicKey'])) {
 			return false;
 		}
 
-		return true;
+		$expected = hash('sha256', self::filterQueryParams($query) . ':' . $secret);
+
+		return hash_equals($expected, $get['hash']);
 	}
 
 	private static function getCurrentQueryArgs()

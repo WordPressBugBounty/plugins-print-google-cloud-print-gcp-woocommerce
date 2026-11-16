@@ -134,6 +134,7 @@ jQuery(function($) {
 			url: ajaxUrl,
 			data: {
 				action: 'zprint_print_manually',
+				nonce: window.zprint_print_dialog.nonce,
 				order_ids: JSON.stringify(orderIDs),
 				location_ids: JSON.stringify(locationIDs),
 				redirect_to: window.location.href,

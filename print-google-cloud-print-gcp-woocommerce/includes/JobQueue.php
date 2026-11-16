@@ -35,11 +35,11 @@ class JobQueue
 	{
 		return InstanceStorage::getGlobalStorage()->asCurrentStorage(function () {
 			return Page::get('printer setting')->scope(function () {
-				$general = TabPage::get('general');
+				$setting = TabPage::get('setting');
 				$networkBox = Box::get('network settings');
 
 				$asyncInput = Input::get('enable async printing');
-				$asyncValue = $asyncInput->getValue($networkBox, null, $general);
+				$asyncValue = $asyncInput->getValue($networkBox, null, $setting);
 				return is_array($asyncValue) && in_array('1', $asyncValue);
 			});
 		});
@@ -54,11 +54,11 @@ class JobQueue
 	{
 		return InstanceStorage::getGlobalStorage()->asCurrentStorage(function () {
 			return Page::get('printer setting')->scope(function () {
-				$general = TabPage::get('general');
+				$setting = TabPage::get('setting');
 				$networkBox = Box::get('network settings');
 
 				$fallbackInput = Input::get('enable fallback queue');
-				$fallbackValue = $fallbackInput->getValue($networkBox, null, $general);
+				$fallbackValue = $fallbackInput->getValue($networkBox, null, $setting);
 				return is_array($fallbackValue) && in_array('1', $fallbackValue);
 			});
 		});

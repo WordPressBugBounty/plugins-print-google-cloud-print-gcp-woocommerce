@@ -72,6 +72,11 @@ class Page extends Base
         return count($this->tabs) > 0;
     }
 
+    public function getTabs()
+    {
+        return $this->tabs;
+    }
+
     protected function currentTab($checkTab = null)
     {
         $current_tab_slug = isset($_GET['tab']) ? $_GET['tab'] : null;

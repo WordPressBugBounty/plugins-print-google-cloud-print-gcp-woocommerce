@@ -50,7 +50,7 @@ class Tab
 										<td>
 											<select id="zprint-debug-orders">
 												<?php foreach ($orders_ids as $order_id): ?>
-													<option value="<?php echo $order_id; ?>"><?php echo '#' . $order_id; ?></option>
+													<option value="<?php echo esc_attr($order_id); ?>"><?php echo esc_html('#' . $order_id); ?></option>
 												<?php endforeach; ?>
 											</select>
 										</td>
@@ -62,7 +62,7 @@ class Tab
 										<td>
 											<select id="zprint-debug-locations">
 												<?php foreach ($locations as $location): ?>
-													<option value="<?php echo $location['id']; ?>"><?php echo $location['title']; ?></option>
+													<option value="<?php echo esc_attr($location['id']); ?>"><?php echo esc_html($location['title']); ?></option>
 												<?php endforeach; ?>
 											</select>
 										</td>
@@ -95,8 +95,10 @@ class Tab
 		?>
 			<script>
 				(function ($) {
+					var nonce = <?php echo wp_json_encode(wp_create_nonce(Core::NONCE)); ?>;
+
 					$('#zprint-debug-remote-printers').on('click', function () {
-						$.post(window.ajaxurl, {action: 'getPrinters'},
+						$.post(window.ajaxurl, {action: <?php echo wp_json_encode(Core::ACTION_GET_PRINTERS); ?>, nonce: nonce},
 							function (data) {
 								stringifyResponse('#zprint-debug-remote-printers-output', data);
 							}
@@ -109,7 +111,7 @@ class Tab
 							location_id: $('#zprint-debug-locations').val()
 						}
 
-						$.post(window.ajaxurl, {action: 'sendPrintRequest', data: data},
+						$.post(window.ajaxurl, {action: <?php echo wp_json_encode(Core::ACTION_SEND_PRINT); ?>, nonce: nonce, data: data},
 							function (data) {
 								stringifyResponse('#zprint-debug-print-request-output', data);
 							}

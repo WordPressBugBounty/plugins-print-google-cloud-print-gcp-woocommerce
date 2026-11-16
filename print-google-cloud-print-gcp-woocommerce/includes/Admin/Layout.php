@@ -4,6 +4,7 @@ namespace Zprint\Admin;
 
 use Zprint\Plugin;
 use Zprint\TabPage;
+use Zprint\User;
 use Zprint\Aspect\Page;
 
 class Layout
@@ -21,7 +22,9 @@ class Layout
 	{
 		/* Use $_GET['page'] check as primary — Page::isRequested() can fail
 		   on multisite subdirectory installs due to home_url() path doubling. */
-		$on_plugin_page = isset( $_GET['page'] ) && 'zp_bce0c' === $_GET['page'];
+		$allowed_slugs = apply_filters('zprint_print_manager_page_slugs', array('zp_bce0c'));
+		$current_slug  = isset($_GET['page']) ? sanitize_key(wp_unslash($_GET['page'])) : '';
+		$on_plugin_page = in_array($current_slug, $allowed_slugs, true);
 		if ( ! $on_plugin_page && ! self::$page->isRequested() ) {
 			return;
 		} ?>
@@ -31,7 +34,7 @@ class Layout
 										<a href="http://bizswoop.com/print">
 												<img
 													class="zprint-logo"
-													src="<?= Plugin::getUrl('assets/logo.png') . '?v=2'; ?>"
+													src="<?= Plugin::getUrl('assets/logo-mark.svg') . '?v=3'; ?>"
 													alt="<?= esc_attr__('Print Manager', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?>"
 												>
 										</a>
@@ -44,6 +47,7 @@ class Layout
 												<span><?= __('Print to anywhere with BizPrint', 'Print-Google-Cloud-Print-GCP-WooCommerce'); ?></span>
 										</div>
 								</div>
+								<?php /* Quick-Print-only users cannot open these pages. */ if (current_user_can(User::PRINT_MANAGEMENT_CAP_KEY)) : ?>
 								<div class="zprint-navigation">
 										<ul>
 												<li>
@@ -102,6 +106,7 @@ class Layout
 												</li>
 										</ul>
 								</div>
+								<?php endif; ?>
 						</div>
 				</div>
 				<?php

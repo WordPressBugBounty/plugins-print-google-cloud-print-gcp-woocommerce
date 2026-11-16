@@ -21,6 +21,7 @@ jQuery(function ($) {
 		$.post(window.ajaxurl, {
 			action: 'zprint_copy_log',
 			type: this.dataset.logType,
+			nonce: this.dataset.nonce,
 		}).done(function (data) {
 			navigator.clipboard.writeText(data).then(
 				function () {

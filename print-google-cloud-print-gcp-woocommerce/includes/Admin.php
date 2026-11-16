@@ -25,6 +25,7 @@ class Admin
         new Admin\Order();
         new Admin\OrderTable();
         new Admin\PrintDialog();
+        new Admin\AdminBar();
     }
 
     public function enqueueAssets()

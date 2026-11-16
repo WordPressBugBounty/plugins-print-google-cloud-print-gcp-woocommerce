@@ -43,14 +43,22 @@ class LegacyClient
 
 	public static function checkGetAccess()
 	{
-		$keys = self::getAccess();
+		return self::verifyKeys($_GET, self::getAccess());
+	}
 
-		if( !isset($_GET['publicKey'], $_GET['secretKey'])) return false;
+	/* Application version 0 sends both keys in the url. */
+	public static function verifyKeys(array $get, array $keys): bool
+	{
+		$public = (string) ($keys['publicKey'] ?? '');
+		$secret = (string) ($keys['secretKey'] ?? '');
+		if ($public === '' || $secret === '') {
+			return false;
+		}
+		if (!isset($get['publicKey'], $get['secretKey']) || !is_string($get['publicKey']) || !is_string($get['secretKey'])) {
+			return false;
+		}
 
-		return $keys['publicKey'] === $_GET['publicKey'] &&
-			$keys['secretKey'] === $_GET['secretKey'] &&
-			$keys['publicKey'] !== '' &&
-			$keys['secretKey'] !== '';
+		return hash_equals($public, $get['publicKey']) && hash_equals($secret, $get['secretKey']);
 	}
 
 	private static function getBaseUrl()

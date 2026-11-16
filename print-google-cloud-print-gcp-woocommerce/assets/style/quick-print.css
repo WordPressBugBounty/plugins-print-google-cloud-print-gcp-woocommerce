@@ -1,0 +1,422 @@
+/* ==========================================================================
+   TAB-BAR ACTION BUTTONS
+   Uses plugin brand tokens so it matches the rest of Print Manager.
+   Higher-specificity selectors than the existing .page-title-action rules
+   in print-manager-admin.css so our overrides win.
+   ========================================================================== */
+
+.print-manager-admin .nav-tab-wrapper .zprint-tab-actions {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--pm-space-2);
+	margin-left: auto;
+}
+
+.print-manager-admin .nav-tab-wrapper .zprint-tab-actions .page-title-action {
+	margin: 0;
+	align-self: center;
+}
+
+/* "Print a File" — solid brand fill; pairs with the outlined "Add new" to its right. */
+.print-manager-admin .nav-tab-wrapper .zprint-tab-actions .page-title-action.zprint-print-file-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--pm-space-1);
+	padding: var(--pm-space-1) var(--pm-space-4);
+	font-size: var(--pm-text-sm);
+	font-weight: 500;
+	color: var(--pm-bg-white);
+	background: var(--pm-brand);
+	border: 1px solid var(--pm-brand);
+	border-radius: var(--pm-radius);
+	box-shadow: none;
+	transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.print-manager-admin .nav-tab-wrapper .zprint-tab-actions .page-title-action.zprint-print-file-btn:hover,
+.print-manager-admin .nav-tab-wrapper .zprint-tab-actions .page-title-action.zprint-print-file-btn:focus {
+	color: var(--pm-bg-white);
+	background: var(--pm-brand-hover);
+	border-color: var(--pm-brand-hover);
+}
+
+.print-manager-admin .nav-tab-wrapper .zprint-tab-actions .page-title-action.zprint-print-file-btn:focus-visible {
+	outline: 2px solid var(--pm-brand);
+	outline-offset: 2px;
+}
+
+.print-manager-admin .nav-tab-wrapper .zprint-tab-actions .page-title-action.zprint-print-file-btn .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	line-height: 1;
+}
+
+
+/* ==========================================================================
+   PAGE LAYOUT
+   The page-level wrapper flows full-width using the plugin's existing
+   margin rule (`.print-manager-admin > :not(.nav-tab-wrapper)` adds
+   pm-space-5 horizontal margins). No max-width — matches other tabs.
+   ========================================================================== */
+
+.print-manager-admin .zprint-quick-print {
+	margin-top: var(--pm-space-5);
+	margin-bottom: var(--pm-space-8);
+}
+
+.print-manager-admin .zprint-quick-print__notice {
+	margin: 0 0 var(--pm-space-4);
+}
+
+
+/* ==========================================================================
+   FORM CARD
+   Matches .zprint-settings-section-wrapper from the settings tabs.
+   ========================================================================== */
+
+.print-manager-admin .zprint-quick-print__form {
+	margin: 0;
+	padding: var(--pm-space-6) var(--pm-space-5);
+	background: var(--pm-bg-white);
+	border: 1px solid var(--pm-border-light);
+	border-radius: var(--pm-radius-md);
+	box-shadow: var(--pm-shadow-sm);
+}
+
+
+/* ==========================================================================
+   DROP ZONE — label element; click-to-browse handled natively by the browser
+   ========================================================================== */
+
+.print-manager-admin .zprint-quick-print__dropzone {
+	display: block;
+	position: relative;
+	padding: var(--pm-space-8) var(--pm-space-5);
+	text-align: center;
+	cursor: pointer;
+	background: var(--pm-bg);
+	border: 2px dashed var(--pm-border-light);
+	border-radius: var(--pm-radius-md);
+	transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.print-manager-admin .zprint-quick-print__dropzone:hover,
+.print-manager-admin .zprint-quick-print__dropzone:focus-within {
+	border-color: var(--pm-brand);
+	background: var(--pm-brand-light);
+	outline: none;
+}
+
+.print-manager-admin .zprint-quick-print__dropzone.is-dragover {
+	border-color: var(--pm-brand);
+	background: var(--pm-brand-light);
+}
+
+.print-manager-admin .zprint-quick-print__dropzone.has-file {
+	border-style: solid;
+	background: var(--pm-bg-white);
+}
+
+.print-manager-admin .zprint-quick-print__dropzone.is-uploading {
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+.print-manager-admin .zprint-quick-print__dropzone-heading {
+	margin-bottom: var(--pm-space-3);
+	font-size: var(--pm-text-lg);
+	font-weight: 600;
+	color: var(--pm-text);
+	line-height: 1.2;
+}
+
+.print-manager-admin .zprint-quick-print__dropzone-icon {
+	margin-bottom: var(--pm-space-2);
+	font-size: 32px;
+	color: var(--pm-brand);
+	line-height: 1;
+}
+
+.print-manager-admin .zprint-quick-print__dropzone-copy {
+	display: flex;
+	flex-direction: column;
+	gap: var(--pm-space-1);
+	margin-bottom: var(--pm-space-2);
+}
+
+.print-manager-admin .zprint-quick-print__dropzone-copy strong {
+	font-size: var(--pm-text-md);
+	font-weight: 600;
+	color: var(--pm-text);
+}
+
+.print-manager-admin .zprint-quick-print__dropzone-copy span {
+	font-size: var(--pm-text-sm);
+	color: var(--pm-text-muted);
+}
+
+.print-manager-admin .zprint-quick-print__dropzone-meta {
+	font-size: var(--pm-text-sm);
+	color: var(--pm-text-muted);
+}
+
+.print-manager-admin .zprint-quick-print__file-input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+
+/* ==========================================================================
+   SELECTED FILE CHIP
+   ========================================================================== */
+
+.print-manager-admin .zprint-quick-print__selected {
+	display: flex;
+	align-items: center;
+	gap: var(--pm-space-3);
+	margin-top: var(--pm-space-3);
+	padding: var(--pm-space-3) var(--pm-space-4);
+	background: var(--pm-brand-light);
+	border: 1px solid var(--pm-border-light);
+	border-radius: var(--pm-radius-md);
+	animation: zprint-qp-fade-in 0.2s ease;
+}
+
+@keyframes zprint-qp-fade-in {
+	from { opacity: 0; transform: translateY(-4px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+.print-manager-admin .zprint-quick-print__selected-icon {
+	font-size: 20px;
+	color: var(--pm-brand);
+	line-height: 1;
+}
+
+.print-manager-admin .zprint-quick-print__selected-info {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.print-manager-admin .zprint-quick-print__selected-name {
+	font-weight: 600;
+	color: var(--pm-text);
+	word-break: break-all;
+}
+
+.print-manager-admin .zprint-quick-print__selected-size {
+	margin-top: 2px;
+	font-size: var(--pm-text-sm);
+	color: var(--pm-text-muted);
+}
+
+.print-manager-admin .zprint-quick-print__selected-remove {
+	padding: var(--pm-space-1) var(--pm-space-2);
+	background: transparent;
+	border: 0;
+	color: var(--pm-text-muted);
+	cursor: pointer;
+	line-height: 1;
+}
+
+.print-manager-admin .zprint-quick-print__selected-remove:hover {
+	color: var(--pm-brand-hover);
+}
+
+
+/* ==========================================================================
+   FORM ROWS
+   ========================================================================== */
+
+.print-manager-admin .zprint-quick-print__row {
+	display: flex;
+	flex-direction: column;
+	gap: var(--pm-space-1);
+	margin-top: var(--pm-space-5);
+}
+
+.print-manager-admin .zprint-quick-print__row label {
+	font-size: var(--pm-text-md);
+	font-weight: 600;
+	color: var(--pm-text);
+}
+
+.print-manager-admin .zprint-quick-print__row select,
+.print-manager-admin .zprint-quick-print__row input[type="text"] {
+	width: 100%;
+	max-width: 480px;
+	padding: var(--pm-space-2) var(--pm-space-3);
+	font-size: var(--pm-text-md);
+	color: var(--pm-text);
+	background: var(--pm-bg-white);
+	border: 1px solid var(--pm-border-light);
+	border-radius: var(--pm-radius-md);
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.print-manager-admin .zprint-quick-print__row select:focus,
+.print-manager-admin .zprint-quick-print__row input[type="text"]:focus {
+	border-color: var(--pm-brand);
+	box-shadow: 0 0 0 2px rgba(var(--pm-brand-rgb), 0.15);
+	outline: none;
+}
+
+.print-manager-admin .zprint-quick-print__row .description {
+	margin: var(--pm-space-1) 0 0;
+	color: var(--pm-text-muted);
+	font-size: var(--pm-text-sm);
+}
+
+
+/* ==========================================================================
+   PROGRESS BAR
+   ========================================================================== */
+
+.print-manager-admin .zprint-quick-print__progress {
+	margin-top: var(--pm-space-5);
+}
+
+.print-manager-admin .zprint-quick-print__progress-bar {
+	height: 8px;
+	background: var(--pm-brand-light);
+	border-radius: 999px;
+	overflow: hidden;
+}
+
+.print-manager-admin .zprint-quick-print__progress-bar span {
+	display: block;
+	width: 0%;
+	height: 100%;
+	background: var(--pm-brand);
+	transition: width 0.15s ease;
+}
+
+.print-manager-admin .zprint-quick-print__progress-label {
+	display: block;
+	margin-top: var(--pm-space-1);
+	font-size: var(--pm-text-sm);
+	color: var(--pm-text-muted);
+}
+
+
+/* ==========================================================================
+   STATUS BANNER — info / success / error
+   ========================================================================== */
+
+.print-manager-admin .zprint-quick-print__status {
+	display: flex;
+	align-items: center;
+	gap: var(--pm-space-2);
+	margin-top: var(--pm-space-5);
+	padding: var(--pm-space-3) var(--pm-space-4);
+	font-size: var(--pm-text-md);
+	border-radius: var(--pm-radius-md);
+	border-left: 3px solid transparent;
+}
+
+.print-manager-admin .zprint-quick-print__status.is-info {
+	background: var(--pm-brand-light);
+	border-left-color: var(--pm-brand);
+	color: var(--pm-text);
+}
+
+.print-manager-admin .zprint-quick-print__status.is-success {
+	background: #e6f4ea;
+	border-left-color: #138a00;
+	color: #0a5a00;
+}
+
+.print-manager-admin .zprint-quick-print__status.is-error {
+	background: #fcf0f1;
+	border-left-color: #d63638;
+	color: #a00;
+}
+
+.print-manager-admin .zprint-quick-print__status-icon::before {
+	font-family: dashicons;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.print-manager-admin .zprint-quick-print__status.is-info .zprint-quick-print__status-icon::before { content: "\f463"; }
+.print-manager-admin .zprint-quick-print__status.is-success .zprint-quick-print__status-icon::before { content: "\f147"; }
+.print-manager-admin .zprint-quick-print__status.is-error .zprint-quick-print__status-icon::before { content: "\f534"; }
+
+
+/* ==========================================================================
+   SUBMIT BUTTON — matches the "Save Changes" styling from p.submit
+   ========================================================================== */
+
+.print-manager-admin .zprint-quick-print__actions {
+	margin-top: var(--pm-space-6);
+	padding-top: var(--pm-space-4);
+	border-top: 1px solid var(--pm-border-light);
+}
+
+.print-manager-admin .zprint-quick-print__submit.button-primary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--pm-space-2);
+	min-width: 180px;
+	min-height: 36px;
+	padding: var(--pm-space-2) var(--pm-space-6);
+	font-size: var(--pm-text-md);
+	font-weight: 600;
+	color: var(--pm-bg-white);
+	background: var(--pm-brand);
+	border: 1px solid var(--pm-brand);
+	border-radius: var(--pm-radius-md);
+	box-shadow: none;
+	transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.print-manager-admin .zprint-quick-print__submit.button-primary:hover,
+.print-manager-admin .zprint-quick-print__submit.button-primary:focus {
+	color: var(--pm-bg-white);
+	background: var(--pm-brand-hover);
+	border-color: var(--pm-brand-hover);
+}
+
+.print-manager-admin .zprint-quick-print__submit.button-primary:focus-visible {
+	box-shadow: 0 0 0 2px rgba(var(--pm-brand-rgb), 0.25);
+	outline: none;
+}
+
+.print-manager-admin .zprint-quick-print__submit.button-primary[disabled],
+.print-manager-admin .zprint-quick-print__submit.button-primary:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.print-manager-admin .zprint-quick-print__submit-spinner {
+	display: none;
+	width: 14px;
+	height: 14px;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	border-top-color: var(--pm-bg-white);
+	border-radius: 50%;
+	animation: zprint-qp-spin 0.8s linear infinite;
+}
+
+.print-manager-admin .zprint-quick-print__submit.is-loading .zprint-quick-print__submit-spinner {
+	display: inline-block;
+}
+
+.print-manager-admin .zprint-quick-print__submit.is-loading .zprint-quick-print__submit-label {
+	opacity: 0.9;
+}
+
+@keyframes zprint-qp-spin {
+	to { transform: rotate(360deg); }
+}

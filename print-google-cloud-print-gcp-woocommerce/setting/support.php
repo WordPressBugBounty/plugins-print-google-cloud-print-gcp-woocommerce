@@ -21,6 +21,11 @@ return function (Page $setting_page) {
 			Tab::render($orders_ids, Location::getAllFormatted());
 		});
 
+	/* Move older log files before the log controls below check whether a log exists. */
+	if ($setting_page->isRequested($support)) {
+		Log::secureStorage();
+	}
+
 	if ($setting_page->isRequested($support)) {
 		add_action('admin_enqueue_scripts', function () {
 			wp_register_script(
@@ -74,7 +79,7 @@ return function (Page $setting_page) {
 				->setLabel('singular_name', __('Log file content', 'Print-Google-Cloud-Print-GCP-WooCommerce'))
 				->setType(Input::TYPE_INFO)
 				->setArgument('content', zprint_get_log_file_content_html(
-						Log::getPrintLogFilePath(false),
+						Admin\LogAccess::viewUrl(Log::PRINTING),
 						Log::PRINTING,
 						$view_log_text,
 						$copy_log_text,
@@ -98,7 +103,7 @@ return function (Page $setting_page) {
 			}
 			add_filter('\Zprint\Aspect\Input\saveBefore', function ($data, $object, $key_name) use ($clear) {
 				if ($object === $clear && $data) {
-					file_put_contents(Log::getPrintLogFilePath(), '');
+					Log::clear(Log::PRINTING);
 				}
 				return $data;
 			}, 10, 3);
@@ -115,7 +120,7 @@ return function (Page $setting_page) {
 				->setLabel('singular_name', __('Log file content', 'Print-Google-Cloud-Print-GCP-WooCommerce'))
 				->setType(Input::TYPE_INFO)
 				->setArgument('content', zprint_get_log_file_content_html(
-						Log::getBasicLogFilePath(false),
+						Admin\LogAccess::viewUrl(Log::BASIC),
 						Log::BASIC,
 						$view_log_text,
 						$copy_log_text,
@@ -139,7 +144,7 @@ return function (Page $setting_page) {
 			}
 			add_filter('\Zprint\Aspect\Input\saveBefore', function ($data, $object, $key_name) use ($clear) {
 				if ($object === $clear && $data) {
-					file_put_contents(Log::getBasicLogFilePath(), '');
+					Log::clear(Log::BASIC);
 				}
 				return $data;
 			}, 10, 3);
@@ -153,21 +158,7 @@ return function (Page $setting_page) {
 				->setArgument('default', false);
 		});
 
-	add_action('wp_ajax_zprint_copy_log', function () {
-		$type = $_POST['type'] ?? '';
-
-		if (Log::BASIC === $type) {
-			$path = Log::getBasicLogFilePath();
-		} elseif (Log::PRINTING === $type) {
-			$path = Log::getPrintLogFilePath();
-		} else {
-			$path = '';
-		}
-
-		echo $path ? file_get_contents($path) : '';
-
-		wp_die();
-	});
+	/* Log copy/view handlers: Admin\LogAccess. */
 
 	// Job Queue section
 	$jobQueue = new Box('job queue');
@@ -283,7 +274,7 @@ return function (Page $setting_page) {
 
 	// AJAX handlers for job queue actions
 	add_action('wp_ajax_zprint_retry_job', function () {
-		check_ajax_referer('zprint_queue_action', 'nonce');
+		Support\AdminRequest::authorize('zprint_queue_action');
 
 		$jobId = isset($_POST['job_id']) ? intval($_POST['job_id']) : 0;
 
@@ -295,7 +286,7 @@ return function (Page $setting_page) {
 	});
 
 	add_action('wp_ajax_zprint_delete_job', function () {
-		check_ajax_referer('zprint_queue_action', 'nonce');
+		Support\AdminRequest::authorize('zprint_queue_action');
 
 		$jobId = isset($_POST['job_id']) ? intval($_POST['job_id']) : 0;
 
@@ -378,15 +369,16 @@ function zprint_get_log_file_content_html(string $file_url, string $log_type, st
 	$view_log_button = sprintf(
 		'<a class="button %s" href="%s" target="_blank" %s>%s</a>',
 		$disabled,
-		$file_url,
+		esc_url($file_url),
 		$log_exists ? '' : 'style="pointer-events: none"',
 		$log_exists ? $view_log_text : __('Log is empty', 'Print-Google-Cloud-Print-GCP-WooCommerce')
 	);
 
 	$copy_log_button = sprintf(
-		'<button type="button" class="button %s zprint-copy-log-button" data-log-type="%s" style="margin-left: 20px; display: none">%s</button>',
+		'<button type="button" class="button %s zprint-copy-log-button" data-log-type="%s" data-nonce="%s" style="margin-left: 20px; display: none">%s</button>',
 		$disabled,
-		$log_type,
+		esc_attr($log_type),
+		esc_attr(wp_create_nonce(Admin\LogAccess::NONCE)),
 		$copy_log_text
 	);
 

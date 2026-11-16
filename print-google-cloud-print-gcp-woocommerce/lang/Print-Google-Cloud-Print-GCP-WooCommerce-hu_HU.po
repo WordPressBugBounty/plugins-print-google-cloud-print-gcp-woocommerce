@@ -27,17 +27,16 @@ msgstr "Aktív"
 #: setting/general.php:77
 #: setting/locations/single.php:113
 #: setting/locations/single.php:122
-#: setting/setting.php:63
-#: setting/setting.php:85
-#: setting/setting.php:107
-#: setting/setting.php:118
+#: setting/setting.php:131
+#: setting/setting.php:153
+#: setting/setting.php:175
+#: setting/setting.php:186
 msgid "Enable"
 msgstr "Engedélyezés"
 
-#: includes/Admin/Layout.php:35
-#: includes/Admin/Layout.php:40
+#: includes/Admin/Layout.php:37
+#: includes/Admin/Layout.php:42
 #: includes/Admin/PrintDialog.php:109
-#: includes/Admin/PrintDialog.php:112
 #: includes/Admin/PrintDialog.php:189
 #: setting/index.php:13
 msgid "Print Manager"
@@ -47,7 +46,7 @@ msgstr "Nyomtatáskezelő"
 msgid "Print Order"
 msgstr "Rendelés nyomtatása"
 
-#: includes/Admin/Layout.php:57
+#: includes/Admin/Layout.php:59
 #: setting/general.php:11
 msgid "General"
 msgstr "Általános"
@@ -56,7 +55,7 @@ msgstr "Általános"
 msgid "Add-ons"
 msgstr "Bővítmények"
 
-#: includes/Admin/Layout.php:79
+#: includes/Admin/Layout.php:81
 #: setting/locations/single.php:454
 #: setting/setting.php:11
 msgid "Settings"
@@ -164,19 +163,19 @@ msgstr "Automatikus nyomtatás engedélyezése"
 msgid "Copies"
 msgstr "Másolatok"
 
-#: setting/printers.php:72
+#: setting/printers.php:86
 msgid "Location deleted"
 msgstr "Törölt hely"
 
-#: setting/printers.php:78
+#: setting/printers.php:92
 msgid "Location saved"
 msgstr "Mentett hely"
 
-#: setting/printers.php:84
+#: setting/printers.php:98
 msgid "Test print initiated, view log for details"
 msgstr "A nyomtatási teszt megkezdődött, a részletekért nézd meg a naplót"
 
-#: setting/printers.php:50
+#: setting/printers.php:62
 msgid "Add new"
 msgstr "Új hozzáadása"
 
@@ -186,7 +185,7 @@ msgstr "Új hozzáadása"
 msgid "Enabled"
 msgstr "Engedélyezve"
 
-#: includes/Admin/Layout.php:68
+#: includes/Admin/Layout.php:70
 #: setting/locations/index.php:49
 #: setting/locations/single.php:129
 #: setting/printers.php:15
@@ -447,6 +446,7 @@ msgstr "Szerepkörök kiválasztása a felhasználók helyleképezéséhez"
 
 #: setting/setting.php:28
 #: setting/setting.php:42
+#: setting/setting.php:59
 msgid "Selected Roles"
 msgstr "Kiválasztott szerepkörök"
 
@@ -640,22 +640,27 @@ msgid "Shipping address"
 msgstr "Szállítási cím"
 
 #. Description of the plugin
+#: index.php
 msgid "Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!"
 msgstr "Könnyedén hozzáadhat támogatást a WooCommerce megrendelések nyomtatásához a BizPrint Cloud Print Service segítségével, és nyomtasson a világ bármely pontjára!"
 
 #. Author of the plugin
+#: index.php
 msgid "BizSwoop a CPF Concepts, LLC Brand"
 msgstr "BizSwoop a CPF Concepts, LLC márka"
 
 #. Author URI of the plugin
+#: index.php
 msgid "http://www.bizswoop.com"
 msgstr "http://www.bizswoop.com"
 
 #. Plugin Name of the plugin
+#: index.php
 msgid "BizPrint Print Manager for WooCommerce"
 msgstr "BizPrint Nyomtatáskezelő WooCommerce"
 
 #. Plugin URI of the plugin
+#: index.php
 msgid "http://www.getbizprint.com"
 msgstr "http://www.getbizprint.com"
 
@@ -664,7 +669,7 @@ msgid "Our Full Collection of Print Templates"
 msgstr "A nyomtatási sablonok teljes gyűjteménye"
 
 #: includes/Addons.php:20
-#: includes/Admin/Layout.php:90
+#: includes/Admin/Layout.php:92
 #: setting/addons.php:11
 msgid "Marketplace"
 msgstr "Piactér"
@@ -717,47 +722,47 @@ msgstr "Eszközök és sablonok"
 msgid "Use tools"
 msgstr "Szerszámok használata"
 
-#: includes/Admin.php:51
+#: includes/Admin.php:52
 msgid "Order(s) is printing"
 msgstr "A megrendelés (ok) nyomtatása"
 
-#: includes/Admin.php:60
+#: includes/Admin.php:61
 msgid "Print error"
 msgstr "Hiba nyomtatása"
 
-#: includes/Admin.php:188
+#: includes/Admin.php:189
 msgid "You're almost there. Set up BizPrint to start printing automatically"
 msgstr "Mindjárt ott vagy. Felszerelés BizPrint automatikus nyomtatás"
 
-#: includes/Admin.php:198
+#: includes/Admin.php:199
 msgid "BizPrint setup illustration"
 msgstr "BizPrint beállítási ábra"
 
-#: includes/Admin.php:203
+#: includes/Admin.php:204
 msgid "Finish Setup to Start Printing Automatically"
 msgstr "A nyomtatás automatikus indítása"
 
-#: includes/Admin.php:209
+#: includes/Admin.php:210
 msgid "Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands."
 msgstr "Időt takarít meg és csökkenti a komplexitást megbízható, méretezhető nyomtatási oldattal. Használja a meglévő nyomtató - működik minden nagyobb márkák."
 
-#: includes/Admin.php:216
+#: includes/Admin.php:217
 msgid "You're almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders."
 msgstr "Már majdnem kész vagy a nyomtatásra. Kövesse a Quick Start Guide-ot a nyomtató csatlakoztatásához és a blokkok és megrendelések nyomtatásának megkezdéséhez."
 
-#: includes/Admin.php:223
+#: includes/Admin.php:224
 msgid "Launch Quick Start Guide"
 msgstr "Gyors indítási útmutató indítása"
 
-#: includes/Admin.php:229
+#: includes/Admin.php:230
 msgid "Go to print settings"
 msgstr "Ugrás a nyomtatási beállításokra"
 
-#: includes/Admin.php:233
+#: includes/Admin.php:234
 msgid "Get Support"
 msgstr "Támogatás"
 
-#: includes/Admin/Layout.php:44
+#: includes/Admin/Layout.php:46
 msgid "Print to anywhere with BizPrint"
 msgstr "Nyomtatás bárhol BizPrint"
 
@@ -1211,59 +1216,59 @@ msgstr "Visszatérési ország / állam"
 msgid "Return Postcode"
 msgstr "Visszatérési irányítószám"
 
-#: setting/setting.php:51
+#: setting/setting.php:119
 msgid "Network Settings"
 msgstr "Hálózati beállítások"
 
-#: setting/setting.php:58
+#: setting/setting.php:126
 msgid "Custom Request Timeout"
 msgstr "Egyéni kérelem időkérés"
 
-#: setting/setting.php:61
+#: setting/setting.php:129
 msgid "Override the default WordPress HTTP timeout (5 seconds) for print service requests."
 msgstr "Alapértelmezés felülbírálása WordPress HTTP időkérés (5 másodperc) nyomtatási szolgáltatás igényléséhez."
 
-#: setting/setting.php:69
+#: setting/setting.php:137
 msgid "Timeout (seconds)"
 msgstr "Időpont (másodperc)"
 
-#: setting/setting.php:73
+#: setting/setting.php:141
 msgid "Number of seconds to wait for print service response. Recommended: 10-30 seconds."
 msgstr "A nyomtatási szolgáltatás válaszára várandó másodpercek száma. Ajánlott: 10-30 másodperc."
 
-#: setting/setting.php:80
+#: setting/setting.php:148
 msgid "Enable Network Retry"
 msgstr "Hálózati visszaállítás engedélyezése"
 
-#: setting/setting.php:83
+#: setting/setting.php:151
 msgid "Retry failed print requests once on connection timeout or network errors. Note: May cause duplicate prints if the server received the original request."
 msgstr "A nem sikerült nyomtatási kérések újraindítása egyszer a kapcsolat időtúllépése vagy hálózati hibák esetén. Megjegyzés: Ha a szerver megkapta az eredeti kérést, másolatokat okozhat."
 
-#: setting/setting.php:91
+#: setting/setting.php:159
 msgid "Disable SSL Verification"
 msgstr "SSL ellenőrzés kikapcsolása"
 
-#: setting/setting.php:94
+#: setting/setting.php:162
 msgid "Disable SSL certificate verification for print service requests. Only enable if you have TLS inspection or custom certificate authorities in your network."
 msgstr "Az SSL tanúsítvány hitelesítésének kikapcsolása nyomtatási szolgáltatás igényléséhez. Csak akkor engedélyezheti, ha a TLS ellenőrző vagy egyéni tanúsítvány-ellenőrző hatóságok vannak a hálózatában."
 
-#: setting/setting.php:96
+#: setting/setting.php:164
 msgid "Disable"
 msgstr "Kikapcsolás"
 
-#: setting/setting.php:102
+#: setting/setting.php:170
 msgid "Background Print Processing"
 msgstr "Háttérnyomtatás"
 
-#: setting/setting.php:105
+#: setting/setting.php:173
 msgid "Process print jobs in the background instead of during checkout. Checkout completes immediately and print jobs are sent asynchronously. Recommended for sites experiencing print service timeouts."
 msgstr "Folyamat nyomtatási feladatok a háttérben, ahelyett, hogy kijelentkezés. A kijelentkezés azonnal befejeződik, és a nyomtatási feladatokat aszinkronikusan küldik. A nyomtatási szolgáltatás időbeosztását megtapasztaló oldalakra ajánlott."
 
-#: setting/setting.php:113
+#: setting/setting.php:181
 msgid "Queue Failed Jobs"
 msgstr "A sor nem sikerült"
 
-#: setting/setting.php:116
+#: setting/setting.php:184
 msgid "When a print job fails during checkout, automatically queue it for background retry. Jobs will retry with increasing delays up to 5 times. Only applies when Background Print Processing is disabled."
 msgstr "Ha egy nyomtatási feladat kijelentkezés közben nem sikerül, automatikusan állítsuk be a háttérre. A munkahelyek újra megpróbálkoznak majd a késések akár ötszörösével is. Csak akkor alkalmazandó, ha a háttérnyomtatás nem működik."
 
@@ -1579,3 +1584,147 @@ msgstr "Tel."
 msgctxt "%1$s - line break, %2$s - caret right icon"
 msgid "Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer."
 msgstr "A nyomtató helyének létrehozása nyomtatási feladatok küldéséhez:%1$sÁruház%2$s BizPrint %2$sa csatlakoztatott nyomtatót."
+
+#: includes/Admin/AdminBar.php:28
+#: setting/printers.php:60
+#: setting/quick-print.php:30
+#: setting/quick-print.php:31
+#: setting/quick-print.php:196
+msgid "Print a File"
+msgstr "Fájl nyomtatása"
+
+#: includes/Admin/AdminBar.php:31
+msgid "Open the BizPrint drag-and-drop Print a File page"
+msgstr "A BizPrint fogd és vidd Fájl nyomtatása oldalának megnyitása"
+
+#: includes/API/QuickPrint.php:66
+msgid "You do not have permission to print files."
+msgstr "Nincs jogosultsága fájlok nyomtatására."
+
+#. translators: 1: max prints, 2: minutes.
+#: includes/API/QuickPrint.php:82
+msgid "Rate limit exceeded: %1$d prints per %2$d minutes."
+msgstr "Túllépte a korlátot: %1$d nyomtatás %2$d percenként."
+
+#: includes/API/QuickPrint.php:94
+msgid "No file was uploaded."
+msgstr "Nem lett fájl feltöltve."
+
+#. translators: %s: file name.
+#: includes/API/QuickPrint.php:104
+msgid "Quick print: %s"
+msgstr "Gyorsnyomtatás: %s"
+
+#: includes/API/QuickPrint.php:112
+msgid "Choose a destination printer."
+msgstr "Válasszon célnyomtatót."
+
+#: includes/API/QuickPrint.php:121
+msgid "That printer is not available on this site."
+msgstr "Ez a nyomtató nem érhető el ezen a webhelyen."
+
+#. translators: %d: max size in MB.
+#: includes/API/QuickPrint.php:133
+msgid "That file is larger than the allowed limit of %d MB."
+msgstr "A fájl nagyobb a megengedett %d MB-os korlátnál."
+
+#: includes/API/QuickPrint.php:145
+msgid "Only PDF and HTML files are accepted."
+msgstr "Csak PDF- és HTML-fájlok fogadhatók el."
+
+#: includes/API/QuickPrint.php:153
+msgid "BizPrint API keys are not configured."
+msgstr "A BizPrint API-kulcsok nincsenek beállítva."
+
+#: includes/API/QuickPrint.php:204
+msgid "Unexpected response from print service."
+msgstr "Váratlan válasz a nyomtatási szolgáltatástól."
+
+#: includes/API/QuickPrint.php:308
+msgid "Could not save uploaded file."
+msgstr "Nem sikerült menteni a feltöltött fájlt."
+
+#: setting/quick-print.php:157
+msgid "You do not have permission to access this page."
+msgstr "Nincs jogosultsága az oldal megtekintéséhez."
+
+#. translators: %s: settings page URL.
+#: setting/quick-print.php:180
+msgid "BizPrint API keys are not configured. <a href=\"%s\">Add your keys on the Application tab</a> before printing."
+msgstr "A BizPrint API-kulcsok nincsenek beállítva. Nyomtatás előtt <a href=\"%s\">adja meg a kulcsait az Alkalmazás lapon</a>."
+
+#: setting/quick-print.php:202
+msgid "Drag a file here"
+msgstr "Húzzon ide egy fájlt"
+
+#: setting/quick-print.php:203
+msgid "or click to browse"
+msgstr "vagy kattintson a tallózáshoz"
+
+#: setting/quick-print.php:220
+msgid "Remove selected file"
+msgstr "Kiválasztott fájl eltávolítása"
+
+#: setting/quick-print.php:227
+msgid "Printer"
+msgstr "Nyomtató"
+
+#: setting/quick-print.php:230
+msgid "Select a printer…"
+msgstr "Válasszon nyomtatót…"
+
+#: setting/quick-print.php:237
+msgid "No printers found. Add printers in the Printers tab or verify your API keys."
+msgstr "Nem található nyomtató. Adjon hozzá nyomtatókat a Nyomtatók lapon, vagy ellenőrizze az API-kulcsait."
+
+#: setting/quick-print.php:244
+msgid "Description (optional)"
+msgstr "Leírás (nem kötelező)"
+
+#: setting/quick-print.php:251
+msgid "e.g. Daily report"
+msgstr "pl. Napi jelentés"
+
+#: setting/quick-print.php:272
+msgid "Send to Printer"
+msgstr "Küldés a nyomtatóra"
+
+#: setting/setting.php:50
+msgid "Quick Print Access Roles"
+msgstr "Gyorsnyomtatási hozzáférési szerepkörök"
+
+#: setting/setting.php:51
+msgid "Select roles that can access the drag-and-drop Print a File page, admin bar shortcut, and file-print endpoint."
+msgstr "Válassza ki azokat a szerepköröket, amelyek hozzáférhetnek a fogd és vidd Fájl nyomtatása oldalhoz, az adminsáv parancsikonjához és a fájlnyomtatási végponthoz."
+
+#: setting/setting.php:67
+msgid "Quick Print Limits"
+msgstr "Gyorsnyomtatási korlátok"
+
+#: setting/setting.php:72
+msgid "Maximum File Size (MB)"
+msgstr "Maximális fájlméret (MB)"
+
+#: setting/setting.php:75
+msgid "Maximum file size allowed for Print a File uploads. Larger files increase the risk of a timeout between your server and BizPrint, especially on shared hosting. Default: 2 MB. Hard maximum: 50 MB."
+msgstr "A Fájl nyomtatása feltöltéseknél megengedett maximális fájlméret. A nagyobb fájlok növelik az időtúllépés kockázatát a szerver és a BizPrint között, különösen megosztott tárhelyen. Alapértelmezett: 2 MB. Abszolút maximum: 50 MB."
+
+#: setting/setting.php:80
+msgid "Keep Files For (Hours)"
+msgstr "Fájlok megőrzése (óra)"
+
+#: setting/setting.php:83
+msgid "How long an uploaded file stays available to your printers. A printer that is offline fetches the file when it reconnects, and Reprint fetches it again, so both only work within this window. Files are deleted after it ends. Default: 24 hours. Maximum: 720 hours."
+msgstr "Mennyi ideig érhető el egy feltöltött fájl a nyomtatók számára. Az offline nyomtató az újracsatlakozáskor tölti le a fájlt, az Újranyomtatás pedig ismét letölti, így mindkettő csak ezen az időtartamon belül működik. A fájlok ezután törlődnek. Alapértelmezett: 24 óra. Maximum: 720 óra."
+
+#: setting/setting.php:91
+msgid "Default Printer"
+msgstr "Alapértelmezett nyomtató"
+
+#: setting/setting.php:94
+msgid "Pre-select this printer on the Print a File page so users can send a file without choosing a printer first. Leave blank to require a choice each time."
+msgstr "Ennek a nyomtatónak az előzetes kiválasztása a Fájl nyomtatása oldalon, hogy a felhasználók nyomtatóválasztás nélkül küldhessenek fájlt. Hagyja üresen, ha minden alkalommal választást szeretne megkövetelni."
+
+#: setting/setting.php:96
+msgid "None — let the user choose"
+msgstr "Nincs — a felhasználó választ"

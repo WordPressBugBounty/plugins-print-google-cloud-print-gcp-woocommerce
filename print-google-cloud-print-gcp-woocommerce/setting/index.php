@@ -45,6 +45,9 @@ $setting_page
 		call_user_func(include_once 'support.php', $setting_page);
 	});
 
+/* Sibling page (not a TabPage) so it can carry its own capability. */
+include_once __DIR__ . '/quick-print.php';
+
 function get_appearance_setting($name)
 {
 	global $zprint_appearance;

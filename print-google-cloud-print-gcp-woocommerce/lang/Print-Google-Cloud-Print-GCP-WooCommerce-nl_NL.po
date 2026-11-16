@@ -27,17 +27,16 @@ msgstr "Actief"
 #: setting/general.php:77
 #: setting/locations/single.php:113
 #: setting/locations/single.php:122
-#: setting/setting.php:63
-#: setting/setting.php:85
-#: setting/setting.php:107
-#: setting/setting.php:118
+#: setting/setting.php:131
+#: setting/setting.php:153
+#: setting/setting.php:175
+#: setting/setting.php:186
 msgid "Enable"
 msgstr "Inschakelen"
 
-#: includes/Admin/Layout.php:35
-#: includes/Admin/Layout.php:40
+#: includes/Admin/Layout.php:37
+#: includes/Admin/Layout.php:42
 #: includes/Admin/PrintDialog.php:109
-#: includes/Admin/PrintDialog.php:112
 #: includes/Admin/PrintDialog.php:189
 #: setting/index.php:13
 msgid "Print Manager"
@@ -47,7 +46,7 @@ msgstr "Afdrukbeheer"
 msgid "Print Order"
 msgstr "Printopdracht"
 
-#: includes/Admin/Layout.php:57
+#: includes/Admin/Layout.php:59
 #: setting/general.php:11
 msgid "General"
 msgstr "Algemeen"
@@ -56,7 +55,7 @@ msgstr "Algemeen"
 msgid "Add-ons"
 msgstr "Add-ons"
 
-#: includes/Admin/Layout.php:79
+#: includes/Admin/Layout.php:81
 #: setting/locations/single.php:454
 #: setting/setting.php:11
 msgid "Settings"
@@ -164,19 +163,19 @@ msgstr "Automatisch afdrukken inschakelen"
 msgid "Copies"
 msgstr "Kopieën"
 
-#: setting/printers.php:72
+#: setting/printers.php:86
 msgid "Location deleted"
 msgstr "Locatie verwijderd"
 
-#: setting/printers.php:78
+#: setting/printers.php:92
 msgid "Location saved"
 msgstr "Locatie opgeslagen"
 
-#: setting/printers.php:84
+#: setting/printers.php:98
 msgid "Test print initiated, view log for details"
 msgstr "Testafdruk gestart, bekijk logboek voor details"
 
-#: setting/printers.php:50
+#: setting/printers.php:62
 msgid "Add new"
 msgstr "Nieuwe toevoegen"
 
@@ -186,7 +185,7 @@ msgstr "Nieuwe toevoegen"
 msgid "Enabled"
 msgstr "Ingeschakeld"
 
-#: includes/Admin/Layout.php:68
+#: includes/Admin/Layout.php:70
 #: setting/locations/index.php:49
 #: setting/locations/single.php:129
 #: setting/printers.php:15
@@ -447,6 +446,7 @@ msgstr "Selecteer rollen voor locatietoewijzing aan gebruikers"
 
 #: setting/setting.php:28
 #: setting/setting.php:42
+#: setting/setting.php:59
 msgid "Selected Roles"
 msgstr "Geselecteerde rollen"
 
@@ -640,22 +640,27 @@ msgid "Shipping address"
 msgstr "Verzendingsadres"
 
 #. Description of the plugin
+#: index.php
 msgid "Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!"
 msgstr "Voeg eenvoudig ondersteuning toe voor het afdrukken van WooCommerce-bestellingen met BizPrint Cloud Print Service en print overal ter wereld!"
 
 #. Author of the plugin
+#: index.php
 msgid "BizSwoop a CPF Concepts, LLC Brand"
 msgstr "BizSwoop een merk van CPF Concepts, LLC"
 
 #. Author URI of the plugin
+#: index.php
 msgid "http://www.bizswoop.com"
 msgstr "http://www.bizswoop.com"
 
 #. Plugin Name of the plugin
+#: index.php
 msgid "BizPrint Print Manager for WooCommerce"
 msgstr "BizPrint Afdrukbeheer voor WooCommerce"
 
 #. Plugin URI of the plugin
+#: index.php
 msgid "http://www.getbizprint.com"
 msgstr "http://www.getbizprint.com"
 
@@ -664,7 +669,7 @@ msgid "Our Full Collection of Print Templates"
 msgstr "Onze volledige verzameling afdruksjablonen"
 
 #: includes/Addons.php:20
-#: includes/Admin/Layout.php:90
+#: includes/Admin/Layout.php:92
 #: setting/addons.php:11
 msgid "Marketplace"
 msgstr "Marktplaats"
@@ -717,47 +722,47 @@ msgstr "Hulpmiddelen & sjablonen"
 msgid "Use tools"
 msgstr "Hulpmiddelen gebruiken"
 
-#: includes/Admin.php:51
+#: includes/Admin.php:52
 msgid "Order(s) is printing"
 msgstr "Bestelling(en) worden afgedrukt"
 
-#: includes/Admin.php:60
+#: includes/Admin.php:61
 msgid "Print error"
 msgstr "Afdrukfout"
 
-#: includes/Admin.php:188
+#: includes/Admin.php:189
 msgid "You're almost there. Set up BizPrint to start printing automatically"
 msgstr "Je bent er bijna. Instellen BizPrint om automatisch af te drukken"
 
-#: includes/Admin.php:198
+#: includes/Admin.php:199
 msgid "BizPrint setup illustration"
 msgstr "BizPrint setup illustratie"
 
-#: includes/Admin.php:203
+#: includes/Admin.php:204
 msgid "Finish Setup to Start Printing Automatically"
 msgstr "Afwerking instellen om automatisch afdrukken te starten"
 
-#: includes/Admin.php:209
+#: includes/Admin.php:210
 msgid "Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands."
 msgstr "Bespaar tijd en reduceer complexiteit met een betrouwbare, schaalbare printoplossing. Gebruik uw bestaande printer en werkt op alle grote merken."
 
-#: includes/Admin.php:216
+#: includes/Admin.php:217
 msgid "You're almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders."
 msgstr "Je bent bijna klaar om te drukken. Volg onze Quick Start Guide om uw printer te verbinden en te beginnen met het afdrukken van ontvangstbewijzen en bestellingen."
 
-#: includes/Admin.php:223
+#: includes/Admin.php:224
 msgid "Launch Quick Start Guide"
 msgstr "Snelstarthandleiding starten"
 
-#: includes/Admin.php:229
+#: includes/Admin.php:230
 msgid "Go to print settings"
 msgstr "Ga naar afdrukinstellingen"
 
-#: includes/Admin.php:233
+#: includes/Admin.php:234
 msgid "Get Support"
 msgstr "Ondersteuning opvragen"
 
-#: includes/Admin/Layout.php:44
+#: includes/Admin/Layout.php:46
 msgid "Print to anywhere with BizPrint"
 msgstr "Afdrukken naar overal met BizPrint"
 
@@ -1211,59 +1216,59 @@ msgstr "Land van terugkeer / Staat"
 msgid "Return Postcode"
 msgstr "Postcode retourneren"
 
-#: setting/setting.php:51
+#: setting/setting.php:119
 msgid "Network Settings"
 msgstr "Netwerkinstellingen"
 
-#: setting/setting.php:58
+#: setting/setting.php:126
 msgid "Custom Request Timeout"
 msgstr "Aangepaste verzoektermijn"
 
-#: setting/setting.php:61
+#: setting/setting.php:129
 msgid "Override the default WordPress HTTP timeout (5 seconds) for print service requests."
 msgstr "Standaard overschrijven WordPress HTTP timeout (5 seconden) voor afdrukserviceverzoeken."
 
-#: setting/setting.php:69
+#: setting/setting.php:137
 msgid "Timeout (seconds)"
 msgstr "Tijdslimiet (seconden)"
 
-#: setting/setting.php:73
+#: setting/setting.php:141
 msgid "Number of seconds to wait for print service response. Recommended: 10-30 seconds."
 msgstr "Aantal seconden om te wachten op reactie van de afdrukdienst. Aanbevolen: 10-30 seconden."
 
-#: setting/setting.php:80
+#: setting/setting.php:148
 msgid "Enable Network Retry"
 msgstr "Netwerk opnieuw proberen inschakelen"
 
-#: setting/setting.php:83
+#: setting/setting.php:151
 msgid "Retry failed print requests once on connection timeout or network errors. Note: May cause duplicate prints if the server received the original request."
 msgstr "Foutieve afdrukverzoeken opnieuw proberen bij timeout van de verbinding of netwerkfouten. Opmerking: Kan dubbele afdrukken veroorzaken als de server het oorspronkelijke verzoek heeft ontvangen."
 
-#: setting/setting.php:91
+#: setting/setting.php:159
 msgid "Disable SSL Verification"
 msgstr "SSL-verificatie uitschakelen"
 
-#: setting/setting.php:94
+#: setting/setting.php:162
 msgid "Disable SSL certificate verification for print service requests. Only enable if you have TLS inspection or custom certificate authorities in your network."
 msgstr "Schakel verificatie van SSL-certificaat voor afdrukserviceverzoeken uit. Alleen inschakelen als u TLS inspectie of aangepaste certificaat autoriteiten in uw netwerk."
 
-#: setting/setting.php:96
+#: setting/setting.php:164
 msgid "Disable"
 msgstr "Uitschakelen"
 
-#: setting/setting.php:102
+#: setting/setting.php:170
 msgid "Background Print Processing"
 msgstr "Achtergrondafdrukbewerking"
 
-#: setting/setting.php:105
+#: setting/setting.php:173
 msgid "Process print jobs in the background instead of during checkout. Checkout completes immediately and print jobs are sent asynchronously. Recommended for sites experiencing print service timeouts."
 msgstr "Proces afdruktaken op de achtergrond in plaats van tijdens de kassa. Afrekenen voltooit onmiddellijk en afdruktaken worden asynchroon verzonden. Aanbevolen voor sites met printservice timeouts."
 
-#: setting/setting.php:113
+#: setting/setting.php:181
 msgid "Queue Failed Jobs"
 msgstr "Wachtrij mislukt"
 
-#: setting/setting.php:116
+#: setting/setting.php:184
 msgid "When a print job fails during checkout, automatically queue it for background retry. Jobs will retry with increasing delays up to 5 times. Only applies when Background Print Processing is disabled."
 msgstr "Als een afdruktaak mislukt tijdens het uitchecken, wacht dan automatisch op de achtergrond opnieuw proberen. Banen zullen opnieuw proberen met toenemende vertragingen tot 5 keer. Alleen van toepassing wanneer achtergrondafdrukverwerking is uitgeschakeld."
 
@@ -1579,3 +1584,147 @@ msgstr "Tel."
 msgctxt "%1$s - line break, %2$s - caret right icon"
 msgid "Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer."
 msgstr "Maak een printerlocatie om afdruktaken te versturen van:%1$sUw winkel%2$s BizPrint %2$suw verbonden printer."
+
+#: includes/Admin/AdminBar.php:28
+#: setting/printers.php:60
+#: setting/quick-print.php:30
+#: setting/quick-print.php:31
+#: setting/quick-print.php:196
+msgid "Print a File"
+msgstr "Een bestand afdrukken"
+
+#: includes/Admin/AdminBar.php:31
+msgid "Open the BizPrint drag-and-drop Print a File page"
+msgstr "Open de BizPrint-pagina Een bestand afdrukken met slepen en neerzetten"
+
+#: includes/API/QuickPrint.php:66
+msgid "You do not have permission to print files."
+msgstr "U heeft geen toestemming om bestanden af te drukken."
+
+#. translators: 1: max prints, 2: minutes.
+#: includes/API/QuickPrint.php:82
+msgid "Rate limit exceeded: %1$d prints per %2$d minutes."
+msgstr "Limiet overschreden: %1$d afdrukken per %2$d minuten."
+
+#: includes/API/QuickPrint.php:94
+msgid "No file was uploaded."
+msgstr "Er is geen bestand geüpload."
+
+#. translators: %s: file name.
+#: includes/API/QuickPrint.php:104
+msgid "Quick print: %s"
+msgstr "Snel afdrukken: %s"
+
+#: includes/API/QuickPrint.php:112
+msgid "Choose a destination printer."
+msgstr "Kies een doelprinter."
+
+#: includes/API/QuickPrint.php:121
+msgid "That printer is not available on this site."
+msgstr "Die printer is niet beschikbaar op deze site."
+
+#. translators: %d: max size in MB.
+#: includes/API/QuickPrint.php:133
+msgid "That file is larger than the allowed limit of %d MB."
+msgstr "Dat bestand is groter dan de toegestane limiet van %d MB."
+
+#: includes/API/QuickPrint.php:145
+msgid "Only PDF and HTML files are accepted."
+msgstr "Alleen PDF- en HTML-bestanden worden geaccepteerd."
+
+#: includes/API/QuickPrint.php:153
+msgid "BizPrint API keys are not configured."
+msgstr "BizPrint-API-sleutels zijn niet geconfigureerd."
+
+#: includes/API/QuickPrint.php:204
+msgid "Unexpected response from print service."
+msgstr "Onverwacht antwoord van de afdrukservice."
+
+#: includes/API/QuickPrint.php:308
+msgid "Could not save uploaded file."
+msgstr "Kan het geüploade bestand niet opslaan."
+
+#: setting/quick-print.php:157
+msgid "You do not have permission to access this page."
+msgstr "U heeft geen toestemming om deze pagina te openen."
+
+#. translators: %s: settings page URL.
+#: setting/quick-print.php:180
+msgid "BizPrint API keys are not configured. <a href=\"%s\">Add your keys on the Application tab</a> before printing."
+msgstr "BizPrint-API-sleutels zijn niet geconfigureerd. <a href=\"%s\">Voeg uw sleutels toe op het tabblad Toepassing</a> voordat u afdrukt."
+
+#: setting/quick-print.php:202
+msgid "Drag a file here"
+msgstr "Sleep een bestand hierheen"
+
+#: setting/quick-print.php:203
+msgid "or click to browse"
+msgstr "of klik om te bladeren"
+
+#: setting/quick-print.php:220
+msgid "Remove selected file"
+msgstr "Geselecteerd bestand verwijderen"
+
+#: setting/quick-print.php:227
+msgid "Printer"
+msgstr "Printer"
+
+#: setting/quick-print.php:230
+msgid "Select a printer…"
+msgstr "Selecteer een printer…"
+
+#: setting/quick-print.php:237
+msgid "No printers found. Add printers in the Printers tab or verify your API keys."
+msgstr "Geen printers gevonden. Voeg printers toe op het tabblad Printers of controleer uw API-sleutels."
+
+#: setting/quick-print.php:244
+msgid "Description (optional)"
+msgstr "Beschrijving (optioneel)"
+
+#: setting/quick-print.php:251
+msgid "e.g. Daily report"
+msgstr "bijv. Dagrapport"
+
+#: setting/quick-print.php:272
+msgid "Send to Printer"
+msgstr "Naar printer verzenden"
+
+#: setting/setting.php:50
+msgid "Quick Print Access Roles"
+msgstr "Toegangsrollen voor snel afdrukken"
+
+#: setting/setting.php:51
+msgid "Select roles that can access the drag-and-drop Print a File page, admin bar shortcut, and file-print endpoint."
+msgstr "Selecteer de rollen die toegang hebben tot de pagina Een bestand afdrukken met slepen en neerzetten, de snelkoppeling in de beheerbalk en het endpoint voor het afdrukken van bestanden."
+
+#: setting/setting.php:67
+msgid "Quick Print Limits"
+msgstr "Limieten voor snel afdrukken"
+
+#: setting/setting.php:72
+msgid "Maximum File Size (MB)"
+msgstr "Maximale bestandsgrootte (MB)"
+
+#: setting/setting.php:75
+msgid "Maximum file size allowed for Print a File uploads. Larger files increase the risk of a timeout between your server and BizPrint, especially on shared hosting. Default: 2 MB. Hard maximum: 50 MB."
+msgstr "Maximaal toegestane bestandsgrootte voor uploads via Een bestand afdrukken. Grotere bestanden vergroten het risico op een time-out tussen uw server en BizPrint, vooral bij gedeelde hosting. Standaard: 2 MB. Absoluut maximum: 50 MB."
+
+#: setting/setting.php:80
+msgid "Keep Files For (Hours)"
+msgstr "Bestanden bewaren gedurende (uren)"
+
+#: setting/setting.php:83
+msgid "How long an uploaded file stays available to your printers. A printer that is offline fetches the file when it reconnects, and Reprint fetches it again, so both only work within this window. Files are deleted after it ends. Default: 24 hours. Maximum: 720 hours."
+msgstr "Hoe lang een geüpload bestand beschikbaar blijft voor uw printers. Een printer die offline is, haalt het bestand op zodra hij weer verbinding maakt, en Opnieuw afdrukken haalt het nogmaals op, dus beide werken alleen binnen deze periode. Daarna worden de bestanden verwijderd. Standaard: 24 uur. Maximum: 720 uur."
+
+#: setting/setting.php:91
+msgid "Default Printer"
+msgstr "Standaardprinter"
+
+#: setting/setting.php:94
+msgid "Pre-select this printer on the Print a File page so users can send a file without choosing a printer first. Leave blank to require a choice each time."
+msgstr "Selecteer deze printer vooraf op de pagina Een bestand afdrukken, zodat gebruikers een bestand kunnen verzenden zonder eerst een printer te kiezen. Laat leeg om elke keer een keuze te vereisen."
+
+#: setting/setting.php:96
+msgid "None — let the user choose"
+msgstr "Geen — laat de gebruiker kiezen"

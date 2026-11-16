@@ -139,10 +139,10 @@
 	display: inline-flex;
 	align-items: center;
 	padding: 10px 24px;
-	color: #fff;
+	color: #fff !important;
 	font-size: 14px;
 	font-weight: 600;
-	text-decoration: none;
+	text-decoration: none !important;
 	background: linear-gradient(135deg, #303030 0%, #252525 100%);
 	border-radius: 6px;
 	box-shadow: 0 1px 3px rgba(48, 48, 48, 0.3);

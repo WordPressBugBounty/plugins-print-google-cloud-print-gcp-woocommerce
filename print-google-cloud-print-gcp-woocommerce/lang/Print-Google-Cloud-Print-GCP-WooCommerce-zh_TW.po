@@ -27,17 +27,16 @@ msgstr "啟用"
 #: setting/general.php:77
 #: setting/locations/single.php:113
 #: setting/locations/single.php:122
-#: setting/setting.php:63
-#: setting/setting.php:85
-#: setting/setting.php:107
-#: setting/setting.php:118
+#: setting/setting.php:131
+#: setting/setting.php:153
+#: setting/setting.php:175
+#: setting/setting.php:186
 msgid "Enable"
 msgstr "啟用"
 
-#: includes/Admin/Layout.php:35
-#: includes/Admin/Layout.php:40
+#: includes/Admin/Layout.php:37
+#: includes/Admin/Layout.php:42
 #: includes/Admin/PrintDialog.php:109
-#: includes/Admin/PrintDialog.php:112
 #: includes/Admin/PrintDialog.php:189
 #: setting/index.php:13
 msgid "Print Manager"
@@ -47,7 +46,7 @@ msgstr "打印機管理"
 msgid "Print Order"
 msgstr "列印訂單"
 
-#: includes/Admin/Layout.php:57
+#: includes/Admin/Layout.php:59
 #: setting/general.php:11
 msgid "General"
 msgstr "一般"
@@ -56,7 +55,7 @@ msgstr "一般"
 msgid "Add-ons"
 msgstr "附加元件"
 
-#: includes/Admin/Layout.php:79
+#: includes/Admin/Layout.php:81
 #: setting/locations/single.php:454
 #: setting/setting.php:11
 msgid "Settings"
@@ -164,19 +163,19 @@ msgstr "啟用自動列印"
 msgid "Copies"
 msgstr "副本"
 
-#: setting/printers.php:72
+#: setting/printers.php:86
 msgid "Location deleted"
 msgstr "地點刪除"
 
-#: setting/printers.php:78
+#: setting/printers.php:92
 msgid "Location saved"
 msgstr "已儲存位置"
 
-#: setting/printers.php:84
+#: setting/printers.php:98
 msgid "Test print initiated, view log for details"
 msgstr "測試列印已啟動，查看日誌以瞭解詳細資訊"
 
-#: setting/printers.php:50
+#: setting/printers.php:62
 msgid "Add new"
 msgstr "新增"
 
@@ -186,7 +185,7 @@ msgstr "新增"
 msgid "Enabled"
 msgstr "啟用"
 
-#: includes/Admin/Layout.php:68
+#: includes/Admin/Layout.php:70
 #: setting/locations/index.php:49
 #: setting/locations/single.php:129
 #: setting/printers.php:15
@@ -447,6 +446,7 @@ msgstr "選擇位置對應使用者的角色"
 
 #: setting/setting.php:28
 #: setting/setting.php:42
+#: setting/setting.php:59
 msgid "Selected Roles"
 msgstr "選定角色"
 
@@ -640,22 +640,27 @@ msgid "Shipping address"
 msgstr "運送地址"
 
 #. Description of the plugin
+#: index.php
 msgid "Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!"
 msgstr "使用BizPrint雲端列印服務，輕鬆支援列印 WooCommerce 訂單，並列印到世界任何地方！"
 
 #. Author of the plugin
+#: index.php
 msgid "BizSwoop a CPF Concepts, LLC Brand"
 msgstr "BizSwoop a CPF Concepts， LLC 品牌"
 
 #. Author URI of the plugin
+#: index.php
 msgid "http://www.bizswoop.com"
 msgstr "http://www.bizswoop.com"
 
 #. Plugin Name of the plugin
+#: index.php
 msgid "BizPrint Print Manager for WooCommerce"
 msgstr "適用於 WooCommerce 的 BizPrint 列印管理器"
 
 #. Plugin URI of the plugin
+#: index.php
 msgid "http://www.getbizprint.com"
 msgstr "http://www.getbizprint.com"
 
@@ -664,7 +669,7 @@ msgid "Our Full Collection of Print Templates"
 msgstr "我們的列印模板全集"
 
 #: includes/Addons.php:20
-#: includes/Admin/Layout.php:90
+#: includes/Admin/Layout.php:92
 #: setting/addons.php:11
 msgid "Marketplace"
 msgstr "市集"
@@ -717,47 +722,47 @@ msgstr "工具模板( T)"
 msgid "Use tools"
 msgstr "使用工具"
 
-#: includes/Admin.php:51
+#: includes/Admin.php:52
 msgid "Order(s) is printing"
 msgstr "順序是列印"
 
-#: includes/Admin.php:60
+#: includes/Admin.php:61
 msgid "Print error"
 msgstr "列印錯誤"
 
-#: includes/Admin.php:188
+#: includes/Admin.php:189
 msgid "You're almost there. Set up BizPrint to start printing automatically"
 msgstr "你馬上就到了 設定BizPrint自動開始列印"
 
-#: includes/Admin.php:198
+#: includes/Admin.php:199
 msgid "BizPrint setup illustration"
 msgstr "BizPrint設定插圖"
 
-#: includes/Admin.php:203
+#: includes/Admin.php:204
 msgid "Finish Setup to Start Printing Automatically"
 msgstr "完成自動開始列印的設定"
 
-#: includes/Admin.php:209
+#: includes/Admin.php:210
 msgid "Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands."
 msgstr "用可靠,可縮放的列印解決方案節省時間,減少複雜性. 使用你現有的印表機——在所有主要品牌上工作."
 
-#: includes/Admin.php:216
+#: includes/Admin.php:217
 msgid "You're almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders."
 msgstr "你幾乎準備好列印。 按照我們的快速啟動指南連線您的印表機並開始列印收據和訂單."
 
-#: includes/Admin.php:223
+#: includes/Admin.php:224
 msgid "Launch Quick Start Guide"
 msgstr "啟動快速啟動指南"
 
-#: includes/Admin.php:229
+#: includes/Admin.php:230
 msgid "Go to print settings"
 msgstr "轉到列印設定"
 
-#: includes/Admin.php:233
+#: includes/Admin.php:234
 msgid "Get Support"
 msgstr "獲取支援"
 
-#: includes/Admin/Layout.php:44
+#: includes/Admin/Layout.php:46
 msgid "Print to anywhere with BizPrint"
 msgstr "列印到任何地方BizPrint"
 
@@ -1210,59 +1215,59 @@ msgstr "返回國/國家"
 msgid "Return Postcode"
 msgstr "返回郵政編碼"
 
-#: setting/setting.php:51
+#: setting/setting.php:119
 msgid "Network Settings"
 msgstr "網路設定"
 
-#: setting/setting.php:58
+#: setting/setting.php:126
 msgid "Custom Request Timeout"
 msgstr "自定義請求超時"
 
-#: setting/setting.php:61
+#: setting/setting.php:129
 msgid "Override the default WordPress HTTP timeout (5 seconds) for print service requests."
 msgstr "覆蓋預設WordPress HTTP 列印服務請求的超時( 5秒) 。"
 
-#: setting/setting.php:69
+#: setting/setting.php:137
 msgid "Timeout (seconds)"
 msgstr "超時( 秒)"
 
-#: setting/setting.php:73
+#: setting/setting.php:141
 msgid "Number of seconds to wait for print service response. Recommended: 10-30 seconds."
 msgstr "等待列印服務響應的秒數 。 建議:10-30秒。"
 
-#: setting/setting.php:80
+#: setting/setting.php:148
 msgid "Enable Network Retry"
 msgstr "啟用網路重試"
 
-#: setting/setting.php:83
+#: setting/setting.php:151
 msgid "Retry failed print requests once on connection timeout or network errors. Note: May cause duplicate prints if the server received the original request."
 msgstr "在連線超時或網路錯誤時重試一次失敗的列印請求 。 注:如果伺服器收到原始請求,則可能造成重複列印."
 
-#: setting/setting.php:91
+#: setting/setting.php:159
 msgid "Disable SSL Verification"
 msgstr "禁用 SSL 校驗"
 
-#: setting/setting.php:94
+#: setting/setting.php:162
 msgid "Disable SSL certificate verification for print service requests. Only enable if you have TLS inspection or custom certificate authorities in your network."
 msgstr "為列印服務請求禁用 SSL 證書驗證 。 只有在您的網路中設定了 TLS 檢查或自定義證書許可權時才能啟用 。"
 
-#: setting/setting.php:96
+#: setting/setting.php:164
 msgid "Disable"
 msgstr "停用"
 
-#: setting/setting.php:102
+#: setting/setting.php:170
 msgid "Background Print Processing"
 msgstr "背景列印處理"
 
-#: setting/setting.php:105
+#: setting/setting.php:173
 msgid "Process print jobs in the background instead of during checkout. Checkout completes immediately and print jobs are sent asynchronously. Recommended for sites experiencing print service timeouts."
 msgstr "在背景中處理列印任務, 而不是在退出時處理 。 立即完成檢查並同步傳送列印任務. 建議印刷服務暫停的地點。"
 
-#: setting/setting.php:113
+#: setting/setting.php:181
 msgid "Queue Failed Jobs"
 msgstr "佇列失敗的任務"
 
-#: setting/setting.php:116
+#: setting/setting.php:184
 msgid "When a print job fails during checkout, automatically queue it for background retry. Jobs will retry with increasing delays up to 5 times. Only applies when Background Print Processing is disabled."
 msgstr "當一個列印工作在退出時失敗, 請自動排隊以進行背景重試 。 工作將重複試驗,拖延時間會增加多達5次。 只有在背景列印處理被禁用時才適用."
 
@@ -1578,3 +1583,147 @@ msgstr "電話"
 msgctxt "%1$s - line break, %2$s - caret right icon"
 msgid "Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer."
 msgstr "建立印表機位置, 從 :%1$s您的倉庫%2$s BizPrint %2$s您的連線印表機。"
+
+#: includes/Admin/AdminBar.php:28
+#: setting/printers.php:60
+#: setting/quick-print.php:30
+#: setting/quick-print.php:31
+#: setting/quick-print.php:196
+msgid "Print a File"
+msgstr "列印檔案"
+
+#: includes/Admin/AdminBar.php:31
+msgid "Open the BizPrint drag-and-drop Print a File page"
+msgstr "開啟 BizPrint 拖放式列印檔案頁面"
+
+#: includes/API/QuickPrint.php:66
+msgid "You do not have permission to print files."
+msgstr "您沒有列印檔案的權限。"
+
+#. translators: 1: max prints, 2: minutes.
+#: includes/API/QuickPrint.php:82
+msgid "Rate limit exceeded: %1$d prints per %2$d minutes."
+msgstr "超出速率限制：每 %2$d 分鐘最多 %1$d 次列印。"
+
+#: includes/API/QuickPrint.php:94
+msgid "No file was uploaded."
+msgstr "未上傳任何檔案。"
+
+#. translators: %s: file name.
+#: includes/API/QuickPrint.php:104
+msgid "Quick print: %s"
+msgstr "快速列印：%s"
+
+#: includes/API/QuickPrint.php:112
+msgid "Choose a destination printer."
+msgstr "請選擇目標印表機。"
+
+#: includes/API/QuickPrint.php:121
+msgid "That printer is not available on this site."
+msgstr "此印表機在本網站上無法使用。"
+
+#. translators: %d: max size in MB.
+#: includes/API/QuickPrint.php:133
+msgid "That file is larger than the allowed limit of %d MB."
+msgstr "此檔案超過允許的 %d MB 上限。"
+
+#: includes/API/QuickPrint.php:145
+msgid "Only PDF and HTML files are accepted."
+msgstr "僅接受 PDF 和 HTML 檔案。"
+
+#: includes/API/QuickPrint.php:153
+msgid "BizPrint API keys are not configured."
+msgstr "尚未設定 BizPrint API 金鑰。"
+
+#: includes/API/QuickPrint.php:204
+msgid "Unexpected response from print service."
+msgstr "列印服務傳回非預期的回應。"
+
+#: includes/API/QuickPrint.php:308
+msgid "Could not save uploaded file."
+msgstr "無法儲存已上傳的檔案。"
+
+#: setting/quick-print.php:157
+msgid "You do not have permission to access this page."
+msgstr "您沒有存取此頁面的權限。"
+
+#. translators: %s: settings page URL.
+#: setting/quick-print.php:180
+msgid "BizPrint API keys are not configured. <a href=\"%s\">Add your keys on the Application tab</a> before printing."
+msgstr "尚未設定 BizPrint API 金鑰。列印前請<a href=\"%s\">在「應用程式」分頁中新增您的金鑰</a>。"
+
+#: setting/quick-print.php:202
+msgid "Drag a file here"
+msgstr "將檔案拖曳到這裡"
+
+#: setting/quick-print.php:203
+msgid "or click to browse"
+msgstr "或點擊瀏覽"
+
+#: setting/quick-print.php:220
+msgid "Remove selected file"
+msgstr "移除所選檔案"
+
+#: setting/quick-print.php:227
+msgid "Printer"
+msgstr "印表機"
+
+#: setting/quick-print.php:230
+msgid "Select a printer…"
+msgstr "選擇印表機…"
+
+#: setting/quick-print.php:237
+msgid "No printers found. Add printers in the Printers tab or verify your API keys."
+msgstr "找不到印表機。請在「印表機」分頁中新增印表機，或確認您的 API 金鑰。"
+
+#: setting/quick-print.php:244
+msgid "Description (optional)"
+msgstr "描述（選填）"
+
+#: setting/quick-print.php:251
+msgid "e.g. Daily report"
+msgstr "例如：每日報表"
+
+#: setting/quick-print.php:272
+msgid "Send to Printer"
+msgstr "傳送到印表機"
+
+#: setting/setting.php:50
+msgid "Quick Print Access Roles"
+msgstr "快速列印存取角色"
+
+#: setting/setting.php:51
+msgid "Select roles that can access the drag-and-drop Print a File page, admin bar shortcut, and file-print endpoint."
+msgstr "選擇可存取拖放式列印檔案頁面、管理工具列捷徑及檔案列印端點的角色。"
+
+#: setting/setting.php:67
+msgid "Quick Print Limits"
+msgstr "快速列印限制"
+
+#: setting/setting.php:72
+msgid "Maximum File Size (MB)"
+msgstr "檔案大小上限（MB）"
+
+#: setting/setting.php:75
+msgid "Maximum file size allowed for Print a File uploads. Larger files increase the risk of a timeout between your server and BizPrint, especially on shared hosting. Default: 2 MB. Hard maximum: 50 MB."
+msgstr "列印檔案上傳所允許的檔案大小上限。檔案越大，您的伺服器與 BizPrint 之間發生逾時的風險越高，在共用主機上尤其如此。預設值：2 MB。硬性上限：50 MB。"
+
+#: setting/setting.php:80
+msgid "Keep Files For (Hours)"
+msgstr "檔案保留時間（小時）"
+
+#: setting/setting.php:83
+msgid "How long an uploaded file stays available to your printers. A printer that is offline fetches the file when it reconnects, and Reprint fetches it again, so both only work within this window. Files are deleted after it ends. Default: 24 hours. Maximum: 720 hours."
+msgstr "上傳的檔案可供您的印表機使用的時間。離線的印表機會在重新連線時取得檔案，重新列印也會再次取得檔案，因此兩者都只能在此時段內運作。時段結束後檔案將被刪除。預設值：24 小時。上限：720 小時。"
+
+#: setting/setting.php:91
+msgid "Default Printer"
+msgstr "預設印表機"
+
+#: setting/setting.php:94
+msgid "Pre-select this printer on the Print a File page so users can send a file without choosing a printer first. Leave blank to require a choice each time."
+msgstr "在列印檔案頁面預先選取此印表機，讓使用者不必先選擇印表機即可傳送檔案。留白則每次都需要選擇。"
+
+#: setting/setting.php:96
+msgid "None — let the user choose"
+msgstr "無 — 由使用者選擇"

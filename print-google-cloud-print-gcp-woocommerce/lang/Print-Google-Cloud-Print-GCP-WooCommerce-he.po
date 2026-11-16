@@ -27,17 +27,16 @@ msgstr "פָּעִיל"
 #: setting/general.php:77
 #: setting/locations/single.php:113
 #: setting/locations/single.php:122
-#: setting/setting.php:63
-#: setting/setting.php:85
-#: setting/setting.php:107
-#: setting/setting.php:118
+#: setting/setting.php:131
+#: setting/setting.php:153
+#: setting/setting.php:175
+#: setting/setting.php:186
 msgid "Enable"
 msgstr "לְאַפשֵׁר"
 
-#: includes/Admin/Layout.php:35
-#: includes/Admin/Layout.php:40
+#: includes/Admin/Layout.php:37
+#: includes/Admin/Layout.php:42
 #: includes/Admin/PrintDialog.php:109
-#: includes/Admin/PrintDialog.php:112
 #: includes/Admin/PrintDialog.php:189
 #: setting/index.php:13
 msgid "Print Manager"
@@ -47,7 +46,7 @@ msgstr "מנהל הדפסות"
 msgid "Print Order"
 msgstr "הדפס הזמנה"
 
-#: includes/Admin/Layout.php:57
+#: includes/Admin/Layout.php:59
 #: setting/general.php:11
 msgid "General"
 msgstr "כללי"
@@ -56,7 +55,7 @@ msgstr "כללי"
 msgid "Add-ons"
 msgstr "תוספות"
 
-#: includes/Admin/Layout.php:79
+#: includes/Admin/Layout.php:81
 #: setting/locations/single.php:454
 #: setting/setting.php:11
 msgid "Settings"
@@ -164,19 +163,19 @@ msgstr "אפשר הדפסה אוטומטית"
 msgid "Copies"
 msgstr "עותקים"
 
-#: setting/printers.php:72
+#: setting/printers.php:86
 msgid "Location deleted"
 msgstr "המיקום נמחק"
 
-#: setting/printers.php:78
+#: setting/printers.php:92
 msgid "Location saved"
 msgstr "המיקום נשמר"
 
-#: setting/printers.php:84
+#: setting/printers.php:98
 msgid "Test print initiated, view log for details"
 msgstr "הדפסת הבדיקה יזמה, צפה ביומן לפרטים"
 
-#: setting/printers.php:50
+#: setting/printers.php:62
 msgid "Add new"
 msgstr "הוסף חדש"
 
@@ -186,7 +185,7 @@ msgstr "הוסף חדש"
 msgid "Enabled"
 msgstr "מופעל"
 
-#: includes/Admin/Layout.php:68
+#: includes/Admin/Layout.php:70
 #: setting/locations/index.php:49
 #: setting/locations/single.php:129
 #: setting/printers.php:15
@@ -447,6 +446,7 @@ msgstr "בחר תפקידים למיפוי מיקום למשתמשים"
 
 #: setting/setting.php:28
 #: setting/setting.php:42
+#: setting/setting.php:59
 msgid "Selected Roles"
 msgstr "תפקידים נבחרים"
 
@@ -640,22 +640,27 @@ msgid "Shipping address"
 msgstr "כתובת למשלוח"
 
 #. Description of the plugin
+#: index.php
 msgid "Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!"
 msgstr "הוסף בקלות תמיכה בהדפסת הזמנות WooCommerce באמצעות BizPrint Cloud Print Service והדפס לכל מקום בעולם!"
 
 #. Author of the plugin
+#: index.php
 msgid "BizSwoop a CPF Concepts, LLC Brand"
 msgstr "BizSwoop a CPF Concepts, LLC מותג"
 
 #. Author URI of the plugin
+#: index.php
 msgid "http://www.bizswoop.com"
 msgstr "http://www.bizswoop.com"
 
 #. Plugin Name of the plugin
+#: index.php
 msgid "BizPrint Print Manager for WooCommerce"
 msgstr "BizPrint מנהל הדפסה WooCommerce"
 
 #. Plugin URI of the plugin
+#: index.php
 msgid "http://www.getbizprint.com"
 msgstr "http://www.getbizprint.com"
 
@@ -664,7 +669,7 @@ msgid "Our Full Collection of Print Templates"
 msgstr "אוסף מלא של תבניות הדפסה"
 
 #: includes/Addons.php:20
-#: includes/Admin/Layout.php:90
+#: includes/Admin/Layout.php:92
 #: setting/addons.php:11
 msgid "Marketplace"
 msgstr "Marketplace"
@@ -717,47 +722,47 @@ msgstr "כלים ותבניות"
 msgid "Use tools"
 msgstr "שימוש בכלים"
 
-#: includes/Admin.php:51
+#: includes/Admin.php:52
 msgid "Order(s) is printing"
 msgstr "הוראות (s) הדפסה"
 
-#: includes/Admin.php:60
+#: includes/Admin.php:61
 msgid "Print error"
 msgstr "שגיאה הדפסה"
 
-#: includes/Admin.php:188
+#: includes/Admin.php:189
 msgid "You're almost there. Set up BizPrint to start printing automatically"
 msgstr "אתה כמעט שם. המונחים BizPrint להתחיל הדפסה באופן אוטומטי"
 
-#: includes/Admin.php:198
+#: includes/Admin.php:199
 msgid "BizPrint setup illustration"
 msgstr "BizPrint איור"
 
-#: includes/Admin.php:203
+#: includes/Admin.php:204
 msgid "Finish Setup to Start Printing Automatically"
 msgstr "הגדר להתחיל להדפיס באופן אוטומטי"
 
-#: includes/Admin.php:209
+#: includes/Admin.php:210
 msgid "Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands."
 msgstr "לחסוך זמן ולהפחית מורכבות עם פתרון הדפסה אמין, מדרגי. השתמש המדפסת הקיימת שלך - עובד על כל המותגים הגדולים."
 
-#: includes/Admin.php:216
+#: includes/Admin.php:217
 msgid "You're almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders."
 msgstr "אתה כמעט מוכן להדפיס. עקוב אחר מדריך ההתחלה המהיר שלנו כדי לחבר את המדפסת שלך ולהתחיל קבלות הדפסה הזמנות."
 
-#: includes/Admin.php:223
+#: includes/Admin.php:224
 msgid "Launch Quick Start Guide"
 msgstr "תגית: Quick Start Guide"
 
-#: includes/Admin.php:229
+#: includes/Admin.php:230
 msgid "Go to print settings"
 msgstr "היכנסו להגדרות הדפסה"
 
-#: includes/Admin.php:233
+#: includes/Admin.php:234
 msgid "Get Support"
 msgstr "קבל תמיכה"
 
-#: includes/Admin/Layout.php:44
+#: includes/Admin/Layout.php:46
 msgid "Print to anywhere with BizPrint"
 msgstr "הדפסה לכל מקום BizPrint"
 
@@ -1213,59 +1218,59 @@ msgstr "ארץ / מדינה"
 msgid "Return Postcode"
 msgstr "חזרה Postcode"
 
-#: setting/setting.php:51
+#: setting/setting.php:119
 msgid "Network Settings"
 msgstr "הגדרות רשת"
 
-#: setting/setting.php:58
+#: setting/setting.php:126
 msgid "Custom Request Timeout"
 msgstr "בקשה אישית"
 
-#: setting/setting.php:61
+#: setting/setting.php:129
 msgid "Override the default WordPress HTTP timeout (5 seconds) for print service requests."
 msgstr "להתגבר על ברירת המחדל WordPress HTTP timeout (5 שניות) לבקשות שירות הדפסה."
 
-#: setting/setting.php:69
+#: setting/setting.php:137
 msgid "Timeout (seconds)"
 msgstr "זמן (שניים)"
 
-#: setting/setting.php:73
+#: setting/setting.php:141
 msgid "Number of seconds to wait for print service response. Recommended: 10-30 seconds."
 msgstr "מספר שניות לחכות לתגובת שירות הדפסה. מומלץ: 10-30 שניות"
 
-#: setting/setting.php:80
+#: setting/setting.php:148
 msgid "Enable Network Retry"
 msgstr "רשת Retry"
 
-#: setting/setting.php:83
+#: setting/setting.php:151
 msgid "Retry failed print requests once on connection timeout or network errors. Note: May cause duplicate prints if the server received the original request."
 msgstr "Retry נכשלה בבקשות הדפסה פעם בנוגע לשגיאות בזמן חיבור או ברשת. הערה: עשוי לגרום הדפסה כפולה אם השרת קיבל את הבקשה המקורית."
 
-#: setting/setting.php:91
+#: setting/setting.php:159
 msgid "Disable SSL Verification"
 msgstr "המונחים: SSL Verification"
 
-#: setting/setting.php:94
+#: setting/setting.php:162
 msgid "Disable SSL certificate verification for print service requests. Only enable if you have TLS inspection or custom certificate authorities in your network."
 msgstr "אימות אישור SSL עבור בקשות שירות הדפסה. ניתן רק אם יש לך רשויות בדיקת TLS או תעודה אישית ברשת שלך."
 
-#: setting/setting.php:96
+#: setting/setting.php:164
 msgid "Disable"
 msgstr "כיבוי"
 
-#: setting/setting.php:102
+#: setting/setting.php:170
 msgid "Background Print Processing"
 msgstr "עיבוד הדפסה רקע"
 
-#: setting/setting.php:105
+#: setting/setting.php:173
 msgid "Process print jobs in the background instead of during checkout. Checkout completes immediately and print jobs are sent asynchronously. Recommended for sites experiencing print service timeouts."
 msgstr "תהליך הדפסה עבודות ברקע במקום במהלך הבדיקה. בדיקה משלימה באופן מיידי ועבודות הדפסה נשלחות באופן מסונכרן. מומלץ עבור אתרים מנוסים זמני שירות הדפסה."
 
-#: setting/setting.php:113
+#: setting/setting.php:181
 msgid "Queue Failed Jobs"
 msgstr "הוספת משימות שנכשלו לתור"
 
-#: setting/setting.php:116
+#: setting/setting.php:184
 msgid "When a print job fails during checkout, automatically queue it for background retry. Jobs will retry with increasing delays up to 5 times. Only applies when Background Print Processing is disabled."
 msgstr "כאשר עבודה הדפסה נכשלת במהלך בדיקה, באופן אוטומטי תור זה עבור רקע retry. ג'ובס ינסה עם עיכובים גוברים עד 5 פעמים. חל רק כאשר עיבוד רקע הדפסה הוא מוגבל."
 
@@ -1581,3 +1586,147 @@ msgstr "תל תל"
 msgctxt "%1$s - line break, %2$s - caret right icon"
 msgid "Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer."
 msgstr "יצירת מיקום מדפסת כדי לשלוח עבודות הדפסה מ:%1$sהחנות שלך%2$s BizPrint %2$sהמדפסת המחוברת שלך"
+
+#: includes/Admin/AdminBar.php:28
+#: setting/printers.php:60
+#: setting/quick-print.php:30
+#: setting/quick-print.php:31
+#: setting/quick-print.php:196
+msgid "Print a File"
+msgstr "הדפסת קובץ"
+
+#: includes/Admin/AdminBar.php:31
+msgid "Open the BizPrint drag-and-drop Print a File page"
+msgstr "פתח את עמוד הדפסת קובץ של BizPrint עם גרירה ושחרור"
+
+#: includes/API/QuickPrint.php:66
+msgid "You do not have permission to print files."
+msgstr "אין לך הרשאה להדפיס קבצים."
+
+#. translators: 1: max prints, 2: minutes.
+#: includes/API/QuickPrint.php:82
+msgid "Rate limit exceeded: %1$d prints per %2$d minutes."
+msgstr "חריגה ממגבלת הקצב: %1$d הדפסות לכל %2$d דקות."
+
+#: includes/API/QuickPrint.php:94
+msgid "No file was uploaded."
+msgstr "לא הועלה קובץ."
+
+#. translators: %s: file name.
+#: includes/API/QuickPrint.php:104
+msgid "Quick print: %s"
+msgstr "הדפסה מהירה: %s"
+
+#: includes/API/QuickPrint.php:112
+msgid "Choose a destination printer."
+msgstr "בחר מדפסת יעד."
+
+#: includes/API/QuickPrint.php:121
+msgid "That printer is not available on this site."
+msgstr "המדפסת הזו אינה זמינה באתר זה."
+
+#. translators: %d: max size in MB.
+#: includes/API/QuickPrint.php:133
+msgid "That file is larger than the allowed limit of %d MB."
+msgstr "הקובץ גדול מהמגבלה המותרת של %d MB."
+
+#: includes/API/QuickPrint.php:145
+msgid "Only PDF and HTML files are accepted."
+msgstr "מתקבלים רק קבצי PDF ו-HTML."
+
+#: includes/API/QuickPrint.php:153
+msgid "BizPrint API keys are not configured."
+msgstr "מפתחות ה-API של BizPrint אינם מוגדרים."
+
+#: includes/API/QuickPrint.php:204
+msgid "Unexpected response from print service."
+msgstr "תגובה לא צפויה משירות ההדפסה."
+
+#: includes/API/QuickPrint.php:308
+msgid "Could not save uploaded file."
+msgstr "לא ניתן היה לשמור את הקובץ שהועלה."
+
+#: setting/quick-print.php:157
+msgid "You do not have permission to access this page."
+msgstr "אין לך הרשאה לגשת לעמוד זה."
+
+#. translators: %s: settings page URL.
+#: setting/quick-print.php:180
+msgid "BizPrint API keys are not configured. <a href=\"%s\">Add your keys on the Application tab</a> before printing."
+msgstr "מפתחות ה-API של BizPrint אינם מוגדרים. <a href=\"%s\">הוסף את המפתחות שלך בלשונית יישום</a> לפני ההדפסה."
+
+#: setting/quick-print.php:202
+msgid "Drag a file here"
+msgstr "גרור קובץ לכאן"
+
+#: setting/quick-print.php:203
+msgid "or click to browse"
+msgstr "או לחץ כדי לעיין"
+
+#: setting/quick-print.php:220
+msgid "Remove selected file"
+msgstr "הסר את הקובץ שנבחר"
+
+#: setting/quick-print.php:227
+msgid "Printer"
+msgstr "מדפסת"
+
+#: setting/quick-print.php:230
+msgid "Select a printer…"
+msgstr "בחר מדפסת…"
+
+#: setting/quick-print.php:237
+msgid "No printers found. Add printers in the Printers tab or verify your API keys."
+msgstr "לא נמצאו מדפסות. הוסף מדפסות בלשונית מדפסות או ודא את מפתחות ה-API שלך."
+
+#: setting/quick-print.php:244
+msgid "Description (optional)"
+msgstr "תיאור (אופציונלי)"
+
+#: setting/quick-print.php:251
+msgid "e.g. Daily report"
+msgstr "לדוגמה: דוח יומי"
+
+#: setting/quick-print.php:272
+msgid "Send to Printer"
+msgstr "שלח למדפסת"
+
+#: setting/setting.php:50
+msgid "Quick Print Access Roles"
+msgstr "תפקידים עם גישה להדפסה מהירה"
+
+#: setting/setting.php:51
+msgid "Select roles that can access the drag-and-drop Print a File page, admin bar shortcut, and file-print endpoint."
+msgstr "בחר תפקידים שיכולים לגשת לעמוד הדפסת קובץ עם גרירה ושחרור, לקיצור הדרך בסרגל הניהול ולנקודת הקצה של הדפסת קבצים."
+
+#: setting/setting.php:67
+msgid "Quick Print Limits"
+msgstr "מגבלות הדפסה מהירה"
+
+#: setting/setting.php:72
+msgid "Maximum File Size (MB)"
+msgstr "גודל קובץ מרבי (MB)"
+
+#: setting/setting.php:75
+msgid "Maximum file size allowed for Print a File uploads. Larger files increase the risk of a timeout between your server and BizPrint, especially on shared hosting. Default: 2 MB. Hard maximum: 50 MB."
+msgstr "גודל הקובץ המרבי המותר להעלאות בהדפסת קובץ. קבצים גדולים יותר מגבירים את הסיכון לפסק זמן בין השרת שלך ל-BizPrint, במיוחד באחסון משותף. ברירת מחדל: 2 MB. מקסימום מוחלט: 50 MB."
+
+#: setting/setting.php:80
+msgid "Keep Files For (Hours)"
+msgstr "שמור קבצים למשך (שעות)"
+
+#: setting/setting.php:83
+msgid "How long an uploaded file stays available to your printers. A printer that is offline fetches the file when it reconnects, and Reprint fetches it again, so both only work within this window. Files are deleted after it ends. Default: 24 hours. Maximum: 720 hours."
+msgstr "כמה זמן קובץ שהועלה נשאר זמין למדפסות שלך. מדפסת לא מקוונת מורידה את הקובץ כשהיא מתחברת מחדש, והדפסה חוזרת מורידה אותו שוב, כך ששתיהן פועלות רק בתוך חלון זמן זה. הקבצים נמחקים בסופו. ברירת מחדל: 24 שעות. מקסימום: 720 שעות."
+
+#: setting/setting.php:91
+msgid "Default Printer"
+msgstr "מדפסת ברירת מחדל"
+
+#: setting/setting.php:94
+msgid "Pre-select this printer on the Print a File page so users can send a file without choosing a printer first. Leave blank to require a choice each time."
+msgstr "בחר מראש מדפסת זו בעמוד הדפסת קובץ, כדי שמשתמשים יוכלו לשלוח קובץ בלי לבחור מדפסת קודם. השאר ריק כדי לדרוש בחירה בכל פעם."
+
+#: setting/setting.php:96
+msgid "None — let the user choose"
+msgstr "ללא — המשתמש יבחר"

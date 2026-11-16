@@ -27,17 +27,16 @@ msgstr "actif"
 #: setting/general.php:77
 #: setting/locations/single.php:113
 #: setting/locations/single.php:122
-#: setting/setting.php:63
-#: setting/setting.php:85
-#: setting/setting.php:107
-#: setting/setting.php:118
+#: setting/setting.php:131
+#: setting/setting.php:153
+#: setting/setting.php:175
+#: setting/setting.php:186
 msgid "Enable"
 msgstr "Activer"
 
-#: includes/Admin/Layout.php:35
-#: includes/Admin/Layout.php:40
+#: includes/Admin/Layout.php:37
+#: includes/Admin/Layout.php:42
 #: includes/Admin/PrintDialog.php:109
-#: includes/Admin/PrintDialog.php:112
 #: includes/Admin/PrintDialog.php:189
 #: setting/index.php:13
 msgid "Print Manager"
@@ -47,7 +46,7 @@ msgstr "Gestionnaire d'impression"
 msgid "Print Order"
 msgstr "Ordre d'impression"
 
-#: includes/Admin/Layout.php:57
+#: includes/Admin/Layout.php:59
 #: setting/general.php:11
 msgid "General"
 msgstr "Général"
@@ -56,7 +55,7 @@ msgstr "Général"
 msgid "Add-ons"
 msgstr "Modules complémentaires"
 
-#: includes/Admin/Layout.php:79
+#: includes/Admin/Layout.php:81
 #: setting/locations/single.php:454
 #: setting/setting.php:11
 msgid "Settings"
@@ -164,19 +163,19 @@ msgstr "Activer l'impression automatique"
 msgid "Copies"
 msgstr "Copies"
 
-#: setting/printers.php:72
+#: setting/printers.php:86
 msgid "Location deleted"
 msgstr "Emplacement supprimé"
 
-#: setting/printers.php:78
+#: setting/printers.php:92
 msgid "Location saved"
 msgstr "Emplacement enregistré"
 
-#: setting/printers.php:84
+#: setting/printers.php:98
 msgid "Test print initiated, view log for details"
 msgstr "Test d'impression lancé, voir le journal pour plus de détails"
 
-#: setting/printers.php:50
+#: setting/printers.php:62
 msgid "Add new"
 msgstr "Ajouter un nouveau"
 
@@ -186,7 +185,7 @@ msgstr "Ajouter un nouveau"
 msgid "Enabled"
 msgstr "Activée"
 
-#: includes/Admin/Layout.php:68
+#: includes/Admin/Layout.php:70
 #: setting/locations/index.php:49
 #: setting/locations/single.php:129
 #: setting/printers.php:15
@@ -447,6 +446,7 @@ msgstr "Sélectionnez les rôles pour le mappage de l'emplacement aux utilisateu
 
 #: setting/setting.php:28
 #: setting/setting.php:42
+#: setting/setting.php:59
 msgid "Selected Roles"
 msgstr "Rôles sélectionnés"
 
@@ -640,22 +640,27 @@ msgid "Shipping address"
 msgstr "Adresse de livraison"
 
 #. Description of the plugin
+#: index.php
 msgid "Easily Add Support for Printing WooCommerce Orders with BizPrint Cloud Print Service and Print to Anywhere in the World!"
 msgstr "Ajoutez facilement la prise en charge de l'impression des commandes WooCommerce avec le service d'impression cloud BizPrint et imprimez partout dans le monde !"
 
 #. Author of the plugin
+#: index.php
 msgid "BizSwoop a CPF Concepts, LLC Brand"
 msgstr "BizSwoop une marque de CPF Concepts, LLC"
 
 #. Author URI of the plugin
+#: index.php
 msgid "http://www.bizswoop.com"
 msgstr "http://www.bizswoop.com"
 
 #. Plugin Name of the plugin
+#: index.php
 msgid "BizPrint Print Manager for WooCommerce"
 msgstr "BizPrint Gestionnaire d'impression pour WooCommerce"
 
 #. Plugin URI of the plugin
+#: index.php
 msgid "http://www.getbizprint.com"
 msgstr "http://www.getbizprint.com"
 
@@ -664,7 +669,7 @@ msgid "Our Full Collection of Print Templates"
 msgstr "Notre collection complète de modèles d'impression"
 
 #: includes/Addons.php:20
-#: includes/Admin/Layout.php:90
+#: includes/Admin/Layout.php:92
 #: setting/addons.php:11
 msgid "Marketplace"
 msgstr "Place de marché"
@@ -717,47 +722,47 @@ msgstr "Outils et modèles"
 msgid "Use tools"
 msgstr "Utiliser les outils"
 
-#: includes/Admin.php:51
+#: includes/Admin.php:52
 msgid "Order(s) is printing"
 msgstr "Commande(s) est l'impression"
 
-#: includes/Admin.php:60
+#: includes/Admin.php:61
 msgid "Print error"
 msgstr "Erreur d'impression"
 
-#: includes/Admin.php:188
+#: includes/Admin.php:189
 msgid "You're almost there. Set up BizPrint to start printing automatically"
 msgstr "Tu y es presque. Mise en place BizPrint pour commencer à imprimer automatiquement"
 
-#: includes/Admin.php:198
+#: includes/Admin.php:199
 msgid "BizPrint setup illustration"
 msgstr "BizPrint illustration de configuration"
 
-#: includes/Admin.php:203
+#: includes/Admin.php:204
 msgid "Finish Setup to Start Printing Automatically"
 msgstr "Configuration de finition pour démarrer l'impression automatique"
 
-#: includes/Admin.php:209
+#: includes/Admin.php:210
 msgid "Save time and reduce complexity with a reliable, scalable print solution. Use your existing printer — works on all major brands."
 msgstr "Gagnez du temps et réduisez la complexité grâce à une solution d'impression fiable et évolutive. Utilisez votre imprimante existante — fonctionne sur toutes les grandes marques."
 
-#: includes/Admin.php:216
+#: includes/Admin.php:217
 msgid "You're almost ready to print. Follow our Quick Start Guide to connect your printer and start printing receipts and orders."
 msgstr "Tu es presque prêt à imprimer. Suivez notre Guide de démarrage rapide pour connecter votre imprimante et commencer à imprimer des reçus et des commandes."
 
-#: includes/Admin.php:223
+#: includes/Admin.php:224
 msgid "Launch Quick Start Guide"
 msgstr "Lancer le Guide de démarrage rapide"
 
-#: includes/Admin.php:229
+#: includes/Admin.php:230
 msgid "Go to print settings"
 msgstr "Aller aux paramètres d'impression"
 
-#: includes/Admin.php:233
+#: includes/Admin.php:234
 msgid "Get Support"
 msgstr "Obtenir du soutien"
 
-#: includes/Admin/Layout.php:44
+#: includes/Admin/Layout.php:46
 msgid "Print to anywhere with BizPrint"
 msgstr "Imprimer vers n'importe où avec BizPrint"
 
@@ -1211,59 +1216,59 @@ msgstr "Pays / État de retour"
 msgid "Return Postcode"
 msgstr "Retournez le code postal"
 
-#: setting/setting.php:51
+#: setting/setting.php:119
 msgid "Network Settings"
 msgstr "Réglages du réseau"
 
-#: setting/setting.php:58
+#: setting/setting.php:126
 msgid "Custom Request Timeout"
 msgstr "Délai de demande personnalisé"
 
-#: setting/setting.php:61
+#: setting/setting.php:129
 msgid "Override the default WordPress HTTP timeout (5 seconds) for print service requests."
 msgstr "Surpasser la valeur par défaut WordPress Chronologie HTTP (5 secondes) pour les demandes de service d'impression."
 
-#: setting/setting.php:69
+#: setting/setting.php:137
 msgid "Timeout (seconds)"
 msgstr "Délai (secondes)"
 
-#: setting/setting.php:73
+#: setting/setting.php:141
 msgid "Number of seconds to wait for print service response. Recommended: 10-30 seconds."
 msgstr "Nombre de secondes pour attendre la réponse du service d'impression. Recommandé : 10-30 secondes."
 
-#: setting/setting.php:80
+#: setting/setting.php:148
 msgid "Enable Network Retry"
 msgstr "Activer la réessayer du réseau"
 
-#: setting/setting.php:83
+#: setting/setting.php:151
 msgid "Retry failed print requests once on connection timeout or network errors. Note: May cause duplicate prints if the server received the original request."
 msgstr "Réessayer les requêtes d'impression échouées une fois sur le timeout de connexion ou les erreurs réseau. Note : Peut causer des impressions dupliquées si le serveur a reçu la requête originale."
 
-#: setting/setting.php:91
+#: setting/setting.php:159
 msgid "Disable SSL Verification"
 msgstr "Désactiver la vérification SSL"
 
-#: setting/setting.php:94
+#: setting/setting.php:162
 msgid "Disable SSL certificate verification for print service requests. Only enable if you have TLS inspection or custom certificate authorities in your network."
 msgstr "Désactiver la vérification de certificat SSL pour les demandes de service d'impression. Activez uniquement si vous avez des autorités de contrôle TLS ou de certificat personnalisé dans votre réseau."
 
-#: setting/setting.php:96
+#: setting/setting.php:164
 msgid "Disable"
 msgstr "Désactiver"
 
-#: setting/setting.php:102
+#: setting/setting.php:170
 msgid "Background Print Processing"
 msgstr "Traitement des impressions de fond"
 
-#: setting/setting.php:105
+#: setting/setting.php:173
 msgid "Process print jobs in the background instead of during checkout. Checkout completes immediately and print jobs are sent asynchronously. Recommended for sites experiencing print service timeouts."
 msgstr "Traiter les tâches d'impression en arrière-plan plutôt que lors de la commande. La caisse complète immédiatement et les tâches d'impression sont envoyées asynchronement. Recommandé pour les sites présentant des délais de service d'impression."
 
-#: setting/setting.php:113
+#: setting/setting.php:181
 msgid "Queue Failed Jobs"
 msgstr "Nombre d'emplois ayant échoué"
 
-#: setting/setting.php:116
+#: setting/setting.php:184
 msgid "When a print job fails during checkout, automatically queue it for background retry. Jobs will retry with increasing delays up to 5 times. Only applies when Background Print Processing is disabled."
 msgstr "Lorsqu'un travail d'impression échoue lors de la caisse, faites automatiquement la queue pour la réessayer de fond. Les emplois réessayeront avec des retards croissants jusqu'à 5 fois. S'applique uniquement lorsque le traitement d'impression de fond est désactivé."
 
@@ -1579,3 +1584,147 @@ msgstr "Tél."
 msgctxt "%1$s - line break, %2$s - caret right icon"
 msgid "Create a printer location to send print jobs from: %1$s Your Store %2$s BizPrint %2$s your connected printer."
 msgstr "Créer un emplacement d'imprimante pour envoyer des tâches d'impression à partir de :%1$sVotre magasin%2$s BizPrint %2$svotre imprimante connectée."
+
+#: includes/Admin/AdminBar.php:28
+#: setting/printers.php:60
+#: setting/quick-print.php:30
+#: setting/quick-print.php:31
+#: setting/quick-print.php:196
+msgid "Print a File"
+msgstr "Imprimer un fichier"
+
+#: includes/Admin/AdminBar.php:31
+msgid "Open the BizPrint drag-and-drop Print a File page"
+msgstr "Ouvrir la page glisser-déposer Imprimer un fichier de BizPrint"
+
+#: includes/API/QuickPrint.php:66
+msgid "You do not have permission to print files."
+msgstr "Vous n'avez pas la permission d'imprimer des fichiers."
+
+#. translators: 1: max prints, 2: minutes.
+#: includes/API/QuickPrint.php:82
+msgid "Rate limit exceeded: %1$d prints per %2$d minutes."
+msgstr "Limite dépassée : %1$d impressions par %2$d minutes."
+
+#: includes/API/QuickPrint.php:94
+msgid "No file was uploaded."
+msgstr "Aucun fichier n'a été téléversé."
+
+#. translators: %s: file name.
+#: includes/API/QuickPrint.php:104
+msgid "Quick print: %s"
+msgstr "Impression rapide : %s"
+
+#: includes/API/QuickPrint.php:112
+msgid "Choose a destination printer."
+msgstr "Choisissez une imprimante de destination."
+
+#: includes/API/QuickPrint.php:121
+msgid "That printer is not available on this site."
+msgstr "Cette imprimante n'est pas disponible sur ce site."
+
+#. translators: %d: max size in MB.
+#: includes/API/QuickPrint.php:133
+msgid "That file is larger than the allowed limit of %d MB."
+msgstr "Ce fichier dépasse la taille maximale autorisée de %d MB."
+
+#: includes/API/QuickPrint.php:145
+msgid "Only PDF and HTML files are accepted."
+msgstr "Seuls les fichiers PDF et HTML sont acceptés."
+
+#: includes/API/QuickPrint.php:153
+msgid "BizPrint API keys are not configured."
+msgstr "Les clés d'API BizPrint ne sont pas configurées."
+
+#: includes/API/QuickPrint.php:204
+msgid "Unexpected response from print service."
+msgstr "Réponse inattendue du service d'impression."
+
+#: includes/API/QuickPrint.php:308
+msgid "Could not save uploaded file."
+msgstr "Impossible d'enregistrer le fichier téléversé."
+
+#: setting/quick-print.php:157
+msgid "You do not have permission to access this page."
+msgstr "Vous n'avez pas la permission d'accéder à cette page."
+
+#. translators: %s: settings page URL.
+#: setting/quick-print.php:180
+msgid "BizPrint API keys are not configured. <a href=\"%s\">Add your keys on the Application tab</a> before printing."
+msgstr "Les clés d'API BizPrint ne sont pas configurées. <a href=\"%s\">Ajoutez vos clés dans l'onglet Demande</a> avant d'imprimer."
+
+#: setting/quick-print.php:202
+msgid "Drag a file here"
+msgstr "Glissez un fichier ici"
+
+#: setting/quick-print.php:203
+msgid "or click to browse"
+msgstr "ou cliquez pour parcourir"
+
+#: setting/quick-print.php:220
+msgid "Remove selected file"
+msgstr "Retirer le fichier sélectionné"
+
+#: setting/quick-print.php:227
+msgid "Printer"
+msgstr "Imprimante"
+
+#: setting/quick-print.php:230
+msgid "Select a printer…"
+msgstr "Sélectionnez une imprimante…"
+
+#: setting/quick-print.php:237
+msgid "No printers found. Add printers in the Printers tab or verify your API keys."
+msgstr "Aucune imprimante trouvée. Ajoutez des imprimantes dans l'onglet Imprimantes ou vérifiez vos clés d'API."
+
+#: setting/quick-print.php:244
+msgid "Description (optional)"
+msgstr "Description (facultatif)"
+
+#: setting/quick-print.php:251
+msgid "e.g. Daily report"
+msgstr "ex. Rapport quotidien"
+
+#: setting/quick-print.php:272
+msgid "Send to Printer"
+msgstr "Envoyer à l'imprimante"
+
+#: setting/setting.php:50
+msgid "Quick Print Access Roles"
+msgstr "Rôles d'accès à l'impression rapide"
+
+#: setting/setting.php:51
+msgid "Select roles that can access the drag-and-drop Print a File page, admin bar shortcut, and file-print endpoint."
+msgstr "Sélectionnez les rôles pouvant accéder à la page glisser-déposer Imprimer un fichier, au raccourci de la barre d'administration et au point de terminaison d'impression de fichiers."
+
+#: setting/setting.php:67
+msgid "Quick Print Limits"
+msgstr "Limites de l'impression rapide"
+
+#: setting/setting.php:72
+msgid "Maximum File Size (MB)"
+msgstr "Taille maximale de fichier (MB)"
+
+#: setting/setting.php:75
+msgid "Maximum file size allowed for Print a File uploads. Larger files increase the risk of a timeout between your server and BizPrint, especially on shared hosting. Default: 2 MB. Hard maximum: 50 MB."
+msgstr "Taille maximale autorisée pour les fichiers téléversés via Imprimer un fichier. Les fichiers plus volumineux augmentent le risque d'expiration du délai entre votre serveur et BizPrint, en particulier sur un hébergement mutualisé. Par défaut : 2 MB. Maximum absolu : 50 MB."
+
+#: setting/setting.php:80
+msgid "Keep Files For (Hours)"
+msgstr "Conserver les fichiers pendant (heures)"
+
+#: setting/setting.php:83
+msgid "How long an uploaded file stays available to your printers. A printer that is offline fetches the file when it reconnects, and Reprint fetches it again, so both only work within this window. Files are deleted after it ends. Default: 24 hours. Maximum: 720 hours."
+msgstr "Durée pendant laquelle un fichier téléversé reste disponible pour vos imprimantes. Une imprimante hors ligne récupère le fichier lorsqu'elle se reconnecte, et Réimprimer le récupère à nouveau : les deux ne fonctionnent donc que pendant cette période. Les fichiers sont supprimés une fois celle-ci écoulée. Par défaut : 24 heures. Maximum : 720 heures."
+
+#: setting/setting.php:91
+msgid "Default Printer"
+msgstr "Imprimante par défaut"
+
+#: setting/setting.php:94
+msgid "Pre-select this printer on the Print a File page so users can send a file without choosing a printer first. Leave blank to require a choice each time."
+msgstr "Présélectionnez cette imprimante sur la page Imprimer un fichier pour que les utilisateurs puissent envoyer un fichier sans choisir d'abord une imprimante. Laissez vide pour exiger un choix à chaque fois."
+
+#: setting/setting.php:96
+msgid "None — let the user choose"
+msgstr "Aucune — laisser l'utilisateur choisir"

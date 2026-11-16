@@ -13,7 +13,7 @@ class HttpClient
 	const RETRY_DELAY_MS = 500;
 
 	/**
-	 * Get network settings from the General tab.
+	 * Get network settings from the Settings tab.
 	 *
 	 * @return array
 	 */
@@ -21,25 +21,25 @@ class HttpClient
 	{
 		return InstanceStorage::getGlobalStorage()->asCurrentStorage(function () {
 			return Page::get('printer setting')->scope(function () {
-				$general = TabPage::get('general');
+				$setting = TabPage::get('setting');
 				$networkBox = Box::get('network settings');
 
 				$customTimeoutInput = Input::get('enable custom timeout');
-				$customTimeoutValue = $customTimeoutInput->getValue($networkBox, null, $general);
+				$customTimeoutValue = $customTimeoutInput->getValue($networkBox, null, $setting);
 				$customTimeoutEnabled = is_array($customTimeoutValue) && in_array('1', $customTimeoutValue);
 
 				$timeoutInput = Input::get('timeout seconds');
-				$timeoutSeconds = (int) $timeoutInput->getValue($networkBox, null, $general);
+				$timeoutSeconds = (int) $timeoutInput->getValue($networkBox, null, $setting);
 				if ($timeoutSeconds < 1) {
 					$timeoutSeconds = self::DEFAULT_TIMEOUT;
 				}
 
 				$retryInput = Input::get('enable network retry');
-				$retryValue = $retryInput->getValue($networkBox, null, $general);
+				$retryValue = $retryInput->getValue($networkBox, null, $setting);
 				$retryEnabled = is_array($retryValue) && in_array('1', $retryValue);
 
 				$sslInput = Input::get('disable ssl verify');
-				$sslValue = $sslInput->getValue($networkBox, null, $general);
+				$sslValue = $sslInput->getValue($networkBox, null, $setting);
 				$sslDisabled = is_array($sslValue) && in_array('1', $sslValue);
 
 				return [
